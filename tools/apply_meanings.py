@@ -14,17 +14,17 @@ def sentences(md):
     return re.split(r"(?<=[.!?])\s+(?=[A-Z“\"*])", md)
 missing, noex, done = [], [], 0
 for f in sorted(glob.glob(f"{site}/topics/*.json")):
-    if f.endswith("index.json"): continue
+    if f.endswith("index.json") or f.endswith("words.json"): continue
     t = json.load(open(f)); changed = False
     for b in t["lesson"]:
         if b.get("type") != "dialogue": continue
         lines = [l[1] for l in b["lines"]]
         for v in b["vocab"]:
-            while len(v) < 5: v.append("")
+            while len(v) < 7: v.append("")
             key = norm(v[0])
             m = VIN.get(key)
-            if m: v[3] = m; done += 1
-            elif not v[3]: missing.append((t["id"], key))
+            if m: v[6] = m; done += 1
+            elif not v[6]: missing.append((t["id"], key))
             c = core(v[0]); words = [w for w in c.split() if len(w) > 2]
             ex = ""
             for ln in lines:
@@ -62,9 +62,9 @@ for f in sorted(glob.glob(f"{site}/topics/*.json")):
             if ex:
                 ex = ex.strip()
                 if ex.count("**") % 2: ex = ex + "**" if ex.startswith("**") or ex.find("**") < len(ex) / 2 else "**" + ex
-                v[5:] = [ex]
+                v[5] = ex
             else:
-                v[5:] = [""]; noex.append((t["id"], key))
+                v[5] = ""; noex.append((t["id"], key))
             changed = True
     if changed: json.dump(t, open(f, "w"), ensure_ascii=False, indent=1)
 print("meanings set:", done, "| missing meaning:", missing)

@@ -9,8 +9,9 @@ for f in sorted(glob.glob(f"{site}/topics/*.json")):
     for b in t["lesson"]:
         if b.get("type") == "dialogue":
             for v in b["vocab"]:
-                v = (v + [""] * 6)[:6]
-                if v[3]: words.append(v)
+                v = (v + [""] * 7)[:7]
+                vi = v[6] or v[3]
+                if vi: words.append([v[0], v[1], v[2], vi, v[4], v[5]])
     if words: out[t["id"]] = words
 json.dump(out, open(f"{site}/topics/words.json", "w"), ensure_ascii=False, separators=(",", ":"))
 print({k: len(v) for k, v in out.items()}, os.path.getsize(f"{site}/topics/words.json"), "bytes")

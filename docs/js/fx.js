@@ -96,6 +96,7 @@ export function maybeWordPopup(pick, userId) {
   const close = () => { try { localStorage.setItem(key, pick.date); } catch {} ov.classList.add("out"); setTimeout(() => ov.remove(), 250); };
   ov.querySelector("[data-close]").onclick = close;
   ov.addEventListener("click", (e) => { if (e.target === ov) close(); });
+  window.addEventListener("hashchange", close, { once: true }); // leaving the page closes it too
 }
 
 let player;
