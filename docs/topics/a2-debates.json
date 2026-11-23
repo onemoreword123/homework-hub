@@ -1,0 +1,841 @@
+{
+ "id": "a2-debates",
+ "title": "Hot takes & friendly debates",
+ "level": "A2",
+ "emoji": "🔥",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-debates.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar/Technique"
+  },
+  {
+   "type": "grammar2",
+   "groups": [
+    {
+     "purpose": "Nêu ý kiến nhẹ nhàng",
+     "color": "#d9ead3",
+     "items": [
+      [
+       "Personally, I think… / I’d say…",
+       "***Personally, I think*** *coffee shops are too distracting.*"
+      ],
+      [
+       "I’m not sure (that)…",
+       "***I’m not sure*** *working longer always means working better.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Hỏi ý kiến / hỏi lại",
+     "color": "#ead1dc",
+     "items": [
+      [
+       "What do you think about…?",
+       "***What do you think about*** *working in coffee shops?*"
+      ],
+      [
+       "What makes you say that?",
+       "*“I think hustle culture is harmful.” “****What makes you say that?****”*"
+      ],
+      [
+       "Do you really think (that)…?",
+       "***Do you really think*** *working longer means working better?*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Đồng ý",
+     "color": "#fce5cd",
+     "items": [
+      [
+       "Exactly. / That’s exactly what I think.",
+       "***Exactly.*** *Everyone needs time to switch off.*"
+      ],
+      [
+       "I completely agree (with you).",
+       "***I completely agree.*** *Four days a week in the office is too many.*"
+      ],
+      [
+       "You’ve got a point there.",
+       "***You’ve got a point there.*** *A drink every day really adds up.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Thừa nhận ý người khác",
+     "color": "#d9ead3",
+     "items": [
+      [
+       "That’s true / That’s a fair point, but…",
+       "***That’s true for some people, but*** *in my industry, everyone works long hours.*"
+      ],
+      [
+       "I get that, but…",
+       "***I get that, but*** *you need time to switch off.*"
+      ],
+      [
+       "Even though + clause, …",
+       "***Even though*** *it’s expensive, it helps me focus.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Phản bác nhẹ nhàng",
+     "color": "#ead1dc",
+     "items": [
+      [
+       "I see your point, but…",
+       "***I see your point, but*** *a bit of background noise actually helps.*"
+      ],
+      [
+       "I’m not saying (that)…, I just think…",
+       "***I’m not saying*** *you shouldn’t be ambitious.* ***I just think*** *you need to set some boundaries.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Phân biệt hai ý",
+     "color": "#fce5cd",
+     "items": [
+      [
+       "There’s a difference between X and Y.",
+       "***There’s a difference between*** *working hard* ***and*** *working all the time.*"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🔥 Hot Takes & Friendly Debates"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Do you have an **“unpopular opinion”** that **most of your friends disagree with?**",
+    "When you **disagree with someone**, do you **say it directly or keep quiet?**",
+    "What’s a small, **everyday topic** that people argue about **a lot, like food, phones or work?**",
+    "Can you think of a time someone **changed your mind about something?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Coffee Shops vs. WFH",
+   "context": "***Context:*** *Ryan and Emma are friends who both work remotely. Emma meets Ryan for lunch at a coffee shop.*",
+   "lines": [
+    [
+     "Emma",
+     "Hi! Have you been here all morning?"
+    ],
+    [
+     "Ryan",
+     "Since nine. I work here most days now. I find it hard to focus at home, so I like to **get out of the house**."
+    ],
+    [
+     "Emma",
+     "Really? I can’t do that. I find coffee shops a bit **distracting:** the music, people chatting, someone on a phone call…"
+    ],
+    [
+     "Ryan",
+     "I see your point, but for me, a bit of **background noise** actually helps. At home, it’s too quiet, and I **end up** lying on the sofa, **scrolling through** my phone."
+    ],
+    [
+     "Emma",
+     "I’ve set up **a proper workspace** at home: a desk, a good chair and a second screen. Once I sit down there, I’m **in work mode**. For me, it’s **a matter of discipline**."
+    ],
+    [
+     "Ryan",
+     "That’s great if you have the space. My flat’s tiny, and my bed is right next to my desk. It’s **way too tempting**."
+    ],
+    [
+     "Emma",
+     "**Fair enough.** Doesn’t it get expensive? A drink every day really **adds up**."
+    ],
+    [
+     "Ryan",
+     "Yeah, it’s not cheap. But if I **get more done** in three hours here than in a whole day at home, it’s **worth it**."
+    ],
+    [
+     "Emma",
+     "What about the Wi-Fi? Last time I worked in a café, it kept **cutting out** during a video call."
+    ],
+    [
+     "Ryan",
+     "That does happen. That’s why I always have **a back-up plan**. I use my phone as **a hotspot**."
+    ],
+    [
+     "Emma",
+     "And are you comfortable taking calls **in public**?"
+    ],
+    [
+     "Ryan",
+     "Not really. If I have an important meeting, I stay home. So I suppose **it depends on** what kind of work I’m doing."
+    ],
+    [
+     "Emma",
+     "That makes sense. Maybe I’ll **give it a try** for simple tasks, like answering emails."
+    ],
+    [
+     "Ryan",
+     "Come with me tomorrow. **Worst case**, you get a good coffee."
+    ]
+   ],
+   "vocab": [
+    [
+     "**get out of the house**",
+     "/ɡet aʊt əv ðə haʊs/",
+     "phrase",
+     "",
+     "audio/v/ff3069ff9c.mp3",
+     "I find it hard to focus at home, so I like to **get out of the house**.",
+     "ra khỏi nhà"
+    ],
+    [
+     "**distracting**",
+     "/dɪˈstræk.tɪŋ/",
+     "adjective",
+     "",
+     "audio/v/f0ef942080.mp3",
+     "I find coffee shops a bit **distracting:** the music, people chatting, someone on a phone call…",
+     "gây mất tập trung"
+    ],
+    [
+     "**I see your point, but…**",
+     "/aɪ siː jɔː pɔɪnt bʌt/",
+     "expression",
+     "",
+     "audio/v/f7d6845a3e.mp3",
+     "I see your point, but for me, a bit of **background noise** actually helps.",
+     "Mình hiểu ý bạn, nhưng…"
+    ],
+    [
+     "**background noise**",
+     "/ˈbæk.ɡraʊnd nɔɪz/",
+     "noun",
+     "",
+     "audio/v/dfaef46eb5.mp3",
+     "I see your point, but for me, a bit of **background noise** actually helps.",
+     "tiếng ồn xung quanh"
+    ],
+    [
+     "**end up + V-ing**",
+     "/end ʌp/",
+     "structure",
+     "",
+     "audio/v/8ab18c8f82.mp3",
+     "At home, it’s too quiet, and I **end up** lying on the sofa, **scrolling through** my phone.",
+     "rốt cuộc lại…"
+    ],
+    [
+     "**scroll through** + N",
+     "/skrəʊl θruː/",
+     "phrasal verb",
+     "",
+     "audio/v/55602effc9.mp3",
+     "At home, it’s too quiet, and I **end up** lying on the sofa, **scrolling through** my phone.",
+     "lướt (điện thoại, mạng xã hội…)"
+    ],
+    [
+     "**a proper workspace**",
+     "/ə ˈprɒp.ə ˈwɜːk.speɪs/",
+     "noun",
+     "",
+     "audio/v/75cb8a40f3.mp3",
+     "I’ve set up **a proper workspace** at home: a desk, a good chair and a second screen.",
+     "một chỗ làm việc đàng hoàng"
+    ],
+    [
+     "**be in work mode**",
+     "/bi ɪn wɜːk məʊd/",
+     "phrase",
+     "",
+     "audio/v/0d74c153de.mp3",
+     "Once I sit down there, I’m **in work mode**.",
+     "ở trạng thái làm việc, tập trung làm việc"
+    ],
+    [
+     "**a matter of discipline**",
+     "/ə ˈmæt.ər əv ˈdɪs.ə.plɪn/",
+     "phrase",
+     "",
+     "audio/v/176fd9d1aa.mp3",
+     "For me, it’s **a matter of discipline**.",
+     "vấn đề về kỷ luật"
+    ],
+    [
+     "**way too tempting**",
+     "/weɪ tuː ˈtemp.tɪŋ/",
+     "phrase",
+     "",
+     "audio/v/cd84fd8536.mp3",
+     "It’s **way too tempting**.",
+     "quá hấp dẫn, khó cưỡng lại"
+    ],
+    [
+     "**Fair enough.**",
+     "/feər ɪˈnʌf/",
+     "expression",
+     "",
+     "audio/v/c9b14ad99a.mp3",
+     "**Fair enough.** Doesn’t it get expensive?",
+     "Cũng hợp lý. / Được thôi."
+    ],
+    [
+     "**add up**",
+     "/æd ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/32c8a9ee74.mp3",
+     "A drink every day really **adds up**.",
+     "cộng dồn lại (thành nhiều)"
+    ],
+    [
+     "**get more done**",
+     "/ɡet mɔː dʌn/",
+     "phrase",
+     "",
+     "audio/v/7bd560a316.mp3",
+     "But if I **get more done** in three hours here than in a whole day at home, it’s **worth it**.",
+     "làm được nhiều việc hơn"
+    ],
+    [
+     "**be worth it**",
+     "/bi wɜːθ ɪt/",
+     "phrase",
+     "",
+     "audio/v/c5d9946495.mp3",
+     "But if I **get more done** in three hours here than in a whole day at home, it’s **worth it**.",
+     "đáng (công sức, tiền bạc)"
+    ],
+    [
+     "**cut out**",
+     "/kʌt aʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/7f2391d880.mp3",
+     "Last time I worked in a café, it kept **cutting out** during a video call.",
+     "bị ngắt, mất kết nối"
+    ],
+    [
+     "**a back-up plan**",
+     "/ə ˈbæk.ʌp plæn/",
+     "noun",
+     "",
+     "audio/v/d4f26dbdc7.mp3",
+     "That’s why I always have **a back-up plan**.",
+     "kế hoạch dự phòng"
+    ],
+    [
+     "**a hotspot**",
+     "/ə ˈhɒt.spɒt/",
+     "noun",
+     "",
+     "audio/v/036b2267fd.mp3",
+     "I use my phone as **a hotspot**.",
+     "điểm phát Wi-Fi (từ điện thoại)"
+    ],
+    [
+     "**in public**",
+     "/ɪn ˈpʌb.lɪk/",
+     "phrase",
+     "",
+     "audio/v/17bf13d05e.mp3",
+     "And are you comfortable taking calls **in public**?",
+     "ở nơi công cộng"
+    ],
+    [
+     "**It depends on** + N / **what…**",
+     "/ɪt dɪˈpendz ɒn/",
+     "structure",
+     "",
+     "audio/v/fbd6ba87c4.mp3",
+     "So I suppose **it depends on** what kind of work I’m doing.",
+     "Còn tùy vào…"
+    ],
+    [
+     "**give it a try**",
+     "/ɡɪv ɪt ə traɪ/",
+     "phrase",
+     "",
+     "audio/v/3aaf0d95b6.mp3",
+     "Maybe I’ll **give it a try** for simple tasks, like answering emails.",
+     "thử xem sao"
+    ],
+    [
+     "**Worst case,…**",
+     "/wɜːst keɪs/",
+     "expression",
+     "",
+     "audio/v/d664dcdca1.mp3",
+     "**Worst case**, you get a good coffee.",
+     "Tệ nhất thì…"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Hustle Culture",
+   "context": "***Context:*** *Anna and Josh are friends. They’re meeting for dinner on Friday evening, and Anna has just arrived, an hour late.*",
+   "lines": [
+    [
+     "Anna",
+     "Sorry I’m late. I had to finish a report, and then my manager asked for one more thing."
+    ],
+    [
+     "Josh",
+     "**No worries.** Is it always like this at your new job?"
+    ],
+    [
+     "Anna",
+     "**Pretty much.** Most people in my team stay until eight or nine. If you leave at six, it looks like you’re not **committed**."
+    ],
+    [
+     "Josh",
+     "Even if you’ve finished your work?"
+    ],
+    [
+     "Anna",
+     "Yeah, it’s just the culture there. And to be honest, I don’t mind that much. I’m still **early in my career**, so I want to **prove myself**. If I **put in the hours** now, I’ll **get promoted** faster."
+    ],
+    [
+     "Josh",
+     "I get that. But I’m not sure **working longer** always **means working better**. Some of my colleagues stay late, but they spend half the evening chatting or on their phones."
+    ],
+    [
+     "Anna",
+     "That’s true for some people. But **in my industry**, everyone works long hours. If I don’t, someone else will **take my place**."
+    ],
+    [
+     "Josh",
+     "Maybe. But you’ve **cancelled on** us three times this month. Do you ever get time to **switch off**?"
+    ],
+    [
+     "Anna",
+     "Not really. Even at the weekend, I check my emails. I **feel guilty** if I don’t reply **straight away**."
+    ],
+    [
+     "Josh",
+     "That’s what worries me. My last job was like that, and after a year, I was completely **burnt out**. I couldn’t sleep, and I **lost interest in** everything."
+    ],
+    [
+     "Anna",
+     "I didn’t know that. What happened after that?"
+    ],
+    [
+     "Josh",
+     "I moved to a company with more **reasonable hours**. I leave at six, I **turn off notifications** at the weekend, and honestly, my work is better because I’m not exhausted all the time."
+    ],
+    [
+     "Anna",
+     "I guess **there’s a difference between** working hard **and** working all the time."
+    ],
+    [
+     "Josh",
+     "Yeah. I’m not saying you shouldn’t be **ambitious**. I just think you need to **set some boundaries**."
+    ],
+    [
+     "Anna",
+     "Maybe I could start by not checking emails on Sundays."
+    ],
+    [
+     "Josh",
+     "That sounds like **a good start**. Now, let’s order. I’m **starving**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**No worries.**",
+     "/nəʊ ˈwʌr.iz/",
+     "expression",
+     "",
+     "audio/v/f104fa9c05.mp3",
+     "**No worries.** Is it always like this at your new job?",
+     "Không sao đâu."
+    ],
+    [
+     "**Pretty much.**",
+     "/ˈprɪt.i mʌtʃ/",
+     "expression",
+     "",
+     "audio/v/c8f3bf4d9e.mp3",
+     "**Pretty much.** Most people in my team stay until eight or nine.",
+     "Gần như vậy. / Đại loại thế."
+    ],
+    [
+     "**committed**",
+     "/kəˈmɪt.ɪd/",
+     "adjective",
+     "",
+     "audio/v/e01a06dc0d.mp3",
+     "If you leave at six, it looks like you’re not **committed**.",
+     "tận tâm, cam kết với công việc"
+    ],
+    [
+     "**early in your career**",
+     "/ˈɜː.li ɪn jɔː kəˈrɪər/",
+     "phrase",
+     "",
+     "audio/v/ab036ba316.mp3",
+     "I’m still **early in my career**, so I want to **prove myself**.",
+     "khi mới bắt đầu sự nghiệp"
+    ],
+    [
+     "**put in the hours**",
+     "/pʊt ɪn ði aʊəz/",
+     "idiom",
+     "",
+     "audio/v/6735dd03ba.mp3",
+     "If I **put in the hours** now, I’ll **get promoted** faster.",
+     "bỏ ra nhiều thời gian làm việc"
+    ],
+    [
+     "**get promoted**",
+     "/ɡet prəˈməʊ.tɪd/",
+     "collocation",
+     "",
+     "audio/v/dc45576455.mp3",
+     "If I **put in the hours** now, I’ll **get promoted** faster.",
+     "được thăng chức"
+    ],
+    [
+     "**Working longer doesn’t always mean working better.**",
+     "",
+     "expression",
+     ")",
+     "audio/v/2d2a927a20.mp3",
+     "But I’m not sure **working longer** always **means working better**.",
+     "Làm lâu hơn không có nghĩa là làm tốt hơn."
+    ],
+    [
+     "**take sb’s place**",
+     "/teɪk pleɪs/",
+     "phrase",
+     "",
+     "audio/v/f48c92b8da.mp3",
+     "If I don’t, someone else will **take my place**.",
+     "thế chỗ ai"
+    ],
+    [
+     "**cancel on** sb",
+     "/ˈkæn.səl ɒn/",
+     "phrasal verb, informal",
+     "",
+     "audio/v/16fb4cd5f0.mp3",
+     "But you’ve **cancelled on** us three times this month.",
+     "hủy hẹn với ai"
+    ],
+    [
+     "**switch off**",
+     "/swɪtʃ ɒf/",
+     "phrasal verb",
+     "",
+     "audio/v/08a500a725.mp3",
+     "Do you ever get time to **switch off**?",
+     "thư giãn, không nghĩ đến công việc"
+    ],
+    [
+     "**feel guilty**",
+     "/fiːl ˈɡɪl.ti/",
+     "collocation",
+     "",
+     "audio/v/924be579eb.mp3",
+     "I **feel guilty** if I don’t reply **straight away**.",
+     "cảm thấy có lỗi"
+    ],
+    [
+     "**burnt out**",
+     "/bɜːnt aʊt/",
+     "adjective",
+     "",
+     "audio/v/8de19add6a.mp3",
+     "My last job was like that, and after a year, I was completely **burnt out**.",
+     "kiệt sức (vì làm việc quá nhiều)"
+    ],
+    [
+     "**lose interest in** + N",
+     "/luːz ˈɪn.trəst ɪn/",
+     "phrase",
+     "",
+     "audio/v/3982c90fbd.mp3",
+     "I couldn’t sleep, and I **lost interest in** everything.",
+     "mất hứng thú với…"
+    ],
+    [
+     "**reasonable hours**",
+     "/ˈriː.zən.ə.bəl aʊəz/",
+     "collocation",
+     "",
+     "audio/v/ce3fd35545.mp3",
+     "I moved to a company with more **reasonable hours**.",
+     "giờ làm việc hợp lý"
+    ],
+    [
+     "**turn off notifications**",
+     "/tɜːn ɒf ˌnəʊ.tɪ.fɪˈkeɪ.ʃənz/",
+     "collocation",
+     "",
+     "audio/v/5ca5eeaae1.mp3",
+     "I leave at six, I **turn off notifications** at the weekend, and honestly, my work is better because I’m not exhausted all the time.",
+     "tắt thông báo"
+    ],
+    [
+     "**There’s a difference between X and Y.**",
+     "/ðeəz ə ˈdɪf.ər.əns bɪˈtwiːn/",
+     "structure",
+     "",
+     "audio/v/dddc871f2d.mp3",
+     "I guess **there’s a difference between** working hard **and** working all the time.",
+     "X và Y là hai chuyện khác nhau."
+    ],
+    [
+     "**ambitious**",
+     "/æmˈbɪʃ.əs/",
+     "adjective",
+     "",
+     "audio/v/b8ed474e5e.mp3",
+     "I’m not saying you shouldn’t be **ambitious**.",
+     "tham vọng, có hoài bão"
+    ],
+    [
+     "**set boundaries**",
+     "/set ˈbaʊn.dər.iz/",
+     "collocation",
+     "",
+     "audio/v/7aeeef5da5.mp3",
+     "I just think you need to **set some boundaries**.",
+     "đặt ra giới hạn"
+    ],
+    [
+     "**a good start**",
+     "/ə ɡʊd stɑːt/",
+     "phrase",
+     "",
+     "audio/v/66c63f1e50.mp3",
+     "That sounds like **a good start**.",
+     "một khởi đầu tốt"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Hannah and Leo work at the same marketing agency. Their company has just announced a trial of a four-day working week.",
+   "bank": [
+    "feel guilty",
+    "get more done",
+    "it depends on",
+    "committed",
+    "burnt out",
+    "put in",
+    "a matter of discipline",
+    "Fair enough",
+    "end up",
+    "switch off"
+   ],
+   "lines": [
+    [
+     "Hannah",
+     "Have you heard? We’re trying a four-day week from January."
+    ],
+    [
+     "Leo",
+     "I know. Honestly, I’m a bit worried. If we only work four days, won’t clients think we’re less {committed}?"
+    ],
+    [
+     "Hannah",
+     "I don’t think so. Our clients care about results, not how many hours we {put in}."
+    ],
+    [
+     "Leo",
+     "Maybe. But we’re already really busy. Won’t we just {end up} working late every Thursday?"
+    ],
+    [
+     "Hannah",
+     "I see your point, but some studies show that people actually {get more done} in four days, because they waste less time."
+    ],
+    [
+     "Leo",
+     "{Fair enough}. But I check my emails at the weekend anyway. I’m not sure an extra day off will help me {switch off}."
+    ],
+    [
+     "Hannah",
+     "That’s {a matter of discipline}, though. You could just turn off your notifications."
+    ],
+    [
+     "Leo",
+     "Easier said than done. When I don’t reply straight away, I {feel guilty}."
+    ],
+    [
+     "Hannah",
+     "I get that, but if you never rest, you’ll be completely {burnt out} by the summer."
+    ],
+    [
+     "Leo",
+     "True. I suppose {it depends on} the kind of work we do. Let’s just see how the trial goes."
+    ],
+    [
+     "Hannah",
+     "Exactly. And if it doesn’t work, we can always go back."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to part of a podcast about a rule one manager tried at work, then do Parts A and B.",
+   "podcast": "🎧 Work Talk: the phone box experiment",
+   "audio": "audio/a2-debates.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "",
+     "text": "Welcome back to Work Talk. Today, I want to share a small experiment we tried at my company. It caused more arguments than I expected."
+    },
+    {
+     "t": 10.1,
+     "who": "",
+     "text": "Last spring, I noticed that in almost every meeting, ==half the team were looking at their phones==. Some were checking emails, and some were obviously on social media. So I made a rule: no phones in meetings. Everyone had to leave them in ==a box by the door==."
+    },
+    {
+     "t": 27.9,
+     "who": "",
+     "text": "For the first two weeks, I thought it was a great success. ==Meetings were shorter, and people actually listened to each other.== But then the complaints started. One colleague, Sara, pointed out that she sometimes needed her phone to check information during meetings, ==because her laptop was too slow==. Another colleague had a young ==child== and was worried about missing a call from the school."
+    },
+    {
+     "t": 51.0,
+     "who": "",
+     "text": "Honestly, my first reaction was to say no. ==I thought they were just making excuses.== But when I thought about it more, I realised they had a fair point. The problem wasn't really the phones. ==The problem was that people were bored, and some of our meetings were simply too long.=="
+    },
+    {
+     "t": 68.7,
+     "who": "",
+     "text": "So we changed the rule. ==Now, phones can stay on the table, but face down, and we keep every meeting under thirty minutes.== If someone needs to take an urgent call, they just ==step outside==."
+    },
+    {
+     "t": 81.3,
+     "who": "",
+     "text": "Has it worked? Mostly, yes. People still check their phones sometimes, but much less than before. And I've learned something about debates at work: if you really listen to the other side, you usually end up with a better solution than the one you started with."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2A: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did the speaker make the “no phones” rule?",
+     "options": [
+      "Phones kept ringing during meetings.",
+      "Many people weren’t paying attention in meetings.",
+      "Staff were spending too much time on social media at their desks."
+     ],
+     "answer": 1,
+     "why": "“In almost every meeting, half the team were looking at their phones.”"
+    },
+    {
+     "q": "What happened during the first two weeks?",
+     "options": [
+      "Staff complained straight away.",
+      "The meetings got better.",
+      "People started bringing laptops instead."
+     ],
+     "answer": 1,
+     "why": "“Meetings were shorter, and people actually listened to each other.”"
+    },
+    {
+     "q": "Why did Sara sometimes need her phone in meetings?",
+     "options": [
+      "She had to answer calls from her child’s school.",
+      "Her computer wasn’t fast enough.",
+      "She needed to reply to urgent emails."
+     ],
+     "answer": 1,
+     "why": "“…because her laptop was too slow.”"
+    },
+    {
+     "q": "How did the speaker first react to the complaints?",
+     "options": [
+      "He agreed with them straight away.",
+      "He didn’t believe their reasons.",
+      "He asked them to suggest a new rule."
+     ],
+     "answer": 1,
+     "why": "“I thought they were just making excuses.”"
+    },
+    {
+     "q": "What did he realise was the real problem?",
+     "options": [
+      "The meetings weren’t interesting or short enough.",
+      "The staff didn’t have enough work to do.",
+      "The box by the door was inconvenient."
+     ],
+     "answer": 0,
+     "why": "“The problem was that people were bored, and some of our meetings were simply too long.”"
+    },
+    {
+     "q": "What is the rule now?",
+     "options": [
+      "Phones must be left outside the meeting room.",
+      "Phones can only be used for urgent calls.",
+      "Meetings are shorter, and phones are allowed if they’re face down."
+     ],
+     "answer": 2,
+     "why": "“Phones can stay on the table, but face down, and we keep every meeting under thirty minutes.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 2B: Complete the summary",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "text": "The speaker noticed that half the team were looking at their {phones} during meetings, so he asked everyone to leave them in a {box} by the door. At first, meetings were {shorter}, and people listened more. However, one colleague with a young {child} was worried about missing calls. The speaker realised the real problem was that people were {bored}. Now, every meeting lasts less than {thirty minutes|30 minutes}, and anyone who needs to take an urgent call can {step outside}."
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Recording (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Where do people work best: in a coffee shop, at home or in the office?",
+     "questions": [
+      "Where do you prefer to work or study, and why?",
+      "What are the good things about it?",
+      "What are the downsides?",
+      "Does it depend on the person or the type of work?"
+     ],
+     "use": "I’d say…, I see your point, but…, end up + V-ing, a matter of discipline, be worth it, It depends on…"
+    },
+    {
+     "title": "Should young people work as hard as possible while they’re young?",
+     "questions": [
+      "Why do some people work very long hours?",
+      "What are the risks?",
+      "Do you know anyone who works like this? What happened?",
+      "What’s a healthy balance?"
+     ],
+     "use": "put in the hours, prove yourself, burnt out, switch off, set boundaries, There’s a difference between X and Y, I’m not saying…, I just think…"
+    },
+    {
+     "title": "Choose ONE hot take and give your opinion.",
+     "choices": [
+      "It’s fine to change jobs every one or two years.",
+      "Married couples should live on their own, not with their parents.",
+      "It’s better to spend money on experiences, like travel, than to save it.",
+      "Working for a big company is better than working for a start-up."
+     ],
+     "questions": [],
+     "use": "Personally, I think…, That’s true, but…"
+    }
+   ]
+  }
+ ]
+}

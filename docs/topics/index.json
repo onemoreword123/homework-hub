@@ -48,5 +48,11 @@
   "level": "A2",
   "emoji": "💬",
   "homework": false
+ },
+ {
+  "id": "a2-debates",
+  "title": "Hot takes & friendly debates",
+  "level": "A2",
+  "emoji": "🔥"
  }
 ]
