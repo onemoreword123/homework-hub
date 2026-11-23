@@ -3,7 +3,657 @@
  "title": "Pitching and presenting ideas",
  "level": "B1",
  "emoji": "💡",
- "lesson": [],
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-pitching.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "grammar2",
+   "label": "suggesting ideas",
+   "groups": [
+    {
+     "purpose": "Xin thời gian",
+     "color": "#D9D2E9",
+     "items": [
+      [
+       "Have you got a minute?",
+       "***Have you got a minute?*** *I have an idea I want to run by you.*"
+      ],
+      [
+       "…, if we've got a couple of minutes.",
+       "*There’s one thing,* ***if we’ve got a couple of minutes****.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nêu vấn đề",
+     "color": "#CFE2F3",
+     "items": [
+      [
+       "You know how + clause?",
+       "***You know how*** *we keep getting calls about putting furniture together?*"
+      ],
+      [
+       "I've noticed (that)…",
+       "***Quite a few*** *new staff said they felt lost.*"
+      ],
+      [
+       "Quite a few people said…",
+       ""
+      ]
+     ]
+    },
+    {
+     "purpose": "Gợi ý ý tưởng",
+     "color": "#FFF2CC",
+     "items": [
+      [
+       "I was thinking, what if we + V (past)?",
+       "***I was thinking, what if we made*** *some short videos?*"
+      ],
+      [
+       "What I'm suggesting is + noun phrase",
+       "***What I'm suggesting is*** *a buddy system.*"
+      ],
+      [
+       "It might be worth + V-ing",
+       "***It might be worth trying*** *a shorter meeting on Mondays.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nói về lợi ích",
+     "color": "#D9D2E9",
+     "items": [
+      [
+       "would / could / might + V",
+       "*Customers* ***would*** *get help straight away. It* ***might*** *even cut down on returns.*"
+      ],
+      [
+       "It would free sb up to + V",
+       "***It would free us up to*** *deal with the trickier problems.*"
+      ],
+      [
+       "That way, + clause",
+       "***That way****, new starters always know who to ask.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Làm nhẹ ý tưởng",
+     "color": "#CFE2F3",
+     "items": [
+      [
+       "Nothing too… / just / only",
+       "***Nothing too formal****,* ***just*** *someone to show them the ropes.*"
+      ],
+      [
+       "It's just an idea, but…",
+       "***It's just an idea, but*** *what if we tried a buddy system?*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Hứa sẽ kiểm tra lại",
+     "color": "#FFF2CC",
+     "items": [
+      [
+       "I can look into it.",
+       "*Good question.* ***I can look into it.***"
+      ],
+      [
+       "Let me think about it and get back to you.",
+       "*I'm not sure yet.* ***Let me think about it and get back to you.***"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🦜 Pitching and presenting ideas"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Have you ever **suggested a new idea at work or school?** What happened?",
+    "Do you **feel nervous sharing an idea with your manager? Why?**",
+    "If you could change **one small thing about your workplace,** what would it be?",
+    "What makes people **say “yes” to a new idea?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Can I run something by you?",
+   "context": "***Context:*** *Emma works in customer service at an online furniture shop. She catches her manager, Rachel, after the weekly meeting.*",
+   "lines": [
+    [
+     "Emma",
+     "Rachel, **have you got a minute**? I’ve had an idea I wanted to **run by you**."
+    ],
+    [
+     "Rachel",
+     "Sure, **go ahead**."
+    ],
+    [
+     "Emma",
+     "**You know how** we **keep getting** calls about putting furniture together? I **kept track** last week, and it was almost half of all our calls."
+    ],
+    [
+     "Rachel",
+     "Half? I knew it was a lot, but **I didn’t realise** it was that bad."
+    ],
+    [
+     "Emma",
+     "Yeah, it’s really **time-consuming**, and most of them are about the same few products. So **I was thinking**, **what if we made** some short, **step-by-step** videos for those? We could send the link with every order."
+    ],
+    [
+     "Rachel",
+     "So customers could just watch a video instead of **waiting on hold**."
+    ],
+    [
+     "Emma",
+     "Exactly. They’d get help **straight away**, and it would **free us up to deal with** the **trickier** problems. It might even **cut down on** returns. A lot of people send things back just because they can’t **figure out** how to put them together."
+    ],
+    [
+     "Rachel",
+     "**That makes sense.** But videos aren’t cheap, and we don’t really have **the budget** for a film crew."
+    ],
+    [
+     "Emma",
+     "I don’t think we’d need one. Jack used to make videos at his old company. With a **decent** phone and some basic editing, we could do it **in-house**."
+    ],
+    [
+     "Rachel",
+     "How long would it take?"
+    ],
+    [
+     "Emma",
+     "Maybe two weeks for the first three videos, if we **fit it in alongside** our normal work."
+    ],
+    [
+     "Rachel",
+     "And what if people still call?"
+    ],
+    [
+     "Emma",
+     "Some will, **for sure**. That’s why I’d like to **start small**, with **a one-month trial** for three products. We can **keep an eye on** the number of calls and see if it **makes a difference**."
+    ],
+    [
+     "Rachel",
+     "OK, it’s definitely **worth a shot**. Can you **put together** a quick email with the numbers? I’ll **bring it up** with the director on Thursday."
+    ],
+    [
+     "Emma",
+     "Great, I’ll **send it over** today. **Thanks for hearing me out.**"
+    ],
+    [
+     "Rachel",
+     "No problem. **Keep me posted.**"
+    ]
+   ],
+   "vocab": [
+    [
+     "**Have you got a minute?**",
+     "/həv juː ɡɒt ə ˈmɪn.ɪt/",
+     "expression",
+     "",
+     "audio/v/87a4851688.mp3"
+    ],
+    [
+     "**run sth by sb**",
+     "/rʌn baɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/fcfa60a69b.mp3"
+    ],
+    [
+     "**Go ahead.**",
+     "/ɡəʊ əˈhed/",
+     "expression",
+     "",
+     "audio/v/0ec33eadc2.mp3"
+    ],
+    [
+     "**keep + V-ing**",
+     "/kiːp/",
+     "structure",
+     "",
+     "audio/v/1264bdfe5f.mp3"
+    ],
+    [
+     "**keep track (of sth)**",
+     "/kiːp træk/",
+     "phrase",
+     "",
+     "audio/v/9d0dd00482.mp3"
+    ],
+    [
+     "**I didn’t realise…**",
+     "/aɪ ˈdɪd.ənt ˈrɪə.laɪz/",
+     "structure",
+     "",
+     "audio/v/3bf42175bd.mp3"
+    ],
+    [
+     "**time-consuming**",
+     "/ˈtaɪm.kənˌsjuː.mɪŋ/",
+     "adjective",
+     "",
+     "audio/v/e99ae9aac7.mp3"
+    ],
+    [
+     "**I was thinking, …**",
+     "/aɪ wəz ˈθɪŋ.kɪŋ/",
+     "expression",
+     "",
+     "audio/v/f29100c2de.mp3"
+    ],
+    [
+     "**What if we + V (past)?**",
+     "/wɒt ɪf wi/",
+     "structure",
+     "",
+     "audio/v/e913a005e9.mp3"
+    ],
+    [
+     "**wait on hold**",
+     "/weɪt ɒn həʊld/",
+     "collocation",
+     "",
+     "audio/v/5052c403a6.mp3"
+    ],
+    [
+     "**free sb up to + V**",
+     "/friː ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/58de0dedf1.mp3"
+    ],
+    [
+     "**deal with** sth",
+     "/diːl wɪð/",
+     "phrasal verb",
+     "",
+     "audio/v/265487b1c9.mp3"
+    ],
+    [
+     "**cut down on** sth",
+     "/kʌt daʊn ɒn/",
+     "phrasal verb",
+     "",
+     "audio/v/1fe5d7bfc3.mp3"
+    ],
+    [
+     "**That makes sense.**",
+     "/ðæt meɪks sens/",
+     "expression",
+     "",
+     "audio/v/7b51d7f661.mp3"
+    ],
+    [
+     "**in-house**",
+     "/ˌɪnˈhaʊs/",
+     "adjective / adverb",
+     "",
+     "audio/v/60d5335626.mp3"
+    ],
+    [
+     "**fit sth in**",
+     "/fɪt ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/9f50ca635b.mp3"
+    ],
+    [
+     "**alongside** + N",
+     "/əˌlɒŋˈsaɪd/",
+     "preposition",
+     "",
+     "audio/v/54c1c68edd.mp3"
+    ],
+    [
+     "**for sure**",
+     "/fə ʃɔːr/",
+     "phrase",
+     "",
+     "audio/v/1e3e10c2d4.mp3"
+    ],
+    [
+     "**start small**",
+     "/stɑːt smɔːl/",
+     "phrase",
+     "",
+     "audio/v/cd3ae8d8aa.mp3"
+    ],
+    [
+     "**a one-month trial**",
+     "/ə ˌwʌn.mʌnθ ˈtraɪ.əl/",
+     "noun",
+     "",
+     "audio/v/32dee9b43a.mp3"
+    ],
+    [
+     "**keep an eye on** sth",
+     "/kiːp ən aɪ ɒn/",
+     "idiom",
+     "",
+     "audio/v/21df89d466.mp3"
+    ],
+    [
+     "**make a difference**",
+     "/meɪk ə ˈdɪf.ər.əns/",
+     "collocation",
+     "",
+     "audio/v/ebc4e9f5a1.mp3"
+    ],
+    [
+     "**be worth a shot**",
+     "/bi wɜːθ ə ʃɒt/",
+     "idiom",
+     "",
+     "audio/v/70c06bac0a.mp3"
+    ],
+    [
+     "**put together** + email / plan",
+     "/pʊt təˈɡeð.ər/",
+     "phrasal verb",
+     "",
+     "audio/v/5967b8fba8.mp3"
+    ],
+    [
+     "**bring sth up (with sb)**",
+     "/brɪŋ ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/7259fb1967.mp3"
+    ],
+    [
+     "**send sth over**",
+     "/send ˈəʊ.vər/",
+     "phrasal verb",
+     "",
+     "audio/v/12ab4e4c32.mp3"
+    ],
+    [
+     "**Keep me posted.**",
+     "/kiːp miː ˈpəʊ.stɪd/",
+     "expression",
+     "",
+     "audio/v/5338137df1.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Sharing an idea in a meeting",
+   "context": "***Context:*** *Nathan works in HR at a tech company. At the end of the monthly team meeting, his manager, Claire, asks if anyone has anything else to discuss.*",
+   "lines": [
+    [
+     "Claire",
+     "OK, I think that’s everything **on the agenda**. Anything else before we **wrap up**?"
+    ],
+    [
+     "Nathan",
+     "Actually, there’s one thing, if we’ve got a couple of minutes. It’s about **new starters**."
+    ],
+    [
+     "Claire",
+     "Sure, **go for it**."
+    ],
+    [
+     "Nathan",
+     "So, in the last survey, **quite a few** new staff said they **felt** a bit **lost** during their first month. They didn’t really know **who to turn to** when they **got stuck**. Two of the people who left this year said the same thing in their **exit interviews**."
+    ],
+    [
+     "Lucy",
+     "**I can relate to that.** When I started, I spent two days trying to figure out how to book a meeting room. I was too embarrassed to ask."
+    ],
+    [
+     "Nathan",
+     "Right. So **what I’m suggesting is a buddy system**. Each new starter would be paired with someone from their team who's been here a while. **Nothing too formal**, just someone to **show them the ropes** and **grab lunch** with in the first week."
+    ],
+    [
+     "Ben",
+     "I like the idea, but **realistically**, who’s got time for that? We’re all **stretched pretty thin as it is.**"
+    ],
+    [
+     "Nathan",
+     "**That’s fair.** It would only be people who actually want to do it, and it’s maybe an hour or two a week. Mostly, it’s just **being around** if they’ve got a question."
+    ],
+    [
+     "Lucy",
+     "**I’d be up for it**, to be honest."
+    ],
+    [
+     "Ben",
+     "**What's in it** for the buddies, though?"
+    ],
+    [
+     "Nathan",
+     "Good question. I **haven’t** really **thought that far ahead** yet. Maybe a lunch voucher or something? I can **look into** it."
+    ],
+    [
+     "Claire",
+     "And how would we know if it’s actually working?"
+    ],
+    [
+     "Nathan",
+     "Hmm, I’m not sure yet. Maybe we just **check in with** the new starters after a month? Let me think about it and **get back to you**."
+    ],
+    [
+     "Claire",
+     "OK. I think it’s **worth a try**. Let’s **test it** with the next couple of people who join and **see how it goes**."
+    ],
+    [
+     "Nathan",
+     "Great. I’ll **put together** a short plan and **send it round** by Friday."
+    ],
+    [
+     "Claire",
+     "Perfect. Thanks, Nathan. Right, I think **that’s it for today**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**on the agenda**",
+     "/ɒn ði əˈdʒen.də/",
+     "phrase",
+     "",
+     "audio/v/3712e53cb6.mp3"
+    ],
+    [
+     "**wrap up**",
+     "/ræp ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/bea7973113.mp3"
+    ],
+    [
+     "**Go for it.**",
+     "/ɡəʊ fɔːr ɪt/",
+     "expression",
+     "",
+     "audio/v/7ebe2000c4.mp3"
+    ],
+    [
+     "**who to turn to**",
+     "/huː tə tɜːn tuː/",
+     "phrase",
+     "",
+     "audio/v/1da3196a0c.mp3"
+    ],
+    [
+     "**an exit interview**",
+     "/ən ˈek.sɪt ˈɪn.tə.vjuː/",
+     "noun",
+     "",
+     "audio/v/c756c0cc24.mp3"
+    ],
+    [
+     "**I can relate to that.**",
+     "/aɪ kən rɪˈleɪt tə ðæt/",
+     "expression",
+     "",
+     "audio/v/e03bfbc674.mp3"
+    ],
+    [
+     "**What I’m suggesting is…**",
+     "/wɒt aɪm səˈdʒest.ɪŋ ɪz/",
+     "structure",
+     "",
+     "audio/v/18eb9c9e11.mp3"
+    ],
+    [
+     "**a buddy system**",
+     "/ə ˈbʌd.i ˈsɪs.təm/",
+     "noun",
+     "",
+     "audio/v/10a4468935.mp3"
+    ],
+    [
+     "**be paired with** sb",
+     "/bi peəd wɪð/",
+     "phrase",
+     "",
+     "audio/v/e4a43dd47e.mp3"
+    ],
+    [
+     "**(for) a while**",
+     "/ə waɪl/",
+     "phrase",
+     "",
+     "audio/v/2581eb0a53.mp3"
+    ],
+    [
+     "**Nothing too formal.**",
+     "/ˈnʌθ.ɪŋ tuː ˈfɔː.məl/",
+     "expression",
+     "",
+     "audio/v/1885b9c8b9.mp3"
+    ],
+    [
+     "**show sb the ropes**",
+     "/ʃəʊ ðə rəʊps/",
+     "idiom",
+     "",
+     "audio/v/2ade16ba90.mp3"
+    ],
+    [
+     "**realistically**",
+     "/ˌrɪəˈlɪs.tɪ.kəl.i/",
+     "adverb",
+     "",
+     "audio/v/770d91f714.mp3"
+    ],
+    [
+     "**be stretched thin**",
+     "/bi stretʃt θɪn/",
+     "idiom",
+     "",
+     "audio/v/1ae783fd9e.mp3"
+    ],
+    [
+     "**as it is**",
+     "/əz ɪt ɪz/",
+     "phrase",
+     "",
+     "audio/v/42ca1d0b92.mp3"
+    ],
+    [
+     "**That’s fair.**",
+     "/ðæts feər/",
+     "expression",
+     "",
+     "audio/v/df3234e1ff.mp3"
+    ],
+    [
+     "**I’d be up for it.**",
+     "/aɪd bi ʌp fɔːr ɪt/",
+     "expression",
+     "",
+     "audio/v/6539081f55.mp3"
+    ],
+    [
+     "**What’s in it for** + sb?",
+     "/wɒts ɪn ɪt fɔː/",
+     "expression",
+     "",
+     "audio/v/da43b824a4.mp3"
+    ],
+    [
+     "**think that far ahead**",
+     "/θɪŋk ðæt fɑːr əˈhed/",
+     "phrase",
+     "",
+     "audio/v/81fe8e7cc3.mp3"
+    ],
+    [
+     "**look into** sth",
+     "/lʊk ˈɪn.tuː/",
+     "phrasal verb",
+     "",
+     "audio/v/781a2a8aeb.mp3"
+    ],
+    [
+     "**check in with** sb",
+     "/tʃek ɪn wɪð/",
+     "phrasal verb",
+     "",
+     "audio/v/d2ce78f917.mp3"
+    ],
+    [
+     "**get back to sb**",
+     "/ɡet bæk tə/",
+     "phrasal verb",
+     "",
+     "audio/v/baf3241adc.mp3"
+    ],
+    [
+     "**be worth a try**",
+     "/bi wɜːθ ə traɪ/",
+     "phrase",
+     "",
+     "audio/v/feec4de591.mp3"
+    ],
+    [
+     "**see how it goes**",
+     "/siː haʊ ɪt ɡəʊz/",
+     "phrase",
+     "",
+     "audio/v/3e5c2e65bf.mp3"
+    ],
+    [
+     "**put together** + plan",
+     "/pʊt təˈɡeð.ər/",
+     "phrasal verb",
+     "",
+     "audio/v/bc8e702098.mp3"
+    ],
+    [
+     "**send sth round**",
+     "/send raʊnd/",
+     "phrasal verb",
+     "",
+     "audio/v/9c731bc234.mp3"
+    ],
+    [
+     "**That’s it for today.**",
+     "/ðæts ɪt fə təˈdeɪ/",
+     "expression",
+     "",
+     "audio/v/ce98912f78.mp3"
+    ]
+   ]
+  }
+ ],
  "homework": [
   {
    "type": "gapselect",
