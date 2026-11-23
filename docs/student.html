@@ -20,6 +20,7 @@ import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toas
 import { renderLesson, renderHomework } from "./js/topic.js";
 import { renderRecording } from "./js/recorder.js";
 import { feedbackView } from "./js/feedback.js";
+import { celebrate, wordOfTheDay, wordCard, maybeWordPopup, bindSay } from "./js/fx.js";
 
 const main = document.getElementById("main");
 document.getElementById("out").onclick = signOut;
@@ -37,15 +38,25 @@ async function list() {
   const [index, { data: open }, subs] = await Promise.all([loadTopicIndex(), c.from("class_topics").select("*").eq("class_id", profile.class_id), mySubs()]);
   const openSet = new Set((open || []).map((o) => o.topic_id));
   const topics = index.filter((t) => openSet.has(t.id)).reverse(); // course order, latest lesson first
-  main.innerHTML = `<div class="card" style="margin-bottom:0"><div class="tag">${esc(cls?.name || "")} ${cls?.level ? "· " + esc(cls.level) : ""}</div><h2>Hi ${esc(profile.full_name.split(" ")[0])}!</h2><p class="muted">Here's your homework. The latest lesson is first.</p></div>
+  const openedAt = Object.fromEntries((open || []).map((o) => [o.topic_id, new Date(o.opened_at)]));
+  const isNew = (id) => Date.now() - (openedAt[id] || 0) < 3 * 24 * 3600 * 1000;
+  main.innerHTML = `<div class="card" style="margin-bottom:0"><div class="tag">${esc(cls?.name || "")} ${cls?.level ? "· " + esc(cls.level) : ""}</div><h2>Hi ${esc(profile.full_name.split(" ")[0])}!</h2><p class="muted">Here's your homework. The latest lesson is first.</p><div id="wotd"></div></div>
     ${topics.length ? `<div class="topics">${topics.map((t) => {
       const s = subs[t.id] || {};
       const hasHw = t.homework !== false;
       const ex = !hasHw ? `<span class="pill">📖 Lesson notes</span>` : s.exercises_submitted_at ? `<span class="pill ok">Exercises ${s.score}/${s.max_score}</span>` : `<span class="pill warn">Exercises to do</span>`;
       const rec = !hasHw ? "" : s.recording_path ? `<span class="pill ok">🎤 Sent</span>` : `<span class="pill warn">🎤 To do</span>`;
       const fb = s.reviewed_at ? `<span class="pill accent">💬 Feedback</span>` : "";
-      return `<a class="topic-card" href="#/t/${esc(t.id)}"><div class="emoji">${t.emoji || "📘"}</div><h3>${esc(t.title)}</h3><div class="status">${ex}${rec}${fb}</div></a>`;
+      const nw = isNew(t.id) && !s.exercises_submitted_at ? `<span class="pill new"><span class="sparkle">✨</span> New</span>` : "";
+      return `<a class="topic-card" href="#/t/${esc(t.id)}"><div class="emoji">${t.emoji || "📘"}</div><h3>${esc(t.title)}</h3><div class="status">${nw}${ex}${rec}${fb}</div></a>`;
     }).join("")}</div>` : `<div class="card"><p>No homework yet. Your teacher will open topics here after each class.</p></div>`}`;
+  // ✨ Word of the day (from lessons this class has open)
+  const pick = await wordOfTheDay(profile.class_id, topics.map((t) => t.id), index);
+  if (pick) {
+    const box = document.getElementById("wotd");
+    if (box) { box.innerHTML = wordCard(pick); bindSay(box); }
+    maybeWordPopup(pick, user.id);
+  }
 }
 
 async function topicPage(id, tab) {
@@ -83,7 +94,7 @@ async function topicPage(id, tab) {
       onSubmit: async (answers, score, max) => {
         const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: id, answers, score, max_score: max }, { onConflict: "student_id,topic_id" }).select().single();
         if (error) throw error;
-        sub = data; toast(`Submitted! Your score: ${score} / ${max}`);
+        sub = data; celebrate(score, max);
         await homework(el); window.scrollTo({ top: 0, behavior: "smooth" });
       },
     });
