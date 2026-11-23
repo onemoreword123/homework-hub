@@ -44,8 +44,8 @@ const S = { classes: [], classId: localStorage.getItem("hh.class") || null, tab:
 
 /* ---------- helpers ---------- */
 async function admin(action, payload) {
-  const { data, error } = await c.functions.invoke("admin", { body: { action, ...payload } });
-  if (error) throw new Error(error.message?.includes("Failed to send") ? "Couldn't reach the account service. Check that the Supabase function \"admin\" is deployed." : error.message);
+  const { data, error } = await c.functions.invoke("clever-handler", { body: { action, ...payload } });
+  if (error) throw new Error(error.message?.includes("Failed to send") ? "Couldn't reach the account service. Check that the Supabase function \"clever-handler\" is deployed." : error.message);
   if (data?.error) throw new Error(data.error);
   return data;
 }

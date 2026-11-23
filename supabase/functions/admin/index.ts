@@ -1,6 +1,6 @@
 // Homework Hub · teacher-only account management (Supabase Edge Function "admin").
 // Paste this whole file into Supabase → Edge Functions → Deploy a new function → Via Editor,
-// name the function: admin
+// (deployed in this project as "clever-handler")
 // Supabase provides SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY automatically. Nothing else to set.
 import { createClient } from "jsr:@supabase/supabase-js@2";
 
