@@ -1,0 +1,956 @@
+{
+ "id": "a2-pitching",
+ "title": "Pitching and presenting ideas",
+ "level": "A2",
+ "emoji": "💡",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-pitching.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "grammar2",
+   "label": "suggesting ideas",
+   "groups": [
+    {
+     "purpose": "Xin thời gian",
+     "color": "#d9d2e9",
+     "items": [
+      [
+       "Have you got a minute?",
+       "***Have you got a minute?*** *I have an idea I want to run by you.*"
+      ],
+      [
+       "…, if we’ve got a couple of minutes.",
+       "*There’s one thing,* ***if we’ve got a couple of minutes****.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nêu vấn đề",
+     "color": "#cfe2f3",
+     "items": [
+      [
+       "You know how + clause?",
+       "***You know how*** *we keep getting calls about putting furniture together?*"
+      ],
+      [
+       "I've noticed (that)…",
+       "***A lot of*** *new staff* ***said*** *they felt lost.*"
+      ],
+      [
+       "Quite a few people said…",
+       ""
+      ]
+     ]
+    },
+    {
+     "purpose": "Gợi ý ý tưởng",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "I was thinking, what if we + V (past)?",
+       "***I was thinking, what if we made*** *some short how-to videos?*"
+      ],
+      [
+       "What I’m suggesting is + N",
+       "***What I’m suggesting is*** *a buddy system.*"
+      ],
+      [
+       "Maybe we could + V",
+       "***Maybe we could*** *talk to the new staff after a month.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nói về lợi ích",
+     "color": "#d9d2e9",
+     "items": [
+      [
+       "would / could / might + V",
+       "*Customers* ***would*** *get help straight away. We* ***might*** *also get fewer returns.*"
+      ],
+      [
+       "We’d have more time for + N",
+       "***We’d have more time for*** *difficult problems.*"
+      ],
+      [
+       "That way, + clause",
+       "***That way****, new staff always know who to ask.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Làm nhẹ ý tưởng",
+     "color": "#cfe2f3",
+     "items": [
+      [
+       "Nothing too… / just / only",
+       "***Nothing too formal****,* ***just*** *someone to show them the ropes.*"
+      ],
+      [
+       "That’s why I’d like to start small.",
+       "***That’s why I’d like to start small****, with a one-month trial.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Hứa sẽ kiểm tra lại",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "I can look into it/I can find out.",
+       "*Good question. I haven’t thought about that yet.* ***I can find out.***"
+      ],
+      [
+       "Let me think about it and get back to you.",
+       "***I’m not sure yet. Let me think about it and get back to you.***"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🦜 Pitching and presenting ideas"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Have you ever **suggested a new idea at work or school?** What happened?",
+    "Do you **feel nervous sharing an idea with your manager? Why?**",
+    "If you could change **one small thing about your workplace,** what would it be?",
+    "What makes people **say “yes” to a new idea?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Can I run something by you?",
+   "context": "***Context:*** *Emma works in customer service at an online furniture shop. She catches her manager, Rachel, after the weekly meeting.*",
+   "lines": [
+    [
+     "Emma",
+     "Rachel, **have you got a minute**? I’ve had an idea I wanted to **run by you**."
+    ],
+    [
+     "Rachel",
+     "Sure, **go ahead**."
+    ],
+    [
+     "Emma",
+     "**You know how** we **keep getting** calls about putting furniture together? I counted last week, and it was almost half of all our calls."
+    ],
+    [
+     "Rachel",
+     "Half? I knew it was a lot, but **I didn’t realise** it was that bad."
+    ],
+    [
+     "Emma",
+     "Yeah, it **takes up a lot of time**, and most calls are about the same few products. So **I was thinking**, **what if we made** some short **how-to videos** for those? We could send the link with every order."
+    ],
+    [
+     "Rachel",
+     "So customers could just watch a video instead of **waiting on the phone**."
+    ],
+    [
+     "Emma",
+     "Exactly. They’d **get help straight away**, and we’d have more time for **difficult problems**. We might also get **fewer returns**. A lot of people send things back because they don’t know how to put them together."
+    ],
+    [
+     "Rachel",
+     "**That makes sense.** But videos are expensive, and we don’t have **a big budget**."
+    ],
+    [
+     "Emma",
+     "I don’t think it would cost much. Jack made videos at his old company. With a good phone and some simple editing, we could **do it ourselves**."
+    ],
+    [
+     "Rachel",
+     "How long would it take?"
+    ],
+    [
+     "Emma",
+     "I think we could make the first three videos **in about two weeks**. We can **still do our normal work** at the same time."
+    ],
+    [
+     "Rachel",
+     "And what if people still call?"
+    ],
+    [
+     "Emma",
+     "Some people will, **for sure**. That’s why I’d like to **start small**, with **a one-month trial** for three products. Then we can **check** the number of calls and see if it **makes a difference**."
+    ],
+    [
+     "Rachel",
+     "OK, I think it’s **worth a try**. Can you send me a short email with the numbers? I’ll **talk to** the director **about it** on Thursday."
+    ],
+    [
+     "Emma",
+     "Great, I’ll send it today. **Thanks for listening.**"
+    ],
+    [
+     "Rachel",
+     "No problem. **Keep me posted.**"
+    ]
+   ],
+   "vocab": [
+    [
+     "**Have you got a minute?**",
+     "/həv juː ɡɒt ə ˈmɪn.ɪt/",
+     "expression",
+     "",
+     "audio/v/87a4851688.mp3"
+    ],
+    [
+     "**run sth by sb**",
+     "/rʌn baɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/fcfa60a69b.mp3"
+    ],
+    [
+     "**Go ahead.**",
+     "/ɡəʊ əˈhed/",
+     "expression",
+     "",
+     "audio/v/0ec33eadc2.mp3"
+    ],
+    [
+     "**You know how…?**",
+     "/juː nəʊ haʊ/",
+     "structure",
+     "",
+     "audio/v/ca44cdf40a.mp3"
+    ],
+    [
+     "**keep + V-ing**",
+     "/kiːp/",
+     "structure",
+     "",
+     "audio/v/1264bdfe5f.mp3"
+    ],
+    [
+     "**I didn’t realise…**",
+     "/aɪ ˈdɪd.ənt ˈrɪə.laɪz/",
+     "structure",
+     "",
+     "audio/v/3bf42175bd.mp3"
+    ],
+    [
+     "**take up a lot of time**",
+     "/teɪk ʌp ə lɒt əv taɪm/",
+     "phrase",
+     "",
+     "audio/v/7cfa4ca2a0.mp3"
+    ],
+    [
+     "**I was thinking, …**",
+     "/aɪ wəz ˈθɪŋ.kɪŋ/",
+     "expression",
+     "",
+     "audio/v/f29100c2de.mp3"
+    ],
+    [
+     "**What if we + V (past)?**",
+     "/wɒt ɪf wi/",
+     "structure",
+     "",
+     "audio/v/e913a005e9.mp3"
+    ],
+    [
+     "**a how-to video**",
+     "/ə ˈhaʊ.tuː ˈvɪd.i.əʊ/",
+     "noun",
+     "",
+     "audio/v/68e0bbca38.mp3"
+    ],
+    [
+     "**wait on the phone**",
+     "/weɪt ɒn ðə fəʊn/",
+     "phrase",
+     "",
+     "audio/v/723721d504.mp3"
+    ],
+    [
+     "**get help straight away**",
+     "/ɡet help streɪt əˈweɪ/",
+     "phrase",
+     "",
+     "audio/v/87399d3c5b.mp3"
+    ],
+    [
+     "**fewer returns**",
+     "/ˈfjuː.ə rɪˈtɜːnz/",
+     "phrase",
+     "",
+     "audio/v/9b73649227.mp3"
+    ],
+    [
+     "**That makes sense.**",
+     "/ðæt meɪks sens/",
+     "expression",
+     "",
+     "audio/v/7b51d7f661.mp3"
+    ],
+    [
+     "**a budget**",
+     "/ə ˈbʌdʒ.ɪt/",
+     "noun",
+     "",
+     "audio/v/21b21d5fa6.mp3"
+    ],
+    [
+     "**do it ourselves**",
+     "/duː ɪt aʊəˈselvz/",
+     "phrase",
+     "",
+     "audio/v/4b35e42669.mp3"
+    ],
+    [
+     "**in about + time**",
+     "/ɪn əˈbaʊt/",
+     "phrase",
+     "",
+     "audio/v/f15baeb7df.mp3"
+    ],
+    [
+     "**at the same time**",
+     "/ət ðə seɪm taɪm/",
+     "phrase",
+     "",
+     "audio/v/e0fbf19664.mp3"
+    ],
+    [
+     "**for sure**",
+     "/fə ʃɔːr/",
+     "phrase",
+     "",
+     "audio/v/1e3e10c2d4.mp3"
+    ],
+    [
+     "**start small**",
+     "/stɑːt smɔːl/",
+     "phrase",
+     "",
+     "audio/v/cd3ae8d8aa.mp3"
+    ],
+    [
+     "**a one-month trial**",
+     "/ə ˌwʌn.mʌnθ ˈtraɪ.əl/",
+     "noun",
+     "",
+     "audio/v/32dee9b43a.mp3"
+    ],
+    [
+     "**make a difference**",
+     "/meɪk ə ˈdɪf.ər.əns/",
+     "collocation",
+     "",
+     "audio/v/ebc4e9f5a1.mp3"
+    ],
+    [
+     "**be worth a try**",
+     "/bi wɜːθ ə traɪ/",
+     "phrase",
+     "",
+     "audio/v/feec4de591.mp3"
+    ],
+    [
+     "**talk to sb about sth**",
+     "/tɔːk tə… əˈbaʊt/",
+     "phrase",
+     "",
+     "audio/v/0ea1b1e949.mp3"
+    ],
+    [
+     "**Thanks for listening.**",
+     "/θæŋks fə ˈlɪs.ən.ɪŋ/",
+     "expression",
+     "",
+     "audio/v/84522d80a6.mp3"
+    ],
+    [
+     "**Keep me posted.**",
+     "/kiːp miː ˈpəʊ.stɪd/",
+     "expression",
+     "",
+     "audio/v/5338137df1.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Sharing an idea in a meeting",
+   "context": "***Context:*** *Nathan works in HR at a tech company. At the end of the monthly team meeting, his manager, Claire, asks if anyone has anything else to discuss.*",
+   "lines": [
+    [
+     "Claire",
+     "OK, I think that’s everything **on the agenda**. Anything else before we finish?"
+    ],
+    [
+     "Nathan",
+     "Actually, there’s one thing, **if we’ve got a couple of minutes**. It’s about **new staff**."
+    ],
+    [
+     "Claire",
+     "Sure, **go for it**."
+    ],
+    [
+     "Nathan",
+     "So, in the last survey, a lot of new staff said they **felt lost** in their first month. They didn’t know **who to ask** when they **had a problem**. Two people who left this year said the same thing."
+    ],
+    [
+     "Lucy",
+     "**I know how that feels.** When I started, I spent two days trying to find out how to book a meeting room. I was too shy to ask."
+    ],
+    [
+     "Nathan",
+     "Right. So **what I’m suggesting is a buddy system**. Each new person would have a “buddy”, someone from their team who’s been here for a while. **Nothing too formal**, just someone to **show them around** and have lunch with in the first week."
+    ],
+    [
+     "Ben",
+     "I like the idea, but who’s got time for that? We’re all really busy."
+    ],
+    [
+     "Nathan",
+     "That’s fair. It would only be people who want to do it, and it’s maybe an hour or two a week. Buddies just need to **help out** when new staff have a question."
+    ],
+    [
+     "Lucy",
+     "**I’d be happy to do it**, to be honest."
+    ],
+    [
+     "Ben",
+     "Would buddies **get anything for it**, though?"
+    ],
+    [
+     "Nathan",
+     "**Good question.** I haven’t thought about that yet. Maybe a lunch voucher or something?"
+    ],
+    [
+     "Claire",
+     "And how would we know if it’s working?"
+    ],
+    [
+     "Nathan",
+     "Hmm, I’m not sure yet. Maybe we could talk to the new staff after a month? Let me think about it and **get back to you**."
+    ],
+    [
+     "Claire",
+     "OK. I think it’s **worth a try**. Let’s **try it** with the next two or three people who join and **see how it goes**."
+    ],
+    [
+     "Nathan",
+     "Great. I’ll write a short plan and send it to everyone by Friday."
+    ],
+    [
+     "Claire",
+     "Perfect. Thanks, Nathan. Right, I think **that’s it for today**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**on the agenda**",
+     "/ɒn ði əˈdʒen.də/",
+     "phrase",
+     "",
+     "audio/v/3712e53cb6.mp3"
+    ],
+    [
+     "**if we’ve got a couple of minutes**",
+     "/ɪf wiːv ɡɒt ə ˈkʌp.əl əv ˈmɪn.ɪts/",
+     "expression",
+     "",
+     "audio/v/43f6955bbb.mp3"
+    ],
+    [
+     "**new staff**",
+     "/njuː stɑːf/",
+     "noun",
+     "",
+     "audio/v/b30c857bbd.mp3"
+    ],
+    [
+     "**Go for it.**",
+     "/ɡəʊ fɔːr ɪt/",
+     "expression",
+     "",
+     "audio/v/7ebe2000c4.mp3"
+    ],
+    [
+     "**feel lost**",
+     "/fiːl lɒst/",
+     "collocation",
+     "",
+     "audio/v/9151dac8b2.mp3"
+    ],
+    [
+     "**who to ask**",
+     "/huː tə ɑːsk/",
+     "phrase",
+     "",
+     "audio/v/aa79f8101a.mp3"
+    ],
+    [
+     "**have a problem**",
+     "/hæv ə ˈprɒb.ləm/",
+     "collocation",
+     "",
+     "audio/v/7061367e66.mp3"
+    ],
+    [
+     "**I know how that feels.**",
+     "/aɪ nəʊ haʊ ðæt fiːlz/",
+     "expression",
+     "",
+     "audio/v/0daf174324.mp3"
+    ],
+    [
+     "**too shy to + V**",
+     "/tuː ʃaɪ tə/",
+     "structure",
+     "",
+     "audio/v/231eb63c09.mp3"
+    ],
+    [
+     "**What I’m suggesting is…**",
+     "/wɒt aɪm səˈdʒest.ɪŋ ɪz/",
+     "structure",
+     "",
+     "audio/v/18eb9c9e11.mp3"
+    ],
+    [
+     "**a buddy system**",
+     "/ə ˈbʌd.i ˈsɪs.təm/",
+     "noun",
+     "",
+     "audio/v/10a4468935.mp3"
+    ],
+    [
+     "**(for) a while**",
+     "/fər ə waɪl/",
+     "phrase",
+     "",
+     "audio/v/2581eb0a53.mp3"
+    ],
+    [
+     "**Nothing too formal.**",
+     "/ˈnʌθ.ɪŋ tuː ˈfɔː.məl/",
+     "expression",
+     "",
+     "audio/v/1885b9c8b9.mp3"
+    ],
+    [
+     "**show sb around**",
+     "/ʃəʊ əˈraʊnd/",
+     "phrasal verb",
+     "",
+     "audio/v/5aad3ac36f.mp3"
+    ],
+    [
+     "**That’s fair.**",
+     "/ðæts feər/",
+     "expression",
+     "",
+     "audio/v/df3234e1ff.mp3"
+    ],
+    [
+     "**help out**",
+     "/help aʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/ec0e28c8f7.mp3"
+    ],
+    [
+     "**I’d be happy to + V**",
+     "/aɪd bi ˈhæp.i tə/",
+     "structure",
+     "",
+     "audio/v/1e34854b86.mp3"
+    ],
+    [
+     "**get sth for it**",
+     "/ɡet… fɔːr ɪt/",
+     "phrase",
+     "",
+     "audio/v/800791356f.mp3"
+    ],
+    [
+     "**Good question.**",
+     "/ɡʊd ˈkwes.tʃən/",
+     "expression",
+     "",
+     "audio/v/4a2aececd1.mp3"
+    ],
+    [
+     "**get back to sb**",
+     "/ɡet bæk tə/",
+     "phrasal verb",
+     "",
+     "audio/v/baf3241adc.mp3"
+    ],
+    [
+     "**be worth a try**",
+     "/bi wɜːθ ə traɪ/",
+     "phrase",
+     "",
+     "audio/v/feec4de591.mp3"
+    ],
+    [
+     "**see how it goes**",
+     "/siː haʊ ɪt ɡəʊz/",
+     "phrase",
+     "",
+     "audio/v/3e5c2e65bf.mp3"
+    ],
+    [
+     "**That’s it for today.**",
+     "/ðæts ɪt fə təˈdeɪ/",
+     "expression",
+     "",
+     "audio/v/ce98912f78.mp3"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check (conversation)",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Lily works in a small bakery. Before the shop opens, she talks to her manager, Tom.",
+   "bank": [
+    "worth a try",
+    "keep calling",
+    "one-month trial",
+    "That makes sense",
+    "run by you",
+    "wait on the phone",
+    "start small",
+    "budget",
+    "takes up a lot of time",
+    "do it ourselves"
+   ],
+   "lines": [
+    [
+     "Lily",
+     "Tom, have you got a minute? I've had an idea I wanted to {run by you}."
+    ],
+    [
+     "Tom",
+     "Sure, go ahead."
+    ],
+    [
+     "Lily",
+     "You know how customers {keep calling} us to order birthday cakes? It {takes up a lot of time}, and sometimes we can't answer because we're too busy."
+    ],
+    [
+     "Tom",
+     "Yes, I know. Last week, one customer had to {wait on the phone} for ten minutes."
+    ],
+    [
+     "Lily",
+     "Exactly. So I was thinking, what if we made a simple order form on our Facebook page? Customers could choose the cake, the size and the date."
+    ],
+    [
+     "Tom",
+     "Hmm, {That makes sense}. But we don't have a big {budget} for a website."
+    ],
+    [
+     "Lily",
+     "We don't need a website. A Facebook form is free, and we could {do it ourselves}."
+    ],
+    [
+     "Tom",
+     "And what if some customers still call?"
+    ],
+    [
+     "Lily",
+     "Some people will, for sure. That's why I'd like to {start small}, with a {one-month trial}. Then we can count the phone calls and see if it makes a difference."
+    ],
+    [
+     "Tom",
+     "OK, I think it's {worth a try}. Let's start next week."
+    ],
+    [
+     "Lily",
+     "Great. Thanks for listening."
+    ],
+    [
+     "Tom",
+     "No problem. Keep me posted."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once. You don't need to change the form of the words.",
+   "bank": [
+    "see how it goes",
+    "help out",
+    "that's it for today",
+    "go for it",
+    "on the agenda",
+    "too shy",
+    "show you around",
+    "who to ask",
+    "get back to you",
+    "I know how that feels"
+   ],
+   "lines": [
+    [
+     "",
+     "Before we finish, is there anything else {on the agenda}?"
+    ],
+    [
+     "",
+     "I'm not sure what time the meeting is. I'll check and {get back to you}."
+    ],
+    [
+     "",
+     "Don't worry about your first day. Sarah will {show you around} the office."
+    ],
+    [
+     "",
+     "“Can I tell the team about my idea?” “Sure, {go for it}.”"
+    ],
+    [
+     "",
+     "“I was so nervous on my first day.” “{I know how that feels}. I was nervous too.”"
+    ],
+    [
+     "",
+     "Let's try the new timetable for two weeks and {see how it goes}."
+    ],
+    [
+     "",
+     "When I started this job, I didn't know {who to ask} when I had a problem."
+    ],
+    [
+     "",
+     "He was {too shy} to ask questions in the meeting, so he stayed quiet."
+    ],
+    [
+     "",
+     "If you need anything, just ask. I'm always happy to {help out}."
+    ],
+    [
+     "",
+     "OK, thanks, everyone. I think {that's it for today}."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 3: Listening",
+   "intro": "Anna and Jack are friends. They're having coffee after work. Listen, then do Parts A and B.",
+   "podcast": "🎧 Anna & Jack: the new working hours",
+   "audio": "audio/a2-pitching.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Anna",
+     "text": "So, did you talk to your manager about your idea?"
+    },
+    {
+     "t": 3.3,
+     "who": "Jack",
+     "text": "Yes, this morning. I was really nervous, but it went well."
+    },
+    {
+     "t": 7.1,
+     "who": "Anna",
+     "text": "Remind me, what was the idea?"
+    },
+    {
+     "t": 9.5,
+     "who": "Jack",
+     "text": "I asked if our team could start work at ==eight== and finish at ==four==, instead of nine to five."
+    },
+    {
+     "t": 14.2,
+     "who": "Anna",
+     "text": "Why?"
+    },
+    {
+     "t": 15.4,
+     "who": "Jack",
+     "text": "Because the ==traffic is terrible at half past eight==. It takes me an hour to get to work. If I leave home earlier, it only takes ==twenty minutes==."
+    },
+    {
+     "t": 23.0,
+     "who": "Anna",
+     "text": "That makes sense. What did your manager say?"
+    },
+    {
+     "t": 25.7,
+     "who": "Jack",
+     "text": "At first, she wasn't sure. She said, ==“What if a client calls at half past four and nobody's there?”=="
+    },
+    {
+     "t": 31.5,
+     "who": "Anna",
+     "text": "Good question."
+    },
+    {
+     "t": 32.8,
+     "who": "Jack",
+     "text": "Yeah. So I said not everyone needs to change. Some people can still work nine to five, so there's always someone in the office until five."
+    },
+    {
+     "t": 39.8,
+     "who": "Anna",
+     "text": "Smart. So did she say yes?"
+    },
+    {
+     "t": 42.4,
+     "who": "Jack",
+     "text": "Not completely. She wants to start small. ==Three people can try it for one month==, and then she'll check if it's working."
+    },
+    {
+     "t": 49.0,
+     "who": "Anna",
+     "text": "That's great! Are you one of the three?"
+    },
+    {
+     "t": 51.4,
+     "who": "Jack",
+     "text": "Yes, I start next ==Monday==. I'm so happy. ==I'll have more time with my kids== in the afternoon."
+    },
+    {
+     "t": 58.3,
+     "who": "Anna",
+     "text": "That sounds amazing. Maybe I should talk to my boss too."
+    },
+    {
+     "t": 62.8,
+     "who": "Jack",
+     "text": "Go for it. Just explain the problem first, and suggest a short trial. It's much easier for managers to say yes."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 3A: Choose the best answer",
+   "questions": [
+    {
+     "q": "What did Jack ask his manager?",
+     "options": [
+      "If he could work from home",
+      "If he could change his working hours",
+      "If he could work fewer days a week"
+     ],
+     "answer": 1,
+     "why": "“I asked if our team could start work at eight and finish at four, instead of nine to five.”"
+    },
+    {
+     "q": "Why does Jack want this change?",
+     "options": [
+      "He wants to avoid the heavy traffic.",
+      "He wants to earn more money.",
+      "He has too much work."
+     ],
+     "answer": 0,
+     "why": "“The traffic is terrible at half past eight.”"
+    },
+    {
+     "q": "How long will it take Jack to get to work if he leaves home earlier?",
+     "options": [
+      "An hour",
+      "Half an hour",
+      "Twenty minutes"
+     ],
+     "answer": 2,
+     "why": "“If I leave home earlier, it only takes twenty minutes.”"
+    },
+    {
+     "q": "What was the manager worried about?",
+     "options": [
+      "Nobody would be in the office if a client called late.",
+      "Jack might arrive late for work.",
+      "The team might not finish their work."
+     ],
+     "answer": 0,
+     "why": "“What if a client calls at half past four and nobody's there?”"
+    },
+    {
+     "q": "What did the manager decide?",
+     "options": [
+      "Everyone can start work at eight.",
+      "A small group can try the new hours for a month.",
+      "She'll decide next month."
+     ],
+     "answer": 1,
+     "why": "“Three people can try it for one month.”"
+    },
+    {
+     "q": "Why is Jack happy?",
+     "options": [
+      "He can spend more time with his children.",
+      "He doesn't have to go to the office any more.",
+      "His manager gave him a new job."
+     ],
+     "answer": 0,
+     "why": "“I'll have more time with my kids in the afternoon.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 3B: Complete the summary",
+   "instructions": "Write ONE word for each blank.",
+   "text": "Jack wants to start work at {eight|8} and finish at {four|4}. At half past eight, the {traffic} is terrible. His manager was worried that a {client} might call late in the afternoon. In the end, {three|3} people can try the new hours for one {month}. Jack starts next {Monday}."
+  },
+  {
+   "type": "recording",
+   "title": "Part 4: Speaking (1.5–2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking. You are the only speaker.",
+   "options": [
+    {
+     "title": "(Pitch) Pitch an idea to make your workplace, school or class better.",
+     "questions": [
+      "What's the problem?",
+      "What's your idea?",
+      "How would it help?",
+      "How could you start small?"
+     ],
+     "use": "Have you got a minute?, You know how…?, I was thinking, what if we…?, We'd have more time for…, That way, …, a one-month trial."
+    },
+    {
+     "title": "(Story) Tell me about a time you suggested an idea (at work, at school or at home).",
+     "questions": [
+      "What was the problem, and what was your idea?",
+      "Who did you talk to?",
+      "How did they react? Were they worried about anything?",
+      "What happened in the end?"
+     ],
+     "use": "run sth by sb, I was thinking, what if we…?, That makes sense, be worth a try, see how it goes."
+    },
+    {
+     "title": "(Pitch) Choose ONE idea below and pitch it to your manager.",
+     "choices": [
+      "Flexible working hours (for example, 8am–4pm instead of 9am–5pm)",
+      "Working from home one day a week",
+      "A short training course paid for by the company"
+     ],
+     "questionsLabel": "In your pitch, explain:",
+     "questions": [
+      "the problem",
+      "your idea",
+      "how it would help the team and the company",
+      "one worry your manager might have, and how you'd deal with it: “I know you might be worried that… That's fair, but…”",
+      "how you could start small"
+     ],
+     "use": "You know how…?, What I'm suggesting is…, Nothing too formal, just…, That way, …, keep an eye on, start small."
+    }
+   ]
+  }
+ ]
+}

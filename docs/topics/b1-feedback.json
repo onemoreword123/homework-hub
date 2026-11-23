@@ -1,0 +1,573 @@
+{
+ "id": "b1-feedback",
+ "title": "Giving and receiving feedback",
+ "level": "B1",
+ "emoji": "💬",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-feedback.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "grammar2",
+   "label": "Technique: how to give and receive feedback",
+   "groups": [
+    {
+     "purpose": "Xin góp ý",
+     "color": "#d9ead3",
+     "items": [
+      [
+       "Could you have a quick look at...?",
+       "***Could you have a quick look at*** *my slides?*"
+      ],
+      [
+       "I'd really appreciate a second opinion.",
+       ""
+      ],
+      [
+       "Is there anything I could do better?",
+       ""
+      ]
+     ]
+    },
+    {
+     "purpose": "Khen cụ thể",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "First of all, ...",
+       "***First of all,*** *you've done a great job on the campaign.*"
+      ],
+      [
+       "The part about... is spot on.",
+       "***The part about*** *delivery times* ***is spot on****.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nêu vấn đề nhẹ nhàng",
+     "color": "#ead1dc",
+     "items": [
+      [
+       "The only thing is, ...",
+       "***The only thing is****, the ending feels a bit sudden.*"
+      ],
+      [
+       "There's one thing I wanted to mention, though.",
+       ""
+      ],
+      [
+       "a bit + adj",
+       "*Some slides are* ***a bit*** *text-heavy.*"
+      ],
+      [
+       "It's not a huge problem, but...",
+       "***It's not a huge problem, but*** *it does hold up the team.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Gợi ý giải pháp",
+     "color": "#d9ead3",
+     "items": [
+      [
+       "Maybe you could + V",
+       "***Maybe you could*** *cut it down to three bullet points.*"
+      ],
+      [
+       "It might be worth + V-ing",
+       "***It might be worth*** *adding a summary slide.*"
+      ],
+      [
+       "That way, + clause",
+       "***That way****, they'll listen to you instead of reading.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Kết thúc tích cực",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "But overall, ...",
+       "***But overall****, it's really strong.*"
+      ],
+      [
+       "Just so you know, ...",
+       "***Just so you know****, I'm really happy with your work.*"
+      ]
+     ]
+    },
+    {
+     "purpose": "Nhận góp ý",
+     "color": "#ead1dc",
+     "items": [
+      [
+       "That's really helpful. / I appreciate the feedback.",
+       ""
+      ],
+      [
+       "Fair point. / I hadn't thought of that.",
+       ""
+      ],
+      [
+       "I'll make sure (that)... / From now on, I'll...",
+       "***I'll make sure*** *I flag it early* ***from now on****.*"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🦜 Giving and receiving feedback"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "When was the last time someone gave you **feedback at work or school? How did you feel?**",
+    "Do you **find it easier to give feedback or to receive it**? Why?",
+    "Is it common to **give direct feedback** in Vietnamese workplaces?",
+    "What makes **feedback helpful,** and what **makes it hurtful?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Can I get a second opinion?",
+   "context": "***Context:*** *Mia has a presentation with a new client tomorrow. She asks her colleague, Tom, to look at her slides.*",
+   "lines": [
+    [
+     "Mia",
+     "Tom, have you got five minutes? Could you **have a quick look at** my slides for tomorrow? I'd really appreciate **a second opinion.**"
+    ],
+    [
+     "Tom",
+     "Sure, let's have a look."
+    ],
+    [
+     "Mia",
+     "And please **be honest**. **I'd rather hear it from you than** from the client."
+    ],
+    [
+     "Tom",
+     "Fair enough. OK, **first of all**, the design looks great. It's clean and professional, and the charts are really **easy to follow**."
+    ],
+    [
+     "Mia",
+     "Thanks. I **spent ages on** those."
+    ],
+    [
+     "Tom",
+     "**It shows.** **The only thing is**, some of the slides feel a bit **cluttered**. Like this one, there's a whole paragraph. I think you might **lose their attention**."
+    ],
+    [
+     "Mia",
+     "Yeah, **I had a feeling** that one was too much. **What would you do?**"
+    ],
+    [
+     "Tom",
+     "**Maybe you could** **cut it down to** three bullet points and explain the rest **out loud**. **That way**, they'll **focus on** you instead of reading."
+    ],
+    [
+     "Mia",
+     "That makes sense. Anything else?"
+    ],
+    [
+     "Tom",
+     "Hmm, the ending feels a bit **rushed**. You go straight from the prices to \"Thank you.\" **It might be worth** adding a slide with **the key takeaways**, so you **end on a strong note**."
+    ],
+    [
+     "Mia",
+     "**Good point.** **I hadn't thought of that.**"
+    ],
+    [
+     "Tom",
+     "But honestly, **overall**, it's really **solid**. The part about delivery times is **spot on**. That's exactly what they care about. You've really **nailed** that bit."
+    ],
+    [
+     "Mia",
+     "**That's really helpful**, thanks. I'll **make a few tweaks** tonight and **run through it** one more time."
+    ],
+    [
+     "Tom",
+     "Sounds good. You'll be fine. Good luck tomorrow!"
+    ]
+   ],
+   "vocab": [
+    [
+     "**have a quick look at** sth",
+     "/hæv ə kwɪk lʊk æt/",
+     "phrase",
+     "",
+     "audio/v/ae84265953.mp3"
+    ],
+    [
+     "**a second opinion**",
+     "/ə ˈsek.ənd əˈpɪn.jən/",
+     "collocation",
+     "",
+     "audio/v/686c13c7a4.mp3"
+    ],
+    [
+     "**I'd rather hear it from you than...**",
+     "/aɪd ˈrɑː.ðə hɪər ɪt frɒm juː ðən/",
+     "expression",
+     "",
+     "audio/v/1c255d0748.mp3"
+    ],
+    [
+     "**spend ages on** sth",
+     "/spend ˈeɪ.dʒɪz ɒn/",
+     "phrase",
+     "",
+     "audio/v/8a8dd3c4d8.mp3"
+    ],
+    [
+     "**It shows.**",
+     "/ɪt ʃəʊz/",
+     "expression",
+     "",
+     "audio/v/378d6c3e04.mp3"
+    ],
+    [
+     "**The only thing is, ...**",
+     "/ði ˈəʊn.li θɪŋ ɪz/",
+     "structure",
+     "",
+     "audio/v/e32af2b152.mp3"
+    ],
+    [
+     "**I had a feeling (that)...**",
+     "/aɪ hæd ə ˈfiː.lɪŋ/",
+     "expression",
+     "",
+     "audio/v/0066a49308.mp3"
+    ],
+    [
+     "**What would you do?**",
+     "/wɒt wʊd juː duː/",
+     "expression",
+     "",
+     "audio/v/75c07032e1.mp3"
+    ],
+    [
+     "**Maybe you could + V**",
+     "/ˈmeɪ.bi juː kʊd/",
+     "structure",
+     "",
+     "audio/v/37c8535b22.mp3"
+    ],
+    [
+     "**That way, ...**",
+     "/ðæt weɪ/",
+     "phrase",
+     "",
+     "audio/v/90cd9e7fbe.mp3"
+    ],
+    [
+     "**focus on** sb/sth",
+     "/ˈfəʊ.kəs ɒn/",
+     "phrasal verb",
+     "",
+     "audio/v/335b6ecfed.mp3"
+    ],
+    [
+     "**rushed**",
+     "/rʌʃt/",
+     "adjective",
+     "",
+     "audio/v/2d2261234b.mp3"
+    ],
+    [
+     "**the key takeaways**",
+     "/ðə kiː ˈteɪk.ə.weɪz/",
+     "noun",
+     "",
+     "audio/v/de18a56580.mp3"
+    ],
+    [
+     "**end on a strong note**",
+     "/end ɒn ə strɒŋ nəʊt/",
+     "idiom",
+     "",
+     "audio/v/695cb4f4a8.mp3"
+    ],
+    [
+     "**Good point.**",
+     "/ɡʊd pɔɪnt/",
+     "expression",
+     "",
+     "audio/v/2e37553aca.mp3"
+    ],
+    [
+     "**I hadn't thought of that.**",
+     "/aɪ ˈhæd.ənt θɔːt əv ðæt/",
+     "expression",
+     "",
+     "audio/v/6b746abc05.mp3"
+    ],
+    [
+     "**solid**",
+     "/ˈsɒl.ɪd/",
+     "adjective",
+     "",
+     "audio/v/69e699bc1f.mp3"
+    ],
+    [
+     "**spot on**",
+     "/ˌspɒt ˈɒn/",
+     "adjective, informal",
+     "",
+     "audio/v/c85bc6deb9.mp3"
+    ],
+    [
+     "**nail** sth",
+     "/neɪl/",
+     "verb, informal",
+     "",
+     "audio/v/4cef9b7999.mp3"
+    ],
+    [
+     "**That's really helpful.**",
+     "/ðæts ˈrɪə.li ˈhelp.fəl/",
+     "expression",
+     "",
+     "audio/v/a0bf36fc06.mp3"
+    ],
+    [
+     "**make a few tweaks**",
+     "/meɪk ə fjuː twiːks/",
+     "collocation",
+     "",
+     "audio/v/165766a5a4.mp3"
+    ],
+    [
+     "**run through** sth",
+     "/rʌn θruː/",
+     "phrasal verb",
+     "",
+     "audio/v/18b8944940.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. The monthly one-to-one",
+   "context": "***Context:*** *Sam has worked in the marketing team for six months. His manager, Laura, is having their monthly one-to-one meeting with him.*",
+   "lines": [
+    [
+     "Laura",
+     "So, **how are things going** at the moment?"
+    ],
+    [
+     "Sam",
+     "Pretty good, thanks. It's been **a busy month**, but I'm enjoying it."
+    ],
+    [
+     "Laura",
+     "**Good to hear.** **I wanted to start by saying** you've **done a great job on** the social media campaign. Our engagement has **gone up by** about 30% since you **took over**. That's **a big deal**."
+    ],
+    [
+     "Sam",
+     "Thanks, that's really nice to hear."
+    ],
+    [
+     "Laura",
+     "**There's one thing I wanted to bring up, though.** Your last two weekly reports came in a couple of days late. **It's not the end of the world**, but it does **hold up** the rest of the team, because they need your numbers for their own reports."
+    ],
+    [
+     "Sam",
+     "Ah, right. Sorry about that. To be honest, I've been **struggling to keep on top of** everything since the campaign started."
+    ],
+    [
+     "Laura",
+     "I get it. You've **got a lot on your plate** right now. Is there anything that would help?"
+    ],
+    [
+     "Sam",
+     "Maybe if I knew the priorities a bit earlier in the week? Sometimes urgent tasks **come up** on Thursday, and then everything else **gets pushed back**."
+    ],
+    [
+     "Laura",
+     "**Okay.** I'll send you a list of priorities every Monday morning. And if you can see that a deadline is going to be **tight**, just **give me a heads-up**. We can always **work something out**."
+    ],
+    [
+     "Sam",
+     "That would really help. I'll make sure I **let you know** early **from now on**."
+    ],
+    [
+     "Laura",
+     "Great. And **just so you know**, I'm really happy with your work **overall**. This is just a small thing."
+    ],
+    [
+     "Sam",
+     "Thanks. I appreciate you **being upfront** about it."
+    ],
+    [
+     "Laura",
+     "Of course. Let's **check in** again next month and see how it's going."
+    ],
+    [
+     "Sam",
+     "Sounds good."
+    ]
+   ],
+   "vocab": [
+    [
+     "**How are things going?**",
+     "/haʊ ɑː θɪŋz ˈɡəʊ.ɪŋ/",
+     "expression",
+     "",
+     "audio/v/7f07e98453.mp3"
+    ],
+    [
+     "**Good to hear.**",
+     "/ɡʊd tə hɪər/",
+     "expression",
+     "",
+     "audio/v/b5c4f13e53.mp3"
+    ],
+    [
+     "**I wanted to start by saying...**",
+     "/aɪ ˈwɒn.tɪd tə stɑːt baɪ ˈseɪ.ɪŋ/",
+     "structure",
+     "",
+     "audio/v/cf24b43a1a.mp3"
+    ],
+    [
+     "**go up by** + number",
+     "/ɡəʊ ʌp baɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/142e73bc8b.mp3"
+    ],
+    [
+     "**take over**",
+     "/teɪk ˈəʊ.vər/",
+     "phrasal verb",
+     "",
+     "audio/v/08b37dce44.mp3"
+    ],
+    [
+     "**a big deal**",
+     "/ə bɪɡ diːl/",
+     "phrase, informal",
+     "",
+     "audio/v/26c4b1b4dc.mp3"
+    ],
+    [
+     "**There's one thing I wanted to bring up, though.**",
+     "/ðeəz wʌn θɪŋ aɪ ˈwɒn.tɪd tə brɪŋ ʌp ðəʊ/",
+     "expression",
+     "",
+     "audio/v/bd8c136fae.mp3"
+    ],
+    [
+     "**It's not the end of the world.**",
+     "/ɪts nɒt ði end əv ðə wɜːld/",
+     "idiom",
+     "",
+     "audio/v/1e431b663f.mp3"
+    ],
+    [
+     "**hold** sb/sth **up**",
+     "/həʊld ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/f00c00bfaf.mp3"
+    ],
+    [
+     "**struggle to + V**",
+     "/ˈstrʌɡ.əl tə/",
+     "structure",
+     "",
+     "audio/v/d83dfcf373.mp3"
+    ],
+    [
+     "**keep on top of** sth",
+     "/kiːp ɒn tɒp əv/",
+     "idiom",
+     "",
+     "audio/v/09c779d6cf.mp3"
+    ],
+    [
+     "**have a lot on your plate**",
+     "/hæv ə lɒt ɒn jɔː pleɪt/",
+     "idiom",
+     "",
+     "audio/v/246b92ff12.mp3"
+    ],
+    [
+     "**get pushed back**",
+     "/ɡet pʊʃt bæk/",
+     "phrasal verb",
+     "",
+     "audio/v/4145926bbd.mp3"
+    ],
+    [
+     "**a tight deadline**",
+     "/ə taɪt ˈded.laɪn/",
+     "collocation",
+     "",
+     "audio/v/94bdfe9a12.mp3"
+    ],
+    [
+     "**give** sb **a heads-up**",
+     "/ɡɪv ə ˈhedz.ʌp/",
+     "idiom, informal",
+     "",
+     "audio/v/4a987b0b5e.mp3"
+    ],
+    [
+     "**work** sth **out**",
+     "/wɜːk aʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/f2d8da4cc1.mp3"
+    ],
+    [
+     "**let** sb **know**",
+     "/let nəʊ/",
+     "phrase",
+     "",
+     "audio/v/607f1a3273.mp3"
+    ],
+    [
+     "**from now on**",
+     "/frɒm naʊ ɒn/",
+     "phrase",
+     "",
+     "audio/v/4a1f4b6220.mp3"
+    ],
+    [
+     "**Just so you know, ...**",
+     "/dʒʌst səʊ juː nəʊ/",
+     "expression",
+     "",
+     "audio/v/87c1e7011c.mp3"
+    ],
+    [
+     "**be upfront (about sth)**",
+     "/bi ʌpˈfrʌnt/",
+     "phrase",
+     "",
+     "audio/v/e66db51434.mp3"
+    ],
+    [
+     "**check in (with sb)**",
+     "/tʃek ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/d2ce78f917.mp3"
+    ]
+   ]
+  }
+ ],
+ "homework": []
+}

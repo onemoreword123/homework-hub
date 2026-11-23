@@ -1,0 +1,747 @@
+{
+ "id": "b1-home",
+ "title": "Home and living spaces",
+ "level": "B1",
+ "emoji": "🏠",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-home.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "vocab",
+   "label": "🧠 How to expand your answers",
+   "title": "Types of homes",
+   "rows": [
+    [
+     "a flat / an apartment",
+     "/flæt/ /əˈpɑːt.mənt/",
+     "căn hộ",
+     "audio/v/c8f47782b8.mp3"
+    ],
+    [
+     "a studio (flat)",
+     "/ˈstjuː.di.əʊ/",
+     "căn hộ studio (1 phòng chung)",
+     "audio/v/4c56167012.mp3"
+    ],
+    [
+     "a terraced house",
+     "/ˌter.əst ˈhaʊs/",
+     "nhà phố liền kề",
+     "audio/v/f256d2da61.mp3"
+    ],
+    [
+     "a detached house",
+     "/dɪˌtætʃt ˈhaʊs/",
+     "nhà biệt lập",
+     "audio/v/0ead54ebda.mp3"
+    ],
+    [
+     "a shared house",
+     "/ʃeəd haʊs/",
+     "nhà ở ghép",
+     "audio/v/9fc5af43a6.mp3"
+    ],
+    [
+     "a landlord / a tenant",
+     "/ˈlænd.lɔːd/ /ˈten.ənt/",
+     "chủ nhà / người thuê nhà",
+     "audio/v/5c470aa2f1.mp3"
+    ],
+    [
+     "rent / a deposit / a mortgage",
+     "/rent/ /dɪˈpɒz.ɪt/ /ˈmɔː.ɡɪdʒ/",
+     "tiền thuê / tiền đặt cọc, tiền trả trước / khoản vay mua nhà",
+     "audio/v/928ed90287.mp3"
+    ],
+    [
+     "a minimalist / a maximalist",
+     "/ˈmɪn.ɪ.məl.ɪst/ /ˈmæk.sɪ.məl.ɪst/",
+     "người theo lối sống tối giản / người thích bày biện nhiều đồ",
+     "audio/v/d63bb246ad.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "grammar",
+   "title": "Weighing up and imagining",
+   "rows": [
+    {
+     "structure": "While + clause, + clause",
+     "examples": [
+      "**While** living alone is relaxing, it’s much more expensive."
+     ],
+     "note": "Nối hai ý trái ngược"
+    },
+    {
+     "structure": "X matters more (to me) than Y",
+     "examples": [
+      "Freedom **matters more to me than** money."
+     ],
+     "note": "Nói điều quan trọng hơn"
+    },
+    {
+     "structure": "I’d rather + V + than + V",
+     "examples": [
+      "**I’d rather** pay more **than** share a bathroom with four people."
+     ],
+     "note": "Nói lựa chọn ưu tiên"
+    },
+    {
+     "structure": "If + past simple, would / could + V (2nd conditional)",
+     "examples": [
+      "**If** I **moved** back in with my parents, I **could** save for a deposit."
+     ],
+     "note": "Tưởng tượng một tình huống khác hiện tại"
+    },
+    {
+     "structure": "unless + clause",
+     "examples": [
+      "A house is out of my price range, **unless** I move out of the city."
+     ],
+     "note": "Trừ khi…"
+    },
+    {
+     "structure": "as long as + clause",
+     "examples": [
+      "Sharing a house is fine, **as long as** everyone takes out the bins."
+     ],
+     "note": "Miễn là…"
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🏠 Home and living spaces"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Would you describe your home **as tidy and simple**, or **full of things?**",
+    "What’s your **favourite spot** at home? Why?",
+    "Do you **live alone, with family or with flatmates?** What are the **pros and cons?**",
+    "**Is it better to rent or buy a home where you live? Why?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Minimalist vs. Maximalist",
+   "context": "***Context:*** *Sophie is helping her friend Ella move into a new flat. They’re carrying boxes up the stairs.*",
+   "lines": [
+    [
+     "Ella",
+     "Careful with that one. It’s full of plants."
+    ],
+    [
+     "Sophie",
+     "Another one? Ella, this is the fourth box of plants."
+    ],
+    [
+     "Ella",
+     "I know. I’m **a bit of a hoarder**. I’ve **accumulated** a lot of **stuff** over the years."
+    ],
+    [
+     "Sophie",
+     "“A lot” is **an understatement**. You’ve got more cushions than chairs."
+    ],
+    [
+     "Ella",
+     "They make the place feel **cosy**. I like **being surrounded by** things that mean something to me: photos, books, **little knick-knacks** from trips."
+    ],
+    [
+     "Sophie",
+     "I get that. I’m **the complete opposite**. My flat’s almost empty: a sofa, a table, a bed, and **that’s about it**."
+    ],
+    [
+     "Ella",
+     "I know. It looks like **a show home**. Doesn’t it feel a bit cold?"
+    ],
+    [
+     "Sophie",
+     "Not to me. I find **clutter** really stressful. When everything’s **tidy**, I can actually relax. Plus, cleaning takes ten minutes."
+    ],
+    [
+     "Ella",
+     "That’s the one thing I’m jealous of. Dusting all my shelves **takes forever**. It’s **a real pain**."
+    ],
+    [
+     "Sophie",
+     "Last year, I had a big **declutter**. I **gave away** half my clothes, and honestly, I don’t miss any of them. **Less is more.**"
+    ],
+    [
+     "Ella",
+     "I could never do that. Most of my things have **sentimental value**. I still have concert tickets from 2015. I just **can’t bring myself to** throw them away."
+    ],
+    [
+     "Sophie",
+     "That’s the difference between us. You keep things for the memories. **I’d rather** keep the memories **than** the stuff."
+    ],
+    [
+     "Ella",
+     "**Fair point.** But **bare** white walls just make me sad. A home should **feel lived-in**."
+    ],
+    [
+     "Sophie",
+     "So where’s all this going to go? Your new place isn’t exactly huge, and there’s **hardly any storage space**."
+    ],
+    [
+     "Ella",
+     "I’ll **make it work**. A few more shelves, some hooks on the walls…"
+    ],
+    [
+     "Sophie",
+     "Or you could **get rid of** a few cushions."
+    ],
+    [
+     "Ella",
+     "Absolutely not. The cushions stay."
+    ]
+   ],
+   "vocab": [
+    [
+     "**a bit of a hoarder**",
+     "/ə bɪt əv ə ˈhɔː.dər/",
+     "phrase",
+     "",
+     "audio/v/be77408cb1.mp3"
+    ],
+    [
+     "**accumulate**",
+     "/əˈkjuː.mjə.leɪt/",
+     "verb",
+     "",
+     "audio/v/da612b0004.mp3"
+    ],
+    [
+     "**an understatement**",
+     "/ən ˌʌn.dəˈsteɪt.mənt/",
+     "noun",
+     "",
+     "audio/v/215ea10a50.mp3"
+    ],
+    [
+     "**be surrounded by** + N",
+     "/bi səˈraʊn.dɪd baɪ/",
+     "phrase",
+     "",
+     "audio/v/d4820dbad0.mp3"
+    ],
+    [
+     "**knick-knacks**",
+     "/ˈnɪk.næks/",
+     "noun",
+     "",
+     "audio/v/0caed95b4f.mp3"
+    ],
+    [
+     "**That’s about it.**",
+     "/ðæts əˈbaʊt ɪt/",
+     "expression",
+     "",
+     "audio/v/78af01bba3.mp3"
+    ],
+    [
+     "**a show home**",
+     "/ə ˈʃəʊ həʊm/",
+     "noun",
+     "nhà mẫu",
+     "audio/v/8b44a8a73f.mp3"
+    ],
+    [
+     "**clutter**",
+     "/ˈklʌt.ər/",
+     "noun",
+     "",
+     "audio/v/d3f0d26b7b.mp3"
+    ],
+    [
+     "**a real pain**",
+     "/ə rɪəl peɪn/",
+     "phrase, informal",
+     "",
+     "audio/v/297e09e271.mp3"
+    ],
+    [
+     "**a declutter**",
+     "/ə ˌdiːˈklʌt.ər/",
+     "noun",
+     "",
+     "audio/v/667aa29c53.mp3"
+    ],
+    [
+     "**give away** sth",
+     "/ɡɪv əˈweɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/8b13d131e7.mp3"
+    ],
+    [
+     "**Less is more.**",
+     "/les ɪz mɔːr/",
+     "saying",
+     "",
+     "audio/v/31cf3c46f7.mp3"
+    ],
+    [
+     "**sentimental value**",
+     "/ˌsen.tɪˈmen.təl ˈvæl.juː/",
+     "collocation",
+     "",
+     "audio/v/cd4742ec10.mp3"
+    ],
+    [
+     "**can’t bring yourself to + V**",
+     "/kɑːnt brɪŋ jɔːˈself tə/",
+     "structure",
+     "",
+     "audio/v/a34af72700.mp3"
+    ],
+    [
+     "**feel lived-in**",
+     "/fiːl ˈlɪvd.ɪn/",
+     "phrase",
+     "",
+     "audio/v/bca44ad37f.mp3"
+    ],
+    [
+     "**hardly any** + N",
+     "/ˈhɑːd.li ˈen.i/",
+     "phrase",
+     "",
+     "audio/v/5fb29e7b40.mp3"
+    ],
+    [
+     "**make it work**",
+     "/meɪk ɪt wɜːk/",
+     "phrase",
+     "",
+     "audio/v/bda0d708c7.mp3"
+    ],
+    [
+     "**get rid of** sth",
+     "/ɡet rɪd əv/",
+     "phrase",
+     "",
+     "audio/v/39a2d80e95.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Home, sweet home",
+   "context": "***Context:*** *Ben and Hannah are colleagues. On Monday, Hannah asks Ben about the flat he moved into at the weekend.*",
+   "lines": [
+    [
+     "Hannah",
+     "How’s the new place? You moved last weekend, didn’t you?"
+    ],
+    [
+     "Ben",
+     "Yeah. It’s only **a studio**, and it’s a bit small, but **it’s all mine**. After three years of **sharing a house** with four **flatmates**, it feels amazing."
+    ],
+    [
+     "Hannah",
+     "No more queuing for the bathroom."
+    ],
+    [
+     "Ben",
+     "And no more arguments about whose turn it is to **take out the bins**. I finally **have the place to myself**, and I can **come and go as I please**."
+    ],
+    [
+     "Hannah",
+     "Isn’t it a bit lonely, though?"
+    ],
+    [
+     "Ben",
+     "Sometimes, in the evenings. But I’m enjoying **the peace and quiet**, and I **invite friends over** more often now."
+    ],
+    [
+     "Hannah",
+     "What about the rent? I bet it’s not cheap."
+    ],
+    [
+     "Ben",
+     "That’s **the downside**. I’m paying almost twice as much as before, and **the bills are all on me** now."
+    ],
+    [
+     "Hannah",
+     "That’s why I’m thinking of **moving back in with** my parents for a year."
+    ],
+    [
+     "Ben",
+     "Really? Would you be OK with that?"
+    ],
+    [
+     "Hannah",
+     "I’m not sure. I’d **lose some of my freedom**, obviously, and my mum would ask where I’m going every time I leave the house. But I could **save for a deposit**."
+    ],
+    [
+     "Ben",
+     "That sounds like a good plan. Renting is so expensive these days. My old landlord **put the rent up** twice last year. By the way, are you looking at flats or houses?"
+    ],
+    [
+     "Hannah",
+     "Flats, probably. A house with a garden would be lovely, but it’s **out of my price range**, unless I move out to **the suburbs**. And then **the commute** would be awful."
+    ],
+    [
+     "Ben",
+     "Well, if you ever need a break from your parents, you’re welcome to **crash on my sofa**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**It’s all mine.**",
+     "/ɪts ɔːl maɪn/",
+     "expression",
+     "",
+     "audio/v/d1b3c68038.mp3"
+    ],
+    [
+     "**flatmates**",
+     "/ˈflæt.meɪts/",
+     "noun",
+     "",
+     "audio/v/a0b7bfb17a.mp3"
+    ],
+    [
+     "**whose turn it is to + V**",
+     "/huːz tɜːn ɪt ɪz tə/",
+     "structure",
+     "",
+     "audio/v/bb7dffa998.mp3"
+    ],
+    [
+     "**take out the bins**",
+     "/teɪk aʊt ðə bɪnz/",
+     "collocation",
+     "",
+     "audio/v/cc58b1ed5e.mp3"
+    ],
+    [
+     "**have the place to yourself**",
+     "/hæv ðə pleɪs tə jɔːˈself/",
+     "phrase",
+     "",
+     "audio/v/7f44bcf1ec.mp3"
+    ],
+    [
+     "**come and go as I please**",
+     "/kʌm ən ɡəʊ əz aɪ pliːz/",
+     "phrase",
+     "",
+     "audio/v/58174d011e.mp3"
+    ],
+    [
+     "**(the) peace and quiet**",
+     "/piːs ən ˈkwaɪ.ət/",
+     "idiom",
+     "",
+     "audio/v/6768870693.mp3"
+    ],
+    [
+     "**invite sb over**",
+     "/ɪnˈvaɪt ˈəʊ.vər/",
+     "phrasal verb",
+     "",
+     "audio/v/36ce7b53d3.mp3"
+    ],
+    [
+     "**The bills are all on me.**",
+     "/ðə bɪlz ər ɔːl ɒn miː/",
+     "expression",
+     "",
+     "audio/v/981d0db6d6.mp3"
+    ],
+    [
+     "**move back in with** sb",
+     "/muːv bæk ɪn wɪð/",
+     "phrasal verb",
+     "",
+     "audio/v/18d333db9a.mp3"
+    ],
+    [
+     "**lose some of your freedom**",
+     "/luːz sʌm əv jɔː ˈfriː.dəm/",
+     "phrase",
+     "",
+     "audio/v/51fb1e5b47.mp3"
+    ],
+    [
+     "**save for a deposit**",
+     "/seɪv fər ə dɪˈpɒz.ɪt/",
+     "collocation",
+     "",
+     "audio/v/9405ecdc35.mp3"
+    ],
+    [
+     "**a landlord**",
+     "/ə ˈlænd.lɔːd/",
+     "noun",
+     "",
+     "audio/v/31c5eee744.mp3"
+    ],
+    [
+     "**put the rent up**",
+     "/pʊt ðə rent ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/00a0f90a14.mp3"
+    ],
+    [
+     "**out of my price range**",
+     "/aʊt əv maɪ praɪs reɪndʒ/",
+     "phrase",
+     "",
+     "audio/v/5dfbbb5e5b.mp3"
+    ],
+    [
+     "**the suburbs**",
+     "/ðə ˈsʌb.ɜːbz/",
+     "noun",
+     "",
+     "audio/v/a9634baec6.mp3"
+    ],
+    [
+     "**the commute**",
+     "/ðə kəˈmjuːt/",
+     "noun",
+     "",
+     "audio/v/3d110757bc.mp3"
+    ],
+    [
+     "**crash on sb’s sofa**",
+     "/kræʃ ɒn ˈsəʊ.fə/",
+     "phrase, informal",
+     "",
+     "audio/v/802346ef0b.mp3"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Jess and Tom are moving in together next month. They’re at Tom’s flat, deciding what to take with them.",
+   "bank": [
+    "a show home",
+    "can’t bring myself to",
+    "hardly any",
+    "declutter",
+    "out of our price range",
+    "accumulated",
+    "knick-knacks",
+    "feel lived-in",
+    "an understatement",
+    "sentimental value"
+   ],
+   "lines": [
+    [
+     "Jess",
+     "Tom, how many mugs do you actually have?"
+    ],
+    [
+     "Tom",
+     "About thirty, I think. I’ve {accumulated} a lot of stuff since I moved here."
+    ],
+    [
+     "Jess",
+     "“A lot” is {an understatement}. This cupboard is full of mugs, and the shelves are covered in little {knick-knacks} from your trips."
+    ],
+    [
+     "Tom",
+     "I know. I keep meaning to throw some things away, but I just {can’t bring myself to} do it. Most of them have {sentimental value}."
+    ],
+    [
+     "Jess",
+     "I get that. But our new flat is half the size of this one, and there’s {hardly any} storage space."
+    ],
+    [
+     "Tom",
+     "Can’t we just buy more shelves? I don’t want our place to look like {a show home}, with nothing on the walls."
+    ],
+    [
+     "Jess",
+     "Neither do I. A home should {feel lived-in}. But we need to be realistic. Why don’t we have a big {declutter} this weekend? Anything we don’t need, we can give away."
+    ],
+    [
+     "Tom",
+     "Fair enough. Remind me why we didn’t look for a bigger place?"
+    ],
+    [
+     "Jess",
+     "Because anything with two bedrooms in the city centre was {out of our price range}, unless we moved out to the suburbs."
+    ],
+    [
+     "Tom",
+     "Right. And neither of us wanted a long commute."
+    ],
+    [
+     "Jess",
+     "Exactly. So, let’s start with the mugs."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to part of a podcast about a woman who moved back in with her parents, then do Parts A and B.",
+   "podcast": "🎧 Money Matters: back to my childhood bedroom",
+   "audio": "audio/b1-home.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Host",
+     "text": "Welcome back to Money Matters. Today's guest is Rachel, who moved back in with her parents at the age of twenty-nine."
+    },
+    {
+     "t": 8.3,
+     "who": "Rachel",
+     "text": "People are always surprised when I tell them. For most of my twenties, I rented a flat in the city with two ==friends==. I loved it. We had a great social life, and I could come and go as I pleased. But ==every year, our landlord put the rent up==, and I realised I was saving almost ==nothing==."
+    },
+    {
+     "t": 26.4,
+     "who": "Rachel",
+     "text": "So last year, I made a decision. I moved back into my childhood bedroom, with a plan to save enough for a deposit in two years."
+    },
+    {
+     "t": 35.5,
+     "who": "Rachel",
+     "text": "The first few months were harder than I expected. ==It wasn't the small room. It was the questions. My mum wanted to know where I was going==, who I was meeting and what time I'd be home. I felt like a ==teenager== again. We had a few arguments, and in the end, ==we sat down and agreed on some ground rules==. Now, I let her know if I'll be back late, and she doesn't ask for the details."
+    },
+    {
+     "t": 59.6,
+     "who": "Rachel",
+     "text": "Financially, it's been amazing. I pay my parents a small amount each month for food and bills, which is less than a ==quarter== of my old rent. ==I've already saved more than I did in five years of renting.=="
+    },
+    {
+     "t": 71.9,
+     "who": "Rachel",
+     "text": "There are downsides, of course. My ==commute== is longer, because my parents live in the suburbs, and I don't invite friends over as often as I'd like. But ==I've also got to know my parents as an adult, which I didn't expect==. My dad and I cook ==dinner together== twice a week now."
+    },
+    {
+     "t": 87.6,
+     "who": "Rachel",
+     "text": "Would I recommend it? ==If you get on well with your family and you set clear boundaries, absolutely.== Just don't expect it to be easy."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2A: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did Rachel decide to move back home?",
+     "options": [
+      "She didn’t get on with her flatmates.",
+      "The rising rent made it hard to save.",
+      "Her parents asked her to come back."
+     ],
+     "answer": 1,
+     "why": "“Every year, our landlord put the rent up, and I realised I was saving almost nothing.”"
+    },
+    {
+     "q": "What did Rachel find most difficult at first?",
+     "options": [
+      "Living in a small bedroom again",
+      "Her mum wanting to know about her plans",
+      "Having to pay her parents every month"
+     ],
+     "answer": 1,
+     "why": "“It wasn’t the small room. It was the questions.”"
+    },
+    {
+     "q": "How did they solve the problem?",
+     "options": [
+      "Rachel promised to always come home early.",
+      "Her mum stopped asking any questions at all.",
+      "They agreed on some rules together."
+     ],
+     "answer": 2,
+     "why": "“We sat down and agreed on some ground rules.”"
+    },
+    {
+     "q": "What do we learn about Rachel’s savings?",
+     "options": [
+      "She now pays her parents exactly a quarter of her old rent.",
+      "She has saved more in about a year than in five years of renting.",
+      "She has already saved enough for a deposit."
+     ],
+     "answer": 1,
+     "why": "She moved last year and has “already saved more than I did in five years of renting.” She pays less than a quarter, not exactly a quarter."
+    },
+    {
+     "q": "What unexpected benefit does Rachel mention?",
+     "options": [
+      "A shorter journey to work",
+      "A closer relationship with her parents",
+      "More time to see her friends"
+     ],
+     "answer": 1,
+     "why": "“I’ve also got to know my parents as an adult, which I didn’t expect.”"
+    },
+    {
+     "q": "Who would Rachel recommend moving back home to?",
+     "options": [
+      "People who can’t afford to rent",
+      "People who are good at saving money",
+      "People who have a good relationship with their family"
+     ],
+     "answer": 2,
+     "why": "“If you get on well with your family and you set clear boundaries, absolutely.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 2B: Complete the summary",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "text": "For most of her twenties, Rachel rented a flat with two {friends}. Because the rent kept going up, she was saving almost {nothing}. At first, living at home made her feel like a {teenager} again, so she and her mum agreed on some {ground rules|rules}. She now pays her parents less than a {quarter} of her old rent. The main downsides are a longer {commute} and inviting friends over less often. However, she now cooks {dinner together|dinner} with her dad twice a week."
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Speaking",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Are you a minimalist or a maximalist?",
+     "questions": [
+      "Describe your home or your room. Is it full of things or quite empty?",
+      "Is there anything you keep for sentimental reasons?",
+      "What are the good and bad sides of your style?",
+      "Would you ever change it? Why or why not?"
+     ],
+     "use": "accumulate, clutter, sentimental value, can’t bring yourself to, feel lived-in, I’d rather… than…"
+    },
+    {
+     "title": "Would you move back in with your parents to save money?",
+     "questions": [
+      "What would be the good things about it?",
+      "What would be the downsides?",
+      "What would make it work, or not work, for you?",
+      "So would you do it? Why or why not?"
+     ],
+     "use": "lose some of your freedom, save for a deposit, come and go as I please, If I…, I’d…, as long as…, unless…"
+    },
+    {
+     "title": "City centre or suburbs: where would you rather live?",
+     "questions": [
+      "What are the good things about living in the city centre?",
+      "What are the good things about living in the suburbs?",
+      "What matters most to you: space, cost, the commute or lifestyle?",
+      "So where would you choose, and why?"
+     ],
+     "use": "out of my price range, the commute, peace and quiet, While…, X matters more to me than Y, I’d rather… than…"
+    }
+   ]
+  }
+ ]
+}

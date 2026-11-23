@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneMoreWord Homework Hub · Log in</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="login-shell">
+  <form class="card login-card" id="form" autocomplete="on">
+    <div class="tag">OneMoreWord Homework Hub</div>
+    <h1>Welcome back 👋</h1>
+    <p class="muted small">Log in with the username and password your teacher gave you.</p>
+    <label class="field" for="u">Username</label>
+    <input type="text" id="u" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+    <label class="field" for="p">Password</label>
+    <input type="password" id="p" name="password" autocomplete="current-password" required>
+    <div class="notice bad hidden" id="err"></div>
+    <button type="submit" id="go">Log in</button>
+    <p class="small muted" style="margin-top:14px">Forgot your password? Ask your teacher to reset it.</p>
+  </form>
+</div>
+<script type="module">
+import { sb, signIn } from "./js/db.js";
+const form = document.getElementById("form"), err = document.getElementById("err"), go = document.getElementById("go");
+
+const showErr = (msg) => { err.textContent = msg; err.classList.remove("hidden"); };
+async function routeIfSignedIn(afterLogin) {
+  const c = await sb();
+  const { data } = await c.auth.getSession();
+  if (!data.session) { if (afterLogin) showErr("Logged in, but no session was saved. Check that cookies/storage aren't blocked."); return; }
+  const { data: p, error } = await c.from("profiles").select("role").eq("id", data.session.user.id).maybeSingle();
+  if (error) { showErr("Logged in, but couldn't load your profile: " + error.message + (error.code ? " (" + error.code + ")" : "")); return; }
+  if (!p) { if (afterLogin) showErr("Logged in, but this account has no profile yet. (Teacher: run the profile step in Supabase.)"); return; }
+  location.href = p.role === "teacher" ? "teacher.html" : "student.html";
+}
+routeIfSignedIn(false).catch((e) => showErr("Couldn't connect: " + e.message));
+
+form.onsubmit = async (e) => {
+  e.preventDefault();
+  err.classList.add("hidden"); go.disabled = true; go.textContent = "Logging in…";
+  try {
+    await signIn(document.getElementById("u").value, document.getElementById("p").value);
+    await routeIfSignedIn(true);
+  } catch (ex) {
+    showErr(/invalid/i.test(ex.message) ? "Wrong username or password." : "Couldn't log in: " + ex.message);
+  }
+  go.disabled = false; go.textContent = "Log in";
+};
+</script>
+</body>
+</html>

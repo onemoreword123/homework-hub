@@ -1,0 +1,1071 @@
+{
+ "id": "a2-movies",
+ "title": "Movies and books",
+ "level": "A2",
+ "emoji": "🎬",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-movies-v3.jpg",
+   "fit": "contain",
+   "bg": "#f4e3c6"
+  },
+  {
+   "type": "table",
+   "label": "📖 Genre Vocabulary",
+   "title": "",
+   "head": [
+    "Genre",
+    "Meaningful",
+    "Examples"
+   ],
+   "rows": [
+    [
+     "**romance** /rəʊˈmæns/",
+     "tình cảm, lãng mạn",
+     "Mắt biếc, Titanic"
+    ],
+    [
+     "**drama** /ˈdrɑː.mə/",
+     "chính kịch, tâm lý",
+     "Bố già, Tắt đèn"
+    ],
+    [
+     "**comedy** /ˈkɒm.ə.di/",
+     "hài",
+     "Home Alone, Mr. Bean"
+    ],
+    [
+     "**action** /ˈæk.ʃən/",
+     "hành động",
+     "Hai Phượng, Fast & Furious"
+    ],
+    [
+     "**thriller** /ˈθrɪl.ər/",
+     "giật gân, hồi hộp",
+     "Parasite"
+    ],
+    [
+     "**horror** /ˈhɒr.ər/",
+     "kinh dị",
+     "The Conjuring"
+    ],
+    [
+     "**mystery** /ˈmɪs.tər.i/ / **detective story** /dɪˈtek.tɪv ˌstɔː.ri/",
+     "trinh thám, bí ẩn",
+     "Sherlock Holmes"
+    ],
+    [
+     "**science fiction (sci-fi)** /ˌsaɪ.əns ˈfɪk.ʃən/",
+     "khoa học viễn tưởng",
+     "Interstellar"
+    ],
+    [
+     "**fantasy** /ˈfæn.tə.si/",
+     "giả tưởng, phép thuật",
+     "Harry Potter"
+    ],
+    [
+     "**animation** /ˌæn.ɪˈmeɪ.ʃən/",
+     "hoạt hình",
+     "Inside Out, Spirited Away"
+    ],
+    [
+     "**historical film /**hɪˈstɒr.ɪ.kəl fɪlm/ **/ war film** /ˈwɔː ˌfɪlm/",
+     "lịch sử / chiến tranh",
+     "Đào, Phở và Piano"
+    ],
+    [
+     "**coming-of-age story** /ˌkʌm.ɪŋ.əvˈeɪdʒ ˌstɔː.ri/",
+     "câu chuyện trưởng thành",
+     "Tôi thấy hoa vàng trên cỏ xanh"
+    ],
+    [
+     "**biography** /baɪˈɒɡ.rə.fi/ **( biopic** /ˈbaɪ.əʊ.pɪk/ )",
+     "tiểu sử",
+     "Steve Jobs"
+    ],
+    [
+     "**documentary** /ˌdɒk.jəˈmen.tər.i/",
+     "phim tài liệu",
+     "Our Planet"
+    ],
+    [
+     "**realist novel** /ˈrɪə.lɪst ˈnɒv.əl/",
+     "tiểu thuyết hiện thực",
+     "Tắt đèn, Số đỏ"
+    ],
+    [
+     "**children’s book** /ˈtʃɪl.drənz bʊk/",
+     "sách thiếu nhi",
+     "Dế Mèn phiêu lưu ký"
+    ]
+   ],
+   "say": [
+    [
+     "audio/v/fbfa863db5.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/63b1298947.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/3e56e6a43d.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/34eb4c4ef0.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/952a08c423.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/bf7b06aaaf.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/9313a4b7ff.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/36c3fc6f89.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/ec1e111db3.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/a6b8b600c2.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/371b503417.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/8fb72d03ea.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/85de40fc72.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/6de8a32086.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/c563938c72.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/20fbba2474.mp3",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Adjectives to describe a book or film:",
+   "head": [
+    "Positive / Neutral",
+    "Negative",
+    "Tone / Atmosphere"
+   ],
+   "rows": [
+    [
+     "**gripping** /ˈɡrɪp.ɪŋ/ (cuốn hút, không dứt ra được)",
+     "**predictable** /prɪˈdɪk.tə.bəl/ (dễ đoán)",
+     "**bleak** /bliːk/ (u ám, ảm đạm)"
+    ],
+    [
+     "**moving** /ˈmuː.vɪŋ/ (cảm động)",
+     "**overrated** /ˌəʊ.vəˈreɪ.tɪd/ (được đánh giá quá cao)",
+     "**slow-paced** /ˌsləʊˈpeɪst/ (nhịp chậm)"
+    ],
+    [
+     "**thought-provoking** /ˈθɔːt.prəˌvəʊ.kɪŋ/ (gợi suy ngẫm)",
+     "**dull** /dʌl/ (nhàm chán)",
+     "**intense** /ɪnˈtens/ (căng thẳng, dồn dập)"
+    ],
+    [
+     "**hilarious** /hɪˈleə.ri.əs/ (cực kỳ hài hước)",
+     "**far-fetched** /ˌfɑːˈfetʃt/ (khó tin, phi lý)",
+     "**heavy /**ˈhev.i/ (nặng nề)"
+    ],
+    [
+     "**relatable** /rɪˈleɪ.tə.bəl/ (dễ đồng cảm)",
+     "**forgettable** /fəˈɡet.ə.bəl/ (xem xong là quên)",
+     "**dark** /dɑːk/ (u tối)"
+    ]
+   ],
+   "say": [
+    [
+     "audio/v/468df1d3eb.mp3",
+     "audio/v/254ed7b8d9.mp3",
+     "audio/v/4aedb33d61.mp3"
+    ],
+    [
+     "audio/v/3ea68c99d9.mp3",
+     "audio/v/45c052c401.mp3",
+     "audio/v/890fc6fc2d.mp3"
+    ],
+    [
+     "audio/v/b61f950b59.mp3",
+     "audio/v/738a85cfbd.mp3",
+     "audio/v/e121ada101.mp3"
+    ],
+    [
+     "audio/v/981a7d7069.mp3",
+     "audio/v/bdcd90a186.mp3",
+     "audio/v/d312949aa5.mp3"
+    ],
+    [
+     "audio/v/6a9533d9fd.mp3",
+     "audio/v/438ce0a212.mp3",
+     "audio/v/3d09ba4476.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "📽️ About movies and books"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Do you prefer **reading books** or **watching films**? Why?",
+    "What’s a book you **had to read at schoo**l? Do you still **remember the story?**",
+    "What’s the **last film** you watched? **Would you recommend it?**",
+    "Have you ever watched **a film adaptation of a book**? Which was better?"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. A film everyone talks about",
+   "context": "***Context:*** *Jake and Emily are colleagues. On Monday morning, Emily asks Jake about his weekend.*",
+   "lines": [
+    [
+     "Emily",
+     "How was your weekend? Did you do anything fun?"
+    ],
+    [
+     "Jake",
+     "Not really. I **stayed in** and finally watched *Train to Busan*. Everyone’s been telling me to watch it."
+    ],
+    [
+     "Emily",
+     "Oh, I love that film. Was it **as good as people said?**"
+    ],
+    [
+     "Jake",
+     "Definitely. I’m not really **into** zombie films, but this one has a really good **plot**. **The main character** is a dad who’s always **busy with work**. On his daughter’s birthday, he takes her on a train to Busan to see her mum."
+    ],
+    [
+     "Emily",
+     "And then the zombies get on the train."
+    ],
+    [
+     "Jake",
+     "Yeah, and **from then on**, it’s really **fast-paced**. But what I liked most is how the dad slowly **changes from** a **selfish** man **into** a really **caring** father."
+    ],
+    [
+     "Emily",
+     "Gong Yoo **gives a great performance** in that role."
+    ],
+    [
+     "Jake",
+     "**The whole cast** is great, actually. The guy who **plays** the strong husband is so **tough** in the **action scenes**, but he also has some of **the funniest lines**."
+    ],
+    [
+     "Emily",
+     "He’s my **favourite character**. Did you find it scary?"
+    ],
+    [
+     "Jake",
+     "Very. The zombies **look so real**. I **jumped out of my seat** a few times, and in **the scene where** they walk through a train full of zombies, I was **holding my breath** the whole time."
+    ],
+    [
+     "Emily",
+     "But the ending was so sad."
+    ],
+    [
+     "Jake",
+     "**Don’t remind me.** When the dad says goodbye to his daughter, I **couldn’t stop crying**. I had to **pause** it for a minute."
+    ],
+    [
+     "Emily",
+     "**Same here.** I watched it at the cinema, and everyone around me was **in tears**."
+    ],
+    [
+     "Jake",
+     "The only thing I didn’t like was **the villain**, that selfish businessman. He was so **annoying** that I wanted to throw something at the TV."
+    ],
+    [
+     "Emily",
+     "Haha, that means the actor **did a good job**. There’s **a sequel** too, but honestly, it’s **not as good as the original**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**stay in**",
+     "/steɪ ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/b346a71645.mp3"
+    ],
+    [
+     "**as good as people said**",
+     "/əz ɡʊd əz ˈpiː.pəl sed/",
+     "structure",
+     "",
+     "audio/v/5d8ac49175.mp3"
+    ],
+    [
+     "**the plot**",
+     "/ðə plɒt/",
+     "noun",
+     "",
+     "audio/v/1b221fd96e.mp3"
+    ],
+    [
+     "**the main character**",
+     "/ðə meɪn ˈkær.ək.tər/",
+     "noun",
+     "",
+     "audio/v/904656b26c.mp3"
+    ],
+    [
+     "**be busy with work**",
+     "/bi ˈbɪz.i wɪð wɜːk/",
+     "phrase",
+     "",
+     "audio/v/2d7d7271bf.mp3"
+    ],
+    [
+     "**from then on**",
+     "/frɒm ðen ɒn/",
+     "phrase",
+     "",
+     "audio/v/c7bc12c766.mp3"
+    ],
+    [
+     "**fast-paced**",
+     "/ˌfɑːstˈpeɪst/",
+     "adjective",
+     "",
+     "audio/v/4c3f0f01ef.mp3"
+    ],
+    [
+     "**change from X into Y**",
+     "/tʃeɪndʒ frɒm… ˈɪn.tuː/",
+     "phrase",
+     "",
+     "audio/v/4a22653083.mp3"
+    ],
+    [
+     "**give a great performance**",
+     "/ɡɪv ə ɡreɪt pəˈfɔː.məns/",
+     "collocation",
+     "",
+     "audio/v/769f3496ca.mp3"
+    ],
+    [
+     "**the whole cast**",
+     "/ðə həʊl kɑːst/",
+     "noun",
+     "",
+     "audio/v/c02ec4c189.mp3"
+    ],
+    [
+     "**play** + character",
+     "/pleɪ/",
+     "verb",
+     "",
+     "audio/v/6aa0ece9b4.mp3"
+    ],
+    [
+     "**tough**",
+     "/tʌf/",
+     "adjective",
+     "",
+     "audio/v/c1f0cd9eff.mp3"
+    ],
+    [
+     "**action scenes**",
+     "/ˈæk.ʃən siːnz/",
+     "noun",
+     "",
+     "audio/v/aeb35add61.mp3"
+    ],
+    [
+     "**have the funniest lines**",
+     "/hæv ðə ˈfʌn.i.ɪst laɪnz/",
+     "phrase",
+     "",
+     "audio/v/7b53d63296.mp3"
+    ],
+    [
+     "**favourite character**",
+     "/ˈfeɪ.vər.ɪt ˈkær.ək.tər/",
+     "noun",
+     "",
+     "audio/v/316a699d07.mp3"
+    ],
+    [
+     "**look so real**",
+     "/lʊk səʊ rɪəl/",
+     "phrase",
+     "",
+     "audio/v/b01219fa1b.mp3"
+    ],
+    [
+     "**jump out of your seat**",
+     "/dʒʌmp aʊt əv jɔː siːt/",
+     "phrase",
+     "",
+     "audio/v/3eaf41a4e6.mp3"
+    ],
+    [
+     "**hold your breath**",
+     "/həʊld jɔː breθ/",
+     "collocation",
+     "",
+     "audio/v/0f1245d45d.mp3"
+    ],
+    [
+     "**be in tears**",
+     "/bi ɪn tɪəz/",
+     "phrase",
+     "",
+     "audio/v/759edc139f.mp3"
+    ],
+    [
+     "**the villain**",
+     "/ðə ˈvɪl.ən/",
+     "noun",
+     "",
+     "audio/v/deaf055e1d.mp3"
+    ],
+    [
+     "**a sequel**",
+     "/ə ˈsiː.kwəl/",
+     "noun",
+     "",
+     "audio/v/6d1a5ce5a7.mp3"
+    ],
+    [
+     "**not as good as the original**",
+     "/nɒt əz ɡʊd əz ði əˈrɪdʒ.ən.əl/",
+     "phrase",
+     "",
+     "audio/v/0179bc47a4.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "Talk about a movie you’ve watched",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What’s the film?**\n(title, genre, director, cast)",
+     "• ***I recently watched…, a … film.***\n• ***The main character is played by…***\n• ***I saw a few clips from it on YouTube/TikTok***"
+    ],
+    [
+     "**What’s it about?**\n(the story, no spoilers)",
+     "• ***It’s about a… who…***\n• ***At first, I thought it was just a… about…, but halfway through…***\n• ***Things get interesting when…***"
+    ],
+    [
+     "**What did you like?**\n(plot, acting, cinematography, soundtrack, effects)",
+     "• ***I really enjoyed the story because…***\n• ***I especially liked the scene where…***\n• ***The music made the film more…***"
+    ],
+    [
+     "**Is it worth watching?**\n(hype, rating, who would enjoy it)",
+     "• ***I really enjoyed it because…***\n• ***It's definitely worth watching.***\n• ***I'd give it … out of ten.***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. A book that stays with you",
+   "context": "***Context:*** *Hà’s English colleague, Tom, sees an old Vietnamese novel on her desk at lunchtime.*",
+   "lines": [
+    [
+     "Tom",
+     "Is that a Vietnamese **novel**?"
+    ],
+    [
+     "Hà",
+     "It’s *Tắt đèn*, by Ngô Tất Tố. It’s **a Vietnamese classic**. We had to read it at school, and I wanted to read it again **now that I’m older**."
+    ],
+    [
+     "Tom",
+     "What’s it about? **The cover** looks a bit gloomy."
+    ],
+    [
+     "Hà",
+     "It’s quite a sad story. It’s **set in** a poor village in northern Vietnam in the 1930s, when Vietnam was **a French colony**."
+    ],
+    [
+     "Tom",
+     "I don’t know much about **that period**. Was life hard back then?"
+    ],
+    [
+     "Hà",
+     "Very hard, especially for farmers. They had to pay a lot of **tax** every year, **even when** they had nothing to eat."
+    ],
+    [
+     "Tom",
+     "So is **the main character** a farmer?"
+    ],
+    [
+     "Hà",
+     "Yes, a farmer’s wife called Chị Dậu. Her husband is very ill, and they **don’t have enough money to** pay the tax, so the village officials **take him away** and beat him."
+    ],
+    [
+     "Tom",
+     "That’s terrible. What does she do?"
+    ],
+    [
+     "Hà",
+     "She **tries everything** to find the money. **In the end**, she **has to** sell her seven-year-old daughter to a rich family."
+    ],
+    [
+     "Tom",
+     "That’s really **dark**."
+    ],
+    [
+     "Hà",
+     "I know. But my **favourite chapter** is when the officials come back for her husband. At first, she asks them **politely** to **leave him alone**, but they don’t listen, so she gets angry and **fights back**."
+    ],
+    [
+     "Tom",
+     "Good for her. She sounds really **brave**."
+    ],
+    [
+     "Hà",
+     "She is. We even have a saying for it: *tức nước vỡ bờ*. It means that if you push people too far, they’ll fight back."
+    ],
+    [
+     "Tom",
+     "**It sounds like** the book really **shows how hard life was** for ordinary people **under French rule**. Is there an English translation? I’d like to read it."
+    ],
+    [
+     "Hà",
+     "I think so. I’ll **look it up** for you."
+    ]
+   ],
+   "vocab": [
+    [
+     "**a classic**",
+     "/ə ˈklæs.ɪk/",
+     "noun",
+     "",
+     "audio/v/c7013a8fb6.mp3"
+    ],
+    [
+     "**now that I’m older**",
+     "/naʊ ðət aɪm ˈəʊl.dər/",
+     "phrase",
+     "",
+     "audio/v/a5c615a589.mp3"
+    ],
+    [
+     "**the cover**",
+     "/ðə ˈkʌv.ər/",
+     "noun",
+     "",
+     "audio/v/e468516cd9.mp3"
+    ],
+    [
+     "**gloomy**",
+     "/ˈɡluː.mi/",
+     "adjective",
+     "",
+     "audio/v/9313089475.mp3"
+    ],
+    [
+     "**be set in** + place/time",
+     "/bi set ɪn/",
+     "phrase",
+     "",
+     "audio/v/c9816230dc.mp3"
+    ],
+    [
+     "**a French colony**",
+     "/ə frentʃ ˈkɒl.ə.ni/",
+     "noun",
+     "",
+     "audio/v/0f1198d6d4.mp3"
+    ],
+    [
+     "**that period**",
+     "/ðæt ˈpɪə.ri.əd/",
+     "noun",
+     "",
+     "audio/v/439fdaf897.mp3"
+    ],
+    [
+     "**tax**",
+     "/tæks/",
+     "noun",
+     "",
+     "audio/v/e8e27c0a09.mp3"
+    ],
+    [
+     "**the main character**",
+     "/ðə meɪn ˈkær.ək.tər/",
+     "noun",
+     "",
+     "audio/v/904656b26c.mp3"
+    ],
+    [
+     "**not have enough money to + V**",
+     "/nɒt hæv ɪˈnʌf ˈmʌn.i tə/",
+     "structure",
+     "",
+     "audio/v/b86cd7aef0.mp3"
+    ],
+    [
+     "**take sb away**",
+     "/teɪk əˈweɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/5af520a9d3.mp3"
+    ],
+    [
+     "**try everything**",
+     "/traɪ ˈev.ri.θɪŋ/",
+     "phrase",
+     "",
+     "audio/v/0a5e397402.mp3"
+    ],
+    [
+     "**in the end**",
+     "/ɪn ði end/",
+     "phrase",
+     "",
+     "audio/v/15c329ad8d.mp3"
+    ],
+    [
+     "**favourite chapter**",
+     "/ˈfeɪ.vər.ɪt ˈtʃæp.tər/",
+     "noun",
+     "",
+     "audio/v/ec3d144066.mp3"
+    ],
+    [
+     "**politely**",
+     "/pəˈlaɪt.li/",
+     "adverb",
+     "",
+     "audio/v/ac4c0d6f50.mp3"
+    ],
+    [
+     "**leave sb alone**",
+     "/liːv əˈləʊn/",
+     "phrase",
+     "",
+     "audio/v/8c799da989.mp3"
+    ],
+    [
+     "**fight back**",
+     "/faɪt bæk/",
+     "phrasal verb",
+     "",
+     "audio/v/e598a69046.mp3"
+    ],
+    [
+     "**a saying**",
+     "/ə ˈseɪ.ɪŋ/",
+     "noun",
+     "",
+     "audio/v/b67a4530a3.mp3"
+    ],
+    [
+     "**push sb too far**",
+     "/pʊʃ tuː fɑː/",
+     "idiom",
+     "",
+     "audio/v/e2d317bb3a.mp3"
+    ],
+    [
+     "**It sounds like + clause**",
+     "/ɪt saʊndz laɪk/",
+     "structure",
+     "",
+     "audio/v/393338a8f9.mp3"
+    ],
+    [
+     "**show how hard life was**",
+     "/ʃəʊ haʊ hɑːd laɪf wɒz/",
+     "phrase",
+     "",
+     "audio/v/0a842757e7.mp3"
+    ],
+    [
+     "**ordinary people**",
+     "/ˈɔː.dən.ri ˈpiː.pəl/",
+     "noun",
+     "",
+     "audio/v/da43c40563.mp3"
+    ],
+    [
+     "**under French rule**",
+     "/ˈʌn.dər frentʃ ruːl/",
+     "phrase",
+     "",
+     "audio/v/fa1f156038.mp3"
+    ],
+    [
+     "**a translation**",
+     "/ə trænsˈleɪ.ʃən/",
+     "noun",
+     "",
+     "audio/v/51c9fd4d53.mp3"
+    ],
+    [
+     "**look sth up**",
+     "/lʊk ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/ad5ea47815.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "Tell someone about a book you’ve read",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What’s the book?**\n(title, author, genre, when you read it)",
+     "• ***It’s… by… / It’s a… novel by…***\n• ***I read it when I was…***\n• ***It’s quite a famous book in…***\n• ***I picked it up because…***"
+    ],
+    [
+     "**Where and when is it set?**\n(place, time, what life was like)",
+     "• ***It’s set in… in the… / during…***\n• ***It's about a woman / a family who…***\n• ***The main character is…***"
+    ],
+    [
+     "**What part do you remember most?**",
+     "• ***I still remember the part when…***\n• ***At first,…, but when…, he / she…***\n• ***My favourite part is when…***"
+    ],
+    [
+     "**What do you think of it?**\n(feeling, message, would you recommend it)",
+     "• ***I found it really interesting / sad / moving / enjoyable.***\n• ***It made me think about…***\n• ***I'd recommend it to people who enjoy…***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Lan meets her friend Tú at a café on Sunday afternoon. Tú has a book in his bag.",
+   "bank": [
+    "stayed in",
+    "a sequel",
+    "look up",
+    "The main character",
+    "gave a great performance",
+    "translation",
+    "not as good as the original",
+    "in the end",
+    "jumped out of my seat",
+    "classic"
+   ],
+   "lines": [
+    [
+     "Lan",
+     "What are you reading?"
+    ],
+    [
+     "Tú",
+     "It’s Dế Mèn phiêu lưu ký. I read it when I was a kid, but now I’m reading the English {translation} to practise my English."
+    ],
+    [
+     "Lan",
+     "Is it difficult?"
+    ],
+    [
+     "Tú",
+     "A bit. I have to {look up} a lot of words in the dictionary."
+    ],
+    [
+     "Lan",
+     "I loved that book. It’s a real {classic}. Everyone in Vietnam knows it."
+    ],
+    [
+     "Tú",
+     "Yeah. {The main character} is a young cricket. He’s strong, but he’s also very proud."
+    ],
+    [
+     "Lan",
+     "And he makes a big mistake at the beginning, right?"
+    ],
+    [
+     "Tú",
+     "Yes, and his neighbour dies because of it. But {in the end}, he learns to be kind and help others."
+    ],
+    [
+     "Lan",
+     "Did you do anything else this weekend?"
+    ],
+    [
+     "Tú",
+     "Not much. On Saturday, I {stayed in} and watched a horror film on Netflix."
+    ],
+    [
+     "Lan",
+     "Was it scary?"
+    ],
+    [
+     "Tú",
+     "Very. I {jumped out of my seat} three times, and my cat ran away."
+    ],
+    [
+     "Lan",
+     "Who was in it?"
+    ],
+    [
+     "Tú",
+     "I didn’t know any of the actors, but they all {gave a great performance}. Even the little girl was brilliant."
+    ],
+    [
+     "Lan",
+     "Is it a new film?"
+    ],
+    [
+     "Tú",
+     "It’s actually {a sequel}. The first one came out in 2019."
+    ],
+    [
+     "Lan",
+     "So, is it good?"
+    ],
+    [
+     "Tú",
+     "It’s OK, but it’s {not as good as the original}. The first film was much scarier."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to a short film review, then do Parts A and B.",
+   "podcast": "🎧 Film Friday: Home Alone",
+   "audio": "audio/a2-movies.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "",
+     "text": "Hi, and welcome to Film Friday. Today I want to talk about an old favourite: Home Alone. It came out in ==1990==, but ==my family still watches it together every Christmas==."
+    },
+    {
+     "t": 13.8,
+     "who": "",
+     "text": "The main character is Kevin, an ==eight==-year-old boy from a big family. The night before a family trip to Paris, Kevin gets into trouble and has to sleep alone in the attic. ==The next morning, everyone wakes up late and rushes to the airport. In the end, they fly to France without him.=="
+    },
+    {
+     "t": 33.4,
+     "who": "",
+     "text": "==At first, Kevin is really happy.== He eats junk food, watches films and jumps on his parents' bed. But then two ==burglars== try to break into the house, and Kevin decides to protect it on his own. He sets up lots of funny ==traps==, and the second half of the film is really fast-paced."
+    },
+    {
+     "t": 53.3,
+     "who": "",
+     "text": "When I was a kid, the traps were my favourite part. ==Now that I'm older, I like a different part: Kevin's mum. She tries everything to get home to her son==, and she even travels across the country in a ==van== with a band. That part always makes me a bit emotional."
+    },
+    {
+     "t": 70.3,
+     "who": "",
+     "text": "There's also an old neighbour who all the kids are scared of. I won't give it away, but ==he's not the person Kevin thinks he is==."
+    },
+    {
+     "t": 78.3,
+     "who": "",
+     "text": "My only problem is the burglars. ==They get hurt so many times that it becomes a bit silly.== Still, it's the perfect Christmas film. ==Nine== out of ten from me."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2A: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why does the speaker watch Home Alone every year?",
+     "options": [
+      "It’s her brother’s favourite film.",
+      "It’s something her family does together at Christmas.",
+      "It’s always on TV in December."
+     ],
+     "answer": 1,
+     "why": "“My family still watches it together every Christmas.”"
+    },
+    {
+     "q": "Why is Kevin left at home?",
+     "options": [
+      "His parents think he is too young to travel.",
+      "He hides in the attic because he doesn’t want to go.",
+      "His family is in a hurry and forgets about him."
+     ],
+     "answer": 2,
+     "why": "“Everyone wakes up late and rushes to the airport. In the end, they fly to France without him.”"
+    },
+    {
+     "q": "How does Kevin feel when he first finds out he is alone?",
+     "options": [
+      "Pleased",
+      "Scared",
+      "Lonely"
+     ],
+     "answer": 0,
+     "why": "“At first, Kevin is really happy.”"
+    },
+    {
+     "q": "Which part of the film does the speaker like most now?",
+     "options": [
+      "The traps Kevin sets for the burglars",
+      "The way Kevin’s mum tries to get back to him",
+      "The scenes of the family in Paris"
+     ],
+     "answer": 1,
+     "why": "“Now that I’m older, I like a different part: Kevin’s mum. She tries everything to get home to her son.”"
+    },
+    {
+     "q": "What do we learn about the old neighbour?",
+     "options": [
+      "He is one of the burglars.",
+      "Kevin has the wrong idea about him.",
+      "He travels home with Kevin’s mum."
+     ],
+     "answer": 1,
+     "why": "“He’s not the person Kevin thinks he is.”"
+    },
+    {
+     "q": "What doesn’t the speaker like about the film?",
+     "options": [
+      "It’s a bit too long.",
+      "The burglars’ injuries aren’t realistic.",
+      "The ending is quite sad."
+     ],
+     "answer": 1,
+     "why": "“They get hurt so many times that it becomes a bit silly.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 2B: Complete the summary",
+   "instructions": "Write ONE word or a number for each blank.",
+   "text": "Home Alone came out in {1990}. Kevin is {eight|8} years old. His family flies to {France|Paris} without him. Two {burglars} try to get into the house, so Kevin makes lots of funny {traps}. Kevin’s mum travels home in a {van} with a band. The speaker gives the film {nine|9} out of ten."
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Recording (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking.",
+   "options": [
+    {
+     "title": "Talk about a film you watched recently.",
+     "questions": [
+      "What’s the film, and what type of film is it?",
+      "Who is the main character? What’s the story about? (No spoilers!)",
+      "What did you think of the actors?",
+      "Was there a scary, sad or funny scene? How did you feel?",
+      "Would you recommend it?"
+     ],
+     "use": "the main character, the plot, fast-paced, give a great performance, jump out of your seat, be in tears."
+    },
+    {
+     "title": "Tell me about a book you read at school.",
+     "questions": [
+      "What’s the book, and who wrote it?",
+      "Where and when is it set?",
+      "Who is the main character, and what happens to him or her?",
+      "What’s your favourite part?",
+      "What do you think of the book now?"
+     ],
+     "use": "a classic, be set in, the main character, in the end, my favourite part is when…, It made me think about…"
+    },
+    {
+     "title": "Do you prefer watching films at the cinema or at home?",
+     "questions": [
+      "When did you last go to the cinema? What did you watch?",
+      "What’s good about watching films at the cinema?",
+      "What’s good about staying in and watching films at home?",
+      "So which do you prefer, and why?"
+     ],
+     "use": "stay in, action scenes, look so real, hold your breath, I’d rather… than…, be worth it."
+    }
+   ]
+  }
+ ]
+}

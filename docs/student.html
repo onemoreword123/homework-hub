@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneMoreWord Homework Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="#/">OneMoreWord <span>Homework Hub</span></a>
+  <span class="who" id="who"></span>
+  <button id="out">Log out</button>
+</div></header>
+<main class="wrap" id="main"><p class="muted" style="padding:30px 0">Loading…</p></main>
+
+<script type="module">
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js";
+import { renderLesson, renderHomework } from "./js/topic.js";
+import { renderRecording } from "./js/recorder.js";
+import { feedbackView } from "./js/feedback.js";
+
+const main = document.getElementById("main");
+document.getElementById("out").onclick = signOut;
+const { user, profile } = await requireUser("student");
+const c = await sb();
+const { data: cls } = await c.from("classes").select("*").eq("id", profile.class_id).maybeSingle();
+document.getElementById("who").textContent = `${profile.full_name}${cls ? " · " + cls.name : ""}`;
+
+async function mySubs() {
+  const { data } = await c.from("submissions").select("*").eq("student_id", user.id);
+  return Object.fromEntries((data || []).map((s) => [s.topic_id, s]));
+}
+
+async function list() {
+  const [index, { data: open }, subs] = await Promise.all([loadTopicIndex(), c.from("class_topics").select("*").eq("class_id", profile.class_id), mySubs()]);
+  const openSet = new Set((open || []).map((o) => o.topic_id));
+  const topics = index.filter((t) => openSet.has(t.id)).reverse(); // course order, latest lesson first
+  main.innerHTML = `<div class="card" style="margin-bottom:0"><div class="tag">${esc(cls?.name || "")} ${cls?.level ? "· " + esc(cls.level) : ""}</div><h2>Hi ${esc(profile.full_name.split(" ")[0])}!</h2><p class="muted">Here's your homework. The latest lesson is first.</p></div>
+    ${topics.length ? `<div class="topics">${topics.map((t) => {
+      const s = subs[t.id] || {};
+      const hasHw = t.homework !== false;
+      const ex = !hasHw ? `<span class="pill">📖 Lesson notes</span>` : s.exercises_submitted_at ? `<span class="pill ok">Exercises ${s.score}/${s.max_score}</span>` : `<span class="pill warn">Exercises to do</span>`;
+      const rec = !hasHw ? "" : s.recording_path ? `<span class="pill ok">🎤 Sent</span>` : `<span class="pill warn">🎤 To do</span>`;
+      const fb = s.reviewed_at ? `<span class="pill accent">💬 Feedback</span>` : "";
+      return `<a class="topic-card" href="#/t/${esc(t.id)}"><div class="emoji">${t.emoji || "📘"}</div><h3>${esc(t.title)}</h3><div class="status">${ex}${rec}${fb}</div></a>`;
+    }).join("")}</div>` : `<div class="card"><p>No homework yet. Your teacher will open topics here after each class.</p></div>`}`;
+}
+
+async function topicPage(id, tab) {
+  const topic = await loadTopic(id);
+  const hasHw = topic.homework?.length > 0;
+  tab = tab || (hasHw ? "homework" : "lesson");
+  let sub = (await mySubs())[id] || null;
+  main.innerHTML = `<div style="padding-top:18px"><a href="#/" class="small">← All homework</a></div>
+    <h1 style="font-size:32px;margin:8px 0 4px">${topic.emoji || ""} ${esc(topic.title)}</h1>
+    <div class="tabs">${topic.lesson?.length ? `<button data-tab="lesson">📖 Lesson notes</button>` : ""}<button data-tab="homework">✏️ Homework</button>${sub?.reviewed_at ? `<button data-tab="feedback">💬 Feedback</button>` : ""}</div>
+    <div id="pane"></div>`;
+  const pane = document.getElementById("pane");
+  const tabs = main.querySelectorAll(".tabs button");
+  const show = async (t) => {
+    tabs.forEach((b) => b.classList.toggle("on", b.dataset.tab === t));
+    if (t === "lesson") return renderLesson(pane, topic);
+    if (t === "feedback") return feedback(pane);
+    await homework(pane);
+  };
+  tabs.forEach((b) => (b.onclick = () => show(b.dataset.tab)));
+
+  function feedback(el) {
+    el.innerHTML = `<div class="card"><h2>Feedback from your teacher</h2><div class="feedback">${sub.teacher_mark ? `<div class="mark">${esc(sub.teacher_mark)}</div>` : ""}${feedbackView(sub.teacher_comment)}<div class="small muted" style="margin-top:8px">Reviewed ${fmtDate(sub.reviewed_at)}</div></div></div>`;
+  }
+
+  async function homework(el) {
+    el.innerHTML = "";
+    if (!hasHw) { el.innerHTML = `<div class="card"><h2>Homework coming soon</h2><p class="muted">Your teacher hasn't added the homework for this lesson yet. Check back later!</p></div>`; return; }
+    if (sub?.reviewed_at) el.insertAdjacentHTML("beforeend", `<div class="feedback" style="margin-top:18px">💬 Your teacher left feedback${sub.teacher_mark ? `: <b>${esc(sub.teacher_mark)}</b>` : ""}. <a href="#" data-fb>Read it</a></div>`);
+    const ex = document.createElement("div"); el.appendChild(ex);
+    const recEl = document.createElement("div"); el.appendChild(recEl);
+    const locked = !!sub?.exercises_submitted_at;
+    const { recording } = renderHomework(ex, topic, {
+      answers: sub?.answers, locked, showScript: locked,
+      onSubmit: async (answers, score, max) => {
+        const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: id, answers, score, max_score: max }, { onConflict: "student_id,topic_id" }).select().single();
+        if (error) throw error;
+        sub = data; toast(`Submitted! Your score: ${score} / ${max}`);
+        await homework(el); window.scrollTo({ top: 0, behavior: "smooth" });
+      },
+    });
+    el.querySelector("[data-fb]")?.addEventListener("click", (e) => { e.preventDefault(); show("feedback"); });
+    if (recording) {
+      const saveRec = async (blob, ext, option) => {
+        const path = `${user.id}/${id}-${Date.now()}.${ext}`;
+        const up = await c.storage.from("recordings").upload(path, blob, { contentType: blob.type || "audio/webm", upsert: false });
+        if (up.error) throw up.error;
+        const old = sub?.recording_path;
+        const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: id, recording_path: path, recording_option: String(option) }, { onConflict: "student_id,topic_id" }).select().single();
+        if (error) throw error;
+        if (old && old !== path) c.storage.from("recordings").remove([old]);
+        sub = data; toast("Recording submitted 🎉");
+        renderRecording(recEl, recording, { submission: sub, locked: false, currentUrl: await signedUrl(path), onSave: saveRec });
+      };
+      renderRecording(recEl, recording, { submission: sub, locked: !!sub?.reviewed_at, currentUrl: await signedUrl(sub?.recording_path), onSave: saveRec });
+    }
+  }
+  show(tab);
+}
+
+async function route() {
+  const m = location.hash.match(/^#\/t\/([\w-]+)/);
+  try { m ? await topicPage(m[1]) : await list(); }
+  catch (e) { main.innerHTML = `<div class="card"><h2>Something went wrong</h2><p>${esc(e.message)}</p><a href="#/">Back</a></div>`; }
+  window.scrollTo(0, 0);
+}
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>

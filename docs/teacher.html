@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneMoreWord Homework Hub · Teacher</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="topbar"><div class="wrap wide">
+  <span class="brand">OneMoreWord <span>Homework Hub</span> · Teacher</span>
+  <span class="who" id="who"></span>
+  <button id="out">Log out</button>
+</div></header>
+
+<main class="wrap wide">
+  <div class="classbar" id="classbar"></div>
+  <div class="tabs" id="tabs">
+    <button data-tab="progress" class="on">📊 Progress</button>
+    <button data-tab="topics">📚 Topics</button>
+    <button data-tab="students">👥 Students</button>
+  </div>
+  <div id="pane"><p class="muted">Loading…</p></div>
+</main>
+
+<div class="overlay hidden" id="overlay"><div class="drawer">
+  <div class="drawer-head"><h2 id="dtitle"></h2><button id="dclose">Close ✕</button></div>
+  <div class="inner" id="dbody"></div>
+</div></div>
+
+<script type="module">
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js";
+import { feedbackEditor, plainText } from "./js/feedback.js";
+
+document.getElementById("out").onclick = signOut;
+const { profile, session } = await requireUser("teacher");
+document.getElementById("who").textContent = profile.full_name;
+const c = await sb();
+const pane = document.getElementById("pane");
+const index = await loadTopicIndex();
+const S = { classes: [], classId: localStorage.getItem("hh.class") || null, tab: "progress" };
+
+/* ---------- helpers ---------- */
+async function admin(action, payload) {
+  const { data, error } = await c.functions.invoke("admin", { body: { action, ...payload } });
+  if (error) throw new Error(error.message?.includes("Failed to send") ? "Couldn't reach the account service. Check that the Supabase function \"admin\" is deployed." : error.message);
+  if (data?.error) throw new Error(data.error);
+  return data;
+}
+const must = ({ data, error }) => { if (error) throw error; return data; };
+const cls = () => S.classes.find((k) => k.id === S.classId);
+const topicMeta = (id) => index.find((t) => t.id === id) || { id, title: id, emoji: "📘" };
+const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/gi, "d").toLowerCase().replace(/[^a-z0-9]+/g, "");
+const genPass = () => { const w = ["sun", "tea", "cat", "sky", "map", "pen", "owl", "fig", "jam", "kite", "leaf", "moon", "star", "wave"]; return w[Math.floor(Math.random() * w.length)] + (1000 + Math.floor(Math.random() * 9000)); };
+
+/* ---------- classes ---------- */
+async function loadClasses() {
+  S.classes = must(await c.from("classes").select("*").order("name"));
+  if (!S.classes.find((k) => k.id === S.classId)) S.classId = S.classes[0]?.id || null;
+  const bar = document.getElementById("classbar");
+  bar.innerHTML = S.classes.map((k) => `<button data-id="${k.id}" class="${k.id === S.classId ? "on" : ""}">${esc(k.name)} ${k.level ? `<span class="small" style="opacity:.7">${esc(k.level)}</span>` : ""}</button>`).join("") +
+    `<button class="ghost sm" id="newclass">+ New class</button><button class="ghost sm" id="export" style="margin-left:auto">⬇ Export all (CSV)</button>`;
+  bar.querySelectorAll("[data-id]").forEach((b) => (b.onclick = () => { S.classId = b.dataset.id; localStorage.setItem("hh.class", S.classId); loadClasses().then(render); }));
+  document.getElementById("newclass").onclick = async () => {
+    const name = prompt("Class name (e.g. Oi10)"); if (!name) return;
+    const level = prompt("Level (e.g. A2, B1)", "") || null;
+    try { const k = must(await c.from("classes").insert({ name: name.trim(), level }).select().single()); S.classId = k.id; await loadClasses(); render(); }
+    catch (e) { alert(e.message); }
+  };
+  document.getElementById("export").onclick = exportCsv;
+}
+
+document.querySelectorAll("#tabs button").forEach((b) => (b.onclick = () => { S.tab = b.dataset.tab; document.querySelectorAll("#tabs button").forEach((x) => x.classList.toggle("on", x === b)); render(); }));
+
+async function classData() {
+  const students = must(await c.from("profiles").select("*").eq("class_id", S.classId).eq("role", "student").order("full_name"));
+  const pos = (id) => { const i = index.findIndex((t) => t.id === id); return i < 0 ? 999 : i; };
+  const opened = must(await c.from("class_topics").select("*").eq("class_id", S.classId)).sort((a, b) => pos(a.topic_id) - pos(b.topic_id));
+  const ids = students.map((s) => s.id);
+  const subs = ids.length ? must(await c.from("submissions").select("*").in("student_id", ids)) : [];
+  return { students, opened, subs };
+}
+
+async function render() {
+  if (!S.classId) { pane.innerHTML = `<div class="card"><p>No classes yet. Click “+ New class”.</p></div>`; return; }
+  pane.innerHTML = `<p class="muted">Loading…</p>`;
+  try {
+    if (S.tab === "progress") await progress();
+    if (S.tab === "topics") await topics();
+    if (S.tab === "students") await students();
+  } catch (e) { pane.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; }
+}
+
+/* ---------- progress ---------- */
+async function progress() {
+  const { students, opened, subs } = await classData();
+  if (!students.length || !opened.length) {
+    pane.innerHTML = `<div class="card"><h2>${esc(cls().name)}</h2><p>${!students.length ? "No students yet. Add them in the <b>Students</b> tab." : ""} ${!opened.length ? "No topics open yet. Open one in the <b>Topics</b> tab." : ""}</p></div>`;
+    return;
+  }
+  const byKey = Object.fromEntries(subs.map((s) => [s.student_id + "|" + s.topic_id, s]));
+  const toReview = subs.filter((s) => (s.exercises_submitted_at || s.recording_path) && !s.reviewed_at && opened.some((o) => o.topic_id === s.topic_id)).length;
+  pane.innerHTML = `<div class="card">
+    <div style="display:flex;gap:10px;align-items:baseline;flex-wrap:wrap"><h2>${esc(cls().name)} · Progress</h2>${toReview ? `<span class="pill accent">${toReview} waiting for review</span>` : `<span class="pill ok">All reviewed</span>`}</div>
+    <p class="small muted">Click a cell to see answers, listen to the recording and leave feedback. <span class="cell none">–</span> not started · <span class="cell done">submitted</span> · <span class="cell reviewed">reviewed ✓</span></p>
+    <div class="grid-wrap"><table class="grid"><tr><th>Student</th>${opened.map((o) => { const t = topicMeta(o.topic_id); return `<th>${t.emoji || ""} ${esc(t.title)}${t.level ? ` <span class="pill">${esc(t.level)}</span>` : ""}</th>`; }).join("")}</tr>
+    ${students.map((st) => `<tr><td><b>${esc(st.full_name)}</b><br><span class="small muted">${esc(st.username)}</span></td>${opened.map((o) => {
+      const s = byKey[st.id + "|" + o.topic_id];
+      const state = !s || (!s.exercises_submitted_at && !s.recording_path) ? "none" : s.reviewed_at ? "reviewed" : "done";
+      const txt = state === "none" ? "–" : `${s.exercises_submitted_at ? `${s.score}/${s.max_score}` : "—"} ${s.recording_path ? "🎤" : ""} ${s.reviewed_at ? "✓" : s.teacher_comment ? "📝" : ""}`;
+      return `<td><span class="cell ${state}" data-st="${st.id}" data-t="${esc(o.topic_id)}">${txt}</span></td>`;
+    }).join("")}</tr>`).join("")}</table></div></div>`;
+  pane.querySelectorAll(".cell[data-st]").forEach((el) => (el.onclick = () => review(students.find((s) => s.id === el.dataset.st), el.dataset.t, byKey[el.dataset.st + "|" + el.dataset.t])));
+}
+
+/* ---------- review drawer ---------- */
+const overlay = document.getElementById("overlay"), dbody = document.getElementById("dbody");
+const closeDrawer = () => { overlay.classList.add("hidden"); dbody.innerHTML = ""; document.body.style.overflow = ""; };
+document.getElementById("dclose").onclick = closeDrawer;
+overlay.onclick = (e) => { if (e.target === overlay) closeDrawer(); };
+function openDrawer(title) { document.getElementById("dtitle").textContent = title; dbody.innerHTML = `<p class="muted">Loading…</p>`; overlay.classList.remove("hidden"); document.body.style.overflow = "hidden"; overlay.querySelector(".drawer").scrollTop = 0; }
+
+async function review(st, topicId, sub) {
+  const topic = await loadTopic(topicId);
+  openDrawer(`${st.full_name} · ${topic.title}`);
+  sub = sub || {};
+  const recSec = topic.homework.find((s) => s.type === "recording");
+  const opt = recSec && sub.recording_option != null ? recSec.options[+sub.recording_option] : null;
+  const url = await signedUrl(sub.recording_path);
+  dbody.innerHTML = `
+    <section class="card"><h2>🎤 Speaking</h2>
+      ${sub.recording_path ? `<p class="small muted">Submitted ${fmtDate(sub.recording_submitted_at)}${opt ? ` · <b>${recSec.options.length > 1 ? `Option ${+sub.recording_option + 1}: ` : ""}${esc(opt.title)}</b>` : ""}</p>${url ? `<audio controls src="${esc(url)}"></audio><a class="small" href="${esc(url)}" download>Download</a>` : `<div class="notice warn">Couldn't load the audio file.</div>`}` : `<p class="muted">No recording yet.</p>`}
+    </section>
+    <section class="card"><h2>💬 Feedback</h2>
+      ${sub.reviewed_at ? `<div class="notice ok small">Published ${fmtDate(sub.reviewed_at)}. The student can see this feedback, and their recording is locked.</div>` : `<p class="small muted"><b>Save draft</b> keeps your work private. <b>Publish</b> shows it to the student and locks their recording.</p>`}
+      <div class="formrow"><div style="max-width:160px"><label class="field">Mark (optional)</label><input type="text" id="fmark" placeholder="e.g. 8/10 or B+" value="${esc(sub.teacher_mark || "")}"></div></div>
+      <div id="fed"></div>
+      <div class="submitbar" style="margin-top:16px"><button class="accent" id="fsave" ${sub.id ? "" : "disabled"}>${sub.reviewed_at ? "Update feedback" : "Publish feedback"}</button>${sub.id && !sub.reviewed_at ? `<button class="ghost" id="fdraft">Save draft</button>` : ""}${sub.reviewed_at ? `<button class="ghost" id="funlock">Unpublish (let student re-record)</button>` : ""}${!sub.id ? `<span class="small muted">Nothing submitted yet.</span>` : ""}</div>
+    </section>
+    <section class="card"><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h2>✏️ Exercises</h2>${sub.exercises_submitted_at ? `<span class="pill ok">${sub.score} / ${sub.max_score}</span><span class="small muted">${fmtDate(sub.exercises_submitted_at)}</span><button class="ghost sm" id="redo" style="margin-left:auto">Allow redo</button>` : `<span class="pill warn">Not submitted</span>`}</div></section>
+    <div id="rex"></div>`;
+  const editor = feedbackEditor(sub.teacher_comment || "");
+  dbody.querySelector("#fed").appendChild(editor.el);
+  if (sub.exercises_submitted_at) renderHomework(dbody.querySelector("#rex"), topic, { answers: sub.answers, locked: true, showScript: true });
+
+  const save = async (patch, msg) => {
+    try { must(await c.from("submissions").update(patch).eq("id", sub.id)); toast(msg); closeDrawer(); render(); }
+    catch (e) { alert(e.message); }
+  };
+  const fields = () => ({ teacher_mark: dbody.querySelector("#fmark").value.trim() || null, teacher_comment: editor.value() });
+  dbody.querySelector("#fsave")?.addEventListener("click", () => save({ ...fields(), reviewed_at: new Date().toISOString() }, "Feedback published"));
+  dbody.querySelector("#fdraft")?.addEventListener("click", () => save(fields(), "Draft saved (not visible to the student yet)"));
+  dbody.querySelector("#funlock")?.addEventListener("click", () => save({ reviewed_at: null }, "Unlocked. The student can re-record, and the feedback is hidden until you save it again."));
+  dbody.querySelector("#redo")?.addEventListener("click", () => { if (confirm(`Clear ${st.full_name}'s exercise answers so they can do them again? Their recording stays.`)) save({ answers: null, score: null, max_score: null, exercises_submitted_at: null }, "Exercises reset"); });
+}
+
+/* ---------- topics ---------- */
+async function topics() {
+  const k = cls();
+  const opened = must(await c.from("class_topics").select("*").eq("class_id", S.classId));
+  const isOpen = (id) => opened.some((o) => o.topic_id === id);
+  const mine = index.filter((t) => !k.level || !t.level || t.level === k.level);
+  const others = index.filter((t) => !mine.includes(t));
+  const row = (t) => `<div class="toggle-row"><div>${t.emoji || "📘"} <b>${esc(t.title)}</b> ${t.level ? `<span class="pill">${esc(t.level)}</span>` : ""} <button class="ghost sm" data-preview="${esc(t.id)}">Preview & answer key</button></div>
+    <label class="switch" title="Open for ${esc(k.name)}"><input type="checkbox" data-id="${esc(t.id)}" ${isOpen(t.id) ? "checked" : ""}><span></span></label></div>`;
+  pane.innerHTML = `<div class="card"><h2>${esc(k.name)} · Topics</h2><p class="small muted">Switch a topic on to make it appear for students in ${esc(k.name)}. Turning it off hides it but keeps their answers.</p>
+    ${!index.length ? `<p class="muted">No topics uploaded yet. Send your topic files to Claude to add them here.</p>` : ""}
+    ${mine.map(row).join("")}
+    ${others.length ? `<h3>Other levels</h3>${others.map(row).join("")}` : ""}</div>`;
+  pane.querySelectorAll("input[data-id]").forEach((cb) => (cb.onchange = async () => {
+    try {
+      if (cb.checked) must(await c.from("class_topics").insert({ class_id: S.classId, topic_id: cb.dataset.id }));
+      else must(await c.from("class_topics").delete().eq("class_id", S.classId).eq("topic_id", cb.dataset.id));
+      toast(cb.checked ? "Topic opened" : "Topic hidden");
+    } catch (e) { cb.checked = !cb.checked; alert(e.message); }
+  }));
+  pane.querySelectorAll("[data-preview]").forEach((b) => (b.onclick = () => preview(b.dataset.preview)));
+}
+
+async function preview(id) {
+  const topic = await loadTopic(id);
+  openDrawer(`Preview · ${topic.title}`);
+  const key = {};
+  topic.homework.forEach((s, i) => { if (["gapselect", "gaptype", "mcq"].includes(s.type)) key["s" + i] = answerKey(s).map((a) => (s.type === "mcq" ? a[0] : a[0])); });
+  dbody.innerHTML = `<div class="notice small">This is what students see after submitting, filled with the correct answers.</div><div id="ph"></div><h2 style="margin:30px 0 0">Lesson notes</h2><div id="pl"></div>`;
+  const { recording } = renderHomework(dbody.querySelector("#ph"), topic, { answers: key, locked: true, showScript: true });
+  if (recording) dbody.querySelector("#ph").insertAdjacentHTML("beforeend", `<section class="card"><h2>${esc(recording.title)}</h2><p class="small muted">${esc(recording.instructions || "")}</p>${recording.options.map((o, i) => `<p><b>${recording.options.length > 1 ? `Option ${i + 1}: ` : ""}${esc(o.title)}</b><br>${o.choices?.length ? `<span class="small">Choose one: ${o.choices.map(esc).join(" · ")}</span><br>` : ""}<span class="small muted">${o.questionsLabel ? esc(o.questionsLabel) + " " : ""}${o.questions.map(esc).join(" · ")}</span></p>`).join("")}</section>`);
+  renderLesson(dbody.querySelector("#pl"), topic);
+}
+
+/* ---------- students ---------- */
+async function students() {
+  const k = cls();
+  const list = must(await c.from("profiles").select("*").eq("class_id", S.classId).eq("role", "student").order("full_name"));
+  pane.innerHTML = `<div class="card"><h2>${esc(k.name)} · Students</h2>
+    ${list.length ? `<table class="t"><tr><th>Name</th><th>Username</th><th></th></tr>${list.map((s) => `<tr><td><b>${esc(s.full_name)}</b></td><td><code>${esc(s.username)}</code></td><td style="text-align:right;white-space:nowrap">
+      <button class="ghost sm" data-reset="${s.id}">Reset password</button>
+      <select class="sm" data-move="${s.id}" style="font-size:13px;padding:3px 6px"><option value="">Move to…</option>${S.classes.filter((x) => x.id !== S.classId).map((x) => `<option value="${x.id}">${esc(x.name)}</option>`).join("")}</select>
+      <button class="danger sm" data-del="${s.id}">Remove</button></td></tr>`).join("")}</table>` : `<p class="muted">No students in this class yet.</p>`}
+    <h3>Add a student</h3>
+    <div class="formrow">
+      <div><label class="field">Full name</label><input type="text" id="nname" placeholder="Nguyễn Văn An"></div>
+      <div><label class="field">Username</label><input type="text" id="nuser" autocapitalize="none" spellcheck="false"></div>
+      <div><label class="field">Password</label><input type="text" id="npass" value="${genPass()}"></div>
+      <div style="flex:0"><button id="nadd">Add</button></div>
+    </div>
+    <div id="cred"></div></div>`;
+  const nname = pane.querySelector("#nname"), nuser = pane.querySelector("#nuser");
+  let touched = false;
+  nuser.oninput = () => (touched = true);
+  nname.oninput = () => { if (touched) return; const parts = nname.value.trim().split(/\s+/); nuser.value = parts.length && parts[0] ? `${slug(parts[parts.length - 1])}.${slug(k.name)}` : ""; };
+  pane.querySelector("#nadd").onclick = async (e) => {
+    const full_name = nname.value.trim(), username = nuser.value.trim().toLowerCase(), password = pane.querySelector("#npass").value.trim();
+    if (!full_name || !username || password.length < 6) return alert("Fill in name, username and a password of at least 6 characters.");
+    if (!/^[a-z0-9._-]{3,30}$/.test(username)) return alert("Username: 3–30 characters, only letters, numbers, dots, dashes.");
+    e.target.disabled = true;
+    try {
+      await admin("create_student", { full_name, username, password, class_id: S.classId });
+      await students();
+      showCred(full_name, username, password);
+    } catch (err) { alert(err.message); e.target.disabled = false; }
+  };
+  pane.querySelectorAll("[data-reset]").forEach((b) => (b.onclick = async () => {
+    const s = list.find((x) => x.id === b.dataset.reset);
+    const password = prompt(`New password for ${s.full_name} (min 6 characters):`, genPass()); if (!password) return;
+    try { await admin("reset_password", { user_id: s.id, password }); showCred(s.full_name, s.username, password); } catch (err) { alert(err.message); }
+  }));
+  pane.querySelectorAll("[data-move]").forEach((sel) => (sel.onchange = async () => {
+    if (!sel.value) return;
+    const s = list.find((x) => x.id === sel.dataset.move), to = S.classes.find((x) => x.id === sel.value);
+    if (!confirm(`Move ${s.full_name} to ${to.name}?`)) { sel.value = ""; return; }
+    try { must(await c.from("profiles").update({ class_id: to.id }).eq("id", s.id)); toast("Moved"); students(); } catch (err) { alert(err.message); }
+  }));
+  pane.querySelectorAll("[data-del]").forEach((b) => (b.onclick = async () => {
+    const s = list.find((x) => x.id === b.dataset.del);
+    if (!confirm(`Remove ${s.full_name}? This permanently deletes their login, all their answers and recordings. This can't be undone.`)) return;
+    try { await admin("delete_student", { user_id: s.id }); toast("Student removed"); students(); } catch (err) { alert(err.message); }
+  }));
+}
+function showCred(name, username, password) {
+  const box = pane.querySelector("#cred");
+  const text = `OneMoreWord Homework Hub\n${location.origin}\nUsername: ${username}\nPassword: ${password}`;
+  box.innerHTML = `<div class="notice ok" style="margin-top:16px"><b>Give these to ${esc(name)}:</b><div class="cred">${esc(text)}</div><button class="sm" id="copy">Copy</button></div>`;
+  box.querySelector("#copy").onclick = () => navigator.clipboard.writeText(text).then(() => toast("Copied"));
+}
+
+/* ---------- export ---------- */
+async function exportCsv() {
+  const profiles = must(await c.from("profiles").select("*").eq("role", "student"));
+  const subs = must(await c.from("submissions").select("*"));
+  const pmap = Object.fromEntries(profiles.map((p) => [p.id, p])), cmap = Object.fromEntries(S.classes.map((k) => [k.id, k.name]));
+  const q = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+  const rows = [["Class", "Student", "Username", "Topic", "Score", "Max", "Exercises submitted", "Recording", "Recording submitted", "Mark", "Comment", "Reviewed", "Answers (raw)"]];
+  subs.forEach((s) => { const p = pmap[s.student_id] || {}; rows.push([cmap[p.class_id], p.full_name, p.username, topicMeta(s.topic_id).title + (topicMeta(s.topic_id).level ? ` (${topicMeta(s.topic_id).level})` : ""), s.score, s.max_score, s.exercises_submitted_at, s.recording_path ? "yes" : "", s.recording_submitted_at, s.teacher_mark, plainText(s.teacher_comment), s.reviewed_at, s.answers ? JSON.stringify(s.answers) : ""]); });
+  const blob = new Blob(["﻿" + rows.map((r) => r.map(q).join(",")).join("\n")], { type: "text/csv" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `homework-hub-${new Date().toISOString().slice(0, 10)}.csv`; a.click();
+}
+
+await loadClasses();
+render();
+</script>
+</body>
+</html>

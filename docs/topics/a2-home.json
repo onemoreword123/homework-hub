@@ -1,0 +1,824 @@
+{
+ "id": "a2-home",
+ "title": "Home and living spaces",
+ "level": "A2",
+ "emoji": "🏠",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-home.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "vocab",
+   "label": "🧠 How to expand your answers",
+   "title": "Types of homes",
+   "rows": [
+    [
+     "a flat / an apartment",
+     "/flæt/ /əˈpɑːt.mənt/",
+     "căn hộ",
+     "audio/v/c8f47782b8.mp3"
+    ],
+    [
+     "a studio (flat)",
+     "/ˈstjuː.di.əʊ/",
+     "căn hộ studio (1 phòng chung)",
+     "audio/v/4c56167012.mp3"
+    ],
+    [
+     "a terraced house",
+     "/ˌter.əst ˈhaʊs/",
+     "nhà phố liền kề",
+     "audio/v/f256d2da61.mp3"
+    ],
+    [
+     "a detached house",
+     "/dɪˌtætʃt ˈhaʊs/",
+     "nhà biệt lập",
+     "audio/v/0ead54ebda.mp3"
+    ],
+    [
+     "a shared house",
+     "/ʃeəd haʊs/",
+     "nhà ở ghép",
+     "audio/v/9fc5af43a6.mp3"
+    ],
+    [
+     "a landlord / a tenant",
+     "/ˈlænd.lɔːd/ /ˈten.ənt/",
+     "chủ nhà / người thuê nhà",
+     "audio/v/5c470aa2f1.mp3"
+    ],
+    [
+     "rent / a deposit / a mortgage",
+     "/rent/ /dɪˈpɒz.ɪt/ /ˈmɔː.ɡɪdʒ/",
+     "tiền thuê / tiền đặt cọc, tiền trả trước / khoản vay mua nhà",
+     "audio/v/928ed90287.mp3"
+    ],
+    [
+     "a minimalist / a maximalist",
+     "/ˈmɪn.ɪ.məl.ɪst/ /ˈmæk.sɪ.məl.ɪst/",
+     "người theo lối sống tối giản / người thích bày biện nhiều đồ",
+     "audio/v/d63bb246ad.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "grammar",
+   "title": "Weighing up and imagining",
+   "rows": [
+    {
+     "structure": "While + clause, + clause",
+     "examples": [
+      "**While** living alone is relaxing, it’s much more expensive."
+     ],
+     "note": "Nối hai ý trái ngược"
+    },
+    {
+     "structure": "…, but… / Although + clause, + clause",
+     "examples": [
+      "**Living** alone is quiet, **but** it’s expensive.",
+      "**Although** living alone is quiet, it’s expensive."
+     ],
+     "note": "Nối hai ý trái ngược"
+    },
+    {
+     "structure": "X matters more (to me) than Y / X is more important (to me) than Y",
+     "examples": [
+      "Freedom **matters more to me than** money.",
+      "Freedom **is more important to me** than money."
+     ],
+     "note": "Nói điều quan trọng hơn"
+    },
+    {
+     "structure": "I’d rather + V + than + V",
+     "examples": [
+      "**I’d rather** pay more **than** share a bathroom with four people."
+     ],
+     "note": "Nói lựa chọn ưu tiên"
+    },
+    {
+     "structure": "If + past simple, would / could + V (2nd conditional)",
+     "examples": [
+      "**If** I **moved** back in with my parents, I **could** save for a deposit."
+     ],
+     "note": "Tưởng tượng một tình huống khác hiện tại"
+    },
+    {
+     "structure": "as long as + clause",
+     "examples": [
+      "Sharing a house is fine, **as long as** everyone takes out the bins."
+     ],
+     "note": "Miễn là…"
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🏠 Home and living spaces"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Would you describe your home **as tidy and simple**, or **full of things?**",
+    "What’s your **favourite spot** at home? Why?",
+    "Do you **live alone, with family or with flatmates?** What are the **pros and cons?**",
+    "**Is it better to rent or buy a home where you live? Why?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Minimalist vs. Maximalist",
+   "context": "***Context:*** *Sophie is helping her friend Ella move into a new flat. They’re carrying boxes up the stairs.*",
+   "lines": [
+    [
+     "Ella",
+     "Careful with that one. It’s full of plants."
+    ],
+    [
+     "Sophie",
+     "Another one? Ella, this is the fourth box of plants."
+    ],
+    [
+     "Ella",
+     "I know. I’m **a bit of a hoarder**. I keep everything."
+    ],
+    [
+     "Sophie",
+     "**I can see that.** You’ve got more cushions than chairs."
+    ],
+    [
+     "Ella",
+     "They make the place feel **cosy**. I like having my favourite things **on display**: photos, books, **souvenirs** from my trips."
+    ],
+    [
+     "Sophie",
+     "I get that. I’m **the complete opposite**. I’m a real **minimalist**. My flat’s almost empty: a sofa, a table, a bed, and **that’s about it**."
+    ],
+    [
+     "Ella",
+     "I know. Doesn’t it feel a bit cold?"
+    ],
+    [
+     "Sophie",
+     "Not to me. **Clutter** makes me feel stressed. When everything’s **neat and tidy**, I can actually relax. Plus, cleaning only takes ten minutes."
+    ],
+    [
+     "Ella",
+     "That’s the one thing I’m **jealous of**. **Dusting** all my shelves **takes forever**."
+    ],
+    [
+     "Sophie",
+     "Last year, I **decluttered** my whole flat. I **gave away** half my clothes, and honestly, I don’t miss any of them."
+    ],
+    [
+     "Ella",
+     "I could never do that. I’m too **attached to** my things. Most of them have **sentimental value**. I still have concert tickets from 2015."
+    ],
+    [
+     "Sophie",
+     "That’s the difference between us. You keep things for the memories. **I’d rather** keep the memories **than** the stuff."
+    ],
+    [
+     "Ella",
+     "**Fair point.** But **bare** white walls just make me sad."
+    ],
+    [
+     "Sophie",
+     "So where’s all this going to go? Your new place isn’t very big, and there’s **hardly any storage space**."
+    ],
+    [
+     "Ella",
+     "I’ll **make it work**. A few more shelves, some hooks on the walls…"
+    ],
+    [
+     "Sophie",
+     "Or you could **get rid of** a few cushions. They **take up** a lot of **space**."
+    ],
+    [
+     "Ella",
+     "Absolutely not. The cushions stay."
+    ]
+   ],
+   "vocab": [
+    [
+     "**a bit of a hoarder**",
+     "/ə bɪt əv ə ˈhɔː.dər/",
+     "phrase",
+     "",
+     "audio/v/be77408cb1.mp3"
+    ],
+    [
+     "**I can see that.**",
+     "/aɪ kən siː ðæt/",
+     "expression",
+     "",
+     "audio/v/95b7deecb1.mp3"
+    ],
+    [
+     "**have sth on display**",
+     "/hæv ɒn dɪˈspleɪ/",
+     "phrase",
+     "",
+     "audio/v/c5129469e1.mp3"
+    ],
+    [
+     "**souvenirs**",
+     "/ˌsuː.vəˈnɪəz/",
+     "noun",
+     "",
+     "audio/v/09fc41fdf6.mp3"
+    ],
+    [
+     "**a minimalist**",
+     "/ə ˈmɪn.ɪ.məl.ɪst/",
+     "noun",
+     "",
+     "audio/v/fbf2d73c97.mp3"
+    ],
+    [
+     "**That’s about it.**",
+     "/ðæts əˈbaʊt ɪt/",
+     "expression",
+     "",
+     "audio/v/78af01bba3.mp3"
+    ],
+    [
+     "**clutter**",
+     "/ˈklʌt.ər/",
+     "noun",
+     "",
+     "audio/v/d3f0d26b7b.mp3"
+    ],
+    [
+     "**neat and tidy**",
+     "/niːt ən ˈtaɪ.di/",
+     "phrase",
+     "",
+     "audio/v/c0c022ee69.mp3"
+    ],
+    [
+     "**be jealous of** + N",
+     "/bi ˈdʒel.əs əv/",
+     "phrase",
+     "",
+     "audio/v/4155d11a03.mp3"
+    ],
+    [
+     "**dust**",
+     "/dʌst/",
+     "verb",
+     "",
+     "audio/v/7d6d3243ab.mp3"
+    ],
+    [
+     "**take forever**",
+     "/teɪk fəˈrev.ər/",
+     "phrase",
+     "",
+     "audio/v/17e7a2e749.mp3"
+    ],
+    [
+     "**declutter**",
+     "/ˌdiːˈklʌt.ər/",
+     "verb",
+     "",
+     "audio/v/48739d8013.mp3"
+    ],
+    [
+     "**give away** sth",
+     "/ɡɪv əˈweɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/8b13d131e7.mp3"
+    ],
+    [
+     "**be attached to** + N",
+     "/bi əˈtætʃt tə/",
+     "phrase",
+     "",
+     "audio/v/c9203a0716.mp3"
+    ],
+    [
+     "**sentimental value**",
+     "/ˌsen.tɪˈmen.təl ˈvæl.juː/",
+     "collocation",
+     "",
+     "audio/v/cd4742ec10.mp3"
+    ],
+    [
+     "**I’d rather X than Y**",
+     "/aɪd ˈrɑː.ðər… ðən/",
+     "structure",
+     "",
+     "audio/v/cfa03fff8d.mp3"
+    ],
+    [
+     "**Fair point.**",
+     "/feə pɔɪnt/",
+     "expression",
+     "",
+     "audio/v/131557dc3a.mp3"
+    ],
+    [
+     "**bare**",
+     "/beər/",
+     "adjective",
+     "",
+     "audio/v/b9e2c5c9b8.mp3"
+    ],
+    [
+     "**hardly any** + N",
+     "/ˈhɑːd.li ˈen.i/",
+     "phrase",
+     "",
+     "audio/v/5fb29e7b40.mp3"
+    ],
+    [
+     "**storage space**",
+     "/ˈstɔː.rɪdʒ speɪs/",
+     "noun",
+     "",
+     "audio/v/3f737932cd.mp3"
+    ],
+    [
+     "**make it work**",
+     "/meɪk ɪt wɜːk/",
+     "phrase",
+     "",
+     "audio/v/bda0d708c7.mp3"
+    ],
+    [
+     "**get rid of** sth",
+     "/ɡet rɪd əv/",
+     "phrase",
+     "",
+     "audio/v/39a2d80e95.mp3"
+    ],
+    [
+     "**take up space**",
+     "/teɪk ʌp speɪs/",
+     "phrasal verb",
+     "",
+     "audio/v/99f351d807.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Home, sweet home",
+   "context": "***Context:*** *Ben and Hannah are colleagues. On Monday, Hannah asks Ben about the flat he moved into at the weekend.*",
+   "lines": [
+    [
+     "Hannah",
+     "How’s the new place? You moved last weekend, didn’t you?"
+    ],
+    [
+     "Ben",
+     "Yeah. It’s only **a studio**, and it’s a bit small, but **it’s all mine**. It’s **fully furnished**, so I didn’t need to buy much."
+    ],
+    [
+     "Hannah",
+     "Nice. How does it feel to **live alone** after sharing a house for so long?"
+    ],
+    [
+     "Ben",
+     "Amazing. I lived with four **flatmates** for three years. I had to wait twenty minutes for the bathroom every morning, and we always argued about **whose turn it was to take out the bins**."
+    ],
+    [
+     "Hannah",
+     "Ah yeah, **the usual flatmate stuff**."
+    ],
+    [
+     "Ben",
+     "Exactly. It was fun sometimes, but now I finally **have the place to myself**."
+    ],
+    [
+     "Hannah",
+     "Isn’t it a bit lonely, though?"
+    ],
+    [
+     "Ben",
+     "Sometimes, in the evenings. But I’m enjoying **the peace and quiet**, and I **invite friends over** more often now."
+    ],
+    [
+     "Hannah",
+     "What about **the rent**? I bet it’s not cheap."
+    ],
+    [
+     "Ben",
+     "Before, we **split the bills** five ways. Now **the bills are all on me**."
+    ],
+    [
+     "Hannah",
+     "That’s why I’m thinking of **moving back in with** my parents for a year. I’d **lose some of my freedom**, and my mum would ask where I’m going every time I leave the house. But I could **save for a deposit**."
+    ],
+    [
+     "Ben",
+     "Yeah, renting is so expensive. My old landlord **put** the rent **up** twice last year. By the way, are you looking at flats or houses?"
+    ],
+    [
+     "Hannah",
+     "Flats, probably. A house with a garden would be lovely, but I **can’t afford** one in the city centre. Houses are cheaper in **the suburbs**, but **the commute** would be awful."
+    ],
+    [
+     "Ben",
+     "Well, if you ever need a break from your parents, you’re welcome to **crash on my sofa**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**a studio**",
+     "/ə ˈstjuː.di.əʊ/",
+     "noun",
+     "",
+     "audio/v/f0be43f059.mp3"
+    ],
+    [
+     "**It’s all mine.**",
+     "/ɪts ɔːl maɪn/",
+     "expression",
+     "",
+     "audio/v/d1b3c68038.mp3"
+    ],
+    [
+     "**fully furnished**",
+     "/ˈfʊl.i ˈfɜː.nɪʃt/",
+     "adjective",
+     "",
+     "audio/v/a44d02c57f.mp3"
+    ],
+    [
+     "**flatmates**",
+     "/ˈflæt.meɪts/",
+     "noun",
+     "",
+     "audio/v/a0b7bfb17a.mp3"
+    ],
+    [
+     "**whose turn it is to + V**",
+     "/huːz tɜːn ɪt ɪz tə/",
+     "structure",
+     "",
+     "audio/v/bb7dffa998.mp3"
+    ],
+    [
+     "**take out the bins**",
+     "/teɪk aʊt ðə bɪnz/",
+     "collocation",
+     "",
+     "audio/v/cc58b1ed5e.mp3"
+    ],
+    [
+     "**the usual flatmate stuff**",
+     "/ðə ˈjuː.ʒu.əl ˈflæt.meɪt stʌf/",
+     "phrase, informal",
+     "",
+     "audio/v/50b4181627.mp3"
+    ],
+    [
+     "**have the place to yourself**",
+     "/hæv ðə pleɪs tə jɔːˈself/",
+     "phrase",
+     "",
+     "audio/v/7f44bcf1ec.mp3"
+    ],
+    [
+     "**(the) peace and quiet**",
+     "/piːs ən ˈkwaɪ.ət/",
+     "idiom",
+     "",
+     "audio/v/6768870693.mp3"
+    ],
+    [
+     "**invite sb over**",
+     "/ɪnˈvaɪt ˈəʊ.vər/",
+     "phrasal verb",
+     "",
+     "audio/v/36ce7b53d3.mp3"
+    ],
+    [
+     "**the rent**",
+     "/ðə rent/",
+     "noun",
+     "",
+     "audio/v/072377f6c1.mp3"
+    ],
+    [
+     "**split the bills**",
+     "/splɪt ðə bɪlz/",
+     "collocation",
+     "",
+     "audio/v/e9127a1917.mp3"
+    ],
+    [
+     "**The bills are all on me.**",
+     "/ðə bɪlz ər ɔːl ɒn miː/",
+     "expression",
+     "",
+     "audio/v/981d0db6d6.mp3"
+    ],
+    [
+     "**move back in with** sb",
+     "/muːv bæk ɪn wɪð/",
+     "phrasal verb",
+     "",
+     "audio/v/18d333db9a.mp3"
+    ],
+    [
+     "**lose some of your freedom**",
+     "/luːz sʌm əv jɔː ˈfriː.dəm/",
+     "phrase",
+     "",
+     "audio/v/51fb1e5b47.mp3"
+    ],
+    [
+     "**save for a deposit**",
+     "/seɪv fər ə dɪˈpɒz.ɪt/",
+     "collocation",
+     "",
+     "audio/v/9405ecdc35.mp3"
+    ],
+    [
+     "**a landlord**",
+     "/ə ˈlænd.lɔːd/",
+     "noun",
+     "",
+     "audio/v/31c5eee744.mp3"
+    ],
+    [
+     "**put the rent up**",
+     "/pʊt ðə rent ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/00a0f90a14.mp3"
+    ],
+    [
+     "**By the way,…**",
+     "/baɪ ðə weɪ/",
+     "expression",
+     "",
+     "audio/v/c233ddb238.mp3"
+    ],
+    [
+     "**can’t afford** + N / **to + V**",
+     "/kɑːnt əˈfɔːd/",
+     "structure",
+     "",
+     "audio/v/7dfece99ee.mp3"
+    ],
+    [
+     "**the suburbs**",
+     "/ðə ˈsʌb.ɜːbz/",
+     "noun",
+     "",
+     "audio/v/a9634baec6.mp3"
+    ],
+    [
+     "**the commute**",
+     "/ðə kəˈmjuːt/",
+     "noun",
+     "",
+     "audio/v/3d110757bc.mp3"
+    ],
+    [
+     "**crash on sb’s sofa**",
+     "/kræʃ ɒn ˈsəʊ.fə/",
+     "phrase, informal",
+     "",
+     "audio/v/802346ef0b.mp3"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Sarah is moving into a shared flat next week. Her friend Tom is helping her pack.",
+   "bank": [
+    "take up space",
+    "peace and quiet",
+    "storage space",
+    "a bit of a hoarder",
+    "split the bills",
+    "fully furnished",
+    "get rid of",
+    "sentimental value",
+    "flatmates",
+    "have the place to myself"
+   ],
+   "lines": [
+    [
+     "Tom",
+     "Wow, you’ve got so many boxes. Are you taking all of this?"
+    ],
+    [
+     "Sarah",
+     "I know. I’m {a bit of a hoarder}. I find it really hard to throw things away."
+    ],
+    [
+     "Tom",
+     "What about these old birthday cards? Do you really need them?"
+    ],
+    [
+     "Sarah",
+     "Yes, they have {sentimental value}. My grandma wrote some of them."
+    ],
+    [
+     "Tom",
+     "Fair enough. But maybe you should {get rid of} some of these clothes. You haven’t worn half of them for years."
+    ],
+    [
+     "Sarah",
+     "True. My new room is quite small, and there’s hardly any {storage space}."
+    ],
+    [
+     "Tom",
+     "Is the flat {fully furnished}?"
+    ],
+    [
+     "Sarah",
+     "Yes, so I don’t need to take my desk. It would just {take up space}."
+    ],
+    [
+     "Tom",
+     "How many people live there?"
+    ],
+    [
+     "Sarah",
+     "Three other girls. I’ve only met my new {flatmates} once, but they seem nice."
+    ],
+    [
+     "Tom",
+     "And what about the rent?"
+    ],
+    [
+     "Sarah",
+     "It’s much cheaper than living alone, because we {split the bills} four ways."
+    ],
+    [
+     "Tom",
+     "Won’t you miss living alone?"
+    ],
+    [
+     "Sarah",
+     "A bit. I’ll miss the {peace and quiet}, and it was nice to {have the place to myself}. But I really need to save money."
+    ],
+    [
+     "Tom",
+     "That makes sense. Right, let’s get these boxes into the car."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to Laura talking about a big change in her life, then answer the questions.",
+   "podcast": "🎧 My home: from a big house to a tiny flat",
+   "audio": "audio/a2-home.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Laura",
+     "text": "Hi, I'm Laura, and today I want to talk about the biggest change I've made in my life: moving into a tiny flat."
+    },
+    {
+     "t": 10.2,
+     "who": "Laura",
+     "text": "Two years ago, I lived in a big house in the suburbs with my husband and our two cats. It had four bedrooms and a garden. It sounds perfect, right? But ==the commute to the city took over an hour each way, and we spent every weekend cleaning and fixing things.=="
+    },
+    {
+     "t": 29.0,
+     "who": "Laura",
+     "text": "So we decided to sell the house and rent a small flat near my office. The problem was, the flat only had one bedroom. ==We had to get rid of more than half of our things. That was really hard== for my husband, because he's a bit of a hoarder. He kept saying, ==\"But I might need this one day!\"=="
+    },
+    {
+     "t": 48.4,
+     "who": "Laura",
+     "text": "In the end, we gave away most of our furniture to friends and family. The only big thing we kept was ==my grandmother's old piano==. It takes up a lot of space, but it has ==too much sentimental value== to sell."
+    },
+    {
+     "t": 61.4,
+     "who": "Laura",
+     "text": "Now, I walk to work in ten minutes, and cleaning the whole flat takes less than an hour. Do I miss anything? Honestly, ==I miss the garden==, especially in summer. But I don't miss spending my weekends looking after a big house."
+    },
+    {
+     "t": 77.0,
+     "who": "Laura",
+     "text": "My advice? ==Before you buy something new, ask yourself: do I really need it, or do I just want it?=="
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did Laura and her husband decide to move?",
+     "options": [
+      "Their house was too expensive to rent.",
+      "They spent too much time travelling and looking after the house.",
+      "Their cats needed more space."
+     ],
+     "answer": 1,
+     "why": "“The commute to the city took over an hour each way, and we spent every weekend cleaning and fixing things.”"
+    },
+    {
+     "q": "What was the most difficult part of moving?",
+     "options": [
+      "Finding a flat near Laura’s office",
+      "Reducing the number of things they owned",
+      "Selling the house quickly"
+     ],
+     "answer": 1,
+     "why": "“We had to get rid of more than half of our things. That was really hard…”"
+    },
+    {
+     "q": "How did Laura’s husband feel about getting rid of things?",
+     "options": [
+      "He found it easy.",
+      "He worried that he might need them later.",
+      "He wanted to sell them online."
+     ],
+     "answer": 1,
+     "why": "“He kept saying, ‘But I might need this one day!’”"
+    },
+    {
+     "q": "Why did they keep the piano?",
+     "options": [
+      "It was very expensive.",
+      "Laura plays it every day.",
+      "It’s special to Laura’s family."
+     ],
+     "answer": 2,
+     "why": "It was her grandmother’s piano and “has too much sentimental value to sell.”"
+    },
+    {
+     "q": "What does Laura miss most about the house?",
+     "options": [
+      "Having more bedrooms",
+      "Having an outdoor space",
+      "Living near friends and family"
+     ],
+     "answer": 1,
+     "why": "“Honestly, I miss the garden.”"
+    },
+    {
+     "q": "What is Laura’s advice?",
+     "options": [
+      "Think carefully before you buy things.",
+      "Always rent instead of buying a home.",
+      "Try to live close to where you work."
+     ],
+     "answer": 0,
+     "why": "“Before you buy something new, ask yourself: do I really need it, or do I just want it?”"
+    }
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Speaking",
+   "instructions": "Choose ONE option and record yourself speaking.",
+   "options": [
+    {
+     "title": "Describe your home.",
+     "questions": [
+      "What kind of home do you live in, and where is it?",
+      "Are you more of a minimalist or a maximalist? Why?",
+      "What’s your favourite spot at home?",
+      "Is there one thing you’d like to change about your home?"
+     ],
+     "use": "neat and tidy, clutter, have sth on display, sentimental value, storage space, take up space."
+    },
+    {
+     "title": "Is it better to live alone or with other people?",
+     "questions": [
+      "Who do you live with now?",
+      "What are the good things about it?",
+      "What are the bad things?",
+      "If you could choose, would you live alone or with others? Why?"
+     ],
+     "use": "have the place to yourself, peace and quiet, split the bills, The bills are all on me, I’d rather… than…, If I…, I’d…"
+    },
+    {
+     "title": "Is it better to rent or buy a home in your city?",
+     "questions": [
+      "How expensive is it to rent or buy a home where you live?",
+      "What are the good and bad things about renting?",
+      "What are the good and bad things about buying?",
+      "What would you do, and why?"
+     ],
+     "use": "the rent, a landlord, save for a deposit, can’t afford, the suburbs, the commute, as long as…"
+    }
+   ]
+  }
+ ]
+}

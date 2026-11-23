@@ -1,0 +1,367 @@
+{
+ "id": "b1-pitching",
+ "title": "Pitching and presenting ideas",
+ "level": "B1",
+ "emoji": "💡",
+ "lesson": [],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check (conversation)",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Chloe works at a busy coffee shop. Before her shift starts, she catches the owner, Ben.",
+   "bank": [
+    "start small",
+    "free us up",
+    "That's fair",
+    "run by you",
+    "worth a shot",
+    "cut down on",
+    "in-house",
+    "keeping track",
+    "make a difference",
+    "didn't realise"
+   ],
+   "lines": [
+    [
+     "Chloe",
+     "Ben, have you got a minute? I've had an idea I wanted to {run by you}."
+    ],
+    [
+     "Ben",
+     "Sure, go ahead."
+    ],
+    [
+     "Chloe",
+     "You know how the queue is always really long between seven and nine? A lot of people just give up and leave. I've been {keeping track} this week, and we're losing about thirty customers every morning."
+    ],
+    [
+     "Ben",
+     "Thirty? I {didn't realise} it was that many."
+    ],
+    [
+     "Chloe",
+     "Yeah. So I was thinking, what if customers could order on their phones before they arrive? They'd just walk in, pick up their coffee and go."
+    ],
+    [
+     "Ben",
+     "Interesting. But building an app sounds expensive."
+    ],
+    [
+     "Chloe",
+     "We wouldn't need our own app. There are ordering websites that cafés can use for a small monthly fee. I could set it up {in-house}."
+    ],
+    [
+     "Ben",
+     "Hmm. Would it really {make a difference}?"
+    ],
+    [
+     "Chloe",
+     "I think so. It would {free us up} to focus on making drinks instead of taking orders. It might even {cut down on} mistakes, because customers type their own orders."
+    ],
+    [
+     "Ben",
+     "What about older customers who don't use their phones much?"
+    ],
+    [
+     "Chloe",
+     "{That's fair}. They can still order at the counter, like now. That's why I'd like to {start small}, with a one-month trial in the mornings only."
+    ],
+    [
+     "Ben",
+     "OK, I think it's {worth a shot}. Send me a few options, and we'll decide by Friday."
+    ],
+    [
+     "Chloe",
+     "Great, I'll send them over tonight. Thanks for hearing me out."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once. You don't need to change the form of the words.",
+   "bank": [
+    "see how it goes",
+    "stretched thin",
+    "on the agenda",
+    "I can relate to that",
+    "who to turn to",
+    "wrap up",
+    "show you the ropes",
+    "look into",
+    "get back to you",
+    "time-consuming"
+   ],
+   "lines": [
+    [
+     "",
+     "I'm not sure about the budget yet, but I'll check and {get back to you} by Monday."
+    ],
+    [
+     "",
+     "OK, it's almost six. Let's {wrap up} and finish the rest tomorrow."
+    ],
+    [
+     "",
+     "The new software looks useful, but setting it up is really {time-consuming}."
+    ],
+    [
+     "",
+     "Is the client presentation {on the agenda} for today's meeting?"
+    ],
+    [
+     "",
+     "Our team is already {stretched thin}, so we can't take on another project this month."
+    ],
+    [
+     "",
+     "When I first started this job, I didn't know {who to turn to} when I had a problem."
+    ],
+    [
+     "",
+     "Don't worry about your first week. Anna will {show you the ropes}."
+    ],
+    [
+     "",
+     "“I hate meetings that run over.” “{I can relate to that}. Ours always finish late.”"
+    ],
+    [
+     "",
+     "Let's try the new schedule for a month and {see how it goes}."
+    ],
+    [
+     "",
+     "I don't know if we can get a discount from the supplier, but I'll {look into} it."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 3: Listening",
+   "intro": "Owen and Jess are friends who work at different companies. They're having lunch together. Listen, then do Parts A and B.",
+   "podcast": "🎧 Owen & Jess: the Friday idea",
+   "audio": "audio/b1-pitching.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Owen",
+     "text": "So, did you talk to your boss about the Friday idea?"
+    },
+    {
+     "t": 2.8,
+     "who": "Jess",
+     "text": "I did, yesterday. I was so nervous."
+    },
+    {
+     "t": 5.8,
+     "who": "Owen",
+     "text": "Remind me what you suggested?"
+    },
+    {
+     "t": 7.5,
+     "who": "Jess",
+     "text": "That our team could work from home on Fridays. Most of us spend ==over an hour commuting each way==, and on Fridays the office is half empty anyway."
+    },
+    {
+     "t": 15.4,
+     "who": "Owen",
+     "text": "How did you start? Did you just say, \"Can we work from home?\""
+    },
+    {
+     "t": 18.7,
+     "who": "Jess",
+     "text": "No, I learned from last time. ==I started with the problem. I showed her the results of a quick survey I did.== ==Eight out of ten people said they felt exhausted by Friday because of the commute.=="
+    },
+    {
+     "t": 29.5,
+     "who": "Owen",
+     "text": "Smart. What did she say?"
+    },
+    {
+     "t": 31.0,
+     "who": "Jess",
+     "text": "At first, she wasn't keen. ==She was worried that clients wouldn't be able to reach us.=="
+    },
+    {
+     "t": 35.7,
+     "who": "Owen",
+     "text": "That's fair, to be honest."
+    },
+    {
+     "t": 37.5,
+     "who": "Jess",
+     "text": "Yeah, so I said we'd all keep our phones on, and that one person from the team would always be in the office, ==on a rota==."
+    },
+    {
+     "t": 44.3,
+     "who": "Owen",
+     "text": "Nice. Did she agree?"
+    },
+    {
+     "t": 45.8,
+     "who": "Jess",
+     "text": "Not straight away. Then she asked how she'd know people were actually working."
+    },
+    {
+     "t": 49.9,
+     "who": "Owen",
+     "text": "Ha, the classic question."
+    },
+    {
+     "t": 51.2,
+     "who": "Jess",
+     "text": "I know! So I suggested that ==everyone sends a short update at the end of each Friday==, about what they've done and what's left. She liked that."
+    },
+    {
+     "t": 58.9,
+     "who": "Owen",
+     "text": "So it's a yes?"
+    },
+    {
+     "t": 59.5,
+     "who": "Jess",
+     "text": "It's a \"let's try it\". ==Two months, just our team.== After that, she'll check whether our work is still getting done on time."
+    },
+    {
+     "t": 66.7,
+     "who": "Owen",
+     "text": "That's brilliant. Honestly, I'm a bit jealous. My manager would never go for that."
+    },
+    {
+     "t": 71.1,
+     "who": "Jess",
+     "text": "You never know. The trick is to make it easy for them to say yes. ==Start small.=="
+    },
+    {
+     "t": 74.7,
+     "who": "Owen",
+     "text": "Maybe I'll run something by her next week, then."
+    },
+    {
+     "t": 78.4,
+     "who": "Jess",
+     "text": "Go for it. ==And bring numbers. Managers love numbers.=="
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 3A: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did Jess suggest working from home on Fridays?",
+     "options": [
+      "Her boss had asked the team for ideas to save money.",
+      "People were tired from travelling to and from work.",
+      "The office was closed for repairs on Fridays."
+     ],
+     "answer": 1,
+     "why": "“Eight out of ten people said they felt exhausted by Friday because of the commute.”"
+    },
+    {
+     "q": "How did Jess begin her pitch this time?",
+     "options": [
+      "She asked directly if the team could work from home.",
+      "She explained the problem using some data.",
+      "She compared her company with other companies."
+     ],
+     "answer": 1,
+     "why": "“I started with the problem. I showed her the results of a quick survey I did.”"
+    },
+    {
+     "q": "What was the manager's first concern?",
+     "options": [
+      "Clients might not be able to contact the team.",
+      "The team would work fewer hours.",
+      "The office would be too empty."
+     ],
+     "answer": 0,
+     "why": "“She was worried that clients wouldn't be able to reach us.”"
+    },
+    {
+     "q": "How did Jess answer the manager's second question?",
+     "options": [
+      "She promised the team would work longer hours.",
+      "She suggested end-of-day progress reports.",
+      "She offered to call the manager every Friday."
+     ],
+     "answer": 1,
+     "why": "“Everyone sends a short update at the end of each Friday, about what they've done and what's left.”"
+    },
+    {
+     "q": "What did the manager decide in the end?",
+     "options": [
+      "Everyone in the company can work from home on Fridays.",
+      "Jess's team can try it for a limited period.",
+      "She'll decide after talking to the clients."
+     ],
+     "answer": 1,
+     "why": "“It's a ‘let's try it’. Two months, just our team.”"
+    },
+    {
+     "q": "What advice does Jess give Owen?",
+     "options": [
+      "Wait until your manager is in a good mood.",
+      "Ask for something small, and support it with figures.",
+      "Ask your whole team to pitch the idea together."
+     ],
+     "answer": 1,
+     "why": "“Start small.” … “And bring numbers. Managers love numbers.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 3B: Complete the summary",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "text": "Jess wanted her team to work from home on {Fridays|Friday}. In her survey, {eight|8} out of ten people said they felt exhausted because of the {commute}. To deal with her manager's first concern, Jess said one person would always be in the office on a {rota}. The team will also send a short {update} at the end of each Friday. The trial will last {two months|2 months}. Jess's final tip is that managers love {numbers}."
+  },
+  {
+   "type": "recording",
+   "title": "Part 4: Speaking (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Pitch an idea to improve your workplace, school or class.",
+     "questions": [
+      "What's the problem? Give a real example or a number.",
+      "What's your idea?",
+      "How would it help?",
+      "How could you start small?",
+      "Imagine someone pushes back. How would you answer?"
+     ],
+     "use": "Have you got a minute?, You know how…?, I was thinking, what if we…?, It would free us up to…, That way, …, a one-month trial."
+    },
+    {
+     "title": "(Story) Tell me about a time you suggested an idea or a change (at work, at school or at home).",
+     "questions": [
+      "What was the problem, and what was your idea?",
+      "Who did you talk to, and how did you suggest it?",
+      "How did they react? Did they have any worries?",
+      "What happened in the end?",
+      "Looking back, would you do anything differently?"
+     ],
+     "use": "run sth by sb, I'd noticed that…, I was thinking, what if we…?, That's fair, be worth a shot, see how it goes."
+    },
+    {
+     "title": "(Pitch) Choose ONE idea below and pitch it to your manager.",
+     "choices": [
+      "Flexible working hours (for example, 8am–4pm instead of 9am–5pm)",
+      "Working from home one day a week",
+      "A short training course paid for by the company"
+     ],
+     "questionsLabel": "In your pitch, explain:",
+     "questions": [
+      "the problem",
+      "your idea",
+      "how it would help the team and the company",
+      "one worry your manager might have, and how you'd deal with it: “I know you might be worried that… That's fair, but…”",
+      "how you could start small"
+     ],
+     "use": "You know how…?, What I'm suggesting is…, Nothing too formal, just…, That way, …, keep an eye on, start small."
+    }
+   ]
+  }
+ ]
+}
