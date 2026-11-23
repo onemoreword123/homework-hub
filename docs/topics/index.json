@@ -1,5 +1,11 @@
 [
  {
+  "id": "b1-movies",
+  "title": "Movies and books",
+  "level": "B1",
+  "emoji": "🎬"
+ },
+ {
   "id": "b1-hometown",
   "title": "Your hometown",
   "level": "B1",

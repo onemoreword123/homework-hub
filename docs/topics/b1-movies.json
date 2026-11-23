@@ -1,0 +1,1067 @@
+{
+ "id": "b1-movies",
+ "title": "Movies and books",
+ "level": "B1",
+ "emoji": "🎬",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-movies.jpg",
+   "fit": "contain",
+   "bg": "#eeeee6"
+  },
+  {
+   "type": "table",
+   "label": "📖 Genre Vocabulary",
+   "title": "",
+   "head": [
+    "Genre",
+    "Meaningful",
+    "Examples"
+   ],
+   "rows": [
+    [
+     "**romance** /rəʊˈmæns/",
+     "tình cảm, lãng mạn",
+     "Mắt biếc, Titanic"
+    ],
+    [
+     "**drama** /ˈdrɑː.mə/",
+     "chính kịch, tâm lý",
+     "Bố già, Tắt đèn"
+    ],
+    [
+     "**comedy** /ˈkɒm.ə.di/",
+     "hài",
+     "Home Alone, Mr. Bean"
+    ],
+    [
+     "**action** /ˈæk.ʃən/",
+     "hành động",
+     "Hai Phượng, Fast & Furious"
+    ],
+    [
+     "**thriller** /ˈθrɪl.ər/",
+     "giật gân, hồi hộp",
+     "Parasite"
+    ],
+    [
+     "**horror** /ˈhɒr.ər/",
+     "kinh dị",
+     "The Conjuring"
+    ],
+    [
+     "**mystery** /ˈmɪs.tər.i/ / **detective story** /dɪˈtek.tɪv ˌstɔː.ri/",
+     "trinh thám, bí ẩn",
+     "Sherlock Holmes"
+    ],
+    [
+     "**science fiction (sci-fi)** /ˌsaɪ.əns ˈfɪk.ʃən/",
+     "khoa học viễn tưởng",
+     "Interstellar"
+    ],
+    [
+     "**fantasy** /ˈfæn.tə.si/",
+     "giả tưởng, phép thuật",
+     "Harry Potter"
+    ],
+    [
+     "**animation** /ˌæn.ɪˈmeɪ.ʃən/",
+     "hoạt hình",
+     "Inside Out, Spirited Away"
+    ],
+    [
+     "**historical film /**hɪˈstɒr.ɪ.kəl fɪlm/ **/ war film** /ˈwɔː ˌfɪlm/",
+     "lịch sử / chiến tranh",
+     "Đào, Phở và Piano"
+    ],
+    [
+     "**coming-of-age story** /ˌkʌm.ɪŋ.əvˈeɪdʒ ˌstɔː.ri/",
+     "câu chuyện trưởng thành",
+     "Tôi thấy hoa vàng trên cỏ xanh"
+    ],
+    [
+     "**biography** /baɪˈɒɡ.rə.fi/ **( biopic** /ˈbaɪ.əʊ.pɪk/ )",
+     "tiểu sử",
+     "Steve Jobs"
+    ],
+    [
+     "**documentary** /ˌdɒk.jəˈmen.tər.i/",
+     "phim tài liệu",
+     "Our Planet"
+    ],
+    [
+     "**realist novel** /ˈrɪə.lɪst ˈnɒv.əl/",
+     "tiểu thuyết hiện thực",
+     "Tắt đèn, Số đỏ"
+    ],
+    [
+     "**children’s book** /ˈtʃɪl.drənz bʊk/",
+     "sách thiếu nhi",
+     "Dế Mèn phiêu lưu ký"
+    ]
+   ],
+   "say": [
+    [
+     "audio/v/fbfa863db5.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/63b1298947.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/3e56e6a43d.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/34eb4c4ef0.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/952a08c423.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/bf7b06aaaf.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/9313a4b7ff.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/36c3fc6f89.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/ec1e111db3.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/a6b8b600c2.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/371b503417.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/8fb72d03ea.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/85de40fc72.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/6de8a32086.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/c563938c72.mp3",
+     "",
+     ""
+    ],
+    [
+     "audio/v/20fbba2474.mp3",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Adjectives to describe a book or film:",
+   "head": [
+    "Positive / Neutral",
+    "Negative",
+    "Tone / Atmosphere"
+   ],
+   "rows": [
+    [
+     "**gripping** /ˈɡrɪp.ɪŋ/ (cuốn hút, không dứt ra được)",
+     "**predictable** /prɪˈdɪk.tə.bəl/ (dễ đoán)",
+     "**bleak** /bliːk/ (u ám, ảm đạm)"
+    ],
+    [
+     "**moving** /ˈmuː.vɪŋ/ (cảm động)",
+     "**overrated** /ˌəʊ.vəˈreɪ.tɪd/ (được đánh giá quá cao)",
+     "**slow-paced** /ˌsləʊˈpeɪst/ (nhịp chậm)"
+    ],
+    [
+     "**thought-provoking** /ˈθɔːt.prəˌvəʊ.kɪŋ/ (gợi suy ngẫm)",
+     "**dull** /dʌl/ (nhàm chán)",
+     "**intense** /ɪnˈtens/ (căng thẳng, dồn dập)"
+    ],
+    [
+     "**hilarious** /hɪˈleə.ri.əs/ (cực kỳ hài hước)",
+     "**far-fetched** /ˌfɑːˈfetʃt/ (khó tin, phi lý)",
+     "**heavy /**ˈhev.i/ (nặng nề)"
+    ],
+    [
+     "**relatable** /rɪˈleɪ.tə.bəl/ (dễ đồng cảm)",
+     "**forgettable** /fəˈɡet.ə.bəl/ (xem xong là quên)",
+     "**dark** /dɑːk/ (u tối)"
+    ]
+   ],
+   "say": [
+    [
+     "audio/v/468df1d3eb.mp3",
+     "audio/v/254ed7b8d9.mp3",
+     "audio/v/4aedb33d61.mp3"
+    ],
+    [
+     "audio/v/3ea68c99d9.mp3",
+     "audio/v/45c052c401.mp3",
+     "audio/v/890fc6fc2d.mp3"
+    ],
+    [
+     "audio/v/b61f950b59.mp3",
+     "audio/v/738a85cfbd.mp3",
+     "audio/v/e121ada101.mp3"
+    ],
+    [
+     "audio/v/981a7d7069.mp3",
+     "audio/v/bdcd90a186.mp3",
+     "audio/v/d312949aa5.mp3"
+    ],
+    [
+     "audio/v/6a9533d9fd.mp3",
+     "audio/v/438ce0a212.mp3",
+     "audio/v/3d09ba4476.mp3"
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "📽️ About movies and books"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Do you prefer **reading books** or **watching films**? Why?",
+    "What’s a book you **had to read at schoo**l? Do you still **remember the story?**",
+    "What’s the **last film** you watched? **Would you recommend it?**",
+    "Have you ever watched **a film adaptation of a book**? Which was better?"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. It lives up to the hype",
+   "context": "***Context:*** *Emily has been telling her friend Jake to watch Parasite for months. He finally watched it last night, and now they’re having coffee.*",
+   "lines": [
+    [
+     "Emily",
+     "So, did you finally watch it?"
+    ],
+    [
+     "Jake",
+     "I did. You were right. It definitely **lives up to the hype**."
+    ],
+    [
+     "Emily",
+     "What did you think of the first half?"
+    ],
+    [
+     "Jake",
+     "At first, I thought it was just **a dark comedy** about a poor family tricking a rich one. Then **halfway through**, there’s that huge **plot twist**, and the whole film changes. I **didn’t see it coming** at all."
+    ],
+    [
+     "Emily",
+     "That’s why I didn’t tell you anything. I didn’t want to **spoil it for you**."
+    ],
+    [
+     "Jake",
+     "I’m glad. I didn’t even watch **the trailer**. The director’s really clever. He **keeps you on the edge of your seat**, but you’re still laughing."
+    ],
+    [
+     "Emily",
+     "And **the cast** is brilliant. Everyone **gives a great performance**. I think there isn’t really **a villain**. Everyone’s just trying to survive."
+    ],
+    [
+     "Jake",
+     "I also loved **the cinematography**. The rich family’s house is so bright and clean, and the poor family’s flat is half underground. Even **the camera angles** show you who’s at the top and who’s at the bottom."
+    ],
+    [
+     "Emily",
+     "Did you notice all the stairs? The poor family is always walking down."
+    ],
+    [
+     "Jake",
+     "I didn’t notice that. I might have to watch it again. **Funnily enough**, I nearly didn’t watch it at all, because I usually hate **subtitles**. But I’d rather read subtitles than watch it **dubbed**."
+    ],
+    [
+     "Emily",
+     "Same. And it was **the first non-English film to win Best Picture** at the Oscars, so it must be worth the effort."
+    ],
+    [
+     "Jake",
+     "It **deserved** it. The only thing is **the ending**. It’s not exactly **a feel-good film**. So what should I watch next?"
+    ],
+    [
+     "Emily",
+     "His earlier film, *Memories of Murder*. But I’m not telling you anything about it."
+    ]
+   ],
+   "vocab": [
+    [
+     "**live up to the hype**",
+     "/lɪv ʌp tə ðə haɪp/",
+     "idiom",
+     "",
+     "audio/v/ac23366e2e.mp3",
+     "It definitely **lives up to the hype**.",
+     "xứng đáng với lời khen, đúng như kỳ vọng"
+    ],
+    [
+     "**a dark comedy**",
+     "/ə dɑːk ˈkɒmədi/",
+     "noun",
+     "",
+     "audio/v/93f2b5e077.mp3",
+     "At first, I thought it was just **a dark comedy** about a poor family tricking a rich one.",
+     "phim hài đen"
+    ],
+    [
+     "**trick** sb",
+     "/trɪk/",
+     "verb",
+     "",
+     "audio/v/735b0c427e.mp3",
+     "At first, I thought it was just **a dark comedy** about a poor family tricking a rich one.",
+     "lừa ai"
+    ],
+    [
+     "**halfway through**",
+     "/ˌhɑːfweɪ ˈθruː/",
+     "phrase",
+     "",
+     "audio/v/d3e0309984.mp3",
+     "Then **halfway through**, there’s that huge **plot twist**, and the whole film changes.",
+     "đến giữa chừng"
+    ],
+    [
+     "**a plot twist**",
+     "/ə plɒt twɪst/",
+     "noun",
+     "",
+     "audio/v/8f018e1072.mp3",
+     "Then **halfway through**, there’s that huge **plot twist**, and the whole film changes.",
+     "tình tiết bất ngờ, cú twist"
+    ],
+    [
+     "**I didn’t see it coming.**",
+     "/aɪ ˈdɪdnt siː ɪt ˈkʌmɪŋ/",
+     "expression",
+     "",
+     "audio/v/7999e20f72.mp3",
+     "I **didn’t see it coming** at all.",
+     "Mình không ngờ tới."
+    ],
+    [
+     "**spoil sth for sb**",
+     "/spɔɪl fɔː/",
+     "phrase",
+     "",
+     "audio/v/a084bd52de.mp3",
+     "I didn’t want to **spoil it for you**.",
+     "tiết lộ nội dung, làm mất hứng của ai"
+    ],
+    [
+     "**a trailer**",
+     "/ə ˈtreɪlə/",
+     "noun",
+     "",
+     "audio/v/a3422e1818.mp3",
+     "I didn’t even watch **the trailer**.",
+     "đoạn giới thiệu phim"
+    ],
+    [
+     "**keep sb on the edge of their seat**",
+     "/kiːp ɒn ði edʒ əv ðeə siːt/",
+     "idiom",
+     "",
+     "audio/v/b4f7605127.mp3",
+     "He **keeps you on the edge of your seat**, but you’re still laughing.",
+     "khiến ai hồi hộp, nín thở theo dõi"
+    ],
+    [
+     "**the cast**",
+     "/ðə kɑːst/",
+     "noun",
+     "",
+     "audio/v/5d26c06eaf.mp3",
+     "And **the cast** is brilliant.",
+     "dàn diễn viên"
+    ],
+    [
+     "**give a great performance**",
+     "/ɡɪv ə ɡreɪt pəˈfɔːməns/",
+     "collocation",
+     "",
+     "audio/v/769f3496ca.mp3",
+     "Everyone **gives a great performance**.",
+     "diễn xuất rất tốt"
+    ],
+    [
+     "**a villain**",
+     "/ə ˈvɪlən/",
+     "noun",
+     "",
+     "audio/v/c103f28a83.mp3",
+     "I think there isn’t really **a villain**.",
+     "nhân vật phản diện"
+    ],
+    [
+     "**the cinematography**",
+     "/ðə ˌsɪnəməˈtɒɡrəfi/",
+     "noun",
+     "",
+     "audio/v/6b1609d4c8.mp3",
+     "I also loved **the cinematography**.",
+     "kỹ thuật quay phim, hình ảnh"
+    ],
+    [
+     "**camera angles**",
+     "/ˈkæmərə ˈæŋɡlz/",
+     "noun",
+     "",
+     "audio/v/b26a835882.mp3",
+     "Even **the camera angles** show you who’s at the top and who’s at the bottom.",
+     "góc máy quay"
+    ],
+    [
+     "**funnily enough**",
+     "/ˈfʌnɪli ɪˈnʌf/",
+     "phrase",
+     "",
+     "audio/v/0878d34a85.mp3",
+     "**Funnily enough**, I nearly didn’t watch it at all, because I usually hate **subtitles**.",
+     "buồn cười là, lạ thay"
+    ],
+    [
+     "**subtitles**",
+     "/ˈsʌbtaɪtlz/",
+     "noun",
+     "",
+     "audio/v/3c0b6b5f1e.mp3",
+     "**Funnily enough**, I nearly didn’t watch it at all, because I usually hate **subtitles**.",
+     "phụ đề"
+    ],
+    [
+     "**dubbed**",
+     "/dʌbd/",
+     "adjective",
+     "",
+     "audio/v/35b129f4be.mp3",
+     "But I’d rather read subtitles than watch it **dubbed**.",
+     "được lồng tiếng"
+    ],
+    [
+     "**win Best Picture**",
+     "/wɪn best ˈpɪktʃə/",
+     "collocation",
+     "",
+     "audio/v/b1998544db.mp3",
+     "And it was **the first non-English film to win Best Picture** at the Oscars, so it must be worth the effort.",
+     "đoạt giải Phim hay nhất"
+    ],
+    [
+     "**a feel-good film**",
+     "/ə ˈfiːl ɡʊd fɪlm/",
+     "noun",
+     "",
+     "audio/v/58647b7989.mp3",
+     "It’s not exactly **a feel-good film**.",
+     "phim nhẹ nhàng, xem xong thấy vui vẻ"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "Talk about a movie you’ve watched",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What’s the film?**\n(title, genre, director, cast)",
+     "• ***I recently watched…, a… directed by…***\n• ***It stars… in the lead role.***\n• ***I’d heard a lot about it, so… / My friend kept telling me to watch it.***"
+    ],
+    [
+     "**What’s it about?**\n(the story, no spoilers)",
+     "• ***It’s about a… who…***\n• ***At first, I thought it was just a… about…, but halfway through…***\n• ***I won’t spoil it for you, but…***"
+    ],
+    [
+     "**What did you like?**\n(plot, acting, cinematography, soundtrack, effects)",
+     "• ***The cast is brilliant. … gives a great performance as…***\n• ***I loved the cinematography / soundtrack, especially the scene where…***"
+    ],
+    [
+     "**Is it worth watching?**\n(hype, rating, who would enjoy it)",
+     "• ***It definitely lives up to the hype. / It doesn’t really live up to the hype.***\n• ***It’s worth watching, even if you…***\n• ***I’d give it… out of ten.***\n• ***If you like…, you’ll love it.***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. A book that stays with you",
+   "context": "***Context:*** *Hà’s English colleague, Tom, sees an old Vietnamese novel on her desk at lunchtime.*",
+   "lines": [
+    [
+     "Tom",
+     "Is that a Vietnamese novel? I’ve never seen you reading at lunch before."
+    ],
+    [
+     "Hà",
+     "Only sometimes. It’s *Tắt đèn*, by Ngô Tất Tố. We had to read it at school, but I wanted to **read it again as an adult**."
+    ],
+    [
+     "Tom",
+     "What’s it **about**? The cover looks a bit **gloomy.**"
+    ],
+    [
+     "Hà",
+     "It is. It’s **set in** a village in northern Vietnam in the 1930s, **under French colonial rule**. **The main character**, Chị Dậu, is a poor farmer’s wife. Her husband is **seriously ill**, and they **can’t afford** to pay the yearly tax, so the village officials **drag him away** and beat him."
+    ],
+    [
+     "Tom",
+     "That’s awful. So what does she do?"
+    ],
+    [
+     "Hà",
+     "She tries everything to **raise the money**. In the end, she **has no choice but to** sell her seven-year-old daughter to a rich family."
+    ],
+    [
+     "Tom",
+     "Wow, that’s really dark. I had to read Oliver Twist at school, and I thought that was depressing."
+    ],
+    [
+     "Hà",
+     "This is probably worse. I still remember the scene when the officials come back for her husband. At first, she begs them politely, but when they **push her too far**, she **fights back** and knocks them to the ground."
+    ],
+    [
+     "Tom",
+     "Good for her. They're **driving her into a corner.**"
+    ],
+    [
+     "Hà",
+     "Yeah. We even have a saying for it: *tức nước vỡ bờ*. It means that if you push people too hard, they’ll **eventually** fight back."
+    ],
+    [
+     "Tom",
+     "So does it have **a happy ending**, or **is that asking too much**?"
+    ],
+    [
+     "Hà",
+     "I won’t **give** too much **away**, but no, not really. It’s quite **bleak**. Still, it **paints a vivid picture of** how hard life was for ordinary people back then. It’s **stayed with me** since I was fourteen."
+    ],
+    [
+     "Tom",
+     "Is there an English translation? I might **give it a go**."
+    ],
+    [
+     "Hà",
+     "I think so. I’ll look it up for you."
+    ]
+   ],
+   "vocab": [
+    [
+     "**read sth again as an adult**",
+     "/riːd əˈɡen əz ən ˈædʌlt/",
+     "phrase",
+     "",
+     "audio/v/0eaed16ceb.mp3",
+     "We had to read it at school, but I wanted to **read it again as an adult**.",
+     "đọc lại cái gì khi đã trưởng thành"
+    ],
+    [
+     "**gloomy**",
+     "/ˈɡluːmi/",
+     "adjective",
+     "",
+     "audio/v/9313089475.mp3",
+     "The cover looks a bit **gloomy.**",
+     "ảm đạm, u buồn"
+    ],
+    [
+     "**be set in** + place/time",
+     "/bi set ɪn/",
+     "phrase",
+     "",
+     "audio/v/c9816230dc.mp3",
+     "It’s **set in** a village in northern Vietnam in the 1930s, **under French colonial rule**.",
+     "lấy bối cảnh ở…"
+    ],
+    [
+     "**under French colonial rule**",
+     "/ˈʌndə frentʃ kəˈləʊniəl ruːl/",
+     "phrase",
+     "",
+     "audio/v/9e94762b17.mp3",
+     "It’s **set in** a village in northern Vietnam in the 1930s, **under French colonial rule**.",
+     "dưới ách thực dân Pháp"
+    ],
+    [
+     "**can’t afford to + V**",
+     "/kɑːnt əˈfɔːd/",
+     "structure",
+     "",
+     "audio/v/1ee5365229.mp3",
+     "Her husband is **seriously ill**, and they **can’t afford** to pay the yearly tax, so the village officials **drag him away** and beat him.",
+     "không đủ khả năng để…"
+    ],
+    [
+     "**drag sb away**",
+     "/dræɡ əˈweɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/26d9fa074b.mp3",
+     "Her husband is **seriously ill**, and they **can’t afford** to pay the yearly tax, so the village officials **drag him away** and beat him.",
+     "lôi ai đi"
+    ],
+    [
+     "**raise the money**",
+     "/reɪz ðə ˈmʌni/",
+     "collocation",
+     "",
+     "audio/v/04ad1aae32.mp3",
+     "She tries everything to **raise the money**.",
+     "gom góp, xoay đủ tiền"
+    ],
+    [
+     "**have no choice but to + V**",
+     "/hæv nəʊ tʃɔɪs bʌt tə/",
+     "structure",
+     "",
+     "audio/v/eeced0fccb.mp3",
+     "In the end, she **has no choice but to** sell her seven-year-old daughter to a rich family.",
+     "không còn cách nào khác ngoài…"
+    ],
+    [
+     "**dark**",
+     "/dɑːk/",
+     "adjective",
+     "",
+     "audio/v/3d09ba4476.mp3",
+     "Wow, that’s really dark.",
+     "u tối"
+    ],
+    [
+     "**depressing**",
+     "/dɪˈpresɪŋ/",
+     "adjective",
+     "",
+     "audio/v/e3ed6f7837.mp3",
+     "I had to read Oliver Twist at school, and I thought that was depressing.",
+     "buồn, khiến người ta chán nản"
+    ],
+    [
+     "**push sb too far**",
+     "/pʊʃ tuː fɑː/",
+     "idiom",
+     "",
+     "audio/v/e2d317bb3a.mp3",
+     "At first, she begs them politely, but when they **push her too far**, she **fights back** and knocks them to the ground.",
+     "dồn ai vào đường cùng"
+    ],
+    [
+     "**fight back**",
+     "/faɪt bæk/",
+     "phrasal verb",
+     "",
+     "audio/v/e598a69046.mp3",
+     "It means that if you push people too hard, they’ll **eventually** fight back.",
+     "chống trả, phản kháng"
+    ],
+    [
+     "**drive sb into a corner**",
+     "/draɪv ˈɪntu ə ˈkɔːnə/",
+     "idiom",
+     "",
+     "audio/v/0a9e818eab.mp3",
+     "",
+     "dồn ai vào đường cùng"
+    ],
+    [
+     "**eventually**",
+     "/ɪˈventʃuəli/",
+     "adverb",
+     "",
+     "audio/v/5865020fca.mp3",
+     "It means that if you push people too hard, they’ll **eventually** fight back.",
+     "cuối cùng, rốt cuộc"
+    ],
+    [
+     "**a happy ending**",
+     "/ə ˈhæpi ˈendɪŋ/",
+     "collocation",
+     "",
+     "audio/v/2ce88c0a6f.mp3",
+     "So does it have **a happy ending**, or **is that asking too much**?",
+     "cái kết có hậu"
+    ],
+    [
+     "**Is that asking too much?**",
+     "/ɪz ðæt ˈɑːskɪŋ tuː mʌtʃ/",
+     "expression, joking",
+     "",
+     "audio/v/04f2eb8b5b.mp3",
+     "So does it have **a happy ending**, or **is that asking too much**?",
+     "Đòi hỏi vậy có quá không? (đùa)"
+    ],
+    [
+     "**give sth away**",
+     "/ɡɪv əˈweɪ/",
+     "phrasal verb",
+     "",
+     "audio/v/fb10c85045.mp3",
+     "I won’t **give** too much **away**, but no, not really.",
+     "để lộ, tiết lộ điều gì"
+    ],
+    [
+     "**bleak**",
+     "/bliːk/",
+     "adjective",
+     "",
+     "audio/v/4aedb33d61.mp3",
+     "It’s quite **bleak**.",
+     "u ám, ảm đạm"
+    ],
+    [
+     "**paint a vivid picture of** + N",
+     "/peɪnt ə ˈvɪvɪd ˈpɪktʃər əv/",
+     "idiom",
+     "",
+     "audio/v/ce8e2db5c8.mp3",
+     "Still, it **paints a vivid picture of** how hard life was for ordinary people back then.",
+     "khắc họa sống động…"
+    ],
+    [
+     "**stay with sb**",
+     "/steɪ wɪð/",
+     "phrase",
+     "",
+     "audio/v/9497f47786.mp3",
+     "It’s **stayed with me** since I was fourteen.",
+     "đọng lại mãi trong lòng ai"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "Tell someone about a book you’ve read",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What’s the book?**\n(title, author, genre, when you read it)",
+     "• ***It’s… by… / It’s a… novel by…***\n• ***I read it when I was…***\n• ***It’s quite a famous book in…***\n• ***I picked it up because…***"
+    ],
+    [
+     "**Where and when is it set?**\n(place, time, what life was like)",
+     "• ***It’s set in… in the… / during…***\n• ***It's about a woman / a family who…***\n• ***The main character is…***"
+    ],
+    [
+     "**What part do you remember most?**",
+     "• ***I still remember the scene when…***\n• ***At first,…, but when…, he / she…***\n• ***Things take a turn when…***"
+    ],
+    [
+     "**What do you think of it?**\n(feeling, message, would you recommend it)",
+     "• ***It’s quite bleak / gloomy / moving, but…***\n• ***It's quite a gripping / moving / thought-provoking story.***\n• ***It paints a vivid picture of…***\n• ***What I like most about it is  …It really makes you think about…***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Vy has just watched the film version of her favourite novel. She’s telling her friend Nam about it over coffee.",
+   "bank": [
+    "bleak",
+    "spoil it for you",
+    "is set in",
+    "stayed with me",
+    "gave a great performance",
+    "lived up to the hype",
+    "paints a vivid picture of",
+    "didn’t see it coming",
+    "feel-good film",
+    "cinematography"
+   ],
+   "lines": [
+    [
+     "Nam",
+     "So, how was the film? You’ve been waiting ages to see it."
+    ],
+    [
+     "Vy",
+     "Honestly, it really {lived up to the hype}. I was worried they’d ruin the book, but they didn’t."
+    ],
+    [
+     "Nam",
+     "What’s it about? I’ve never read it."
+    ],
+    [
+     "Vy",
+     "It {is set in} a small village in central Vietnam in the 1980s. It’s about two brothers growing up in a poor family."
+    ],
+    [
+     "Nam",
+     "Sounds a bit slow."
+    ],
+    [
+     "Vy",
+     "It’s quite slow-paced, but the {cinematography} is stunning. Every scene looks like a painting: green rice fields, yellow flowers everywhere."
+    ],
+    [
+     "Nam",
+     "What about the acting?"
+    ],
+    [
+     "Vy",
+     "The boy who plays the older brother {gave a great performance}. He was only twelve, but he made the whole cinema cry."
+    ],
+    [
+     "Nam",
+     "Is it exactly the same as the book?"
+    ],
+    [
+     "Vy",
+     "Mostly. But the director added one scene that isn’t in the book, and I {didn’t see it coming} at all."
+    ],
+    [
+     "Nam",
+     "What happens?"
+    ],
+    [
+     "Vy",
+     "I’m not telling you. I don’t want to {spoil it for you}."
+    ],
+    [
+     "Nam",
+     "Fair enough. Is it a happy film?"
+    ],
+    [
+     "Vy",
+     "It’s not exactly a {feel-good film}, but it isn’t completely {bleak} either. It {paints a vivid picture of} childhood in the countryside: the games, the jealousy, the first crush."
+    ],
+    [
+     "Nam",
+     "That actually sounds nice."
+    ],
+    [
+     "Vy",
+     "It is. I watched it a week ago, and it’s really {stayed with me}. Watch it first, and then read the book."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to a short film review, then do Parts A and B.",
+   "podcast": "🎧 Weekend Watch: Coco",
+   "audio": "audio/b1-movies.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "",
+     "text": "Welcome back to Weekend Watch. This week, I finally watched Coco, the Pixar film that came out in 2017. I know, I'm very late. My niece has been asking me to watch it with her for years, and ==I kept saying it looked like a film for little kids.=="
+    },
+    {
+     "t": 15.1,
+     "who": "",
+     "text": "I was wrong. Coco is about Miguel, a twelve-year-old boy in Mexico who dreams of ==becoming a musician==. The problem is that his family has ==banned music== for generations, because ==his great-great-grandfather left the family to follow his music career==. On the Day of the Dead, Miguel accidentally ends up in the Land of the Dead, where he meets his ancestors and a funny, slightly dishonest man called Héctor."
+    },
+    {
+     "t": 38.7,
+     "who": "",
+     "text": "To be honest, the first twenty minutes didn't grab me. ==The story felt quite familiar==: a kid who wants to follow his dream while his family says no. But once Miguel crosses into ==the Land of the Dead==, the film really comes alive. The animation is stunning. The whole city glows with orange and purple lights, and ==I kept pausing the film just to look at the backgrounds.=="
+    },
+    {
+     "t": 62.6,
+     "who": "",
+     "text": "Then, about an hour in, there's a ==plot twist== that completely changes how you see two of the main characters. I won't spoil it, but my niece, who's seen it ten times, was watching my face the whole time."
+    },
+    {
+     "t": 76.0,
+     "who": "",
+     "text": "What really got me, though, was the ending. There's a scene where a song called \"==Remember Me==\" is sung to a very old woman, and I'm not ashamed to say I had to reach for the tissues. ==My niece, meanwhile, was eating popcorn as if nothing was happening.=="
+    },
+    {
+     "t": 92.2,
+     "who": "",
+     "text": "My only complaint is that ==the villain becomes a little too obviously evil== once you know the truth. But that's a small thing. It's a beautiful film about family, memory and never forgetting the people we love. ==Nine== out of ten from me."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2A: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why hadn’t the speaker watched Coco before?",
+     "options": [
+      "Her niece didn’t want to watch it with her.",
+      "She thought it was aimed at young children.",
+      "She doesn’t usually enjoy films about music."
+     ],
+     "answer": 1,
+     "why": "“I kept saying it looked like a film for little kids.”"
+    },
+    {
+     "q": "Why is music banned in Miguel’s family?",
+     "options": [
+      "A man in the family chose music over his wife and children.",
+      "Héctor persuaded the family that music was dangerous.",
+      "Music isn’t allowed during the Day of the Dead."
+     ],
+     "answer": 0,
+     "why": "“His great-great-grandfather left the family to follow his music career.”"
+    },
+    {
+     "q": "What did the speaker think of the first part of the film?",
+     "options": [
+      "The animation was the best part.",
+      "The story wasn’t very original.",
+      "It moved too quickly for her niece."
+     ],
+     "answer": 1,
+     "why": "“The story felt quite familiar.”"
+    },
+    {
+     "q": "What did the speaker do because of the animation?",
+     "options": [
+      "She watched some scenes again with her niece.",
+      "She stopped the film to enjoy the scenery.",
+      "She looked at her niece’s face to see her reaction."
+     ],
+     "answer": 1,
+     "why": "“I kept pausing the film just to look at the backgrounds.”"
+    },
+    {
+     "q": "How did the niece react to the ending?",
+     "options": [
+      "She cried as much as the speaker did.",
+      "She watched the speaker’s face closely.",
+      "She didn’t seem emotional at all."
+     ],
+     "answer": 2,
+     "why": "“My niece, meanwhile, was eating popcorn as if nothing was happening.”"
+    },
+    {
+     "q": "What is the speaker’s criticism of the film?",
+     "options": [
+      "The plot twist is too easy to guess.",
+      "One character becomes too clearly bad.",
+      "The film is too long for young children."
+     ],
+     "answer": 1,
+     "why": "“The villain becomes a little too obviously evil once you know the truth.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 2B: Complete the summary",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "text": "The speaker had avoided Coco because she thought it was for {little kids|kids|young children|children|little children}. The film is about a boy who wants to become a {musician}, even though his family has {banned} music. At first, the story felt quite {familiar}, but the film gets much better when Miguel reaches the {Land of the Dead|Land|Land of Dead}. About an hour in, a {plot twist|twist} changes how viewers see two characters. The speaker cried during a song called “{Remember Me}”, and she gave the film {nine|9} out of ten."
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Recording (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Talk about a film you’ve watched recently.",
+     "questions": [
+      "What’s the film? What genre is it, and who’s in it?",
+      "What’s it about? (No spoilers!)",
+      "What did you think of the acting, the cinematography or the plot?",
+      "Was there anything you didn’t like? Does it live up to the hype?"
+     ],
+     "use": "halfway through, a plot twist, I didn’t see it coming, give a great performance, keep sb on the edge of their seat, live up to the hype."
+    },
+    {
+     "title": "Tell someone about a book that has stayed with you.",
+     "questions": [
+      "What’s the book, who wrote it, and when did you read it?",
+      "Where and when is it set? Who is the main character?",
+      "What scene do you remember most?",
+      "How did it make you feel? What’s the message?"
+     ],
+     "use": "be set in, the main character, have no choice but to, give sth away, paint a vivid picture of, stay with sb."
+    },
+    {
+     "title": "Is the book always better than the film?",
+     "questions": [
+      "Think of a book and its film version that you know.",
+      "What can books do better than films?",
+      "What can films do better than books?",
+      "Should people read the book first or watch the film first?"
+     ],
+     "use": "a film adaptation, spoil sth for sb, gripping, predictable, thought-provoking, be worth the effort."
+    }
+   ]
+  }
+ ]
+}
