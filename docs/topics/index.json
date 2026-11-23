@@ -1,5 +1,11 @@
 [
  {
+  "id": "b1-hometown",
+  "title": "Your hometown",
+  "level": "B1",
+  "emoji": "🏡"
+ },
+ {
   "id": "b1-home",
   "title": "Home and living spaces",
   "level": "B1",

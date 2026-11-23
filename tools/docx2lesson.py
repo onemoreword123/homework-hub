@@ -3,7 +3,7 @@
 usage: docx2lesson.py input.docx topic_id out_dir_for_site
 Writes: <site>/img/<topic_id>.jpg (banner) and prints lesson JSON to stdout.
 """
-import sys, re, json, io
+import sys, re, json, io, unicodedata
 from docx import Document
 from docx.oxml.ns import qn
 from PIL import Image
@@ -134,7 +134,7 @@ for el in body.iterchildren():
         continue
     if el.tag != qn("w:p"): continue
     p = Paragraph(el, doc)
-    text = p.text.strip()
+    text = unicodedata.normalize("NFC", p.text).strip()
     if has_image(p) and not blocks:
         blip = el.findall(".//" + qn("a:blip"))[0]
         rid = blip.get(qn("r:embed"))
@@ -181,6 +181,12 @@ for el in body.iterchildren():
         n_dialogue += 1
         cur_dialogue = {"type": "dialogue", "label": take_label(), "title": f"{n_dialogue}. {text}", "context": "", "lines": [], "vocab": []}
         blocks.append(cur_dialogue); state = "dialogue"; continue
+    # a plain (not list) numbered line like "1. The grass is always greener" starts a dialogue
+    mnum = re.match(r"^(\d+)\.\s+(\S.*)$", text)
+    if mnum and not is_list(p):
+        n_dialogue = int(mnum.group(1))
+        cur_dialogue = {"type": "dialogue", "label": take_label(), "title": f"{n_dialogue}. {mnum.group(2)}", "context": "", "lines": [], "vocab": []}
+        blocks.append(cur_dialogue); state = "dialogue"; title_pending = None; continue
     if text.lower().startswith("context") and cur_dialogue is not None:
         md = para_md(p)
         cur_dialogue["context"] = md if md.startswith("*") else f"*{md}*"

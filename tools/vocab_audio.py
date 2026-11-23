@@ -52,7 +52,7 @@ for f in sys.argv[1:]:
                 sf.write("/tmp/v.wav", a, sr)
                 subprocess.run(["ffmpeg","-y","-loglevel","error","-i","/tmp/v.wav","-ac","1","-codec:a","libmp3lame","-b:a","56k",f"{site}/{path}"], check=True)
                 made += 1
-            while len(v) < slot: v.append("")
-            v[slot:] = [path]
+            while len(v) <= slot: v.append("")
+            v[slot] = path
     json.dump(topic, open(p, "w"), ensure_ascii=False, indent=1)
 print("clips made:", made)
