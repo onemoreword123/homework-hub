@@ -131,7 +131,7 @@ async function review(st, topicId, sub) {
   const url = await signedUrl(sub.recording_path);
   dbody.innerHTML = `
     <section class="card"><h2>🎤 Speaking</h2>
-      ${sub.recording_path ? `<p class="small muted">Submitted ${fmtDate(sub.recording_submitted_at)}${opt ? ` · <b>${recSec.options.length > 1 ? `Option ${+sub.recording_option + 1}: ` : ""}${esc(opt.title)}</b>` : ""}</p>${url ? `<audio controls src="${esc(url)}"></audio><a class="small" href="${esc(url)}" download>Download</a>` : `<div class="notice warn">Couldn't load the audio file.</div>`}` : `<p class="muted">No recording yet.</p>`}
+      ${sub.recording_path ? `<p class="small muted">Submitted ${fmtDate(sub.recording_submitted_at)}${opt ? ` · <b>${recSec.options.length > 1 ? `Option ${+sub.recording_option + 1}: ` : ""}${esc(opt.title)}</b>` : ""}</p>${url ? `<audio controls preload="metadata" src="${esc(url)}"></audio><button class="ghost sm" id="dl">⬇ Download recording</button>` : `<div class="notice warn">Couldn't load the audio file.</div>`}` : `<p class="muted">No recording yet.</p>`}
     </section>
     <section class="card"><h2>💬 Feedback</h2>
       ${sub.reviewed_at ? `<div class="notice ok small">Published ${fmtDate(sub.reviewed_at)}. The student can see this feedback, and their recording is locked.</div>` : `<p class="small muted"><b>Save draft</b> keeps your work private. <b>Publish</b> shows it to the student and locks their recording.</p>`}
@@ -141,6 +141,22 @@ async function review(st, topicId, sub) {
     </section>
     <section class="card"><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h2>✏️ Exercises</h2>${sub.exercises_submitted_at ? `<span class="pill ok">${sub.score} / ${sub.max_score}</span><span class="small muted">${fmtDate(sub.exercises_submitted_at)}</span><button class="ghost sm" id="redo" style="margin-left:auto">Allow redo</button>` : `<span class="pill warn">Not submitted</span>`}</div></section>
     <div id="rex"></div>`;
+  dbody.querySelector("#dl")?.addEventListener("click", async (e) => {
+    const btn = e.currentTarget; btn.disabled = true; btn.textContent = "Downloading…";
+    try {
+      const { data, error } = await c.storage.from("recordings").download(sub.recording_path);
+      if (error) throw error;
+      const ext = (sub.recording_path.split(".").pop() || "webm").toLowerCase();
+      const safe = (x) => String(x || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/gi, "d").replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "");
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(data);
+      a.download = `${safe(st.full_name)}_${safe(topic.title)}.${ext}`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+      btn.textContent = "⬇ Download recording";
+    } catch (err) { alert("Couldn't download: " + (err.message || err)); btn.textContent = "⬇ Download recording"; }
+    btn.disabled = false;
+  });
   const editor = feedbackEditor(sub.teacher_comment || "");
   dbody.querySelector("#fed").appendChild(editor.el);
   if (sub.exercises_submitted_at) renderHomework(dbody.querySelector("#rex"), topic, { answers: sub.answers, locked: true, showScript: true });
