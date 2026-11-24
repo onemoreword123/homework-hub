@@ -260,3 +260,8 @@ table.t.gen td .ipa{white-space:normal}
   .fx-pop,.fx-overlay,.fx-overlay .wotd{animation:none!important;transform:translate(-50%,-50%)}
   .fx-overlay,.fx-overlay .wotd{transform:none}
 }
+.step-label{font-weight:700;font-size:14px;color:var(--navy);margin:16px 0 6px;letter-spacing:.02em}
+.opt .ttl input{width:20px;height:20px;vertical-align:-4px}
+.options.need .opt{border-color:var(--bad);background:var(--bad-soft);animation:need-shake .5s}
+@keyframes need-shake{20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+@media (prefers-reduced-motion: reduce){.options.need .opt{animation:none}}

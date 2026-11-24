@@ -6,9 +6,9 @@
  "lesson": [
   {
    "type": "banner",
-   "src": "img/b1-movies.jpg",
+   "src": "img/b1-movies-v2.jpg",
    "fit": "contain",
-   "bg": "#eeeee6"
+   "bg": "#ffd5a7"
   },
   {
    "type": "table",

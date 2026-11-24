@@ -20,6 +20,7 @@ export function renderRecording(el, section, opts) {
   el.innerHTML = `<section class="card">
     <h2>${esc(section.title)}</h2>
     <p class="muted small">${esc(section.instructions || "")}</p>
+    ${!opts.locked && section.options.length > 1 ? `<div class="step-label">Step 1 · Tap the option you will talk about</div>` : ""}
     <div class="options">${section.options.map((o, i) => `
       <label class="opt"><span class="ttl"><input type="radio" name="recopt" value="${i}" ${chosen === i || (section.options.length === 1 && chosen === null) ? "checked" : ""} ${opts.locked ? "disabled" : ""}>${section.options.length > 1 ? `Option ${i + 1}: ` : ""}${esc(o.title)}</span>
         ${o.choices?.length ? `<ul class="choices">${o.choices.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>` : ""}
@@ -27,6 +28,7 @@ export function renderRecording(el, section, opts) {
         <ul>${o.questions.map((q) => `<li>${esc(q)}</li>`).join("")}</ul>
         ${o.use ? `<div class="use"><b>Try to use:</b> ${esc(o.use)}</div>` : ""}</label>`).join("")}</div>
     <div data-current></div>
+    ${!opts.locked ? `<div class="step-label">${section.options.length > 1 ? "Step 2 · " : ""}Record your answer</div>` : ""}
     <div data-rec></div>
   </section>`;
 
@@ -58,7 +60,16 @@ export function renderRecording(el, section, opts) {
 
   const fmt = (t) => `${Math.floor(t / 60)}:${String(t % 60).padStart(2, "0")}`;
   const option = () => { const c = el.querySelector('input[name="recopt"]:checked'); return c ? +c.value : null; };
-  const showPreview = (b, e) => { blob = b; ext = e; pAudio.src = URL.createObjectURL(b); preview.classList.remove("hidden"); btn.classList.add("hidden"); hint.textContent = "Listen back, then submit or record again."; };
+  const showPreview = (b, e) => {
+    blob = b; ext = e; pAudio.src = URL.createObjectURL(b); preview.classList.remove("hidden"); btn.classList.add("hidden");
+    hint.textContent = option() === null ? "Listen back. Then tap an option above (Step 1) and submit." : "Listen back, then submit or record again.";
+    pAudio.onloadedmetadata = () => { if (isFinite(pAudio.duration)) time.textContent = fmt(Math.round(pAudio.duration)); };
+  };
+  // picking an option clears the warning
+  el.querySelectorAll('input[name="recopt"]').forEach((r) => r.addEventListener("change", () => {
+    el.querySelector(".options").classList.remove("need"); msg.textContent = "";
+    if (blob) hint.textContent = "Listen back, then submit or record again.";
+  }));
 
   async function start() {
     msg.textContent = "";
@@ -87,7 +98,13 @@ export function renderRecording(el, section, opts) {
     showPreview(f, extFor(f.type || f.name));
   };
   rec.querySelector("[data-send]").onclick = async (e) => {
-    if (option() === null) { msg.innerHTML = '<span style="color:var(--bad)">Choose an option above first.</span>'; return; }
+    if (option() === null) {
+      const box = el.querySelector(".options");
+      msg.innerHTML = '<span style="color:var(--bad)">⬆️ Please tap the option you talked about (Option 1, 2 or 3), then press Submit again. Your recording is safe.</span>';
+      box.classList.remove("need"); void box.offsetWidth; box.classList.add("need");
+      box.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
     if (!blob) return;
     e.target.disabled = true; e.target.textContent = "Uploading…"; msg.textContent = "";
     try { await opts.onSave(blob, ext, option()); }
