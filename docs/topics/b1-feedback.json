@@ -655,5 +655,400 @@
    ]
   }
  ],
- "homework": []
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Leo is giving a speech at his brother's wedding next weekend. He's practising it in front of his friend, Hana.",
+   "bank": [
+    "rushed",
+    "What would you do",
+    "solid",
+    "nailed",
+    "cut it down",
+    "be honest",
+    "I had a feeling",
+    "end on a strong note",
+    "It shows",
+    "spent ages on"
+   ],
+   "lines": [
+    [
+     "Leo",
+     "So, what did you think? Please {be honest}. I'd rather hear it from you than from two hundred guests."
+    ],
+    [
+     "Hana",
+     "OK. I loved the story about the two of you getting lost in Đà Lạt. Honestly, you {nailed} that part. Everyone will laugh."
+    ],
+    [
+     "Leo",
+     "Really? I {spent ages on} that bit."
+    ],
+    [
+     "Hana",
+     "{It shows}. The only thing is, the speech is a bit long. It took nearly ten minutes."
+    ],
+    [
+     "Leo",
+     "Yeah, {I had a feeling} it was too long. {What would you do}?"
+    ],
+    [
+     "Hana",
+     "Maybe you could {cut it down} to about five minutes. People get hungry at weddings!"
+    ],
+    [
+     "Leo",
+     "Fair point. What else?"
+    ],
+    [
+     "Hana",
+     "The ending felt a bit {rushed}. You just said “Cheers!” and sat down. It might be worth saying something personal to the couple, so you {end on a strong note}."
+    ],
+    [
+     "Leo",
+     "Good idea. Anything else I should change?"
+    ],
+    [
+     "Hana",
+     "No, overall it's really {solid}. Make a few tweaks, run through it a couple more times, and you'll be fine."
+    ],
+    [
+     "Leo",
+     "Thanks, Hana. That's really helpful."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once. You don't need to change the form of the words.",
+   "bank": [
+    "upfront",
+    "gone up by",
+    "a heads-up",
+    "Good to hear",
+    "struggling to keep on top of",
+    "has taken over",
+    "Just so you know",
+    "got pushed back",
+    "a lot on my plate",
+    "not the end of the world"
+   ],
+   "lines": [
+    [
+     "",
+     "Our team leader is on holiday, so Minh {has taken over} her projects for two weeks."
+    ],
+    [
+     "",
+     "“I finally passed my driving test!” “{Good to hear}! Congratulations.”"
+    ],
+    [
+     "",
+     "I'd love to help, but I've got {a lot on my plate} at the moment: three deadlines this week."
+    ],
+    [
+     "",
+     "Missing one class is {not the end of the world}. You can catch up next week."
+    ],
+    [
+     "",
+     "The website crashed this morning, so all our other tasks {got pushed back} to tomorrow."
+    ],
+    [
+     "",
+     "If you're going to be late for dinner, just give me {a heads-up}."
+    ],
+    [
+     "",
+     "Since I started my new job, I've been {struggling to keep on top of} my emails. I have over 200 unread."
+    ],
+    [
+     "",
+     "{Just so you know}, the car park will be closed on Monday, so take the bus if you can."
+    ],
+    [
+     "",
+     "My manager was very {upfront} about the problems with the project, which I really appreciated."
+    ],
+    [
+     "",
+     "Our online sales have {gone up by} 15% since we started posting short videos."
+    ]
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 3: Choose the best response",
+   "instructions": "Choose the most natural and polite option.",
+   "questions": [
+    {
+     "q": "Your colleague asks for feedback on her report. It's good, but too long. What do you say first?",
+     "options": [
+      "To be honest, the report is too long.",
+      "First of all, the research is really good. You must have spent ages on it.",
+      "The report is OK, but it's long."
+     ],
+     "answer": 1,
+     "why": "Start with something specific and positive before mentioning a problem."
+    },
+    {
+     "q": "You want to mention a problem gently.",
+     "options": [
+      "There's one thing I wanted to bring up, though.",
+      "I need to tell you about a big problem.",
+      "You always send your reports late."
+     ],
+     "answer": 0,
+     "why": "“There's one thing I wanted to bring up, though” introduces the problem softly."
+    },
+    {
+     "q": "You want to suggest a solution.",
+     "options": [
+      "You should cut it down.",
+      "Maybe you could cut it down to one page. That way, it's easier to read.",
+      "Cut it down, please."
+     ],
+     "answer": 1,
+     "why": "“Maybe you could…” is gentle, and “That way, …” explains the benefit."
+    },
+    {
+     "q": "Someone gives you a useful idea you didn't think of.",
+     "options": [
+      "OK, if you say so.",
+      "Good point. I hadn't thought of that.",
+      "Yes, I already knew that."
+     ],
+     "answer": 1,
+     "why": "It thanks the person and shows you value the idea."
+    },
+    {
+     "q": "Your manager says your reports have been late.",
+     "options": [
+      "Sorry, but I've been too busy.",
+      "Ah, right. Sorry about that. I'll make sure I let you know earlier from now on.",
+      "Other people are late too."
+     ],
+     "answer": 1,
+     "why": "Apologise and promise a clear change, without making excuses."
+    },
+    {
+     "q": "You want to finish your feedback on a positive note.",
+     "options": [
+      "But overall, it's really solid.",
+      "So that's everything that's wrong.",
+      "Anyway, just change those things."
+     ],
+     "answer": 0,
+     "why": "“But overall, it's really solid” ends the feedback positively."
+    }
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 4: Listening",
+   "intro": "Mai is a freelance designer. She's showing the first version of a new menu to Peter, who owns a small café. Listen, then answer the questions.",
+   "podcast": "🎧 Mai & Peter: the new menu",
+   "audio": "audio/b1-feedback.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Peter",
+     "text": "Thanks for sending this over. I had a good look at it last night."
+    },
+    {
+     "t": 3.9,
+     "who": "Mai",
+     "text": "Great. So, what do you think? Please be honest. It's only the first draft."
+    },
+    {
+     "t": 8.1,
+     "who": "Peter",
+     "text": "Well, first of all, I love the colours. The green and cream look really fresh, and ==they match the café perfectly==."
+    },
+    {
+     "t": 14.8,
+     "who": "Mai",
+     "text": "Oh, good. I spent ages choosing those."
+    },
+    {
+     "t": 17.9,
+     "who": "Peter",
+     "text": "It shows. The only thing is, the text is a bit small. ==A lot of our customers are older, and I think some of them would struggle to read it.=="
+    },
+    {
+     "t": 26.3,
+     "who": "Mai",
+     "text": "That's a fair point. ==I was trying to fit everything on one page.=="
+    },
+    {
+     "t": 30.4,
+     "who": "Peter",
+     "text": "I know. Maybe you could use two pages instead, one for drinks and one for food? That way, you can make the text bigger."
+    },
+    {
+     "t": 37.8,
+     "who": "Mai",
+     "text": "That makes sense. ==It'll cost a little more to print==, though. Is that OK?"
+    },
+    {
+     "t": 42.0,
+     "who": "Peter",
+     "text": "That's fine. It's not a big difference."
+    },
+    {
+     "t": 44.5,
+     "who": "Mai",
+     "text": "OK. Anything else?"
+    },
+    {
+     "t": 46.7,
+     "who": "Peter",
+     "text": "Just one more thing. The photos of the cakes are lovely, but ==they're not actually our cakes==. Customers might be disappointed if the real ones look different."
+    },
+    {
+     "t": 54.8,
+     "who": "Mai",
+     "text": "Ah, I hadn't thought of that. Could you send me some photos of your cakes? ==Or I could come in and take some myself.=="
+    },
+    {
+     "t": 62.3,
+     "who": "Peter",
+     "text": "==Could you come in on Saturday morning?== That's when everything's fresh."
+    },
+    {
+     "t": 66.4,
+     "who": "Mai",
+     "text": "Sure, Saturday works. ==I'll bring my camera.=="
+    },
+    {
+     "t": 69.3,
+     "who": "Peter",
+     "text": "Perfect. Honestly, overall, I'm really happy with it. It looks much more professional than our old menu."
+    },
+    {
+     "t": 75.0,
+     "who": "Mai",
+     "text": "Thanks, that's good to hear. I'll make those changes and send you a new version by Wednesday."
+    },
+    {
+     "t": 80.4,
+     "who": "Peter",
+     "text": "Great. No rush. Just give me a heads-up if it's going to take longer."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 4: Choose the best answer",
+   "questions": [
+    {
+     "q": "What does Peter think of the colours?",
+     "options": [
+      "They're too bright for the café.",
+      "They suit the café very well.",
+      "He'd like a bit more green."
+     ],
+     "answer": 1,
+     "why": "“They match the café perfectly.”"
+    },
+    {
+     "q": "Why does Peter want bigger text?",
+     "options": [
+      "Some customers might find it hard to read.",
+      "The menu doesn't have enough items.",
+      "He wants to add more dishes."
+     ],
+     "answer": 0,
+     "why": "“Some of them would struggle to read it.”"
+    },
+    {
+     "q": "Why was the text small?",
+     "options": [
+      "Mai wanted to keep the printing cost low.",
+      "Mai tried to put everything on one page.",
+      "Peter had asked for a one-page menu."
+     ],
+     "answer": 1,
+     "why": "“I was trying to fit everything on one page.”"
+    },
+    {
+     "q": "What is the downside of Peter's suggestion?",
+     "options": [
+      "It will take longer to design.",
+      "Printing will cost a bit more.",
+      "Customers won't like a two-page menu."
+     ],
+     "answer": 1,
+     "why": "“It'll cost a little more to print.”"
+    },
+    {
+     "q": "What's the problem with the cake photos?",
+     "options": [
+      "They're the wrong size.",
+      "They don't show the café's real cakes.",
+      "They aren't very good quality."
+     ],
+     "answer": 1,
+     "why": "“They're not actually our cakes.”"
+    },
+    {
+     "q": "What will happen on Saturday?",
+     "options": [
+      "Mai will send the new version of the menu.",
+      "Mai will take photos at the café.",
+      "Peter will send Mai some photos."
+     ],
+     "answer": 1,
+     "why": "“Could you come in on Saturday morning?” … “I'll bring my camera.”"
+    }
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 5: Speaking (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes. You are the only speaker.",
+   "options": [
+    {
+     "title": "(Story) Tell me about a time you had to give someone feedback.",
+     "questions": [
+      "Who was it, and what was the feedback about?",
+      "How did you feel before you said it?",
+      "What exactly did you say?",
+      "How did they react?",
+      "Would you say it differently now?"
+     ],
+     "use": "I wanted to start by saying…, There's one thing I wanted to bring up, though, It's not the end of the world, but…, Maybe you could…, overall."
+    },
+    {
+     "title": "(Give feedback) Choose ONE situation and give feedback, as if you're talking to the person.",
+     "choices": [
+      "Your friend has opened a small restaurant. The food is delicious, but the service is very slow.",
+      "Your colleague has made a new company website. It looks modern, but it's hard to find the contact details.",
+      "A new team member wrote a very detailed report, but sent it two days late."
+     ],
+     "questionsLabel": "Use the sandwich:",
+     "questions": [
+      "positive",
+      "one thing to improve",
+      "a suggestion",
+      "positive"
+     ],
+     "use": "First of all, …, It shows, The only thing is…, It might be worth + V-ing, That way, …, spot on, solid."
+    },
+    {
+     "title": "(Opinion) Is it better to get feedback often, or only once or twice a year?",
+     "questions": [
+      "How often do people get feedback where you work or study?",
+      "What are the good sides of regular feedback?",
+      "Are there any downsides?",
+      "What would you prefer, and why?"
+     ],
+     "use": "check in with sb, give sb a heads-up, keep on top of sth, be upfront, I'd rather… than…, It depends on…"
+    }
+   ]
+  }
+ ]
 }
