@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="modulepreload" href="js/vendor/supabase.min.js">
+<link rel="modulepreload" href="js/db.js?v=202611251459">
+<link rel="modulepreload" href="js/config.js?v=202611251459">
 <title>OneMoreWord · Reading Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,8 +186,8 @@ footer{max-width:820px; margin:0 auto; padding:30px 20px 90px; font-size:12.5px;
 <div class="toast" id="toast"></div>
 
 <script type="module">
-import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611251455";
-import { feedbackView } from "./js/feedback.js?v=202611251455";
+import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611251459";
+import { feedbackView } from "./js/feedback.js?v=202611251459";
 
 /* ============ WHO / WHAT ============ */
 const [topicId, viewStudent] = decodeURIComponent(location.hash.slice(1)).split("/");
@@ -198,11 +201,15 @@ if (isTeacher) { $("#back").href = "teacher.html"; $("#back").textContent = "←
 const fail = (msg) => { main.innerHTML = `<div class="banner warn" style="margin-top:40px">${msg}</div>`; throw new Error(msg); };
 if (!topicId) fail("No lesson chosen. <a href='student.html'>Back</a>");
 
+// start everything at once instead of one after another
+const viewing = isTeacher && viewStudent;
+const subQ = isTeacher && !viewStudent ? Promise.resolve({ data: null }) : c.from("submissions").select("*").eq("student_id", viewing ? viewStudent : user.id).eq("topic_id", topicId).maybeSingle();
+const nameQ = viewing ? c.from("profiles").select("full_name").eq("id", viewStudent).maybeSingle() : Promise.resolve({ data: null });
+// The lesson text is kept in private storage: only students whose class has this lesson open (and the teacher) can read it.
+const dlQ = c.storage.from("lessons").download(`${topicId}.json`);
 const topic = await loadTopic(topicId).catch(() => fail("This lesson doesn't exist."));
 document.title = `${topic.title} · Reading Lab`;
-
-// The lesson text is kept in private storage: only students whose class has this lesson open (and the teacher) can read it.
-const dl = await c.storage.from("lessons").download(`${topicId}.json`);
+const dl = await dlQ;
 if (dl.error || !dl.data) fail(isTeacher
   ? "The lesson file hasn't been uploaded yet. In the dashboard, go to <b>Topics</b> and use <b>⬆ Upload lesson file</b> next to this lesson."
   : "This lesson isn't open for your class yet, or it's still being set up. Please ask your teacher.");
@@ -214,9 +221,9 @@ let mode = isTeacher ? (viewStudent ? "view" : "preview") : "student";
 const ownerId = mode === "view" ? viewStudent : user.id;
 let sub = null, studentName = "";
 if (mode !== "preview") {
-  const r = await c.from("submissions").select("*").eq("student_id", ownerId).eq("topic_id", topicId).maybeSingle();
+  const [r, p] = await Promise.all([subQ, nameQ]);
   sub = r.data || null;
-  if (mode === "view") { const p = await c.from("profiles").select("full_name").eq("id", ownerId).maybeSingle(); studentName = p.data?.full_name || "Student"; }
+  if (mode === "view") studentName = p.data?.full_name || "Student";
 }
 let locked = mode === "view" || !!sub?.exercises_submitted_at;
 

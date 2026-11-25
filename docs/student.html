@@ -3,9 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="modulepreload" href="js/vendor/supabase.min.js">
+<link rel="modulepreload" href="js/db.js?v=202611251459">
+<link rel="modulepreload" href="js/config.js?v=202611251459">
 <title>OneMoreWord Homework Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251455">
+<link rel="stylesheet" href="css/app.css?v=202611251459">
 </head>
 <body>
 <header class="topbar"><div class="wrap">
@@ -16,17 +21,22 @@
 <main class="wrap" id="main"><p class="muted" style="padding:30px 0">Loading…</p></main>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251455";
-import { renderLesson, renderHomework } from "./js/topic.js?v=202611251455";
-import { renderRecording } from "./js/recorder.js?v=202611251455";
-import { feedbackView } from "./js/feedback.js?v=202611251455";
-import { celebrate, wordOfTheDay, wordCard, maybeWordPopup, bindSay } from "./js/fx.js?v=202611251455";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251459";
+import { renderLesson, renderHomework } from "./js/topic.js?v=202611251459";
+import { renderRecording } from "./js/recorder.js?v=202611251459";
+import { feedbackView } from "./js/feedback.js?v=202611251459";
+import { celebrate, wordOfTheDay, wordCard, maybeWordPopup, bindSay } from "./js/fx.js?v=202611251459";
 
 const main = document.getElementById("main");
 document.getElementById("out").onclick = signOut;
 const { user, profile } = await requireUser("student");
 const c = await sb();
-const { data: cls } = await c.from("classes").select("*").eq("id", profile.class_id).maybeSingle();
+let cls = null;
+try { cls = JSON.parse(localStorage.getItem("hh.class." + profile.class_id) || "null"); } catch (e) {}
+const clsReady = Promise.resolve(c.from("classes").select("*").eq("id", profile.class_id).maybeSingle()).then(({ data }) => {
+  cls = data; try { localStorage.setItem("hh.class." + profile.class_id, JSON.stringify(data)); } catch (e) {}
+  document.getElementById("who").textContent = `${profile.full_name}${cls ? " · " + cls.name : ""}`;
+});
 document.getElementById("who").textContent = `${profile.full_name}${cls ? " · " + cls.name : ""}`;
 
 async function mySubs() {
@@ -35,7 +45,7 @@ async function mySubs() {
 }
 
 async function list() {
-  const [index, { data: open }, subs] = await Promise.all([loadTopicIndex(), c.from("class_topics").select("*").eq("class_id", profile.class_id), mySubs()]);
+  const [index, { data: open }, subs] = await Promise.all([loadTopicIndex(), c.from("class_topics").select("*").eq("class_id", profile.class_id), mySubs(), cls ? null : clsReady]);
   const openSet = new Set((open || []).map((o) => o.topic_id));
   const topics = index.filter((t) => openSet.has(t.id)).reverse(); // course order, latest lesson first
   const openedAt = Object.fromEntries((open || []).map((o) => [o.topic_id, new Date(o.opened_at)]));

@@ -1,10 +1,11 @@
-import { SUPABASE_URL, SUPABASE_KEY, EMAIL_DOMAIN } from "./config.js?v=202611251455";
+import { SUPABASE_URL, SUPABASE_KEY, EMAIL_DOMAIN } from "./config.js?v=202611251459";
 
 let client;
 export async function sb() {
   if (client) return client;
   if (window.__mockSupabase) return (client = window.__mockSupabase);
-  const { createClient } = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm");
+  // bundled locally (one file from our own site, cached by the browser) instead of many small files from a CDN
+  const { createClient } = await import("./vendor/supabase.min.js");
   client = createClient(SUPABASE_URL, SUPABASE_KEY);
   return client;
 }
@@ -30,7 +31,17 @@ export async function requireUser(role) {
   const { data } = await c.auth.getSession();
   const user = data.session?.user;
   if (!user) { location.href = "index.html"; throw new Error("not signed in"); }
-  const { data: profile } = await c.from("profiles").select("*").eq("id", user.id).maybeSingle();
+  // Use the profile saved on this device straight away (saves a round trip to the database),
+  // then refresh it in the background. The database's own rules still protect all data.
+  const PK = "hh.profile." + user.id;
+  let cached = null;
+  try { cached = JSON.parse(localStorage.getItem(PK) || "null"); } catch (e) {}
+  const fresh = Promise.resolve(c.from("profiles").select("*").eq("id", user.id).maybeSingle()).then(({ data: p }) => {
+    try { p ? localStorage.setItem(PK, JSON.stringify(p)) : localStorage.removeItem(PK); } catch (e) {}
+    if (cached && (!p || p.role !== cached.role || p.class_id !== cached.class_id)) location.reload();
+    return p;
+  });
+  const profile = cached || (await fresh);
   if (!profile) {
     document.body.innerHTML = `<div class="wrap"><div class="card"><h2>Account not set up</h2><p>Your login works, but it has no profile yet. Ask your teacher to check your account.</p><button onclick="history.back()">Back</button></div></div>`;
     throw new Error("no profile");

@@ -3,9 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="modulepreload" href="js/vendor/supabase.min.js">
+<link rel="modulepreload" href="js/db.js?v=202611251459">
+<link rel="modulepreload" href="js/config.js?v=202611251459">
 <title>OneMoreWord Homework Hub · Teacher</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251455">
+<link rel="stylesheet" href="css/app.css?v=202611251459">
 </head>
 <body>
 <header class="topbar"><div class="wrap wide">
@@ -30,9 +35,9 @@
 </div></div>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251455";
-import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251455";
-import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251455";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251459";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251459";
+import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251459";
 
 document.getElementById("out").onclick = signOut;
 const { profile, session } = await requireUser("teacher");
@@ -75,9 +80,10 @@ async function loadClasses() {
 document.querySelectorAll("#tabs button").forEach((b) => (b.onclick = () => { S.tab = b.dataset.tab; document.querySelectorAll("#tabs button").forEach((x) => x.classList.toggle("on", x === b)); render(); }));
 
 async function classData() {
-  const students = must(await c.from("profiles").select("*").eq("class_id", S.classId).eq("role", "student").order("full_name"));
   const pos = (id) => { const i = index.findIndex((t) => t.id === id); return i < 0 ? 999 : i; };
-  const opened = must(await c.from("class_topics").select("*").eq("class_id", S.classId)).sort((a, b) => pos(a.topic_id) - pos(b.topic_id));
+  const [st, op] = await Promise.all([c.from("profiles").select("*").eq("class_id", S.classId).eq("role", "student").order("full_name"), c.from("class_topics").select("*").eq("class_id", S.classId)]);
+  const students = must(st);
+  const opened = must(op).sort((a, b) => pos(a.topic_id) - pos(b.topic_id));
   const ids = students.map((s) => s.id);
   const subs = ids.length ? must(await c.from("submissions").select("*").in("student_id", ids)) : [];
   return { students, opened, subs };
