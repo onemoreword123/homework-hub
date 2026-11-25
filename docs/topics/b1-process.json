@@ -1,0 +1,954 @@
+{
+ "id": "b1-process",
+ "title": "Explaining a process",
+ "level": "B1",
+ "emoji": "🛠️",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-process.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "grammar2",
+   "label": "Phrases for explaining a process",
+   "groups": [
+    {
+     "purpose": "Giới thiệu",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "Let me (quickly) explain how + clause",
+       "**Let me quickly explain how** an order goes through the company."
+      ],
+      [
+       "I'll show you.",
+       "Come here, **I'll show you**."
+      ]
+     ]
+    },
+    {
+     "purpose": "Bắt đầu",
+     "color": "#d0e0e3",
+     "items": [
+      [
+       "It all starts with + N",
+       "**It all starts with** us in sales."
+      ],
+      [
+       "Start with + N / Start by + V-ing",
+       "**Start with** the condensed milk."
+      ]
+     ]
+    },
+    {
+     "purpose": "Các bước tiếp theo",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "Then / Now / After that, …",
+       "**Then** put the *phin* on top of the glass."
+      ],
+      [
+       "Once + clause, …",
+       "**Once** the customer has paid the deposit, the order goes to finance."
+      ],
+      [
+       "As soon as + clause, …",
+       "**As soon as** you get the delivery date, let the customer know."
+      ],
+      [
+       "When + clause, …",
+       "**When** it's done, give it a good stir."
+      ]
+     ]
+    },
+    {
+     "purpose": "Bị động: mô tả quy trình",
+     "color": "#d0e0e3",
+     "items": [
+      [
+       "be + V3 (by sb)",
+       "Then it’s **passed onto** the warehouse."
+      ],
+      [
+       "has to be + V3",
+       "It **has to be signed off by** me first."
+      ]
+     ]
+    },
+    {
+     "purpose": "Phân công",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "It's your job to + V",
+       "**It's your job to** keep the customer updated."
+      ]
+     ]
+    },
+    {
+     "purpose": "Nhắc nhở / cảnh báo",
+     "color": "#d0e0e3",
+     "items": [
+      [
+       "Don't + V, or + clause",
+       "**Don't** push it down too hard, **or** the water won't get through."
+      ],
+      [
+       "Make sure you + V",
+       "**Make sure you** check the payment first."
+      ]
+     ]
+    },
+    {
+     "purpose": "Đưa mẹo",
+     "color": "#fff2cc",
+     "items": [
+      [
+       "My advice is to + V",
+       "**My advice is to** check your orders first thing every morning."
+      ],
+      [
+       "Trust me, …",
+       "**Trust me**, it tastes much stronger."
+      ]
+     ]
+    },
+    {
+     "purpose": "Xử lý vấn đề",
+     "color": "#d0e0e3",
+     "items": [
+      [
+       "If + clause, (then) + clause",
+       "**If** it's taking longer, give finance a quick call."
+      ],
+      [
+       "In that case, …",
+       "**In that case**, it has to be signed off by me."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🛠️ Explaining a process"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Think about your **first week at a new job**. Did anyone explain **how things work? Was it clear?**",
+    "In your company, **how many teams or departments** are involved in **one piece of work?**",
+    "**What's something you can do really well **that you could **teach someone else?**",
+    "What makes **instructions easy** or **hard to follow?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. How an order goes through the company",
+   "context": "***Context:*** *Minh has just started as a sales assistant at an electronics company. On his first morning, his manager explains what happens to an order.*",
+   "lines": [
+    [
+     "Hannah",
+     "Before you start, let me quickly explain how an order goes through the company, **from start to finish**. It'll help you understand **who does what**."
+    ],
+    [
+     "Minh",
+     "That would be great. I was **a bit confused by** all the different teams yesterday."
+    ],
+    [
+     "Hannah",
+     "Don't worry, everyone is at first. So, **it all starts with** us in sales. When a customer **places an order**, you **enter** it **into the system** and send them **a quote**."
+    ],
+    [
+     "Minh",
+     "Do I need to **get** the quote **approved**?"
+    ],
+    [
+     "Hannah",
+     "Only for big orders, anything over 50 million đồng. **In that case**, it **has to be signed off by** me first."
+    ],
+    [
+     "Minh",
+     "OK."
+    ],
+    [
+     "Hannah",
+     "**Once** the customer has **paid the deposit**, the order goes to **finance**. They check the payment and **confirm** it in the system. You don't need to do anything **at that stage**, but **keep an eye on** it."
+    ],
+    [
+     "Minh",
+     "How long does that usually take?"
+    ],
+    [
+     "Hannah",
+     "Usually a day. If it's taking longer, just **give** finance **a quick call**. Don't just sit and wait."
+    ],
+    [
+     "Minh",
+     "**Got it.** And then?"
+    ],
+    [
+     "Hannah",
+     "Then it’s **passed on to** the warehouse. They pack everything and **book the delivery** with our **logistics team**. **As soon as** you get the delivery date, let the customer know."
+    ],
+    [
+     "Minh",
+     "So I'm the one who talks to the customer the whole time?"
+    ],
+    [
+     "Hannah",
+     "Exactly. You're their **main point of contact**. If there's a problem with the delivery, logistics will tell you, and you **keep the customer updated**."
+    ],
+    [
+     "Minh",
+     "That makes sense. Is there anything that often **goes wrong**?"
+    ],
+    [
+     "Hannah",
+     "Yes. Orders sometimes **get stuck** because finance hasn't confirmed the payment. So **my advice is to** check **the status of** your orders **first thing** every morning."
+    ],
+    [
+     "Minh",
+     "OK, **let me just check I've got this right**: sales, approval for big orders, finance, warehouse, then delivery. And I keep the customer updated."
+    ],
+    [
+     "Hannah",
+     "**Spot on.** Any questions **so far**?"
+    ],
+    [
+     "Minh",
+     "Not right now, but I'm sure I'll have some later."
+    ],
+    [
+     "Hannah",
+     "No problem. Just come and find me."
+    ]
+   ],
+   "vocab": [
+    [
+     "**from start to finish**",
+     "/frɒm stɑːt tə ˈfɪn.ɪʃ/",
+     "phrase",
+     "",
+     "audio/v/075647c006.mp3",
+     "Before you start, let me quickly explain how an order goes through the company, **from start to finish**.",
+     "từ đầu đến cuối"
+    ],
+    [
+     "**who does what**",
+     "/huː dʌz wɒt/",
+     "phrase",
+     "",
+     "audio/v/5251af268f.mp3",
+     "It'll help you understand **who does what**.",
+     "ai làm việc gì"
+    ],
+    [
+     "**be confused by** sth",
+     "/bi kənˈfjuːzd baɪ/",
+     "phrase",
+     "",
+     "audio/v/c558d7f28b.mp3",
+     "I was **a bit confused by** all the different teams yesterday.",
+     "bị rối, không hiểu điều gì"
+    ],
+    [
+     "**place an order**",
+     "/pleɪs ən ˈɔː.dər/",
+     "collocation",
+     "",
+     "audio/v/718c2b0e7e.mp3",
+     "When a customer **places an order**, you **enter** it **into the system** and send them **a quote**.",
+     "đặt hàng"
+    ],
+    [
+     "**enter sth into the system**",
+     "/ˈen.tər… ˈɪn.tə ðə ˈsɪs.təm/",
+     "phrase",
+     "",
+     "audio/v/b1e872e17a.mp3",
+     "When a customer **places an order**, you **enter** it **into the system** and send them **a quote**.",
+     "nhập cái gì vào hệ thống"
+    ],
+    [
+     "**a quote**",
+     "/ə kwəʊt/",
+     "noun",
+     "",
+     "audio/v/d58c479197.mp3",
+     "When a customer **places an order**, you **enter** it **into the system** and send them **a quote**.",
+     "bảng báo giá"
+    ],
+    [
+     "**get sth approved**",
+     "/ɡet… əˈpruːvd/",
+     "structure",
+     "",
+     "audio/v/42c02a1481.mp3",
+     "Do I need to **get** the quote **approved**?",
+     "được duyệt (cái gì)"
+    ],
+    [
+     "**in that case**",
+     "/ɪn ðæt keɪs/",
+     "phrase",
+     "",
+     "audio/v/1f9964afe3.mp3",
+     "**In that case**, it **has to be signed off by** me first.",
+     "trong trường hợp đó"
+    ],
+    [
+     "**be signed off (by sb)**",
+     "/bi saɪnd ɒf/",
+     "phrasal verb, passive",
+     "",
+     "audio/v/c0b15a185a.mp3",
+     "**In that case**, it **has to be signed off by** me first.",
+     "được (ai) ký duyệt"
+    ],
+    [
+     "**pay the deposit**",
+     "/peɪ ðə dɪˈpɒz.ɪt/",
+     "collocation",
+     "",
+     "audio/v/5456410d41.mp3",
+     "They check the payment and **confirm** it in the system.",
+     "trả tiền đặt cọc"
+    ],
+    [
+     "**at that stage**",
+     "/ət ðæt steɪdʒ/",
+     "phrase",
+     "",
+     "audio/v/9601fea60a.mp3",
+     "You don't need to do anything **at that stage**, but **keep an eye on** it.",
+     "ở giai đoạn đó"
+    ],
+    [
+     "**keep an eye on** sth",
+     "/kiːp ən aɪ ɒn/",
+     "idiom",
+     "",
+     "audio/v/21df89d466.mp3",
+     "You don't need to do anything **at that stage**, but **keep an eye on** it.",
+     "để mắt đến, theo dõi cái gì"
+    ],
+    [
+     "**give sb a quick call**",
+     "/ɡɪv ə kwɪk kɔːl/",
+     "collocation",
+     "",
+     "audio/v/0009fe7dc6.mp3",
+     "If it's taking longer, just **give** finance **a quick call**.",
+     "gọi nhanh cho ai"
+    ],
+    [
+     "**be passed on to** sb",
+     "/bi pɑːst ɒn tə/",
+     "phrasal verb, passive",
+     "",
+     "audio/v/803a2eeda8.mp3",
+     "Then it’s **passed on to** the warehouse.",
+     "được chuyển cho ai"
+    ],
+    [
+     "**book the delivery**",
+     "/bʊk ðə dɪˈlɪv.ər.i/",
+     "collocation",
+     "",
+     "audio/v/a30d554d78.mp3",
+     "They pack everything and **book the delivery** with our **logistics team**.",
+     "đặt lịch giao hàng"
+    ],
+    [
+     "**the logistics team**",
+     "/ðə ləˈdʒɪs.tɪks tiːm/",
+     "noun",
+     "",
+     "audio/v/d5772050e0.mp3",
+     "They pack everything and **book the delivery** with our **logistics team**.",
+     "bộ phận kho vận, giao nhận"
+    ],
+    [
+     "**as soon as** + clause",
+     "/əz suːn əz/",
+     "conjunction",
+     "",
+     "audio/v/fb7b429e72.mp3",
+     "**As soon as** you get the delivery date, let the customer know.",
+     "ngay khi…"
+    ],
+    [
+     "**the main point of contact**",
+     "/ðə meɪn pɔɪnt əv ˈkɒn.tækt/",
+     "phrase",
+     "",
+     "audio/v/80c388d33d.mp3",
+     "You're their **main point of contact**.",
+     "người liên hệ chính"
+    ],
+    [
+     "**keep sb updated**",
+     "/kiːp ʌpˈdeɪ.tɪd/",
+     "collocation",
+     "",
+     "audio/v/1cfebffea0.mp3",
+     "If there's a problem with the delivery, logistics will tell you, and you **keep the customer updated**.",
+     "cập nhật thông tin cho ai"
+    ],
+    [
+     "**go wrong**",
+     "/ɡəʊ rɒŋ/",
+     "phrase",
+     "",
+     "audio/v/6b92d66215.mp3",
+     "Is there anything that often **goes wrong**?",
+     "gặp trục trặc, bị sai"
+    ],
+    [
+     "**My advice is to + V**",
+     "/maɪ ədˈvaɪs ɪz tə/",
+     "structure",
+     "",
+     "audio/v/fcb41f3028.mp3",
+     "So **my advice is to** check **the status of** your orders **first thing** every morning.",
+     "Lời khuyên của tôi là…"
+    ],
+    [
+     "**Let me just check I've got this right.**",
+     "/let miː dʒʌst tʃek aɪv ɡɒt ðɪs raɪt/",
+     "expression",
+     "",
+     "audio/v/a01e33ddaf.mp3",
+     "OK, **let me just check I've got this right**: sales, approval for big orders, finance, warehouse, then delivery.",
+     "Để mình kiểm tra lại xem mình hiểu đúng chưa."
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Making Vietnamese coffee",
+   "context": "***Context:*** *Tom is staying with his Vietnamese friend, Linh, for the weekend. In the morning, Linh makes cà phê phin and shows him how to do it.*",
+   "lines": [
+    [
+     "Tom",
+     "Morning! Is that the coffee filter thing? I bought one last week, but **I've no idea how to** use it properly."
+    ],
+    [
+     "Linh",
+     "The *phin*? Yeah. What happened when you tried?"
+    ],
+    [
+     "Tom",
+     "It **took forever**, and when it finally finished, it tasted like water."
+    ],
+    [
+     "Linh",
+     "That **happens to everyone at first**. Come here, I'll show you. **Start with** the condensed milk, about two spoons **in the bottom of** the glass."
+    ],
+    [
+     "Tom",
+     "Only two? I thought Vietnamese coffee was really sweet."
+    ],
+    [
+     "Linh",
+     "You can add more later if you like. **Then** put the *phin* **on top of** the glass and add the coffee, about two big spoons. **Give it a little shake** so it's flat."
+    ],
+    [
+     "Tom",
+     "OK. And this little metal thing goes on top?"
+    ],
+    [
+     "Linh",
+     "Yeah, that's the press. Just put it on **gently**. **Don't push it down too hard, or** the water won't **get through**."
+    ],
+    [
+     "Tom",
+     "Ah, that's probably my mistake. I pressed it as hard as I could."
+    ],
+    [
+     "Linh",
+     "**That explains** why it took forever. **Now**, **pour in** just a little hot water, **enough to** cover the coffee, and wait about thirty seconds."
+    ],
+    [
+     "Tom",
+     "Why not **fill it up straight away**?"
+    ],
+    [
+     "Linh",
+     "This bit **lets** the coffee **open up**. **Trust me**, it tastes much stronger. OK, now fill it **to the top**, put the lid on and **leave it to drip**."
+    ],
+    [
+     "Tom",
+     "How long does it take?"
+    ],
+    [
+     "Linh",
+     "Four or five minutes. **If** it's dripping really fast, the coffee isn't pressed enough. If it's **barely** dripping, it's too tight."
+    ],
+    [
+     "Tom",
+     "It's quite relaxing, actually, just watching it."
+    ],
+    [
+     "Linh",
+     "**That's half the fun. When it's done**, **give it a good stir** and pour it over ice."
+    ],
+    [
+     "Tom",
+     "Mmm. That's much better than mine."
+    ],
+    [
+     "Linh",
+     "See? Easy **once you know how**. You'll **get the hang of it**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**I've no idea how to + V**",
+     "/aɪv nəʊ aɪˈdɪə haʊ tə/",
+     "structure",
+     "",
+     "audio/v/fc28b09a15.mp3",
+     "I bought one last week, but **I've no idea how to** use it properly.",
+     "Mình hoàn toàn không biết cách…"
+    ],
+    [
+     "**That happens to everyone at first.**",
+     "",
+     "expression",
+     "",
+     "audio/v/9cdffb9e7f.mp3",
+     "That **happens to everyone at first**.",
+     "Lúc đầu ai cũng vậy cả."
+    ],
+    [
+     "**Start with** + N / **Start by + V-ing**",
+     "/stɑːt wɪð/",
+     "structure",
+     "",
+     "audio/v/b228818b6c.mp3",
+     "**Start with** the condensed milk, about two spoons **in the bottom of** the glass.",
+     "Bắt đầu với… / Bắt đầu bằng việc…"
+    ],
+    [
+     "**on top of** + N",
+     "/ɒn tɒp əv/",
+     "preposition",
+     "",
+     "audio/v/9bae6da75f.mp3",
+     "**Then** put the *phin* **on top of** the glass and add the coffee, about two big spoons.",
+     "đặt lên trên…"
+    ],
+    [
+     "**give sth a (little) shake**",
+     "/ɡɪv ə ʃeɪk/",
+     "collocation",
+     "",
+     "audio/v/022054b4d2.mp3",
+     "**Give it a little shake** so it's flat.",
+     "lắc nhẹ cái gì"
+    ],
+    [
+     "**push sth down**",
+     "/pʊʃ daʊn/",
+     "phrasal verb",
+     "",
+     "audio/v/c698898601.mp3",
+     "**Don't push it down too hard, or** the water won't **get through**.",
+     "ấn cái gì xuống"
+    ],
+    [
+     "**get through**",
+     "/ɡet θruː/",
+     "phrasal verb",
+     "",
+     "audio/v/7227e8fbfd.mp3",
+     "**Don't push it down too hard, or** the water won't **get through**.",
+     "chảy qua, lọt qua"
+    ],
+    [
+     "**That explains + clause**",
+     "/ðæt ɪkˈspleɪnz/",
+     "structure",
+     "",
+     "audio/v/c3d1cd8064.mp3",
+     "**That explains** why it took forever.",
+     "Thảo nào…, Hèn gì…"
+    ],
+    [
+     "**pour in**",
+     "/pɔːr ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/25fa510621.mp3",
+     "**Now**, **pour in** just a little hot water, **enough to** cover the coffee, and wait about thirty seconds.",
+     "đổ về ồ ạt"
+    ],
+    [
+     "**fill sth up**",
+     "/fɪl ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/d7a30cb950.mp3",
+     "Why not **fill it up straight away**?",
+     "đổ đầy cái gì"
+    ],
+    [
+     "**straight away**",
+     "/streɪt əˈweɪ/",
+     "phrase",
+     "",
+     "audio/v/c292720ab7.mp3",
+     "Why not **fill it up straight away**?",
+     "ngay lập tức"
+    ],
+    [
+     "**open up**",
+     "/ˈəʊ.pən ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/16d2a6bd7a.mp3",
+     "This bit **lets** the coffee **open up**.",
+     "nở ra"
+    ],
+    [
+     "**(fill sth) to the top**",
+     "/tə ðə tɒp/",
+     "phrase",
+     "",
+     "audio/v/bb827876e7.mp3",
+     "OK, now fill it **to the top**, put the lid on and **leave it to drip**.",
+     "(đổ) đầy đến miệng"
+    ],
+    [
+     "**leave sth to + V**",
+     "/liːv… tə/",
+     "structure",
+     "",
+     "audio/v/b60cde2556.mp3",
+     "OK, now fill it **to the top**, put the lid on and **leave it to drip**.",
+     "để yên cho cái gì…"
+    ],
+    [
+     "**drip**",
+     "/drɪp/",
+     "verb",
+     "",
+     "audio/v/049c32667a.mp3",
+     "OK, now fill it **to the top**, put the lid on and **leave it to drip**.",
+     "nhỏ giọt"
+    ],
+    [
+     "**barely**",
+     "/ˈbeə.li/",
+     "adverb",
+     "",
+     "audio/v/7ac362595b.mp3",
+     "If it's **barely** dripping, it's too tight.",
+     "hầu như không, chỉ vừa đủ"
+    ],
+    [
+     "**That's half the fun.**",
+     "/ðæts hɑːf ðə fʌn/",
+     "expression",
+     "",
+     "audio/v/44b737c4e0.mp3",
+     "**That's half the fun.**",
+     "Đó mới là phần thú vị."
+    ],
+    [
+     "**When it's done, …**",
+     "/wen ɪts dʌn/",
+     "phrase",
+     "",
+     "audio/v/b4bb0ad1f0.mp3",
+     "When it's done**, **give it a good stir** and pour it over ice.**",
+     "Khi xong rồi thì…"
+    ],
+    [
+     "**give sth a (good) stir**",
+     "/ɡɪv ə stɜːr/",
+     "collocation",
+     "",
+     "audio/v/b3fb3c739a.mp3",
+     "When it's done**, **give it a good stir** and pour it over ice.**",
+     "khuấy đều cái gì"
+    ],
+    [
+     "**get the hang of** sth",
+     "/ɡet ðə hæŋ əv/",
+     "idiom",
+     "",
+     "audio/v/bfab11bd34.mp3",
+     "You'll **get the hang of it**.",
+     "quen tay, nắm được cách làm gì"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "It's Huy's third week at a bank. He wants to take a few days off next month, so he asks Rachel from HR how to request annual leave.",
+   "bank": [
+    "In that case",
+    "keep an eye on",
+    "It all starts with",
+    "signed off",
+    "As soon as",
+    "I've no idea how to",
+    "let me just check I've got this right",
+    "get it approved",
+    "at that stage",
+    "that happens to everyone at first"
+   ],
+   "lines": [
+    [
+     "Huy",
+     "Hi Rachel, have you got a minute? I'd like to take a few days off next month, but {I've no idea how to} request leave here."
+    ],
+    [
+     "Rachel",
+     "Don't worry, {that happens to everyone at first}. It's pretty simple. {It all starts with} the HR app. You log in and fill in the leave form."
+    ],
+    [
+     "Huy",
+     "OK. And then?"
+    ],
+    [
+     "Rachel",
+     "Once you've submitted it, it goes to your manager. You need to {get it approved} before you book anything."
+    ],
+    [
+     "Huy",
+     "What if it's more than five days?"
+    ],
+    [
+     "Rachel",
+     "{In that case}, it also has to be {signed off} by the head of the department."
+    ],
+    [
+     "Huy",
+     "How long does that usually take?"
+    ],
+    [
+     "Rachel",
+     "A couple of days. You don't need to do anything {at that stage}, but {keep an eye on} your email. If nobody replies after three days, give your manager a quick call."
+    ],
+    [
+     "Huy",
+     "Got it. So how do I know it's confirmed?"
+    ],
+    [
+     "Rachel",
+     "{As soon as} it's approved, you get an automatic email, and the days are taken off your leave balance."
+    ],
+    [
+     "Huy",
+     "OK, {let me just check I've got this right}: fill in the form in the app, wait for approval, and then I get an email."
+    ],
+    [
+     "Rachel",
+     "Spot on. My advice is to apply at least two weeks in advance, especially around Tết."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once.",
+   "bank": [
+    "passed on to",
+    "go wrong",
+    "My advice is to",
+    "from start to finish",
+    "straight away",
+    "keep you updated",
+    "who does what",
+    "the main point of contact",
+    "got the hang of it",
+    "That explains"
+   ],
+   "lines": [
+    [
+     "",
+     "The whole project took about six months {from start to finish}."
+    ],
+    [
+     "",
+     "At our first meeting, we decided {who does what}, so everyone knew their tasks."
+    ],
+    [
+     "",
+     "If you have any questions about the event, Lan is {the main point of contact}."
+    ],
+    [
+     "",
+     "I don't have an answer yet, but I'll {keep you updated} as soon as I hear anything."
+    ],
+    [
+     "",
+     "Always double-check the address before you send a parcel. That's where things usually {go wrong}."
+    ],
+    [
+     "",
+     "“The printer's been broken all week.” “Oh, {That explains} why the reports were late.”"
+    ],
+    [
+     "",
+     "The new software was confusing at first, but after a week, I {got the hang of it}."
+    ],
+    [
+     "",
+     "If the client calls, please let me know {straight away}."
+    ],
+    [
+     "",
+     "Your request will be {passed on to} the finance team for approval."
+    ],
+    [
+     "",
+     "{My advice is to} book your flights early. Prices go up a lot before Tết."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 3: Listening",
+   "intro": "Listen to Sarah's guide for new employees, then complete the flow chart.",
+   "podcast": "🎧 How to claim your expenses",
+   "audio": "audio/b1-process.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Sarah",
+     "text": "Hi everyone, and welcome to the company. I'm Sarah from the finance team. In this short guide, I'll walk you through how to claim your expenses after a business trip. It's pretty straightforward once you get the hang of it."
+    },
+    {
+     "t": 11.2,
+     "who": "Sarah",
+     "text": "Step one: During your trip, ==keep all your receipts==: for taxis, meals, hotels, everything. For hotels, make sure you ask for ==a proper invoice== with the company's name on it, or we won't be able to accept it."
+    },
+    {
+     "t": 24.4,
+     "who": "Sarah",
+     "text": "Step two: Once you're back in the office, log in to the HR app and ==fill in the expenses form==. ==Take a clear photo of each receipt== and upload it to the form."
+    },
+    {
+     "t": 33.6,
+     "who": "Sarah",
+     "text": "Step three: When you submit the form, it goes straight to your manager, who needs to ==approve== it before we can do anything. If your claim is over five million đồng, it also has to be signed off by ==the head of the department==. If it's under five million, it comes straight to us."
+    },
+    {
+     "t": 48.0,
+     "who": "Sarah",
+     "text": "Step four: After that, the claim is passed on to us in ==the finance team==. We check everything carefully, so please double-check your numbers before you submit."
+    },
+    {
+     "t": 57.3,
+     "who": "Sarah",
+     "text": "Step five: As soon as everything is confirmed, the money is paid into ==your bank account==, usually within ==ten working days==."
+    },
+    {
+     "t": 64.4,
+     "who": "Sarah",
+     "text": "And finally, one important tip: please submit your claim before ==the end of the month==. That's where most people go wrong. Late claims get stuck in the system and can take much longer."
+    },
+    {
+     "t": 75.1,
+     "who": "Sarah",
+     "text": "If you have any questions, you can always give us a quick call or drop us an email. Thanks, and good luck in your new role!"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "flow": true,
+   "title": "Part 3: Complete the flow chart",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "lines": [
+    [
+     "STEP 1 · During the trip",
+     "• Keep all your {receipts|receipt}.\n• Hotels: ask for a proper {invoice} with the company's name on it."
+    ],
+    [
+     "STEP 2 · Back at the office",
+     "• Fill in the {expenses form|expense form|form} in the HR app.\n• {Take|Upload} a photo of each receipt."
+    ],
+    [
+     "STEP 3 · Your manager",
+     "• {Approves|Approve|Must approve} the claim."
+    ],
+    [
+     "Over 5 million đồng? → YES",
+     "Signed off by the head of the {department}.\n(NO → go straight to Step 4)"
+    ],
+    [
+     "STEP 4",
+     "The {finance} team checks everything carefully."
+    ],
+    [
+     "STEP 5 · Payment",
+     "• Money is paid into your {bank account|account}.\n• Usually within {ten|10} working days."
+    ],
+    [
+     "⚠️ Top tip",
+     "Submit your claim before the {end} of the month!"
+    ]
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 4: Speaking (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "(At work) Explain a process at your workplace to a new colleague.",
+     "choices": [
+      "how a customer order or project moves through your company",
+      "how to request leave",
+      "how to claim expenses"
+     ],
+     "questionsLabel": "Talk about:",
+     "questions": [
+      "What is the process, and who's involved?",
+      "What are the main steps, in order?",
+      "Is there anything that often goes wrong?",
+      "What's your best tip?"
+     ],
+     "use": "from start to finish, It all starts with…, Once…, …, be passed on to, has to be signed off by, My advice is to…"
+    },
+    {
+     "title": "(Daily life) Explain to a foreign friend how to make a Vietnamese dish or drink (bánh mì, nem rán, phở, trà đá, bún chả…).",
+     "questions": [
+      "What do you need?",
+      "What are the steps, in order?",
+      "What's the most common mistake?",
+      "What's the secret to making it taste good?"
+     ],
+     "use": "Start with… / Start by + V-ing, Then…, Don't…, or…, Trust me, …, When it's done, …, get the hang of it."
+    },
+    {
+     "title": "(Story) Tell me about a time someone explained something to you, for example on your first day at work, or when you were learning a new skill.",
+     "questions": [
+      "What were they explaining?",
+      "Was their explanation easy or hard to follow? Why?",
+      "What did you do if you didn't understand?",
+      "What did you learn about explaining things to other people?"
+     ],
+     "use": "I've no idea how to…, be confused by, That happens to everyone at first, Let me just check I've got this right, go wrong, get the hang of sth."
+    }
+   ]
+  }
+ ]
+}

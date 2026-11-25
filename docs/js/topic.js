@@ -104,13 +104,14 @@ function gapBlock(s, saved = [], graded) {
       : `<input class="gap" aria-label="Blank ${idx + 1}" autocomplete="off" value="${esc(val)}" ${graded ? "disabled" : ""}>`;
     return `<span class="blank ${graded ? (ok ? "ok" : "bad") : ""}"><span class="num">${idx + 1}</span>${field}<span class="key">${esc(accepted[0])}</span></span>`;
   };
-  html += `<div class="dialogue ${s.type === "gaptype" ? "summary" : ""}">` + lines.map(([who, text]) => {
+  html += `<div class="dialogue ${s.type === "gaptype" ? "summary" : ""}${s.flow ? " flow" : ""}">` + lines.map(([who, text]) => {
     // escape text but keep {…} markers
     const parts = text.split(BLANK);
     let out = "";
-    parts.forEach((p, i) => { out += i % 2 ? blank(p) : esc(p); });
+    parts.forEach((p, i) => { out += i % 2 ? blank(p) : esc(p).replace(/\n/g, "<br>"); });
+    if (s.flow) return `<div class="flow-step">${who ? `<div class="flow-head">${esc(who)}</div>` : ""}<div>${out}</div></div>`;
     return `<p>${who ? `<b class="who">${esc(who)}:</b>` : ""}${out}</p>`;
-  }).join("") + `</div>`;
+  }).join(s.flow ? `<div class="flow-arrow">▼</div>` : "") + `</div>`;
   wrap.innerHTML = html;
   return wrap;
 }
