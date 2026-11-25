@@ -1,7 +1,7 @@
 // Rich feedback: short comment + full corrected version + error table.
 // Stored inside submissions.teacher_comment as JSON {v:2, comment, corrected, errors:[[mistakeHtml, fixHtml], ...]}
 // so no database change is needed. Old plain-text comments still work.
-import { esc } from "./db.js?v=202611251459";
+import { esc } from "./db.js?v=202611251539";
 
 /* ---------- storage ---------- */
 export function unpack(raw) {
@@ -162,6 +162,46 @@ export function feedbackView(raw) {
   let h = "";
   if (fb.comment) h += `<p style="white-space:pre-wrap;margin:6px 0 0">${esc(fb.comment)}</p>`;
   if (stripTags(fb.corrected)) h += `<div class="fb-label">Bản sửa đầy đủ:</div><div class="fb-corrected">${sanitize(fb.corrected)}</div>`;
-  if (fb.errors?.length) h += `<div class="fb-label">Bảng lỗi sai:</div><div class="grid-wrap"><table class="fb-table"><thead><tr><th>Lỗi sai</th><th>Sửa (và notes)</th></tr></thead><tbody>${fb.errors.map(([a, b]) => `<tr><td>${sanitize(a)}</td><td>${sanitize(b)}</td></tr>`).join("")}</tbody></table></div>`;
+  if (fb.errors?.length) h += `<div class="fb-label">Bảng lỗi sai:</div><div class="grid-wrap"><table class="fb-table"><thead><tr><th>Lỗi sai</th><th>Sửa (và notes)</th></tr></thead><tbody>${fb.errors.map(([a, b]) => `<tr><td>${sanitize(a)}</td><td>${sanitize(b)}${PRON.test(stripTags(a)) ? speakChips(b) : ""}</td></tr>`).join("")}</tbody></table></div>`;
   return h || `<p class="muted">(no comment)</p>`;
+}
+
+/* ---------- 🔊 listen buttons for "Pronunciation" rows ----------
+   Each line in the right-hand cell ("- trailer", "• comfortable /ˈkʌmftəbl/ (3 syllables)") gets a button
+   that reads the word aloud with the device's built-in English voice. Free, no files needed. */
+const PRON = /pronunciation|phát âm/i;
+const canSpeak = () => typeof window !== "undefined" && "speechSynthesis" in window;
+function speakText(line) {
+  return line
+    .replace(/\/[^/]*\//g, " ")        // IPA between slashes
+    .replace(/\([^)]*\)|\[[^\]]*\]/g, " ") // notes in brackets
+    .split(/[:→=]| - | – |\bnot\b/i)[0]  // stop at notes like ": stress on…" or "→ …"
+    .replace(/^[\s\-–•*·\d.)]+/, "")      // bullets / numbering
+    .replace(/["“”]/g, "").replace(/\s+/g, " ").trim();
+}
+function speakChips(html) {
+  if (!canSpeak()) return "";
+  const lines = String(html || "").replace(/<br\s*\/?>|<\/(p|div|li)>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").split("\n");
+  const words = [...new Set(lines.map(speakText).filter((w) => w && w.length <= 80))];
+  if (!words.length) return "";
+  return `<div class="say-row">${words.map((w) => `<span class="say-chip"><button type="button" data-speak="${esc(w)}" title="Listen">🔊 ${esc(w)}</button><button type="button" data-speak="${esc(w)}" data-slow="1" title="Listen slowly">🐢</button></span>`).join("")}</div>`;
+}
+let voice = null;
+function pickVoice() {
+  const vs = speechSynthesis.getVoices().filter((v) => /^en[-_]/i.test(v.lang));
+  const pref = (re) => vs.find((v) => re.test(v.lang) && /natural|google|samantha|daniel|serena|libby|sonia|neural/i.test(v.name)) || vs.find((v) => re.test(v.lang));
+  voice = pref(/en[-_]GB/i) || pref(/en[-_]US/i) || vs[0] || null;
+}
+if (canSpeak()) {
+  pickVoice(); speechSynthesis.onvoiceschanged = pickVoice;
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-speak]"); if (!b) return;
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(b.dataset.speak);
+    if (voice) u.voice = voice;
+    u.lang = voice?.lang || "en-GB";
+    u.rate = b.dataset.slow ? 0.55 : 0.9;
+    b.classList.add("on"); u.onend = u.onerror = () => b.classList.remove("on");
+    speechSynthesis.speak(u);
+  });
 }

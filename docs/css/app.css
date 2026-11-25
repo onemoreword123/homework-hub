@@ -290,3 +290,10 @@ table.t.gen td .ipa{white-space:normal}
 .lvl-head{display:flex;align-items:center;gap:10px;margin:12px 0 4px}
 .lvl-tag{background:var(--navy);color:#fff;border-radius:999px;padding:2px 12px;font-size:15px;font-family:Mulish,sans-serif}
 .lvl-group .toggle-row:last-child{border-bottom:0}
+
+/* 🔊 pronunciation buttons in feedback */
+.say-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.say-chip{display:inline-flex;border:1.5px solid #2F3E2C;border-radius:999px;overflow:hidden;background:#fff}
+.say-chip button{all:unset;cursor:pointer;padding:3px 10px;font-size:14px;font-weight:600;color:#2F3E2C}
+.say-chip button+button{border-left:1.5px solid #2F3E2C;padding:3px 8px}
+.say-chip button:hover,.say-chip button.on{background:#EDF0E9}

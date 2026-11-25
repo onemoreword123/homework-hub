@@ -1,4 +1,4 @@
-import { SUPABASE_URL, SUPABASE_KEY, EMAIL_DOMAIN } from "./config.js?v=202611251459";
+import { SUPABASE_URL, SUPABASE_KEY, EMAIL_DOMAIN } from "./config.js?v=202611251539";
 
 let client;
 export async function sb() {
