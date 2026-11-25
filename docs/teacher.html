@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneMoreWord Homework Hub · Teacher</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251452">
+<link rel="stylesheet" href="css/app.css?v=202611251455">
 </head>
 <body>
 <header class="topbar"><div class="wrap wide">
@@ -30,9 +30,9 @@
 </div></div>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251452";
-import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251452";
-import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251452";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251455";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251455";
+import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251455";
 
 document.getElementById("out").onclick = signOut;
 const { profile, session } = await requireUser("teacher");
@@ -109,7 +109,8 @@ async function progress() {
     ${students.map((st) => `<tr><td><b>${esc(st.full_name)}</b><br><span class="small muted">${esc(st.username)}</span></td>${opened.map((o) => {
       const s = byKey[st.id + "|" + o.topic_id];
       const state = !s || (!s.exercises_submitted_at && !s.recording_path) ? "none" : s.reviewed_at ? "reviewed" : "done";
-      const txt = state === "none" ? (s?.draft ? "✍️" : "–") : `${s.exercises_submitted_at ? `${s.score}/${s.max_score}` : "—"} ${s.recording_path ? "🎤" : ""} ${s.reviewed_at ? "✓" : s.teacher_comment ? "📝" : ""}`;
+      const secs = s?.draft ? Object.keys(s.draft).filter((k) => k.startsWith("sub-")).length : 0;
+      const txt = state === "none" ? (s?.draft ? `✍️${secs ? ` ${secs} sec.` : ""}` : "–") : `${s.exercises_submitted_at ? `${s.score}/${s.max_score}` : "—"} ${s.recording_path ? "🎤" : ""} ${s.reviewed_at ? "✓" : s.teacher_comment ? "📝" : ""}`;
       return `<td><span class="cell ${state}" data-st="${st.id}" data-t="${esc(o.topic_id)}">${txt}</span></td>`;
     }).join("")}</tr>`).join("")}</table></div></div>`;
   pane.querySelectorAll(".cell[data-st]").forEach((el) => (el.onclick = () => review(students.find((s) => s.id === el.dataset.st), el.dataset.t, byKey[el.dataset.st + "|" + el.dataset.t])));
@@ -187,11 +188,12 @@ async function reviewLab(st, topic, sub) {
   const ans = (k) => (a[k] || "").trim() ? `<div class="lab-ans">${esc(a[k])}</div>` : `<div class="lab-ans empty">(no answer)</div>`;
   const words = (s) => (String(s || "").trim().match(/\S+/g) || []).length;
   const status = sub.exercises_submitted_at ? `<span class="pill ok">${sub.score} / ${sub.max_score}</span><span class="small muted">submitted ${fmtDate(sub.exercises_submitted_at)}</span><button class="ghost sm" id="redo" style="margin-left:auto">Allow redo</button>`
-    : sub.draft ? `<span class="pill warn">In progress, not submitted</span>` : `<span class="pill warn">Not started</span>`;
+    : sub.draft ? `<span class="pill warn">In progress · ${L.chunks.concat([{ id: "final" }]).filter((ch) => a["sub-" + ch.id]).length} of ${L.chunks.length + 1} sections submitted</span>` : `<span class="pill warn">Not started</span>`;
+  const secState = (id) => a["sub-" + id] ? `<span class="pill ok">submitted</span> <button class="ghost sm" data-reopen="${id}" title="Let the student change this section and submit it again">Reopen</button>` : `<span class="pill">not submitted</span>`;
   const writing = L.chunks.map((ch, i) => {
     const mc = ch.comp.filter((q, j) => a[`mc-${ch.id}-q${j}`] === q.a).length;
     const gp = ch.gap.items.filter((it, j) => it[1].includes(String(a[`${ch.id}-g${j}`] || "").toLowerCase().replace(/[’']/g, "'").replace(/\s+/g, " ").trim()) && !a[`${ch.id}-g${j}_shown`]).length;
-    return `<h3 style="margin-top:22px">${i + 1}. ${esc(ch.title)} <span class="small muted" style="font-weight:400">· questions ${mc}/${ch.comp.length} · gaps ${gp}/${ch.gap.items.length}</span></h3>
+    return `<h3 style="margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;gap:8px">${i + 1}. ${esc(ch.title)} <span class="small muted" style="font-weight:400">· questions ${mc}/${ch.comp.length} · gaps ${gp}/${ch.gap.items.length}</span> ${secState(ch.id)}</h3>
       <div class="lab-sub">Translate</div>${ch.trans.map((t, j) => `<div class="lab-q">${esc(strip(t.vi))}</div>${ans(`${ch.id}-t${j}`)}<div class="lab-model">Model: ${esc(strip(t.m))}</div>`).join("")}
       <div class="lab-sub">Think & write</div>${ch.write.map((w, j) => `<div class="lab-q">${esc(strip(w.q))} <span class="small muted">(${words(a[`${ch.id}-w${j}`])} words, aim ${w.min}+)</span></div>${ans(`${ch.id}-w${j}`)}`).join("")}`;
   }).join("");
@@ -205,7 +207,7 @@ async function reviewLab(st, topic, sub) {
       <div id="fed"></div>
       <div class="submitbar" style="margin-top:16px"><button class="accent" id="fsave" ${sub.id ? "" : "disabled"}>${sub.reviewed_at ? "Update feedback" : "Publish feedback"}</button>${sub.id && !sub.reviewed_at ? `<button class="ghost" id="fdraft">Save draft</button>` : ""}${sub.reviewed_at ? `<button class="ghost" id="funlock">Unpublish</button>` : ""}${!sub.id ? `<span class="small muted">Nothing written yet.</span>` : ""}</div>
     </section>
-    <section class="card"><h2>✍️ Final PEEL paragraph <span class="small muted" style="font-weight:400">(${words(peel)} words, target 150–200)</span></h2>${peel ? `<div class="lab-ans">${esc(peel)}</div>` : `<div class="lab-ans empty">(no answer)</div>`}</section>
+    <section class="card"><h2 style="display:flex;flex-wrap:wrap;align-items:center;gap:8px">✍️ Final PEEL paragraph <span class="small muted" style="font-weight:400">(${words(peel)} words, target 150–200)</span> ${secState("final")}</h2>${peel ? `<div class="lab-ans">${esc(peel)}</div>` : `<div class="lab-ans empty">(no answer)</div>`}</section>
     <section class="card"><h2>📝 Translations and writing</h2>${writing}</section>`;
   const editor = feedbackEditor(sub.teacher_comment || "");
   dbody.querySelector("#fed").appendChild(editor.el);
@@ -214,7 +216,16 @@ async function reviewLab(st, topic, sub) {
   dbody.querySelector("#fsave")?.addEventListener("click", () => save({ ...fields(), reviewed_at: new Date().toISOString() }, "Feedback published"));
   dbody.querySelector("#fdraft")?.addEventListener("click", () => save(fields(), "Draft saved (not visible to the student yet)"));
   dbody.querySelector("#funlock")?.addEventListener("click", () => save({ reviewed_at: null }, "Feedback hidden until you publish it again."));
-  dbody.querySelector("#redo")?.addEventListener("click", () => { if (confirm(`Let ${st.full_name} edit and submit this lesson again? Their written work is kept.`)) save({ answers: null, score: null, max_score: null, exercises_submitted_at: null }, "Reopened for the student"); });
+  dbody.querySelector("#redo")?.addEventListener("click", () => {
+    if (!confirm(`Reopen every section for ${st.full_name}? They can change their answers and submit again. Their work is kept.`)) return;
+    const d = { ...(sub.draft || sub.answers || {}) }; Object.keys(d).forEach((k) => k.startsWith("sub-") && delete d[k]); d._t = Date.now();
+    save({ draft: d, answers: null, score: null, max_score: null, exercises_submitted_at: null }, "All sections reopened");
+  });
+  dbody.querySelectorAll("[data-reopen]").forEach((b) => (b.onclick = () => {
+    if (!confirm(`Reopen this section for ${st.full_name}? They can change it and submit it again.`)) return;
+    const d = { ...(sub.draft || sub.answers || {}) }; delete d["sub-" + b.dataset.reopen]; d._t = Date.now();
+    save({ draft: d, answers: null, score: null, max_score: null, exercises_submitted_at: null }, "Section reopened");
+  }));
 }
 
 /* Convert any browser-playable audio to a 16 kHz mono WAV with a proper length header

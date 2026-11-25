@@ -96,6 +96,13 @@ button{font-family:var(--sans)}
 .opt:hover{border-color:#BFB6A4}
 .opt.right{background:var(--good-bg); border-color:var(--good); color:#134A30}
 .opt.wrong{background:var(--bad-bg); border-color:var(--bad); color:#7A2413}
+.opt.picked{border-color:var(--accent); background:var(--accent-soft); box-shadow:0 0 0 1px var(--accent) inset}
+.chunk:not(.done) .modelbtn{display:none}
+.sec-bar{display:flex; align-items:center; gap:12px; flex-wrap:wrap; background:var(--accent-soft); border:1px solid #D3DACB; border-radius:14px; padding:14px 18px; margin:16px 0}
+.sec-bar .what{font-size:14.5px; flex:1; min-width:200px}
+.sec-bar.done{background:var(--good-bg); border-color:#BFE3CD}
+.sec-bar .big{font-family:var(--display); font-size:22px; font-weight:700; color:var(--good)}
+.dock .prog{background:#fff; border:1px solid var(--line); border-radius:8px; padding:7px 12px; font-size:13.5px; box-shadow:0 4px 14px rgba(0,0,0,.12)}
 .explain{display:none; font-size:14px; margin-top:8px; padding:9px 12px; border-radius:8px; background:#F6F3EC}
 .explain.show{display:block}
 .bank{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px}
@@ -176,8 +183,8 @@ footer{max-width:820px; margin:0 auto; padding:30px 20px 90px; font-size:12.5px;
 <div class="toast" id="toast"></div>
 
 <script type="module">
-import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611251452";
-import { feedbackView } from "./js/feedback.js?v=202611251452";
+import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611251455";
+import { feedbackView } from "./js/feedback.js?v=202611251455";
 
 /* ============ WHO / WHAT ============ */
 const [topicId, viewStudent] = decodeURIComponent(location.hash.slice(1)).split("/");
@@ -265,9 +272,9 @@ function render() {
   const m = L.meta;
   let top = "";
   if (mode === "view") top += `<div class="banner info">👀 You're viewing <b>${esc(studentName)}</b>'s work${sub?.exercises_submitted_at ? `, submitted ${fmtDate(sub.exercises_submitted_at)} · <b>${sub.score}/${sub.max_score}</b>` : sub?.draft ? " (in progress, not submitted yet)" : " (nothing written yet)"}.</div>`;
-  if (mode === "preview") top += `<div class="banner info">Teacher preview: you can try everything, but nothing is saved. Use <b>Show answers</b> and <b>Show model answer</b> as your answer key.</div>`;
+  if (mode === "preview") top += `<div class="banner info">Teacher preview: nothing is saved. Press <b>Submit section</b> at the end of a chunk to see the answer key, explanations and model answers.</div>`;
   if (mode === "student" && sub?.reviewed_at) top += `<div class="fbbox"><h3>💬 Feedback from your teacher</h3>${sub.teacher_mark ? `<div class="mark">${esc(sub.teacher_mark)}</div>` : ""}${feedbackView(sub.teacher_comment)}<div class="muted" style="font-size:13px;margin-top:8px">Reviewed ${fmtDate(sub.reviewed_at)}</div></div>`;
-  if (mode === "student" && locked) top += `<div class="banner ok">✅ You submitted this lesson on ${fmtDate(sub.exercises_submitted_at)} · score <b>${sub.score}/${sub.max_score}</b> for the questions and gap-fills. Your writing goes to your teacher. You can still read everything and look at the model answers.</div>`;
+  if (mode === "student" && locked) top += `<div class="banner ok">✅ You finished every section on ${fmtDate(sub.exercises_submitted_at)} · score <b>${sub.score}/${sub.max_score}</b> for the questions and gap-fills. Your teacher will check your writing.</div>`;
 
   main.innerHTML = `${top}
   <div class="hero" id="intro">
@@ -280,12 +287,13 @@ function render() {
       <ol>
         <li><b>Read</b> the text once for the general idea. Tap <span class="v" tabindex="0">highlighted words</span> to see the meaning in English and Vietnamese.</li>
         <li><b>Hard sentences</b> are <span class="ds">underlined<sup>1</sup></span>. Try to understand each one yourself first, then tap it to see the Vietnamese translation.</li>
-        <li><b>Check understanding:</b> answer the questions. You'll see right away whether you were right, and why. Only your first answer counts!</li>
+        <li><b>Check understanding:</b> answer the questions.</li>
         <li><b>Vocabulary:</b> fill the gaps using the words from the chunk.</li>
         <li><b>Translate</b> Vietnamese → English using the target words. The chips turn green when you use them.</li>
         <li><b>Write:</b> answer the thinking questions. Use the “Think first” box to plan, and tap a sentence frame to start.</li>
+        <li><b>Submit the section</b> at the bottom of each chunk. Then you'll see the correct answers, the explanations and the model answers, and your teacher can check your work. You can't change a section after you submit it.</li>
       </ol>
-      <div class="legend-row"><span>Your work saves automatically, so you can do it over several days, on any device.</span><span>When everything is finished, press <b>Submit to teacher</b> (bottom right).</span></div>
+      <div class="legend-row"><span>Your work saves automatically, so you can do it over several days, on any device.</span></div>
     </div>
   </div>
   <div id="chunks">${CHUNKS.map((ch, i) => chunkHTML(ch, i)).join("")}</div>
@@ -308,12 +316,13 @@ function render() {
       <div class="peel-box"><label>L – Link / evaluate <span>“Overall,…”, “However, the article does not consider…”</span></label><textarea data-save="final-l"></textarea></div>
       <div class="btn-row">
         <button class="btn primary" id="buildPeel">Build my paragraph</button>
-        <button class="btn" data-toggle="final-model">Show model paragraph</button>
+        <button class="btn modelbtn" data-toggle="final-model">Show model paragraph</button>
       </div>
       <div class="preview" id="peelPreview"></div>
       <div class="wc" id="peelWc"></div>
       <div class="model" id="final-model"><span class="lbl">Model paragraph (one possible answer)</span>${L.final.model}</div>
     </div>
+    <div class="sec-bar" id="final-bar"></div>
   </section>`;
   $("#footer").innerHTML = m.footer;
   $("#nav").innerHTML = `<a href="#intro" data-jump>Start</a>` + CHUNKS.map((ch, i) => `<a href="#${ch.id}" data-jump data-nav="${ch.id}">${i + 1}</a>`).join("") + `<a href="#final" data-jump data-nav="final">Final</a>`;
@@ -322,12 +331,12 @@ function render() {
   dock();
 }
 
+const SECTIONS = () => [...CHUNKS.map((ch) => ch.id), "final"];
+const isDone = (id) => locked && mode !== "view" ? true : !!store["sub-" + id];
 function dock() {
-  const d = $("#dock");
-  if (mode === "student" && !locked) d.innerHTML = `<button class="btn" id="dlBtn">⬇ My answers</button><button class="btn primary" id="submitBtn">Submit to teacher</button>`;
-  else d.innerHTML = `<button class="btn" id="dlBtn">⬇ ${mode === "view" ? "Answers as text" : "My answers"}</button>`;
+  const d = $("#dock"), n = SECTIONS().filter((id) => store["sub-" + id]).length;
+  d.innerHTML = `<span class="prog">${n} / ${SECTIONS().length} sections submitted</span><button class="btn" id="dlBtn">⬇ ${mode === "view" ? "Answers as text" : "My answers"}</button>`;
   $("#dlBtn").onclick = downloadText;
-  $("#submitBtn")?.addEventListener("click", submitWork);
 }
 
 function chunkHTML(ch, i) {
@@ -341,13 +350,13 @@ function chunkHTML(ch, i) {
   const gap = `<div class="bank">${ch.gap.bank.map((b) => `<span>${b}</span>`).join("")}</div>` + ch.gap.items.map((it, j) => {
     const parts = it[0].split("___");
     return `<div class="gap">${j + 1}. ${parts[0]}<input data-save="${ch.id}-g${j}" data-ans="${it[1].join("|")}" autocomplete="off" spellcheck="false">${parts[1]}<span class="fb"></span></div>`;
-  }).join("") + `<div class="btn-row"><button class="btn primary" data-check="${ch.id}">Check answers</button><button class="btn" data-reveal="${ch.id}">Show answers</button><span class="score" id="${ch.id}-score"></span></div>`;
+  }).join("") + `<div class="btn-row"><span class="score" id="${ch.id}-score" style="margin-left:0"></span></div>`;
   const trans = ch.trans.map((t, j) => `
     <div class="task">
       <div class="prompt"><b>${j + 1}.</b> <span class="vi-src">${t.vi}</span></div>
       <div class="uses" data-uses="${ch.id}-t${j}"><span>Use:</span>${t.use.map((u) => `<span class="chip" data-m="${u}">${u.split("|")[0]}</span>`).join("")}</div>
       <textarea data-save="${ch.id}-t${j}" data-usetarget="${ch.id}-t${j}" placeholder="Write your English translation…"></textarea>
-      <div class="btn-row"><button class="btn small" data-toggle="${ch.id}-tm${j}">Show model answer</button></div>
+      <div class="btn-row"><button class="btn small modelbtn" data-toggle="${ch.id}-tm${j}">Show model answer</button></div>
       <div class="model" id="${ch.id}-tm${j}"><span class="lbl">Model answer</span>${t.m}</div>
     </div>`).join("");
   const write = ch.write.map((w, j) => `
@@ -357,7 +366,7 @@ function chunkHTML(ch, i) {
       <div class="frames"><span style="font-size:13px;color:var(--muted);align-self:center">Start with:</span>${w.frames.map((f) => `<span class="frame" data-for="${ch.id}-w${j}">${f}…</span>`).join("")}</div>
       <textarea class="long" id="ta-${ch.id}-w${j}" data-save="${ch.id}-w${j}" data-min="${w.min}" placeholder="Write your answer here…"></textarea>
       <div class="wc" data-wc="${ch.id}-w${j}">0 words · aim for ${w.min}+</div>
-      <div class="btn-row"><button class="btn small" data-toggle="${ch.id}-wm${j}">Show model answer</button></div>
+      <div class="btn-row"><button class="btn small modelbtn" data-toggle="${ch.id}-wm${j}">Show model answer</button></div>
       <div class="model" id="${ch.id}-wm${j}"><span class="lbl">Model answer (compare it with your ideas, don't copy it)</span>${w.m}</div>
     </div>`).join("");
   return `
@@ -369,6 +378,7 @@ function chunkHTML(ch, i) {
     <div class="step"><div class="step-label"><div class="badge">C</div><h3>Vocabulary check <small>fill each gap with a word from the box</small></h3></div>${gap}</div>
     <div class="step"><div class="step-label"><div class="badge">D</div><h3>Translate into English <small>use the target words</small></h3></div>${trans}</div>
     <div class="step"><div class="step-label"><div class="badge">E</div><h3>Think & write <small>form your own ideas</small></h3></div>${write}</div>
+    <div class="sec-bar" id="${ch.id}-bar"></div>
   </section>`;
 }
 
@@ -451,13 +461,13 @@ document.addEventListener("click", (e) => {
   if (ds && ds.dataset.c) { e.stopPropagation(); showSentPop(ds); return; }
   if (t.dataset.toggle) document.getElementById(t.dataset.toggle)?.classList.toggle("show");
   if (t.classList.contains("opt")) {
-    const q = t.closest(".q"); if (q.dataset.done || locked) return;
-    markMC(q, +t.dataset.k);
+    const q = t.closest(".q"), sec = t.closest("section.chunk");
+    if (locked || sec.classList.contains("done")) return;
+    $$(".opt", q).forEach((o) => o.classList.toggle("picked", o === t));
     store["mc-" + q.dataset.q] = +t.dataset.k; save(); updateNav();
   }
-  if (t.dataset.check) checkGaps(t.dataset.check, false);
-  if (t.dataset.reveal) checkGaps(t.dataset.reveal, true);
-  if (t.classList.contains("frame") && !locked) {
+  if (t.dataset.secsubmit) submitSection(t.dataset.secsubmit);
+  if (t.classList.contains("frame") && !locked && !t.closest("section.chunk").classList.contains("done")) {
     const ta = document.getElementById("ta-" + t.dataset.for);
     const add = t.textContent.replace(/…$/, "");
     ta.value = (ta.value.trim() ? ta.value.replace(/\s*$/, " ") : "") + add;
@@ -470,24 +480,60 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") pop.style.display = "none";
 });
 
-function checkGaps(id, reveal) {
+function markGaps(id) {
   let right = 0; const inputs = $$(`#${id} .gap input`);
-  if (reveal && !locked && !confirm("Show all the answers for this exercise? Any gaps you haven't got right will be filled in for you, and they won't count in your score.")) return;
   inputs.forEach((inp) => {
-    const ans = inp.dataset.ans.split("|");
-    if (reveal && !ans.includes(norm(inp.value))) {
-      if (locked) { inp.nextElementSibling.textContent = `→ ${ans[0]}`; inp.nextElementSibling.style.color = "var(--good)"; inp.classList.toggle("wrong", inp.value.trim() !== ""); return; }
-      inp.value = ans[0]; store[inp.dataset.save + "_shown"] = 1; store[inp.dataset.save] = ans[0];
-    }
-    const ok = ans.includes(norm(inp.value)) && !store[inp.dataset.save + "_shown"];
-    const shown = !!store[inp.dataset.save + "_shown"];
-    inp.classList.toggle("right", ok); inp.classList.toggle("wrong", !ok && !shown && inp.value.trim() !== "");
-    inp.nextElementSibling.textContent = ok ? "✓" : shown ? "(answer shown)" : inp.value.trim() ? (locked ? `✗ → ${ans[0]}` : "✗ try again") : (locked ? `→ ${ans[0]}` : "");
-    inp.nextElementSibling.style.color = ok ? "var(--good)" : shown ? "var(--muted)" : "var(--bad)";
+    const ans = inp.dataset.ans.split("|"), ok = ans.includes(norm(inp.value));
+    inp.classList.toggle("right", ok); inp.classList.toggle("wrong", !ok);
+    inp.nextElementSibling.textContent = ok ? "✓" : `✗ → ${ans[0]}`;
+    inp.nextElementSibling.style.color = ok ? "var(--good)" : "var(--bad)";
     if (ok) right++;
   });
-  $(`#${id}-score`).textContent = `${right} / ${inputs.length}`;
-  save(); updateNav();
+  $(`#${id}-score`).textContent = inputs.length ? `${right} / ${inputs.length} correct` : "";
+}
+function sectionScore(id) {
+  const ch = CHUNKS.find((x) => x.id === id); if (!ch) return null;
+  const mc = ch.comp.filter((q, j) => store[`mc-${ch.id}-q${j}`] === q.a).length;
+  const gp = ch.gap.items.filter((it, j) => it[1].includes(norm(store[`${ch.id}-g${j}`]))).length;
+  return { got: mc + gp, of: ch.comp.length + ch.gap.items.length };
+}
+// show answers, explanations and model answers for a submitted section, and freeze it
+function revealSection(id) {
+  const sec = document.getElementById(id); if (!sec) return;
+  sec.classList.add("done");
+  $$(".q", sec).forEach((q) => { const k = store["mc-" + q.dataset.q]; $$(".opt", q).forEach((o) => o.classList.remove("picked")); markMC(q, k == null ? -1 : +k); });
+  if (id !== "final") markGaps(id);
+  $$("[data-save]", sec).forEach((el) => (el.readOnly = true));
+  $$(".model", sec).forEach((m) => m.classList.add("show"));
+}
+function sectionBar(id) {
+  const bar = document.getElementById(id + "-bar"); if (!bar) return;
+  const n = id === "final" ? "the final task" : `section ${CHUNKS.findIndex((c) => c.id === id) + 1}`;
+  const sc = sectionScore(id);
+  if (store["sub-" + id] || (locked && mode !== "view")) {
+    bar.className = "sec-bar done";
+    bar.innerHTML = `<div class="what">✅ <b>${id === "final" ? "Final task" : "Section " + n.split(" ")[1]} submitted</b>${store["sub-" + id] ? ` · ${fmtDate(new Date(store["sub-" + id]).toISOString())}` : ""}<br><span class="muted">The answers and model answers are shown above${mode === "student" ? ". Your teacher can now check your work." : "."}</span></div>${sc ? `<div class="big">${sc.got}/${sc.of}</div>` : ""}`;
+  } else if (mode === "view") {
+    bar.className = "sec-bar"; bar.innerHTML = `<div class="what">⏳ Not submitted yet. You're seeing the student's work so far.</div>`;
+  } else {
+    bar.className = "sec-bar";
+    bar.innerHTML = `<div class="what"><b>Finished ${n}?</b> Submit it to see the answers and the model answers. You can't change it afterwards.</div><button class="btn primary" data-secsubmit="${id}">Submit ${n}</button>`;
+  }
+}
+async function submitSection(id) {
+  const sec = document.getElementById(id), ch = CHUNKS.find((x) => x.id === id);
+  const miss = [];
+  if (ch) {
+    const mq = ch.comp.filter((q, j) => store[`mc-${ch.id}-q${j}`] == null).length; if (mq) miss.push(`${mq} question(s)`);
+    const mg = ch.gap.items.filter((it, j) => !String(store[`${ch.id}-g${j}`] || "").trim()).length; if (mg) miss.push(`${mg} gap(s)`);
+    const mt = [...ch.trans.map((t, j) => `${ch.id}-t${j}`), ...ch.write.map((w, j) => `${ch.id}-w${j}`)].filter((k) => !words(store[k])).length; if (mt) miss.push(`${mt} translation/writing task(s)`);
+  } else if (!finalDone()) miss.push("parts of the PEEL paragraph");
+  if (!confirm(`${miss.length ? "Still empty: " + miss.join(", ") + ".\n\n" : ""}Submit this section? You'll see the answers, and you can't change it afterwards.`)) return;
+  store["sub-" + id] = Date.now();
+  revealSection(id); sectionBar(id); dock(); updateNav();
+  if (mode === "student") { store._t = Date.now(); dirty = true; try { localStorage.setItem(LKEY, JSON.stringify(store)); } catch (e) {} clearTimeout(saveTimer); await pushDraft(); }
+  if (SECTIONS().every((x) => store["sub-" + x])) await finishAll();
+  else toast("Section submitted ✓");
 }
 
 function updateUses(ta) {
@@ -501,7 +547,7 @@ function updateWc(ta) {
   el.textContent = `${n} words · aim for ${min}+`; el.classList.toggle("ok", n >= min);
 }
 document.addEventListener("input", (e) => {
-  const t = e.target; if (!t.dataset.save || locked) return;
+  const t = e.target; if (!t.dataset.save || locked || t.closest("section.chunk")?.classList.contains("done")) return;
   store[t.dataset.save] = t.value; save();
   if (t.dataset.usetarget) updateUses(t);
   if (t.dataset.min) updateWc(t);
@@ -515,19 +561,15 @@ function restore() {
     if (el.dataset.usetarget) updateUses(el);
     if (el.dataset.min) updateWc(el);
   });
-  $$(".q").forEach((q) => { const k = store["mc-" + q.dataset.q]; if (k != null) markMC(q, +k); });
-  if (locked) CHUNKS.forEach((ch) => checkGaps(ch.id, false));
+  $$(".q").forEach((q) => { const k = store["mc-" + q.dataset.q]; if (k != null) $(`.opt[data-k="${k}"]`, q)?.classList.add("picked"); });
+  SECTIONS().forEach((id) => { if (isDone(id) || mode === "view") revealSection(id); sectionBar(id); });
 }
 
-function chunkDone(ch) {
-  const mc = ch.comp.every((q, j) => store[`mc-${ch.id}-q${j}`] != null);
-  const wr = ch.write.every((w, j) => words(store[`${ch.id}-w${j}`]) >= Math.round(w.min * 0.6));
-  return mc && wr;
-}
+function chunkDone(ch) { return !!store["sub-" + ch.id] || (locked && mode !== "view"); }
 const finalDone = () => ["final-p", "final-e1", "final-e2", "final-l"].every((k) => (store[k] || "").trim().length > 10);
 function updateNav() {
   CHUNKS.forEach((ch) => document.querySelector(`[data-nav="${ch.id}"]`)?.classList.toggle("done", chunkDone(ch)));
-  document.querySelector(`[data-nav="final"]`)?.classList.toggle("done", finalDone());
+  document.querySelector(`[data-nav="final"]`)?.classList.toggle("done", !!store["sub-final"] || (locked && mode !== "view"));
 }
 const io = new IntersectionObserver((entries) => {
   entries.forEach((en) => { if (en.isIntersecting) {
@@ -563,23 +605,19 @@ function downloadText() {
   document.body.appendChild(a); a.click(); a.remove();
 }
 
-async function submitWork() {
-  const missingMC = CHUNKS.reduce((n, ch) => n + ch.comp.filter((q, j) => store[`mc-${ch.id}-q${j}`] == null).length, 0);
-  const emptyWrite = CHUNKS.reduce((n, ch) => n + ch.write.filter((w, j) => !words(store[`${ch.id}-w${j}`])).length + ch.trans.filter((t, j) => !words(store[`${ch.id}-t${j}`])).length, 0);
-  const notes = [missingMC && `${missingMC} question(s) not answered`, emptyWrite && `${emptyWrite} translation/writing task(s) empty`, !finalDone() && "the final PEEL paragraph isn't finished"].filter(Boolean);
-  if (!confirm(`${notes.length ? "Not finished yet: " + notes.join(", ") + ".\n\n" : ""}Submit your work to your teacher now? You can't change it after you submit.`)) return;
-  const btn = $("#submitBtn"); btn.disabled = true; btn.textContent = "Submitting…";
-  clearTimeout(saveTimer);
+// every section submitted: record the whole lesson as finished (score for questions + gaps)
+async function finishAll() {
+  if (mode !== "student") { toast("All sections submitted (preview)"); return; }
   const answers = { ...store }; delete answers._t;
-  const { score, max } = scoreOf(Object.fromEntries(Object.entries(answers).filter(([k]) => !answers[k + "_shown"])));
+  const { score, max } = scoreOf(answers);
   const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: topicId, draft: store, answers, score, max_score: max }, { onConflict: "student_id,topic_id" }).select().single();
-  if (error) { alert("Couldn't submit: " + error.message + "\nYour work is still saved. Please try again."); btn.disabled = false; btn.textContent = "Submit to teacher"; return; }
+  if (error) { alert("Your sections are saved, but finishing the lesson failed: " + error.message + "\nPlease reload the page."); return; }
   sub = data; locked = true; dirty = false;
   try { localStorage.removeItem(LKEY); } catch (e) {}
-  saveState("Submitted ✓");
+  saveState("Finished ✓");
   render(); restore(); updateNav(); observe();
   window.scrollTo({ top: 0, behavior: "smooth" });
-  toast("Submitted! Great work 🎉");
+  toast("All done! Great work 🎉");
 }
 
 function observe() { [...CHUNKS.map((ch) => document.getElementById(ch.id)), document.getElementById("final")].forEach((s) => s && io.observe(s)); }

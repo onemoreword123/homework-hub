@@ -1,5 +1,5 @@
 // Renders a topic's lesson notes and homework from its JSON file.
-import { esc } from "./db.js?v=202611251452";
+import { esc } from "./db.js?v=202611251455";
 
 const norm = (s) => String(s ?? "").toLowerCase().replace(/[’‘`]/g, "'").replace(/[“”]/g, '"')
   .replace(/[.,!?;:"]/g, "").replace(/-/g, " ").replace(/\s+/g, " ").trim();
