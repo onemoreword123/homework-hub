@@ -1,6 +1,6 @@
 // Speaking task: pick an option, record in the browser (or upload a file), submit.
-import { esc, fmtDate } from "./db.js?v=202611251543";
-import { MAX_RECORDING_SECONDS } from "./config.js?v=202611251543";
+import { esc, fmtDate } from "./db.js?v=202611252116";
+import { MAX_RECORDING_SECONDS } from "./config.js?v=202611252116";
 
 const MIC = '<svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-2.08A7 7 0 0 0 19 12z"/></svg>';
 const STOP = '<svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>';

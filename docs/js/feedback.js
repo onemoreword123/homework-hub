@@ -1,7 +1,7 @@
 // Rich feedback: short comment + full corrected version + error table.
 // Stored inside submissions.teacher_comment as JSON {v:2, comment, corrected, errors:[[mistakeHtml, fixHtml], ...]}
 // so no database change is needed. Old plain-text comments still work.
-import { esc } from "./db.js?v=202611251543";
+import { esc } from "./db.js?v=202611252116";
 
 /* ---------- storage ---------- */
 export function unpack(raw) {
@@ -161,7 +161,7 @@ export function feedbackView(raw) {
   const fb = unpack(raw);
   let h = "";
   if (fb.comment) h += `<p style="white-space:pre-wrap;margin:6px 0 0">${esc(fb.comment)}</p>`;
-  if (stripTags(fb.corrected)) h += `<div class="fb-label">Bản sửa đầy đủ:</div><div class="fb-corrected">${sanitize(fb.corrected)}</div>`;
+  if (stripTags(fb.corrected)) h += `<div class="fb-label">Bản sửa đầy đủ:</div>${readPlayer(fb.corrected)}<div class="fb-corrected">${sanitize(fb.corrected)}</div>`;
   if (fb.errors?.length) h += `<div class="fb-label">Bảng lỗi sai:</div><div class="grid-wrap"><table class="fb-table"><thead><tr><th>Lỗi sai</th><th>Sửa (và notes)</th></tr></thead><tbody>${fb.errors.map(([a, b]) => `<tr><td>${sanitize(a)}</td><td>${sanitize(b)}${PRON.test(stripTags(a)) ? speakChips(b) : ""}</td></tr>`).join("")}</tbody></table></div>`;
   return h || `<p class="muted">(no comment)</p>`;
 }
@@ -203,5 +203,67 @@ if (canSpeak()) {
     u.rate = b.dataset.slow ? 0.55 : 0.9;
     b.classList.add("on"); u.onend = u.onerror = () => b.classList.remove("on");
     speechSynthesis.speak(u);
+  });
+}
+
+
+/* ---------- 🔊 read the corrected version aloud (American English, slow and clear) ----------
+   Uses the device's built-in voice, sentence by sentence (long texts get cut off otherwise). */
+function plainLines(html) {
+  return String(html || "").replace(/<br\s*\/?>|<\/?(p|div|li|ul|ol|h\d)\b[^>]*>/gi, "\n").replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+}
+function readPlayer(html) {
+  if (!canSpeak()) return "";
+  const text = plainLines(html).replace(/[ \t]+/g, " ").trim();
+  if (!text) return "";
+  return `<div class="tts" data-tts="${esc(text)}">
+    <button type="button" class="tts-play" data-tts-act="play">▶ Listen</button>
+    <button type="button" class="tts-stop" data-tts-act="stop" hidden>⏹ Stop</button>
+    <span class="tts-speed"><button type="button" data-tts-rate="0.75" class="on">🐢 Slow</button><button type="button" data-tts-rate="0.95">Normal</button></span>
+    <span class="tts-prog"></span>
+  </div>`;
+}
+let usVoice = null;
+function pickUS() {
+  const vs = speechSynthesis.getVoices().filter((v) => /^en[-_]US/i.test(v.lang));
+  usVoice = vs.find((v) => /natural|neural|online/i.test(v.name)) || vs.find((v) => /google us|samantha|ava|allison|jenny|aria|zira/i.test(v.name)) || vs[0] || null;
+}
+const tts = { box: null, parts: [], i: 0, rate: 0.75, playing: false };
+function sentences(text) {
+  return text.split(/\n+/).flatMap((p) => p.match(/[^.!?]+[.!?]+["”’)]*|[^.!?]+$/g) || []).map((s) => s.trim()).filter(Boolean);
+}
+function ttsUI() {
+  document.querySelectorAll(".tts").forEach((b) => {
+    const me = b === tts.box && tts.playing;
+    b.querySelector(".tts-play").textContent = me ? "⏸ Pause" : b === tts.box && tts.i > 0 && tts.i < tts.parts.length ? "▶ Continue" : "▶ Listen";
+    b.querySelector(".tts-stop").hidden = !(b === tts.box && (tts.playing || tts.i > 0));
+    b.querySelector(".tts-prog").textContent = b === tts.box && tts.parts.length && (tts.playing || tts.i > 0) ? `${Math.min(tts.i + 1, tts.parts.length)} / ${tts.parts.length}` : "";
+    b.querySelectorAll("[data-tts-rate]").forEach((r) => r.classList.toggle("on", +r.dataset.ttsRate === tts.rate));
+  });
+}
+function speakNext() {
+  if (!tts.playing) return;
+  if (tts.i >= tts.parts.length) { tts.playing = false; tts.i = 0; ttsUI(); return; }
+  const u = new SpeechSynthesisUtterance(tts.parts[tts.i]);
+  if (usVoice) u.voice = usVoice;
+  u.lang = "en-US"; u.rate = tts.rate; u.pitch = 1;
+  u.onend = () => { if (!tts.playing) return; tts.i++; ttsUI(); setTimeout(speakNext, 250); };
+  u.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") { tts.playing = false; ttsUI(); } };
+  speechSynthesis.speak(u);
+  ttsUI();
+}
+if (canSpeak()) {
+  pickUS(); speechSynthesis.addEventListener?.("voiceschanged", pickUS);
+  document.addEventListener("click", (e) => {
+    const box = e.target.closest(".tts"); if (!box) return;
+    const act = e.target.closest("[data-tts-act]")?.dataset.ttsAct, rate = e.target.closest("[data-tts-rate]")?.dataset.ttsRate;
+    if (box !== tts.box) { speechSynthesis.cancel(); tts.playing = false; tts.box = box; tts.parts = sentences(box.dataset.tts); tts.i = 0; }
+    if (rate) { tts.rate = +rate; if (tts.playing) { tts.playing = false; speechSynthesis.cancel(); tts.playing = true; speakNext(); } ttsUI(); return; }
+    if (act === "stop") { tts.playing = false; speechSynthesis.cancel(); tts.i = 0; ttsUI(); return; }
+    if (act === "play") {
+      if (tts.playing) { tts.playing = false; speechSynthesis.cancel(); ttsUI(); return; } // pause = stop after this sentence, continue from here
+      speechSynthesis.cancel(); tts.playing = true; speakNext();
+    }
   });
 }
