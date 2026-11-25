@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="modulepreload" href="js/vendor/supabase.min.js">
-<link rel="modulepreload" href="js/db.js?v=202611252119">
-<link rel="modulepreload" href="js/config.js?v=202611252119">
+<link rel="modulepreload" href="js/db.js?v=202611252126">
+<link rel="modulepreload" href="js/config.js?v=202611252126">
 <title>OneMoreWord · Reading Lab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,7 @@ main{max-width:820px; margin:0 auto; padding:24px 20px 100px}
 .fb-table th,.fb-table td{border:1.5px solid #1f2a37;padding:8px 10px;text-align:left;vertical-align:top}
 .fb-table th:first-child{background:#ead1dc;width:40%}
 .fb-table th:nth-child(2){background:#fde047}
-.grid-wrap{overflow-x:auto} /* 🔊 listen to corrected version */ .tts{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:2px 0 8px} .tts button{font:inherit;font-size:14px;font-weight:700;cursor:pointer;border:1.5px solid #2F3E2C;background:#fff;color:#2F3E2C;border-radius:999px;padding:5px 14px} .tts .tts-play{background:#2F3E2C;color:#fff} .tts-speed{display:inline-flex;border:1.5px solid #2F3E2C;border-radius:999px;overflow:hidden} .tts-speed button{border:0;border-radius:0;padding:5px 12px;font-weight:600} .tts-speed button+button{border-left:1.5px solid #2F3E2C} .tts-speed button.on{background:#EDF0E9} .tts-prog{font-size:13px;color:#5E6670} .tts [hidden]{display:none!important}  /* 🔊 pronunciation buttons in feedback */ .say-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px} .say-chip{display:inline-flex;border:1.5px solid #2F3E2C;border-radius:999px;overflow:hidden;background:#fff} .say-chip button{all:unset;cursor:pointer;padding:3px 10px;font-size:14px;font-weight:600;color:#2F3E2C} .say-chip button+button{border-left:1.5px solid #2F3E2C;padding:3px 8px} .say-chip button:hover,.say-chip button.on{background:#EDF0E9} 
+.grid-wrap{overflow-x:auto}  /* 🔊 pronunciation buttons in feedback */ .say-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px} .say-chip{display:inline-flex;border:1.5px solid #2F3E2C;border-radius:999px;overflow:hidden;background:#fff} .say-chip button{all:unset;cursor:pointer;padding:3px 10px;font-size:14px;font-weight:600;color:#2F3E2C} .say-chip button+button{border-left:1.5px solid #2F3E2C;padding:3px 8px} .say-chip button:hover,.say-chip button.on{background:#EDF0E9} 
 .muted{color:var(--muted)}
 .hero{padding:30px 0 18px}
 .kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600}
@@ -186,8 +186,8 @@ footer{max-width:820px; margin:0 auto; padding:30px 20px 90px; font-size:12.5px;
 <div class="toast" id="toast"></div>
 
 <script type="module">
-import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611252119";
-import { feedbackView } from "./js/feedback.js?v=202611252119";
+import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611252126";
+import { feedbackView } from "./js/feedback.js?v=202611252126";
 
 /* ============ WHO / WHAT ============ */
 const [topicId, viewStudent] = decodeURIComponent(location.hash.slice(1)).split("/");
