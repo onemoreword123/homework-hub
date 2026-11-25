@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneMoreWord Homework Hub · Teacher</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/app.css?v=202611251047">
 </head>
 <body>
 <header class="topbar"><div class="wrap wide">
@@ -30,9 +30,9 @@
 </div></div>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js";
-import { renderLesson, renderHomework, answerKey } from "./js/topic.js";
-import { feedbackEditor, plainText } from "./js/feedback.js";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251047";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251047";
+import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251047";
 
 document.getElementById("out").onclick = signOut;
 const { profile, session } = await requireUser("teacher");
