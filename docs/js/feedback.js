@@ -1,7 +1,7 @@
 // Rich feedback: short comment + full corrected version + error table.
 // Stored inside submissions.teacher_comment as JSON {v:2, comment, corrected, errors:[[mistakeHtml, fixHtml], ...]}
 // so no database change is needed. Old plain-text comments still work.
-import { esc } from "./db.js?v=202611251539";
+import { esc } from "./db.js?v=202611251543";
 
 /* ---------- storage ---------- */
 export function unpack(raw) {
@@ -181,7 +181,7 @@ function speakText(line) {
 }
 function speakChips(html) {
   if (!canSpeak()) return "";
-  const lines = String(html || "").replace(/<br\s*\/?>|<\/(p|div|li)>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").split("\n");
+  const lines = String(html || "").replace(/<br\s*\/?>|<\/?(p|div|li|ul|ol|h\d)\b[^>]*>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").split("\n");
   const words = [...new Set(lines.map(speakText).filter((w) => w && w.length <= 80))];
   if (!words.length) return "";
   return `<div class="say-row">${words.map((w) => `<span class="say-chip"><button type="button" data-speak="${esc(w)}" title="Listen">🔊 ${esc(w)}</button><button type="button" data-speak="${esc(w)}" data-slow="1" title="Listen slowly">🐢</button></span>`).join("")}</div>`;
