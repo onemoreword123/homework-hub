@@ -727,5 +727,312 @@
    ]
   }
  ],
- "homework": []
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Anna is applying for a new job. She asks her friend, Duc, to check her CV.",
+   "bank": [
+    "spot on",
+    "The only thing is",
+    "be honest",
+    "cut it down",
+    "really helpful",
+    "have a quick look at",
+    "What would you do",
+    "It shows",
+    "a second opinion",
+    "spent ages on"
+   ],
+   "lines": [
+    [
+     "Anna",
+     "Duc, could you {have a quick look at} my CV? I'd really like {a second opinion} before I send it."
+    ],
+    [
+     "Duc",
+     "Sure, let me see."
+    ],
+    [
+     "Anna",
+     "And please {be honest}. I really want this job."
+    ],
+    [
+     "Duc",
+     "OK. First of all, it looks really professional. You must have {spent ages on} it."
+    ],
+    [
+     "Anna",
+     "I did. Three whole evenings!"
+    ],
+    [
+     "Duc",
+     "{It shows}. {The only thing is}, it's three pages long. That's a bit long for a CV."
+    ],
+    [
+     "Anna",
+     "Yeah, I was worried about that. {What would you do}?"
+    ],
+    [
+     "Duc",
+     "Maybe you could {cut it down} to two pages. You don't need all your part-time jobs from university."
+    ],
+    [
+     "Anna",
+     "Good point. Anything else?"
+    ],
+    [
+     "Duc",
+     "The part about your last job is {spot on}. It's exactly what this company is looking for. But it might be worth adding a short summary at the top."
+    ],
+    [
+     "Anna",
+     "I hadn't thought of that. That's {really helpful}, thanks. I'll make a few changes tonight."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once.",
+   "bank": [
+    "swamped",
+    "From now on",
+    "a lot on my plate",
+    "Just so you know",
+    "took over",
+    "I appreciate the feedback",
+    "fallen behind",
+    "see how it's going",
+    "Good to hear",
+    "a heads-up"
+   ],
+   "lines": [
+    [
+     "",
+     "\"I got the job!\" \"{Good to hear}! Well done.\""
+    ],
+    [
+     "",
+     "Since Hoa {took over} the project, it's been much better organised."
+    ],
+    [
+     "",
+     "Sorry, I can't help with the party this week. I've got {a lot on my plate}."
+    ],
+    [
+     "",
+     "I was sick for a week, and now I've {fallen behind} with my work."
+    ],
+    [
+     "",
+     "If you think you'll be late, please give me {a heads-up}."
+    ],
+    [
+     "",
+     "{Just so you know}, the office will be closed on Friday."
+    ],
+    [
+     "",
+     "Let's try the new timetable for a month, then talk again and {see how it's going}."
+    ],
+    [
+     "",
+     "I'm really {swamped} at the moment. I have three reports to finish by Friday."
+    ],
+    [
+     "",
+     "I was late twice this week. {From now on}, I'll leave home ten minutes earlier."
+    ],
+    [
+     "",
+     "\"You did a great job on the event.\" \"Thanks! {I appreciate the feedback}.\""
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 3: Listening",
+   "intro": "Leo has just finished his first week as a waiter at a busy restaurant. The manager, Kate, talks to him at the end of his shift. Listen to the conversation, then do Parts A and B.",
+   "podcast": "🎧 Leo's first week",
+   "audio": "audio/a2-feedback.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Kate",
+     "text": "Leo, have you got a minute before you go?"
+    },
+    {
+     "t": 2.17,
+     "who": "Leo",
+     "text": "Sure."
+    },
+    {
+     "t": 2.75,
+     "who": "Kate",
+     "text": "I just wanted to say you've done a great job this week. The customers really like you. Two of them said ==you were very friendly==."
+    },
+    {
+     "t": 9.97,
+     "who": "Leo",
+     "text": "Really? Thanks! That's nice to hear."
+    },
+    {
+     "t": 14.64,
+     "who": "Kate",
+     "text": "There's one thing I wanted to mention, though. ==Sometimes you don't write the orders down.== Yesterday, ==table six got the wrong drinks==."
+    },
+    {
+     "t": 19.94,
+     "who": "Leo",
+     "text": "Oh, I'm sorry about that. ==I thought I could remember everything==, but it was really busy."
+    },
+    {
+     "t": 24.8,
+     "who": "Kate",
+     "text": "I understand. Friday nights are crazy. It's not a big problem, but it confuses the kitchen. Maybe you could always use your ==notebook==, even for small orders."
+    },
+    {
+     "t": 33.53,
+     "who": "Leo",
+     "text": "That makes sense. I'll do that from now on."
+    },
+    {
+     "t": 37.2,
+     "who": "Kate",
+     "text": "Great. And one more thing. When customers are waiting for a table, try to tell them ==how long== it will be. ==People don't mind waiting if they know how long.=="
+    },
+    {
+     "t": 43.78,
+     "who": "Leo",
+     "text": "Good point. I didn't think of that."
+    },
+    {
+     "t": 46.1,
+     "who": "Kate",
+     "text": "But overall, ==I'm really happy with you==. You learn fast."
+    },
+    {
+     "t": 50.01,
+     "who": "Leo",
+     "text": "Thanks, Kate. I appreciate the feedback."
+    },
+    {
+     "t": 52.06,
+     "who": "Kate",
+     "text": "No problem. See you on ==Tuesday==!"
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 3A: Choose the best answer",
+   "questions": [
+    {
+     "q": "What do customers like about Leo?",
+     "options": [
+      "He's very fast.",
+      "He's very friendly.",
+      "He remembers their names."
+     ],
+     "answer": 1,
+     "why": "“Two of them said you were very friendly.”"
+    },
+    {
+     "q": "What problem did Leo have?",
+     "options": [
+      "He was late for work.",
+      "He didn't always write the orders down.",
+      "He was rude to a customer."
+     ],
+     "answer": 1,
+     "why": "“Sometimes you don't write the orders down.”"
+    },
+    {
+     "q": "What happened at table six?",
+     "options": [
+      "They got the wrong food.",
+      "They got the wrong drinks.",
+      "They waited too long for their food."
+     ],
+     "answer": 1,
+     "why": "“Yesterday, table six got the wrong drinks.”"
+    },
+    {
+     "q": "Why did Leo make the mistake?",
+     "options": [
+      "He was very tired.",
+      "He thought he could remember the orders.",
+      "He lost his notebook."
+     ],
+     "answer": 1,
+     "why": "“I thought I could remember everything.”"
+    },
+    {
+     "q": "What does Kate say about customers who are waiting for a table?",
+     "options": [
+      "They should wait outside.",
+      "They don't mind waiting if they know how long it will be.",
+      "They should get a free drink."
+     ],
+     "answer": 1,
+     "why": "“People don't mind waiting if they know how long.”"
+    },
+    {
+     "q": "How does Kate feel about Leo overall?",
+     "options": [
+      "She's happy with his work.",
+      "She's worried about him.",
+      "She's angry about the mistake."
+     ],
+     "answer": 0,
+     "why": "“But overall, I'm really happy with you.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 3B: Complete the summary",
+   "instructions": "Write ONE word for each blank.",
+   "text": "Leo works as a {waiter} in a restaurant. Customers say he's very {friendly}. But sometimes he doesn't write down the {orders|order}. Kate suggests he always uses his {notebook}. She also says Leo should tell waiting customers how {long} it will be. Overall, Kate is {happy|pleased} with Leo. They'll see each other again on {Tuesday}."
+  },
+  {
+   "type": "recording",
+   "title": "Part 4: Speaking (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Tell me about a time someone said something nice about your work or study.",
+     "questions": [
+      "Who was it? (your manager, teacher, colleague, parent…)",
+      "What did they say?",
+      "Why did they say it? What had you done?",
+      "How did you feel?"
+     ],
+     "use": "You've done a great job on…, I spent ages on…, It shows, That's really nice to hear, I appreciate the feedback"
+    },
+    {
+     "title": "Think of a café, restaurant or shop you often go to. Give some feedback to the owner. Talk as if you're speaking to the owner.",
+     "questions": [
+      "What do you like about it? (the food, the drinks, the staff, the music…)",
+      "What's one thing that could be better? (it's too noisy, the Wi-Fi is slow, you wait too long…)",
+      "What's your suggestion?",
+      "Finish with something positive."
+     ],
+     "use": "First of all, …, The only thing is…, a bit + adj, Maybe you could…, That way, …, But overall, …"
+    },
+    {
+     "title": "Talk about a person who gives you good advice or feedback (a teacher, manager, parent or friend).",
+     "questions": [
+      "Who is this person, and how do you know them?",
+      "What kind of feedback or advice do they give you?",
+      "Can you remember one example?",
+      "Why do you think their feedback is helpful?"
+     ],
+     "use": "be honest, The only thing is…, That makes sense, I hadn't thought of that, That's really helpful, from now on"
+    }
+   ]
+  }
+ ]
 }
