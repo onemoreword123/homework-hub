@@ -284,3 +284,9 @@ table.t.gen td .ipa{white-space:normal}
 .lab-model{font-size:13px;color:#1E7F4F;margin-top:4px}
 .btnlink{display:inline-block;text-decoration:none;cursor:pointer}
 .btn.sm{padding:4px 10px;font-size:13px;border-radius:8px}
+
+.lvl-group{border:1px solid var(--line,#E6E0D4);border-radius:14px;padding:4px 16px 6px;margin:16px 0;background:#fff}
+.lvl-group.mine{border-color:var(--navy);box-shadow:0 0 0 1px var(--navy) inset}
+.lvl-head{display:flex;align-items:center;gap:10px;margin:12px 0 4px}
+.lvl-tag{background:var(--navy);color:#fff;border-radius:999px;padding:2px 12px;font-size:15px;font-family:Mulish,sans-serif}
+.lvl-group .toggle-row:last-child{border-bottom:0}

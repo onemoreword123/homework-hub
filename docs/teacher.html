@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneMoreWord Homework Hub · Teacher</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251442">
+<link rel="stylesheet" href="css/app.css?v=202611251452">
 </head>
 <body>
 <header class="topbar"><div class="wrap wide">
@@ -30,9 +30,9 @@
 </div></div>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251442";
-import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251442";
-import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251442";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251452";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251452";
+import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251452";
 
 document.getElementById("out").onclick = signOut;
 const { profile, session } = await requireUser("teacher");
@@ -242,14 +242,19 @@ async function topics() {
   const k = cls();
   const opened = must(await c.from("class_topics").select("*").eq("class_id", S.classId));
   const isOpen = (id) => opened.some((o) => o.topic_id === id);
-  const mine = index.filter((t) => !k.level || !t.level || t.level === k.level);
-  const others = index.filter((t) => !mine.includes(t));
+  // group topics by level; this class's level first (matched loosely, e.g. "ielts" or a class named "Omw IELTS")
+  const lv = (x) => String(x || "").trim().toUpperCase();
+  const levels = [...new Set(index.map((t) => lv(t.level) || "OTHER"))];
+  const mineLv = levels.find((L) => L === lv(k.level)) || levels.find((L) => lv(k.name).includes(L)) || null;
+  const order = ["A2", "B1", "B2", "IELTS"];
+  const rank = (L) => (L === mineLv ? -1 : order.includes(L) ? order.indexOf(L) : 99);
+  levels.sort((a, b) => rank(a) - rank(b));
+  const group = (L) => index.filter((t) => (lv(t.level) || "OTHER") === L);
   const row = (t) => `<div class="toggle-row"><div>${t.emoji || "📘"} <b>${esc(t.title)}</b> ${t.level ? `<span class="pill">${esc(t.level)}</span>` : ""} ${t.kind === "lab" ? `<a class="btn ghost sm btnlink" href="reading.html#${esc(t.id)}" target="_blank" rel="noopener">Preview & answer key ↗</a> <label class="btn ghost sm btnlink upl" title="Upload the lesson file Claude sent you">⬆ Upload lesson file<input type="file" accept=".json,application/json" data-upload="${esc(t.id)}" hidden></label> <span class="small" data-upstate="${esc(t.id)}"></span>` : `<button class="ghost sm" data-preview="${esc(t.id)}">Preview & answer key</button>`}</div>
     <label class="switch" title="Open for ${esc(k.name)}"><input type="checkbox" data-id="${esc(t.id)}" ${isOpen(t.id) ? "checked" : ""}><span></span></label></div>`;
   pane.innerHTML = `<div class="card"><h2>${esc(k.name)} · Topics</h2><p class="small muted">Switch a topic on to make it appear for students in ${esc(k.name)}. Turning it off hides it but keeps their answers.</p>
     ${!index.length ? `<p class="muted">No topics uploaded yet. Send your topic files to Claude to add them here.</p>` : ""}
-    ${mine.map(row).join("")}
-    ${others.length ? `<h3>Other levels</h3>${others.map(row).join("")}` : ""}</div>`;
+    ${levels.map((L) => `<div class="lvl-group${L === mineLv ? " mine" : ""}"><h3 class="lvl-head"><span class="lvl-tag">${L === "OTHER" ? "Other" : esc(L)}</span>${L === mineLv ? `<span class="small muted">this class's level</span>` : ""}<span class="small muted" style="margin-left:auto">${group(L).filter((t) => isOpen(t.id)).length} of ${group(L).length} open</span></h3>${group(L).map(row).join("")}</div>`).join("")}</div>`;
   pane.querySelectorAll("input[data-id]").forEach((cb) => (cb.onchange = async () => {
     try {
       if (cb.checked) must(await c.from("class_topics").insert({ class_id: S.classId, topic_id: cb.dataset.id }));
