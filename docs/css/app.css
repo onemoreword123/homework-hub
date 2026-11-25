@@ -275,3 +275,12 @@ table.t.gen td .ipa{white-space:normal}
 .flow-arrow{text-align:center;color:var(--navy);font-size:18px;line-height:1.4}
 
 .lesson-fig{display:block;width:100%;height:auto;margin-top:16px;border-radius:12px;border:1px solid #e5e7eb;background:#fff}
+
+/* reading lab review */
+.lab-sub{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted,#5E6670);margin:14px 0 4px}
+.lab-q{font-size:14px;margin-top:10px;color:#38404A}
+.lab-ans{background:#fff;border:1px solid var(--line,#E6E0D4);border-radius:10px;padding:10px 12px;margin-top:4px;white-space:pre-wrap;font-size:15px;line-height:1.6}
+.lab-ans.empty{color:#9aa1a9;font-style:italic}
+.lab-model{font-size:13px;color:#1E7F4F;margin-top:4px}
+.btnlink{display:inline-block;text-decoration:none;cursor:pointer}
+.btn.sm{padding:4px 10px;font-size:13px;border-radius:8px}

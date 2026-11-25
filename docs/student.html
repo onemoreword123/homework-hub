@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneMoreWord Homework Hub</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251124">
+<link rel="stylesheet" href="css/app.css?v=202611251442">
 </head>
 <body>
 <header class="topbar"><div class="wrap">
@@ -16,11 +16,11 @@
 <main class="wrap" id="main"><p class="muted" style="padding:30px 0">Loading…</p></main>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251124";
-import { renderLesson, renderHomework } from "./js/topic.js?v=202611251124";
-import { renderRecording } from "./js/recorder.js?v=202611251124";
-import { feedbackView } from "./js/feedback.js?v=202611251124";
-import { celebrate, wordOfTheDay, wordCard, maybeWordPopup, bindSay } from "./js/fx.js?v=202611251124";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251442";
+import { renderLesson, renderHomework } from "./js/topic.js?v=202611251442";
+import { renderRecording } from "./js/recorder.js?v=202611251442";
+import { feedbackView } from "./js/feedback.js?v=202611251442";
+import { celebrate, wordOfTheDay, wordCard, maybeWordPopup, bindSay } from "./js/fx.js?v=202611251442";
 
 const main = document.getElementById("main");
 document.getElementById("out").onclick = signOut;
@@ -48,6 +48,10 @@ async function list() {
       const rec = !hasHw ? "" : s.recording_path ? `<span class="pill ok">🎤 Sent</span>` : `<span class="pill warn">🎤 To do</span>`;
       const fb = s.reviewed_at ? `<span class="pill accent">💬 Feedback</span>` : "";
       const nw = isNew(t.id) && !s.exercises_submitted_at ? `<span class="pill new"><span class="sparkle">✨</span> New</span>` : "";
+      if (t.kind === "lab") {
+        const st = s.exercises_submitted_at ? `<span class="pill ok">Submitted · ${s.score}/${s.max_score}</span>` : s.draft ? `<span class="pill warn">✍️ In progress</span>` : `<span class="pill warn">To do</span>`;
+        return `<a class="topic-card" href="reading.html#${esc(t.id)}"><div class="emoji">${t.emoji || "📘"}</div><h3>${esc(t.title)}</h3><div class="status">${nw}<span class="pill">📰 Reading lab</span>${st}${fb}</div></a>`;
+      }
       return `<a class="topic-card" href="#/t/${esc(t.id)}"><div class="emoji">${t.emoji || "📘"}</div><h3>${esc(t.title)}</h3><div class="status">${nw}${ex}${rec}${fb}</div></a>`;
     }).join("")}</div>` : `<div class="card"><p>No homework yet. Your teacher will open topics here after each class.</p></div>`}`;
   // ✨ Word of the day (from lessons this class has open)
@@ -61,6 +65,7 @@ async function list() {
 
 async function topicPage(id, tab) {
   const topic = await loadTopic(id);
+  if (topic.kind === "lab") { location.href = `reading.html#${id}`; return; }
   const hasHw = topic.homework?.length > 0;
   tab = tab || (hasHw ? "homework" : "lesson");
   let sub = (await mySubs())[id] || null;

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OneMoreWord · Reading Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF8F2; --card:#FFFFFF; --ink:#1F2328; --muted:#5E6670; --line:#E6E0D4;
+  --accent:#2F3E2C; --accent-soft:#EDF0E9; --hl:#FFF1C9; --hl-line:#E3B341;
+  --good:#1E7F4F; --good-bg:#E6F4EC; --bad:#B4351E; --bad-bg:#FBEAE6;
+  --serif:"Source Serif 4", Georgia, serif; --display:"Fraunces", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:70px}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.55}
+a{color:var(--accent)}
+.top{position:sticky; top:0; z-index:20; background:rgba(251,248,242,.94); backdrop-filter:blur(6px); border-bottom:1px solid var(--line)}
+.top-inner{max-width:1040px; margin:0 auto; padding:10px 20px; display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+.back{font-size:13px; text-decoration:none; color:var(--muted); white-space:nowrap}
+.brand{font-family:var(--display); font-weight:700; font-size:17px; color:var(--accent); white-space:nowrap}
+.savestate{font-size:12px; color:var(--muted); white-space:nowrap}
+.savestate.bad{color:var(--bad)}
+.nav{display:flex; gap:6px; flex-wrap:wrap; margin-left:auto}
+.nav a{font-size:13px; text-decoration:none; color:var(--muted); padding:5px 10px; border-radius:999px; border:1px solid var(--line); background:#fff}
+.nav a.active{background:var(--accent); color:#fff; border-color:var(--accent)}
+.nav a.done::after{content:" ✓"; color:var(--good)}
+.nav a.active.done::after{color:#BDE5CF}
+main{max-width:820px; margin:0 auto; padding:24px 20px 100px}
+.banner{border-radius:12px; padding:12px 16px; margin:16px 0 0; font-size:14.5px}
+.banner.ok{background:var(--good-bg); color:#134A30; border:1px solid #BFE3CD}
+.banner.info{background:var(--accent-soft); border:1px solid #D3DACB}
+.banner.warn{background:#FFF6DB; border:1px solid #EED89A}
+.fbbox{background:#FFF6DB; border:1px solid #EED89A; border-radius:14px; padding:16px 18px; margin:16px 0 0}
+.fbbox h3{margin:0 0 4px; font-family:var(--display)}
+.fbbox .mark{font-family:var(--display); font-size:26px; font-weight:700; color:#A16207}
+.fb-label{display:inline-block;background:#fde047;font-weight:700;padding:1px 6px;margin:20px 0 6px;font-size:15px}
+.fb-corrected{background:#fff;border-radius:10px;padding:12px 16px;font-size:15px;line-height:1.65;border:1px solid var(--line)}
+.fb-corrected p{margin:0 0 10px}
+.fb-table{width:100%;border-collapse:collapse;font-size:15px;background:#fff;margin-top:2px}
+.fb-table th,.fb-table td{border:1.5px solid #1f2a37;padding:8px 10px;text-align:left;vertical-align:top}
+.fb-table th:first-child{background:#ead1dc;width:40%}
+.fb-table th:nth-child(2){background:#fde047}
+.grid-wrap{overflow-x:auto}
+.muted{color:var(--muted)}
+.hero{padding:30px 0 18px}
+.kicker{font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); font-weight:600}
+h1{font-family:var(--display); font-size:clamp(30px,5vw,44px); line-height:1.1; margin:8px 0 12px}
+.lede{font-family:var(--serif); font-size:19px; color:#38404A; margin:0 0 18px}
+.meta{display:flex; gap:10px; flex-wrap:wrap; font-size:13px; color:var(--muted)}
+.pill{background:#fff; border:1px solid var(--line); border-radius:999px; padding:4px 10px}
+.howto{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 22px; margin:22px 0 10px}
+.howto h3{margin:0 0 8px; font-size:15px}
+.howto ol{margin:0; padding-left:20px; font-size:15px}
+.howto li{margin:3px 0}
+.legend-row{display:flex; gap:16px; flex-wrap:wrap; font-size:13px; margin-top:10px; color:var(--muted)}
+section.chunk{margin-top:56px}
+.chunk-head{display:flex; align-items:baseline; gap:14px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:18px}
+.chunk-num{font-family:var(--display); font-size:42px; line-height:1; color:var(--accent)}
+.chunk-head h2{font-family:var(--display); font-size:26px; margin:0; line-height:1.15}
+.chunk-head p{margin:2px 0 0; color:var(--muted); font-size:14px}
+.step{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:16px 0}
+.step-label{display:flex; align-items:center; gap:10px; margin:0 0 12px}
+.step-label .badge{width:26px; height:26px; border-radius:50%; background:var(--accent); color:#fff; display:grid; place-items:center; font-size:13px; font-weight:600; flex:none}
+.step-label h3{margin:0; font-size:16px}
+.step-label small{color:var(--muted); font-weight:400; margin-left:4px}
+.reading p{font-family:var(--serif); font-size:18.5px; line-height:1.75; margin:0 0 16px}
+.reading p:last-child{margin-bottom:0}
+.v{background:linear-gradient(transparent 60%, var(--hl) 60%); border-bottom:1.5px dotted var(--hl-line); cursor:pointer; padding:0 1px}
+.v:hover,.v:focus{background:var(--hl); outline:none}
+.ds{text-decoration:underline; text-decoration-color:#A9B79F; text-decoration-thickness:2px; text-underline-offset:4px; cursor:pointer}
+.ds sup{font-family:var(--sans); font-size:10px; font-weight:700; color:#fff; background:var(--accent); border-radius:4px; padding:0 4px; margin-left:2px; text-decoration:none; display:inline-block; line-height:15px}
+.note-inline{font-size:13px; color:var(--muted); font-style:italic; margin-top:8px}
+#pop{position:absolute; z-index:50; max-width:320px; background:#1F2328; color:#fff; border-radius:10px; padding:12px 14px; font-size:14px; box-shadow:0 10px 30px rgba(0,0,0,.18); display:none}
+#pop .w{font-family:var(--display); font-size:18px}
+#pop .pos{color:#AEB7C0; font-size:12px; margin-left:6px}
+#pop .en{margin:6px 0 4px; color:#E6E9EC}
+#pop .vi{color:#FFD97A; font-weight:500}
+#pop .x{position:absolute; top:6px; right:10px; color:#AEB7C0; cursor:pointer; font-size:16px; background:none; border:0}
+button{font-family:var(--sans)}
+.btn{border:1px solid var(--line); background:#fff; color:var(--ink); padding:7px 13px; border-radius:8px; font-size:14px; cursor:pointer}
+.btn:hover{border-color:#BFB6A4}
+.btn.primary{background:var(--accent); color:#fff; border-color:var(--accent)}
+.btn.small{padding:4px 10px; font-size:13px}
+.btn:disabled{opacity:.6; cursor:default}
+.btn-row{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.q{margin:18px 0}
+.q:first-of-type{margin-top:4px}
+.q .qt{font-weight:600; margin-bottom:8px}
+.q .qt .qn{color:var(--accent); margin-right:4px}
+.opts{display:grid; gap:6px}
+.opt{text-align:left; border:1px solid var(--line); background:#fff; border-radius:9px; padding:9px 12px; font-size:15px; cursor:pointer; line-height:1.4; color:var(--ink)}
+.opt:hover{border-color:#BFB6A4}
+.opt.right{background:var(--good-bg); border-color:var(--good); color:#134A30}
+.opt.wrong{background:var(--bad-bg); border-color:var(--bad); color:#7A2413}
+.explain{display:none; font-size:14px; margin-top:8px; padding:9px 12px; border-radius:8px; background:#F6F3EC}
+.explain.show{display:block}
+.bank{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px}
+.bank span{font-size:13.5px; background:var(--hl); border:1px solid #EED89A; border-radius:999px; padding:3px 10px}
+.gap{margin:10px 0; font-size:15.5px; line-height:2}
+.gap input{font:inherit; font-size:15px; border:0; border-bottom:2px solid #BFB6A4; background:#FDFCF9; padding:1px 6px; width:150px; outline:none}
+.gap input:focus{border-color:var(--accent)}
+.gap input.right{border-color:var(--good); background:var(--good-bg)}
+.gap input.wrong{border-color:var(--bad); background:var(--bad-bg)}
+.gap .fb{font-size:13px; margin-left:6px}
+.score{font-size:14px; font-weight:600; margin-left:6px; align-self:center}
+.task{border-top:1px dashed var(--line); padding-top:16px; margin-top:16px}
+.task:first-of-type{border-top:0; padding-top:0; margin-top:0}
+.task .prompt{font-size:16px; margin-bottom:8px}
+.task .prompt .vi-src{font-size:17px; font-family:var(--serif); color:var(--accent)}
+.uses{display:flex; flex-wrap:wrap; gap:6px; margin:6px 0 8px; font-size:13px; align-items:center}
+.uses .chip{border:1px solid var(--line); border-radius:999px; padding:2px 9px; background:#fff; color:var(--muted)}
+.uses .chip.hit{background:var(--good-bg); border-color:var(--good); color:var(--good)}
+textarea{width:100%; font:inherit; font-size:15.5px; font-family:var(--serif); line-height:1.6; border:1px solid var(--line); border-radius:10px; padding:10px 12px; background:#FDFCF9; resize:vertical; min-height:70px; outline:none}
+textarea:focus{border-color:var(--accent); background:#fff}
+textarea.long{min-height:130px}
+textarea[readonly],input[readonly]{background:#F7F5EF}
+.model{display:none; margin-top:10px; padding:10px 13px; border-radius:9px; background:var(--good-bg); color:#134A30; font-family:var(--serif); font-size:16px}
+.model.show{display:block}
+.model .lbl{font-family:var(--sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase; font-weight:600; display:block; margin-bottom:3px}
+.think{background:#F6F3EC; border-radius:10px; padding:10px 14px; font-size:14.5px; margin:8px 0}
+.think b{color:var(--accent)}
+.think ul{margin:4px 0 0; padding-left:18px}
+.frames{display:flex; flex-wrap:wrap; gap:6px; margin:8px 0}
+.frame{font-size:13px; background:#fff; border:1px dashed #A9B79F; color:var(--accent); border-radius:8px; padding:4px 9px; cursor:pointer}
+.frame:hover{background:var(--accent-soft)}
+.locked .frames{display:none}
+.wc{font-size:12.5px; color:var(--muted); margin-top:4px}
+.wc.ok{color:var(--good)}
+.chart-wrap{margin:6px 0 18px; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 16px 10px; position:relative}
+.chart-wrap h4{margin:0; font-size:15px}
+.chart-wrap .sub{font-size:13px; color:var(--muted); margin:2px 0 8px}
+.chart-wrap svg{width:100%; height:auto; display:block}
+.chart-wrap .src{font-size:11.5px; color:var(--muted); margin-top:6px}
+.chart-legend{display:flex; gap:14px; font-size:12.5px; color:var(--muted); margin-bottom:4px}
+.chart-legend i{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:5px; vertical-align:-1px}
+#ctip{position:absolute; pointer-events:none; background:#1F2328; color:#fff; font-size:12.5px; padding:6px 9px; border-radius:7px; display:none; white-space:nowrap}
+.peel-box{margin:12px 0}
+.peel-box label{display:block; font-weight:600; font-size:14.5px; margin-bottom:3px}
+.peel-box label span{color:var(--muted); font-weight:400; font-size:13px}
+.preview{font-family:var(--serif); font-size:17px; line-height:1.7; background:#FDFCF9; border:1px solid var(--line); border-radius:10px; padding:14px 16px; margin-top:10px; display:none; white-space:pre-wrap}
+.preview.show{display:block}
+footer{max-width:820px; margin:0 auto; padding:30px 20px 90px; font-size:12.5px; color:var(--muted); border-top:1px solid var(--line)}
+.dock{position:fixed; right:18px; bottom:18px; z-index:30; display:flex; gap:8px}
+.dock .btn{box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.toast{position:fixed; left:50%; bottom:70px; transform:translateX(-50%); background:#1F2328; color:#fff; padding:8px 14px; border-radius:8px; font-size:14px; display:none; z-index:60; text-align:center}
+.loading{padding:60px 0; color:var(--muted)}
+@media (max-width:600px){
+  .reading p{font-size:17.5px}
+  .step{padding:16px}
+  .chunk-num{font-size:34px}
+  .chunk-head h2{font-size:21px}
+  .dock{right:10px; bottom:10px}
+}
+@media print{.top,.dock,.btn,.btn-row{display:none!important} .model,.explain{display:block!important} section.chunk{break-before:page}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="back" id="back" href="student.html">← All homework</a>
+    <div class="brand">OneMoreWord · Reading Lab</div>
+    <span class="savestate" id="savestate"></span>
+    <nav class="nav" id="nav"></nav>
+  </div>
+</header>
+
+<main id="main"><p class="loading">Loading…</p></main>
+<footer id="footer"></footer>
+<div class="dock" id="dock"></div>
+<div id="pop" role="dialog"></div>
+<div class="toast" id="toast"></div>
+
+<script type="module">
+import { sb, requireUser, loadTopic, esc, fmtDate } from "./js/db.js?v=202611251442";
+import { feedbackView } from "./js/feedback.js?v=202611251442";
+
+/* ============ WHO / WHAT ============ */
+const [topicId, viewStudent] = decodeURIComponent(location.hash.slice(1)).split("/");
+const { user, profile } = await requireUser();
+const c = await sb();
+const isTeacher = profile.role === "teacher";
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => [...el.querySelectorAll(s)];
+const main = $("#main");
+if (isTeacher) { $("#back").href = "teacher.html"; $("#back").textContent = "← Dashboard"; }
+const fail = (msg) => { main.innerHTML = `<div class="banner warn" style="margin-top:40px">${msg}</div>`; throw new Error(msg); };
+if (!topicId) fail("No lesson chosen. <a href='student.html'>Back</a>");
+
+const topic = await loadTopic(topicId).catch(() => fail("This lesson doesn't exist."));
+document.title = `${topic.title} · Reading Lab`;
+
+// The lesson text is kept in private storage: only students whose class has this lesson open (and the teacher) can read it.
+const dl = await c.storage.from("lessons").download(`${topicId}.json`);
+if (dl.error || !dl.data) fail(isTeacher
+  ? "The lesson file hasn't been uploaded yet. In the dashboard, go to <b>Topics</b> and use <b>⬆ Upload lesson file</b> next to this lesson."
+  : "This lesson isn't open for your class yet, or it's still being set up. Please ask your teacher.");
+const L = JSON.parse(await dl.data.text());
+const CHUNKS = L.chunks, CHART = L.chart;
+
+// mode: "student" (own work, saved), "view" (teacher looking at a student's work), "preview" (teacher, nothing saved)
+let mode = isTeacher ? (viewStudent ? "view" : "preview") : "student";
+const ownerId = mode === "view" ? viewStudent : user.id;
+let sub = null, studentName = "";
+if (mode !== "preview") {
+  const r = await c.from("submissions").select("*").eq("student_id", ownerId).eq("topic_id", topicId).maybeSingle();
+  sub = r.data || null;
+  if (mode === "view") { const p = await c.from("profiles").select("full_name").eq("id", ownerId).maybeSingle(); studentName = p.data?.full_name || "Student"; }
+}
+let locked = mode === "view" || !!sub?.exercises_submitted_at;
+
+/* ============ STORAGE ============ */
+const LKEY = `hh.lab.${topicId}.${user.id}`;
+let store = {};
+if (sub?.exercises_submitted_at && sub.answers) store = { ...sub.answers };
+else if (sub?.draft) store = { ...sub.draft };
+if (mode === "student" && !locked) {
+  // a newer copy on this device (e.g. saved while offline) wins
+  try { const loc = JSON.parse(localStorage.getItem(LKEY) || "null"); if (loc && (!sub?.draft || (loc._t || 0) > (sub.draft._t || 0))) store = loc; } catch (e) {}
+}
+let saveTimer = null, dirty = false;
+const saveState = (txt, bad) => { const s = $("#savestate"); s.textContent = txt; s.classList.toggle("bad", !!bad); };
+function save() {
+  if (mode !== "student" || locked) return;
+  store._t = Date.now(); dirty = true;
+  try { localStorage.setItem(LKEY, JSON.stringify(store)); } catch (e) {}
+  saveState("Saving…");
+  clearTimeout(saveTimer); saveTimer = setTimeout(pushDraft, 1200);
+}
+async function pushDraft() {
+  if (!dirty) return;
+  dirty = false;
+  const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: topicId, draft: store }, { onConflict: "student_id,topic_id" }).select().single();
+  if (error) { dirty = true; saveState("⚠ Not saved online yet (saved on this device)", true); return; }
+  sub = data; saveState("Saved ✓");
+}
+window.addEventListener("beforeunload", (e) => { if (dirty && mode === "student") { pushDraft(); e.preventDefault(); } });
+document.addEventListener("visibilitychange", () => { if (document.visibilityState === "hidden") pushDraft(); });
+
+/* ============ HELPERS ============ */
+function markup(text, chunkId) {
+  let h = text.replace(/\{\{([\s\S]+?)\|(\d+)\}\}/g, (m, t, n) => `<span class="ds" data-c="${chunkId}" data-n="${n}">${t}<sup>${n}</sup></span>`);
+  h = h.replace(/\[\[([^\]|]+)\|([a-z0-9]+)\]\]/g, (m, t, k) => `<span class="v" tabindex="0" data-c="${chunkId}" data-k="${k}">${t}</span>`);
+  return h;
+}
+function words(s) { return (String(s || "").trim().match(/[A-Za-zÀ-ỹ0-9’'$%.,-]+/g) || []).length; }
+function norm(s) { return String(s || "").toLowerCase().replace(/[’']/g, "'").replace(/\s+/g, " ").trim(); }
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.style.display = "block"; clearTimeout(t._h); t._h = setTimeout(() => (t.style.display = "none"), 2600); }
+
+function scoreOf(st) {
+  let score = 0, max = 0;
+  CHUNKS.forEach((ch) => {
+    ch.comp.forEach((q, j) => { max++; if (st[`mc-${ch.id}-q${j}`] === q.a) score++; });
+    ch.gap.items.forEach((it, j) => { max++; if (it[1].includes(norm(st[`${ch.id}-g${j}`]))) score++; });
+  });
+  return { score, max };
+}
+
+/* ============ RENDER ============ */
+function render() {
+  const m = L.meta;
+  let top = "";
+  if (mode === "view") top += `<div class="banner info">👀 You're viewing <b>${esc(studentName)}</b>'s work${sub?.exercises_submitted_at ? `, submitted ${fmtDate(sub.exercises_submitted_at)} · <b>${sub.score}/${sub.max_score}</b>` : sub?.draft ? " (in progress, not submitted yet)" : " (nothing written yet)"}.</div>`;
+  if (mode === "preview") top += `<div class="banner info">Teacher preview: you can try everything, but nothing is saved. Use <b>Show answers</b> and <b>Show model answer</b> as your answer key.</div>`;
+  if (mode === "student" && sub?.reviewed_at) top += `<div class="fbbox"><h3>💬 Feedback from your teacher</h3>${sub.teacher_mark ? `<div class="mark">${esc(sub.teacher_mark)}</div>` : ""}${feedbackView(sub.teacher_comment)}<div class="muted" style="font-size:13px;margin-top:8px">Reviewed ${fmtDate(sub.reviewed_at)}</div></div>`;
+  if (mode === "student" && locked) top += `<div class="banner ok">✅ You submitted this lesson on ${fmtDate(sub.exercises_submitted_at)} · score <b>${sub.score}/${sub.max_score}</b> for the questions and gap-fills. Your writing goes to your teacher. You can still read everything and look at the model answers.</div>`;
+
+  main.innerHTML = `${top}
+  <div class="hero" id="intro">
+    <div class="kicker">${m.kicker}</div>
+    <h1>${m.title}</h1>
+    <p class="lede">${m.lede}</p>
+    <div class="meta">${m.pills.map((p) => `<span class="pill">${p}</span>`).join("")}</div>
+    <div class="howto">
+      <h3>How to work through each chunk</h3>
+      <ol>
+        <li><b>Read</b> the text once for the general idea. Tap <span class="v" tabindex="0">highlighted words</span> to see the meaning in English and Vietnamese.</li>
+        <li><b>Hard sentences</b> are <span class="ds">underlined<sup>1</sup></span>. Try to understand each one yourself first, then tap it to see the Vietnamese translation.</li>
+        <li><b>Check understanding:</b> answer the questions. You'll see right away whether you were right, and why. Only your first answer counts!</li>
+        <li><b>Vocabulary:</b> fill the gaps using the words from the chunk.</li>
+        <li><b>Translate</b> Vietnamese → English using the target words. The chips turn green when you use them.</li>
+        <li><b>Write:</b> answer the thinking questions. Use the “Think first” box to plan, and tap a sentence frame to start.</li>
+      </ol>
+      <div class="legend-row"><span>Your work saves automatically, so you can do it over several days, on any device.</span><span>When everything is finished, press <b>Submit to teacher</b> (bottom right).</span></div>
+    </div>
+  </div>
+  <div id="chunks">${CHUNKS.map((ch, i) => chunkHTML(ch, i)).join("")}</div>
+  <section class="chunk" id="final">
+    <div class="chunk-head"><div class="chunk-num">✎</div><div><h2>${L.final.title}</h2><p>${L.final.sub}</p></div></div>
+    <div class="step">
+      <div class="step-label"><div class="badge">★</div><h3>Write a PEEL paragraph <small>150–200 words</small></h3></div>
+      <p style="margin-top:0"><b>Question:</b> ${L.final.question}</p>
+      <div class="think"><b>PEEL</b> is a simple logic structure for one strong paragraph:
+        <ul>
+          <li><b>P – Point:</b> your main claim in one sentence. What is your answer?</li>
+          <li><b>E – Evidence:</b> 2–3 facts or numbers from the article that support it.</li>
+          <li><b>E – Explain:</b> <i>why</i> does this evidence prove your point? Connect the facts.</li>
+          <li><b>L – Link:</b> a final sentence that returns to the question. You can add a limitation or a counter-argument here.</li>
+        </ul>
+      </div>
+      <div class="peel-box"><label>P – Point <span>e.g. “The article argues that the main winners are…, while…”</span></label><textarea data-save="final-p"></textarea></div>
+      <div class="peel-box"><label>E – Evidence <span>use numbers: 3%, 90% vs 0.6%, $1,100, 20,000 jobs…</span></label><textarea class="long" data-save="final-e1"></textarea></div>
+      <div class="peel-box"><label>E – Explain <span>“This shows that…”, “The reason is that…”, “As a result,…”</span></label><textarea class="long" data-save="final-e2"></textarea></div>
+      <div class="peel-box"><label>L – Link / evaluate <span>“Overall,…”, “However, the article does not consider…”</span></label><textarea data-save="final-l"></textarea></div>
+      <div class="btn-row">
+        <button class="btn primary" id="buildPeel">Build my paragraph</button>
+        <button class="btn" data-toggle="final-model">Show model paragraph</button>
+      </div>
+      <div class="preview" id="peelPreview"></div>
+      <div class="wc" id="peelWc"></div>
+      <div class="model" id="final-model"><span class="lbl">Model paragraph (one possible answer)</span>${L.final.model}</div>
+    </div>
+  </section>`;
+  $("#footer").innerHTML = m.footer;
+  $("#nav").innerHTML = `<a href="#intro" data-jump>Start</a>` + CHUNKS.map((ch, i) => `<a href="#${ch.id}" data-jump data-nav="${ch.id}">${i + 1}</a>`).join("") + `<a href="#final" data-jump data-nav="final">Final</a>`;
+  document.body.classList.toggle("locked", locked);
+  drawChart();
+  dock();
+}
+
+function dock() {
+  const d = $("#dock");
+  if (mode === "student" && !locked) d.innerHTML = `<button class="btn" id="dlBtn">⬇ My answers</button><button class="btn primary" id="submitBtn">Submit to teacher</button>`;
+  else d.innerHTML = `<button class="btn" id="dlBtn">⬇ ${mode === "view" ? "Answers as text" : "My answers"}</button>`;
+  $("#dlBtn").onclick = downloadText;
+  $("#submitBtn")?.addEventListener("click", submitWork);
+}
+
+function chunkHTML(ch, i) {
+  const paras = ch.paras.map((p) => (p === "CHART" ? chartShell() : `<p>${markup(p, ch.id)}</p>`)).join("");
+  const comp = ch.comp.map((q, j) => `
+    <div class="q" data-q="${ch.id}-q${j}">
+      <div class="qt"><span class="qn">${j + 1}.</span>${q.q}</div>
+      <div class="opts">${q.o.map((o, k) => `<button class="opt" data-k="${k}" data-a="${q.a}">${o}</button>`).join("")}</div>
+      <div class="explain">${q.e}</div>
+    </div>`).join("");
+  const gap = `<div class="bank">${ch.gap.bank.map((b) => `<span>${b}</span>`).join("")}</div>` + ch.gap.items.map((it, j) => {
+    const parts = it[0].split("___");
+    return `<div class="gap">${j + 1}. ${parts[0]}<input data-save="${ch.id}-g${j}" data-ans="${it[1].join("|")}" autocomplete="off" spellcheck="false">${parts[1]}<span class="fb"></span></div>`;
+  }).join("") + `<div class="btn-row"><button class="btn primary" data-check="${ch.id}">Check answers</button><button class="btn" data-reveal="${ch.id}">Show answers</button><span class="score" id="${ch.id}-score"></span></div>`;
+  const trans = ch.trans.map((t, j) => `
+    <div class="task">
+      <div class="prompt"><b>${j + 1}.</b> <span class="vi-src">${t.vi}</span></div>
+      <div class="uses" data-uses="${ch.id}-t${j}"><span>Use:</span>${t.use.map((u) => `<span class="chip" data-m="${u}">${u.split("|")[0]}</span>`).join("")}</div>
+      <textarea data-save="${ch.id}-t${j}" data-usetarget="${ch.id}-t${j}" placeholder="Write your English translation…"></textarea>
+      <div class="btn-row"><button class="btn small" data-toggle="${ch.id}-tm${j}">Show model answer</button></div>
+      <div class="model" id="${ch.id}-tm${j}"><span class="lbl">Model answer</span>${t.m}</div>
+    </div>`).join("");
+  const write = ch.write.map((w, j) => `
+    <div class="task">
+      <div class="prompt"><b>${j + 1}.</b> ${w.q}</div>
+      <div class="think"><b>Think first:</b><ul>${w.think.map((t) => `<li>${t}</li>`).join("")}</ul></div>
+      <div class="frames"><span style="font-size:13px;color:var(--muted);align-self:center">Start with:</span>${w.frames.map((f) => `<span class="frame" data-for="${ch.id}-w${j}">${f}…</span>`).join("")}</div>
+      <textarea class="long" id="ta-${ch.id}-w${j}" data-save="${ch.id}-w${j}" data-min="${w.min}" placeholder="Write your answer here…"></textarea>
+      <div class="wc" data-wc="${ch.id}-w${j}">0 words · aim for ${w.min}+</div>
+      <div class="btn-row"><button class="btn small" data-toggle="${ch.id}-wm${j}">Show model answer</button></div>
+      <div class="model" id="${ch.id}-wm${j}"><span class="lbl">Model answer (compare it with your ideas, don't copy it)</span>${w.m}</div>
+    </div>`).join("");
+  return `
+  <section class="chunk" id="${ch.id}">
+    <div class="chunk-head"><div class="chunk-num">${i + 1}</div><div><h2>${ch.title}</h2><p>${ch.sub}</p></div></div>
+    <div class="step"><div class="step-label"><div class="badge">A</div><h3>Read <small>tap highlighted words · underlined = hard sentence</small></h3></div>
+      <div class="reading">${paras}</div>${ch.note ? `<div class="note-inline">${ch.note}</div>` : ""}</div>
+    <div class="step"><div class="step-label"><div class="badge">B</div><h3>Check your understanding</h3></div>${comp}</div>
+    <div class="step"><div class="step-label"><div class="badge">C</div><h3>Vocabulary check <small>fill each gap with a word from the box</small></h3></div>${gap}</div>
+    <div class="step"><div class="step-label"><div class="badge">D</div><h3>Translate into English <small>use the target words</small></h3></div>${trans}</div>
+    <div class="step"><div class="step-label"><div class="badge">E</div><h3>Think & write <small>form your own ideas</small></h3></div>${write}</div>
+  </section>`;
+}
+
+function chartShell() {
+  return `<div class="chart-wrap" id="chartWrap">
+    <h4>${CHART.title}</h4><div class="sub">${CHART.sub}</div>
+    <div class="chart-legend"><span><i style="background:#C2410C"></i>Net loss</span><span><i style="background:#1D6FD1"></i>Net gain</span></div>
+    <svg id="chart" viewBox="0 0 640 300" role="img" aria-label="Bar chart of the net change in after-tax income by income decile"></svg>
+    <div class="src">${CHART.src}</div><div id="ctip"></div></div>`;
+}
+function drawChart() {
+  const svg = $("#chart"); if (!svg) return;
+  const W = 640, H = 300, m = { l: 44, r: 12, t: 14, b: 40 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const min = -4, max = 3, y = (v) => m.t + (max - v) / (max - min) * ih;
+  const n = CHART.net.length, bw = iw / n, gap = 10;
+  let s = "";
+  for (let v = -4; v <= 3; v++) {
+    s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}" stroke="${v === 0 ? "#8A8F96" : "#EEE9DF"}" stroke-width="${v === 0 ? 1.2 : 1}"/>`;
+    s += `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end" font-size="11" fill="#5E6670" font-family="Inter">${v > 0 ? "+" : ""}${v}</text>`;
+  }
+  CHART.net.forEach((v, i) => {
+    const x = m.l + i * bw + gap / 2, w = bw - gap, y0 = y(0), y1 = y(v);
+    const top = Math.min(y0, y1), h = Math.max(Math.abs(y1 - y0), 1.5), r = Math.min(4, h / 2);
+    const col = v < 0 ? "#C2410C" : "#1D6FD1";
+    const d = v >= 0 ? `M${x},${y0} V${top + r} Q${x},${top} ${x + r},${top} H${x + w - r} Q${x + w},${top} ${x + w},${top + r} V${y0} Z`
+      : `M${x},${y0} V${y1 - r} Q${x},${y1} ${x + r},${y1} H${x + w - r} Q${x + w},${y1} ${x + w},${y1 - r} V${y0} Z`;
+    s += `<path d="${d}" fill="${col}"/>`;
+    s += `<rect class="hit" x="${m.l + i * bw}" y="${m.t}" width="${bw}" height="${ih}" fill="transparent" data-i="${i}"/>`;
+    s += `<text x="${x + w / 2}" y="${H - m.b + 18}" text-anchor="middle" font-size="11" fill="#5E6670" font-family="Inter">${CHART.labels[i]}</text>`;
+  });
+  const lo = CHART.net.indexOf(Math.min(...CHART.net)), hi = CHART.net.indexOf(Math.max(...CHART.net)), f = (v) => `${v > 0 ? "+" : "−"}${Math.abs(v)}%`;
+  s += `<text x="${m.l + (lo + 0.5) * bw}" y="${y(CHART.net[lo]) + 16}" text-anchor="middle" font-size="12" font-weight="600" fill="#1F2328" font-family="Inter">${f(CHART.net[lo])}</text>`;
+  s += `<text x="${m.l + (hi + 0.5) * bw}" y="${y(CHART.net[hi]) - 6}" text-anchor="middle" font-size="12" font-weight="600" fill="#1F2328" font-family="Inter">${f(CHART.net[hi])}</text>`;
+  s += `<text x="${m.l + iw / 2}" y="${H - 6}" text-anchor="middle" font-size="11.5" fill="#5E6670" font-family="Inter">Income decile (poorest → richest)</text>`;
+  svg.innerHTML = s;
+  const tip = $("#ctip"), wrap = $("#chartWrap");
+  $$(".hit", svg).forEach((r) => {
+    r.addEventListener("mousemove", (e) => {
+      const i = +r.dataset.i, v = CHART.net[i];
+      tip.innerHTML = `<b>${CHART.labels[i]} decile</b> · ${v > 0 ? "+" : ""}${v.toFixed(1)}%`;
+      const b = wrap.getBoundingClientRect();
+      tip.style.left = e.clientX - b.left + 12 + "px"; tip.style.top = e.clientY - b.top - 30 + "px"; tip.style.display = "block";
+    });
+    r.addEventListener("mouseleave", () => (tip.style.display = "none"));
+  });
+}
+
+/* ============ INTERACTION ============ */
+const pop = $("#pop");
+function place(el, pw) {
+  const r = el.getBoundingClientRect();
+  let left = Math.min(r.left, (r.left + r.right) / 2 - pw / 2) + window.scrollX;
+  left = Math.max(window.scrollX + 10, Math.min(left, window.scrollX + window.innerWidth - pw - 10));
+  pop.style.left = left + "px"; pop.style.top = r.bottom + window.scrollY + 8 + "px";
+}
+function showPop(el) {
+  const ch = CHUNKS.find((x) => x.id === el.dataset.c); const v = ch && ch.vocab[el.dataset.k]; if (!v) return;
+  pop.innerHTML = `<button class="x" aria-label="Close">×</button><span class="w">${v[0]}</span><span class="pos">${v[1]}</span><div class="en">${v[2]}</div><div class="vi">🇻🇳 ${v[3]}</div>`;
+  pop.style.display = "block"; place(el, Math.min(320, window.innerWidth - 20));
+}
+function showSentPop(el) {
+  const ch = CHUNKS.find((x) => x.id === el.dataset.c); const s = ch && ch.sentences[+el.dataset.n - 1]; if (!s) return;
+  pop.innerHTML = `<button class="x" aria-label="Close">×</button><span class="pos" style="margin-left:0">Sentence ${el.dataset.n} · Vietnamese</span><div class="vi" style="margin-top:6px">${s.vi}</div>`;
+  pop.style.display = "block"; place(el, Math.min(320, window.innerWidth - 20));
+}
+function markMC(q, k) {
+  const a = +$(".opt", q).dataset.a;
+  $$(".opt", q).forEach((o) => { if (+o.dataset.k === a) o.classList.add("right"); });
+  if (k !== a) $(`.opt[data-k="${k}"]`, q)?.classList.add("wrong");
+  $(".explain", q).classList.add("show");
+  q.dataset.done = "1";
+}
+document.addEventListener("click", (e) => {
+  const t = e.target;
+  if (t.closest("[data-jump]")) { e.preventDefault(); document.querySelector(t.closest("[data-jump]").getAttribute("href"))?.scrollIntoView({ behavior: "smooth" }); return; }
+  const v = t.closest(".v");
+  if (v && v.dataset.k) { e.stopPropagation(); showPop(v); return; }
+  if (!t.closest("#pop") || t.classList.contains("x")) pop.style.display = "none";
+  const ds = t.closest(".ds");
+  if (ds && ds.dataset.c) { e.stopPropagation(); showSentPop(ds); return; }
+  if (t.dataset.toggle) document.getElementById(t.dataset.toggle)?.classList.toggle("show");
+  if (t.classList.contains("opt")) {
+    const q = t.closest(".q"); if (q.dataset.done || locked) return;
+    markMC(q, +t.dataset.k);
+    store["mc-" + q.dataset.q] = +t.dataset.k; save(); updateNav();
+  }
+  if (t.dataset.check) checkGaps(t.dataset.check, false);
+  if (t.dataset.reveal) checkGaps(t.dataset.reveal, true);
+  if (t.classList.contains("frame") && !locked) {
+    const ta = document.getElementById("ta-" + t.dataset.for);
+    const add = t.textContent.replace(/…$/, "");
+    ta.value = (ta.value.trim() ? ta.value.replace(/\s*$/, " ") : "") + add;
+    ta.focus(); ta.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+  if (t.id === "buildPeel") buildPeel();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && e.target.classList.contains("v")) showPop(e.target);
+  if (e.key === "Escape") pop.style.display = "none";
+});
+
+function checkGaps(id, reveal) {
+  let right = 0; const inputs = $$(`#${id} .gap input`);
+  if (reveal && !locked && !confirm("Show all the answers for this exercise? Any gaps you haven't got right will be filled in for you, and they won't count in your score.")) return;
+  inputs.forEach((inp) => {
+    const ans = inp.dataset.ans.split("|");
+    if (reveal && !ans.includes(norm(inp.value))) {
+      if (locked) { inp.nextElementSibling.textContent = `→ ${ans[0]}`; inp.nextElementSibling.style.color = "var(--good)"; inp.classList.toggle("wrong", inp.value.trim() !== ""); return; }
+      inp.value = ans[0]; store[inp.dataset.save + "_shown"] = 1; store[inp.dataset.save] = ans[0];
+    }
+    const ok = ans.includes(norm(inp.value)) && !store[inp.dataset.save + "_shown"];
+    const shown = !!store[inp.dataset.save + "_shown"];
+    inp.classList.toggle("right", ok); inp.classList.toggle("wrong", !ok && !shown && inp.value.trim() !== "");
+    inp.nextElementSibling.textContent = ok ? "✓" : shown ? "(answer shown)" : inp.value.trim() ? (locked ? `✗ → ${ans[0]}` : "✗ try again") : (locked ? `→ ${ans[0]}` : "");
+    inp.nextElementSibling.style.color = ok ? "var(--good)" : shown ? "var(--muted)" : "var(--bad)";
+    if (ok) right++;
+  });
+  $(`#${id}-score`).textContent = `${right} / ${inputs.length}`;
+  save(); updateNav();
+}
+
+function updateUses(ta) {
+  const box = document.querySelector(`[data-uses="${ta.dataset.usetarget}"]`); if (!box) return;
+  const txt = " " + ta.value.toLowerCase().replace(/[’]/g, "'") + " ";
+  $$(".chip", box).forEach((ch) => ch.classList.toggle("hit", ch.dataset.m.split("|").some((m) => txt.includes(m.toLowerCase()))));
+}
+function updateWc(ta) {
+  const el = document.querySelector(`[data-wc="${ta.dataset.save}"]`); if (!el) return;
+  const n = words(ta.value), min = +ta.dataset.min;
+  el.textContent = `${n} words · aim for ${min}+`; el.classList.toggle("ok", n >= min);
+}
+document.addEventListener("input", (e) => {
+  const t = e.target; if (!t.dataset.save || locked) return;
+  store[t.dataset.save] = t.value; save();
+  if (t.dataset.usetarget) updateUses(t);
+  if (t.dataset.min) updateWc(t);
+  updateNav();
+});
+
+function restore() {
+  $$("[data-save]").forEach((el) => {
+    if (store[el.dataset.save] != null) el.value = store[el.dataset.save];
+    if (locked) el.readOnly = true;
+    if (el.dataset.usetarget) updateUses(el);
+    if (el.dataset.min) updateWc(el);
+  });
+  $$(".q").forEach((q) => { const k = store["mc-" + q.dataset.q]; if (k != null) markMC(q, +k); });
+  if (locked) CHUNKS.forEach((ch) => checkGaps(ch.id, false));
+}
+
+function chunkDone(ch) {
+  const mc = ch.comp.every((q, j) => store[`mc-${ch.id}-q${j}`] != null);
+  const wr = ch.write.every((w, j) => words(store[`${ch.id}-w${j}`]) >= Math.round(w.min * 0.6));
+  return mc && wr;
+}
+const finalDone = () => ["final-p", "final-e1", "final-e2", "final-l"].every((k) => (store[k] || "").trim().length > 10);
+function updateNav() {
+  CHUNKS.forEach((ch) => document.querySelector(`[data-nav="${ch.id}"]`)?.classList.toggle("done", chunkDone(ch)));
+  document.querySelector(`[data-nav="final"]`)?.classList.toggle("done", finalDone());
+}
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((en) => { if (en.isIntersecting) {
+    $$(".nav a").forEach((a) => a.classList.remove("active"));
+    document.querySelector(`[data-nav="${en.target.id}"]`)?.classList.add("active");
+  } });
+}, { rootMargin: "-40% 0px -55% 0px" });
+
+function buildPeel() {
+  const txt = ["final-p", "final-e1", "final-e2", "final-l"].map((k) => (store[k] || "").trim()).filter(Boolean).join(" ");
+  const pv = $("#peelPreview"); pv.textContent = txt || "Write something in the boxes above first."; pv.classList.add("show");
+  const n = words(txt), wc = $("#peelWc"); wc.textContent = `${n} words · target 150–200`; wc.classList.toggle("ok", n >= 150 && n <= 220);
+}
+
+function answersText() {
+  let out = `${L.meta.title.toUpperCase()}\n${mode === "view" ? studentName : profile.full_name} · ${new Date().toLocaleString()}\n`;
+  CHUNKS.forEach((ch, i) => {
+    out += `\n==============================\nCHUNK ${i + 1}: ${ch.title}\n==============================\n`;
+    out += `Comprehension: ${ch.comp.reduce((s, q, j) => s + (store[`mc-${ch.id}-q${j}`] === q.a ? 1 : 0), 0)}/${ch.comp.length} correct (first attempt)\n`;
+    out += `Vocabulary gaps: ${ch.gap.items.reduce((s, it, j) => s + (it[1].includes(norm(store[`${ch.id}-g${j}`])) && !store[`${ch.id}-g${j}_shown`] ? 1 : 0), 0)}/${ch.gap.items.length}\n\nTRANSLATION\n`;
+    ch.trans.forEach((t, j) => { out += `${j + 1}. ${t.vi}\n   → ${store[`${ch.id}-t${j}`] || "(no answer)"}\n`; });
+    out += `\nWRITING\n`;
+    ch.write.forEach((w, j) => { out += `${j + 1}. ${w.q.replace(/<[^>]+>/g, "")}\n${store[`${ch.id}-w${j}`] || "(no answer)"}\n\n`; });
+  });
+  out += `\n==============================\nFINAL PEEL PARAGRAPH\n==============================\n`;
+  out += ["final-p", "final-e1", "final-e2", "final-l"].map((k) => (store[k] || "").trim()).filter(Boolean).join(" ") || "(no answer)";
+  return out;
+}
+function downloadText() {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([answersText()], { type: "text/plain;charset=utf-8" }));
+  a.download = `${topicId}-${(mode === "view" ? studentName : profile.full_name).replace(/\s+/g, "-")}.txt`;
+  document.body.appendChild(a); a.click(); a.remove();
+}
+
+async function submitWork() {
+  const missingMC = CHUNKS.reduce((n, ch) => n + ch.comp.filter((q, j) => store[`mc-${ch.id}-q${j}`] == null).length, 0);
+  const emptyWrite = CHUNKS.reduce((n, ch) => n + ch.write.filter((w, j) => !words(store[`${ch.id}-w${j}`])).length + ch.trans.filter((t, j) => !words(store[`${ch.id}-t${j}`])).length, 0);
+  const notes = [missingMC && `${missingMC} question(s) not answered`, emptyWrite && `${emptyWrite} translation/writing task(s) empty`, !finalDone() && "the final PEEL paragraph isn't finished"].filter(Boolean);
+  if (!confirm(`${notes.length ? "Not finished yet: " + notes.join(", ") + ".\n\n" : ""}Submit your work to your teacher now? You can't change it after you submit.`)) return;
+  const btn = $("#submitBtn"); btn.disabled = true; btn.textContent = "Submitting…";
+  clearTimeout(saveTimer);
+  const answers = { ...store }; delete answers._t;
+  const { score, max } = scoreOf(Object.fromEntries(Object.entries(answers).filter(([k]) => !answers[k + "_shown"])));
+  const { data, error } = await c.from("submissions").upsert({ student_id: user.id, topic_id: topicId, draft: store, answers, score, max_score: max }, { onConflict: "student_id,topic_id" }).select().single();
+  if (error) { alert("Couldn't submit: " + error.message + "\nYour work is still saved. Please try again."); btn.disabled = false; btn.textContent = "Submit to teacher"; return; }
+  sub = data; locked = true; dirty = false;
+  try { localStorage.removeItem(LKEY); } catch (e) {}
+  saveState("Submitted ✓");
+  render(); restore(); updateNav(); observe();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+  toast("Submitted! Great work 🎉");
+}
+
+function observe() { [...CHUNKS.map((ch) => document.getElementById(ch.id)), document.getElementById("final")].forEach((s) => s && io.observe(s)); }
+
+/* init */
+render();
+restore();
+updateNav();
+observe();
+if (mode === "student" && !locked && sub?.draft) saveState("Saved ✓");
+if (mode === "student" && !locked && store._t && (!sub?.draft || store._t > (sub.draft._t || 0))) { dirty = true; pushDraft(); }
+</script>
+</body>
+</html>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>OneMoreWord Homework Hub · Teacher</title>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=202611251124">
+<link rel="stylesheet" href="css/app.css?v=202611251442">
 </head>
 <body>
 <header class="topbar"><div class="wrap wide">
@@ -30,9 +30,9 @@
 </div></div>
 
 <script type="module">
-import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251124";
-import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251124";
-import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251124";
+import { sb, requireUser, signOut, loadTopicIndex, loadTopic, esc, fmtDate, toast, signedUrl } from "./js/db.js?v=202611251442";
+import { renderLesson, renderHomework, answerKey } from "./js/topic.js?v=202611251442";
+import { feedbackEditor, plainText } from "./js/feedback.js?v=202611251442";
 
 document.getElementById("out").onclick = signOut;
 const { profile, session } = await requireUser("teacher");
@@ -109,7 +109,7 @@ async function progress() {
     ${students.map((st) => `<tr><td><b>${esc(st.full_name)}</b><br><span class="small muted">${esc(st.username)}</span></td>${opened.map((o) => {
       const s = byKey[st.id + "|" + o.topic_id];
       const state = !s || (!s.exercises_submitted_at && !s.recording_path) ? "none" : s.reviewed_at ? "reviewed" : "done";
-      const txt = state === "none" ? "–" : `${s.exercises_submitted_at ? `${s.score}/${s.max_score}` : "—"} ${s.recording_path ? "🎤" : ""} ${s.reviewed_at ? "✓" : s.teacher_comment ? "📝" : ""}`;
+      const txt = state === "none" ? (s?.draft ? "✍️" : "–") : `${s.exercises_submitted_at ? `${s.score}/${s.max_score}` : "—"} ${s.recording_path ? "🎤" : ""} ${s.reviewed_at ? "✓" : s.teacher_comment ? "📝" : ""}`;
       return `<td><span class="cell ${state}" data-st="${st.id}" data-t="${esc(o.topic_id)}">${txt}</span></td>`;
     }).join("")}</tr>`).join("")}</table></div></div>`;
   pane.querySelectorAll(".cell[data-st]").forEach((el) => (el.onclick = () => review(students.find((s) => s.id === el.dataset.st), el.dataset.t, byKey[el.dataset.st + "|" + el.dataset.t])));
@@ -126,6 +126,7 @@ async function review(st, topicId, sub) {
   const topic = await loadTopic(topicId);
   openDrawer(`${st.full_name} · ${topic.title}`);
   sub = sub || {};
+  if (topic.kind === "lab") return reviewLab(st, topic, sub);
   const recSec = topic.homework.find((s) => s.type === "recording");
   const opt = recSec && sub.recording_option != null ? recSec.options[+sub.recording_option] : null;
   const url = await signedUrl(sub.recording_path);
@@ -173,6 +174,49 @@ async function review(st, topicId, sub) {
   dbody.querySelector("#redo")?.addEventListener("click", () => { if (confirm(`Clear ${st.full_name}'s exercise answers so they can do them again? Their recording stays.`)) save({ answers: null, score: null, max_score: null, exercises_submitted_at: null }, "Exercises reset"); });
 }
 
+/* ---------- reading lab (IELTS) review ---------- */
+async function labContent(id) {
+  const { data, error } = await c.storage.from("lessons").download(`${id}.json`);
+  if (error || !data) throw new Error("The lesson file hasn't been uploaded yet (Topics → ⬆ Upload lesson file).");
+  return JSON.parse(await data.text());
+}
+async function reviewLab(st, topic, sub) {
+  let L = null; try { L = await labContent(topic.id); } catch (e) { dbody.innerHTML = `<div class="notice bad">${esc(e.message)}</div>`; return; }
+  const a = (sub.exercises_submitted_at ? sub.answers : sub.draft) || {};
+  const strip = (h) => String(h || "").replace(/<[^>]+>/g, "");
+  const ans = (k) => (a[k] || "").trim() ? `<div class="lab-ans">${esc(a[k])}</div>` : `<div class="lab-ans empty">(no answer)</div>`;
+  const words = (s) => (String(s || "").trim().match(/\S+/g) || []).length;
+  const status = sub.exercises_submitted_at ? `<span class="pill ok">${sub.score} / ${sub.max_score}</span><span class="small muted">submitted ${fmtDate(sub.exercises_submitted_at)}</span><button class="ghost sm" id="redo" style="margin-left:auto">Allow redo</button>`
+    : sub.draft ? `<span class="pill warn">In progress, not submitted</span>` : `<span class="pill warn">Not started</span>`;
+  const writing = L.chunks.map((ch, i) => {
+    const mc = ch.comp.filter((q, j) => a[`mc-${ch.id}-q${j}`] === q.a).length;
+    const gp = ch.gap.items.filter((it, j) => it[1].includes(String(a[`${ch.id}-g${j}`] || "").toLowerCase().replace(/[’']/g, "'").replace(/\s+/g, " ").trim()) && !a[`${ch.id}-g${j}_shown`]).length;
+    return `<h3 style="margin-top:22px">${i + 1}. ${esc(ch.title)} <span class="small muted" style="font-weight:400">· questions ${mc}/${ch.comp.length} · gaps ${gp}/${ch.gap.items.length}</span></h3>
+      <div class="lab-sub">Translate</div>${ch.trans.map((t, j) => `<div class="lab-q">${esc(strip(t.vi))}</div>${ans(`${ch.id}-t${j}`)}<div class="lab-model">Model: ${esc(strip(t.m))}</div>`).join("")}
+      <div class="lab-sub">Think & write</div>${ch.write.map((w, j) => `<div class="lab-q">${esc(strip(w.q))} <span class="small muted">(${words(a[`${ch.id}-w${j}`])} words, aim ${w.min}+)</span></div>${ans(`${ch.id}-w${j}`)}`).join("")}`;
+  }).join("");
+  const peel = ["final-p", "final-e1", "final-e2", "final-l"].map((k) => (a[k] || "").trim()).filter(Boolean).join(" ");
+  dbody.innerHTML = `
+    <section class="card"><div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap"><h2>📰 Reading lab</h2>${status}</div>
+      <p class="small muted" style="margin-bottom:0">Questions and gap-fills are marked automatically. The translations and writing are below for you to correct. <a href="reading.html#${esc(topic.id)}/${esc(st.id)}" target="_blank" rel="noopener">Open the full lesson with ${esc(st.full_name.split(" ").pop())}'s answers ↗</a></p></section>
+    <section class="card"><h2>💬 Feedback</h2>
+      ${sub.reviewed_at ? `<div class="notice ok small">Published ${fmtDate(sub.reviewed_at)}. The student can see this feedback at the top of the lesson.</div>` : `<p class="small muted"><b>Save draft</b> keeps your work private. <b>Publish</b> shows it to the student.</p>`}
+      <div class="formrow"><div style="max-width:160px"><label class="field">Mark (optional)</label><input type="text" id="fmark" placeholder="e.g. Band 6.5" value="${esc(sub.teacher_mark || "")}"></div></div>
+      <div id="fed"></div>
+      <div class="submitbar" style="margin-top:16px"><button class="accent" id="fsave" ${sub.id ? "" : "disabled"}>${sub.reviewed_at ? "Update feedback" : "Publish feedback"}</button>${sub.id && !sub.reviewed_at ? `<button class="ghost" id="fdraft">Save draft</button>` : ""}${sub.reviewed_at ? `<button class="ghost" id="funlock">Unpublish</button>` : ""}${!sub.id ? `<span class="small muted">Nothing written yet.</span>` : ""}</div>
+    </section>
+    <section class="card"><h2>✍️ Final PEEL paragraph <span class="small muted" style="font-weight:400">(${words(peel)} words, target 150–200)</span></h2>${peel ? `<div class="lab-ans">${esc(peel)}</div>` : `<div class="lab-ans empty">(no answer)</div>`}</section>
+    <section class="card"><h2>📝 Translations and writing</h2>${writing}</section>`;
+  const editor = feedbackEditor(sub.teacher_comment || "");
+  dbody.querySelector("#fed").appendChild(editor.el);
+  const save = async (patch, msg) => { try { must(await c.from("submissions").update(patch).eq("id", sub.id)); toast(msg); closeDrawer(); render(); } catch (e) { alert(e.message); } };
+  const fields = () => ({ teacher_mark: dbody.querySelector("#fmark").value.trim() || null, teacher_comment: editor.value() });
+  dbody.querySelector("#fsave")?.addEventListener("click", () => save({ ...fields(), reviewed_at: new Date().toISOString() }, "Feedback published"));
+  dbody.querySelector("#fdraft")?.addEventListener("click", () => save(fields(), "Draft saved (not visible to the student yet)"));
+  dbody.querySelector("#funlock")?.addEventListener("click", () => save({ reviewed_at: null }, "Feedback hidden until you publish it again."));
+  dbody.querySelector("#redo")?.addEventListener("click", () => { if (confirm(`Let ${st.full_name} edit and submit this lesson again? Their written work is kept.`)) save({ answers: null, score: null, max_score: null, exercises_submitted_at: null }, "Reopened for the student"); });
+}
+
 /* Convert any browser-playable audio to a 16 kHz mono WAV with a proper length header
    (Chrome's .webm recordings have no duration, which tools like Gemini reject). */
 async function toWav(blob) {
@@ -200,7 +244,7 @@ async function topics() {
   const isOpen = (id) => opened.some((o) => o.topic_id === id);
   const mine = index.filter((t) => !k.level || !t.level || t.level === k.level);
   const others = index.filter((t) => !mine.includes(t));
-  const row = (t) => `<div class="toggle-row"><div>${t.emoji || "📘"} <b>${esc(t.title)}</b> ${t.level ? `<span class="pill">${esc(t.level)}</span>` : ""} <button class="ghost sm" data-preview="${esc(t.id)}">Preview & answer key</button></div>
+  const row = (t) => `<div class="toggle-row"><div>${t.emoji || "📘"} <b>${esc(t.title)}</b> ${t.level ? `<span class="pill">${esc(t.level)}</span>` : ""} ${t.kind === "lab" ? `<a class="btn ghost sm btnlink" href="reading.html#${esc(t.id)}" target="_blank" rel="noopener">Preview & answer key ↗</a> <label class="btn ghost sm btnlink upl" title="Upload the lesson file Claude sent you">⬆ Upload lesson file<input type="file" accept=".json,application/json" data-upload="${esc(t.id)}" hidden></label> <span class="small" data-upstate="${esc(t.id)}"></span>` : `<button class="ghost sm" data-preview="${esc(t.id)}">Preview & answer key</button>`}</div>
     <label class="switch" title="Open for ${esc(k.name)}"><input type="checkbox" data-id="${esc(t.id)}" ${isOpen(t.id) ? "checked" : ""}><span></span></label></div>`;
   pane.innerHTML = `<div class="card"><h2>${esc(k.name)} · Topics</h2><p class="small muted">Switch a topic on to make it appear for students in ${esc(k.name)}. Turning it off hides it but keeps their answers.</p>
     ${!index.length ? `<p class="muted">No topics uploaded yet. Send your topic files to Claude to add them here.</p>` : ""}
@@ -214,6 +258,26 @@ async function topics() {
     } catch (e) { cb.checked = !cb.checked; alert(e.message); }
   }));
   pane.querySelectorAll("[data-preview]").forEach((b) => (b.onclick = () => preview(b.dataset.preview)));
+  // reading labs: the lesson text lives in private storage, uploaded from here
+  const labs = index.filter((t) => t.kind === "lab");
+  if (labs.length) {
+    let files = [];
+    try { files = (await c.storage.from("lessons").list("", { limit: 1000 })).data || []; } catch (e) { console.warn(e); }
+    const have = new Set((files || []).map((f) => f.name));
+    labs.forEach((t) => { const el = pane.querySelector(`[data-upstate="${t.id}"]`); if (el) el.innerHTML = have.has(`${t.id}.json`) ? `<span style="color:var(--ok,#1E7F4F)">✓ file uploaded</span>` : `<span style="color:#B4351E">⚠ lesson file missing</span>`; });
+  }
+  pane.querySelectorAll("[data-upload]").forEach((inp) => (inp.onchange = async () => {
+    const f = inp.files[0]; if (!f) return;
+    const id = inp.dataset.upload;
+    try {
+      const d = JSON.parse(await f.text());
+      if (!Array.isArray(d.chunks)) throw new Error("This doesn't look like a reading lab file.");
+      const { error } = await c.storage.from("lessons").upload(`${id}.json`, f, { upsert: true, contentType: "application/json" });
+      if (error) throw error;
+      toast("Lesson file uploaded"); topics();
+    } catch (e) { alert("Upload failed: " + (e.message || e)); }
+    inp.value = "";
+  }));
 }
 
 async function preview(id) {
