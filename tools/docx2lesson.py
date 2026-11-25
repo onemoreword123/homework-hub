@@ -143,6 +143,15 @@ for el in body.iterchildren():
         im.save(f"{site}/img/{tid}.jpg", quality=60, optimize=True, progressive=True)
         blocks.append({"type": "banner", "src": f"img/{tid}.jpg"})
         continue
+    if has_image(p) and blocks and blocks[-1]["type"] == "dialogue" and not blocks[-1].get("image"):
+        # a picture right after a conversation (e.g. a flow chart) is shown at the end of that card
+        rid = el.findall(".//" + qn("a:blip"))[0].get(qn("r:embed"))
+        im = Image.open(io.BytesIO(doc.part.related_parts[rid].blob)).convert("RGB")
+        if im.width > 1600: im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+        n = sum(1 for b in blocks if b.get("image")) + 1
+        im.save(f"{site}/img/{tid}-flow{n}.png", optimize=True)
+        blocks[-1]["image"] = f"img/{tid}-flow{n}.png"
+        if not text: continue
     if not text: continue
     style = (p.style.name or "").lower()
     if "heading" in style:

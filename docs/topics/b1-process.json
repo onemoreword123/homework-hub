@@ -430,7 +430,8 @@
      "OK, **let me just check I've got this right**: sales, approval for big orders, finance, warehouse, then delivery.",
      "Để mình kiểm tra lại xem mình hiểu đúng chưa."
     ]
-   ]
+   ],
+   "image": "img/b1-process-flow1.png"
   },
   {
    "type": "dialogue",
@@ -691,7 +692,8 @@
      "You'll **get the hang of it**.",
      "quen tay, nắm được cách làm gì"
     ]
-   ]
+   ],
+   "image": "img/b1-process-flow2.png"
   }
  ],
  "homework": [

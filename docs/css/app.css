@@ -269,3 +269,5 @@ table.t.gen td .ipa{white-space:normal}
 .flow-step{border:2px solid var(--navy);border-radius:12px;background:#fff;padding:10px 14px;line-height:2.2}
 .flow-head{font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);line-height:1.6}
 .flow-arrow{text-align:center;color:var(--navy);font-size:18px;line-height:1.4}
+
+.lesson-fig{display:block;width:100%;height:auto;margin-top:16px;border-radius:12px;border:1px solid #e5e7eb;background:#fff}
