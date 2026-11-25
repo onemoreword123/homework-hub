@@ -109,7 +109,13 @@ function gapBlock(s, saved = [], graded) {
     const parts = text.split(BLANK);
     let out = "";
     parts.forEach((p, i) => { out += i % 2 ? blank(p) : esc(p).replace(/\n/g, "<br>"); });
-    if (s.flow) return `<div class="flow-step">${who ? `<div class="flow-head">${esc(who)}</div>` : ""}<div>${out}</div></div>`;
+    if (s.flow) {
+      // one point per line: lines starting with "•" become a bullet list
+      const rows = out.split("<br>").map((l) => l.trim()).filter(Boolean);
+      const body = rows.map((l) => /^•/.test(l) ? `<li>${l.replace(/^•\s*/, "")}</li>` : `<p>${l}</p>`).join("")
+        .replace(/(<li>.*?<\/li>)+/g, (m) => `<ul>${m}</ul>`);
+      return `<div class="flow-step">${who ? `<div class="flow-head">${esc(who)}</div>` : ""}${body}</div>`;
+    }
     return `<p>${who ? `<b class="who">${esc(who)}:</b>` : ""}${out}</p>`;
   }).join(s.flow ? `<div class="flow-arrow">▼</div>` : "") + `</div>`;
   wrap.innerHTML = html;
