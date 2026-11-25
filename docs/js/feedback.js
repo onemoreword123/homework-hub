@@ -1,7 +1,7 @@
 // Rich feedback: short comment + full corrected version + error table.
 // Stored inside submissions.teacher_comment as JSON {v:2, comment, corrected, errors:[[mistakeHtml, fixHtml], ...]}
 // so no database change is needed. Old plain-text comments still work.
-import { esc } from "./db.js?v=202611252116";
+import { esc } from "./db.js?v=202611252119";
 
 /* ---------- storage ---------- */
 export function unpack(raw) {
@@ -207,7 +207,7 @@ if (canSpeak()) {
 }
 
 
-/* ---------- 🔊 read the corrected version aloud (American English, slow and clear) ----------
+/* ---------- 🔊 read the corrected version aloud (British English, normal speed) ----------
    Uses the device's built-in voice, sentence by sentence (long texts get cut off otherwise). */
 function plainLines(html) {
   return String(html || "").replace(/<br\s*\/?>|<\/?(p|div|li|ul|ol|h\d)\b[^>]*>/gi, "\n").replace(/<[^>]+>/g, "")
@@ -220,16 +220,16 @@ function readPlayer(html) {
   return `<div class="tts" data-tts="${esc(text)}">
     <button type="button" class="tts-play" data-tts-act="play">▶ Listen</button>
     <button type="button" class="tts-stop" data-tts-act="stop" hidden>⏹ Stop</button>
-    <span class="tts-speed"><button type="button" data-tts-rate="0.75" class="on">🐢 Slow</button><button type="button" data-tts-rate="0.95">Normal</button></span>
+    <span class="tts-speed"><button type="button" data-tts-rate="1" class="on">Normal</button><button type="button" data-tts-rate="0.75">🐢 Slow</button></span>
     <span class="tts-prog"></span>
   </div>`;
 }
-let usVoice = null;
-function pickUS() {
-  const vs = speechSynthesis.getVoices().filter((v) => /^en[-_]US/i.test(v.lang));
-  usVoice = vs.find((v) => /natural|neural|online/i.test(v.name)) || vs.find((v) => /google us|samantha|ava|allison|jenny|aria|zira/i.test(v.name)) || vs[0] || null;
+let ukVoice = null;
+function pickUK() {
+  const all = speechSynthesis.getVoices(), vs = all.filter((v) => /^en[-_]GB/i.test(v.lang));
+  ukVoice = vs.find((v) => /natural|neural|online/i.test(v.name)) || vs.find((v) => /google uk|daniel|serena|kate|libby|sonia|ryan|hazel|arthur|martha/i.test(v.name)) || vs[0] || null;
 }
-const tts = { box: null, parts: [], i: 0, rate: 0.75, playing: false };
+const tts = { box: null, parts: [], i: 0, rate: 1, playing: false };
 function sentences(text) {
   return text.split(/\n+/).flatMap((p) => p.match(/[^.!?]+[.!?]+["”’)]*|[^.!?]+$/g) || []).map((s) => s.trim()).filter(Boolean);
 }
@@ -246,15 +246,15 @@ function speakNext() {
   if (!tts.playing) return;
   if (tts.i >= tts.parts.length) { tts.playing = false; tts.i = 0; ttsUI(); return; }
   const u = new SpeechSynthesisUtterance(tts.parts[tts.i]);
-  if (usVoice) u.voice = usVoice;
-  u.lang = "en-US"; u.rate = tts.rate; u.pitch = 1;
+  if (ukVoice) u.voice = ukVoice;
+  u.lang = ukVoice?.lang || "en-GB"; u.rate = tts.rate; u.pitch = 1;
   u.onend = () => { if (!tts.playing) return; tts.i++; ttsUI(); setTimeout(speakNext, 250); };
   u.onerror = (e) => { if (e.error !== "interrupted" && e.error !== "canceled") { tts.playing = false; ttsUI(); } };
   speechSynthesis.speak(u);
   ttsUI();
 }
 if (canSpeak()) {
-  pickUS(); speechSynthesis.addEventListener?.("voiceschanged", pickUS);
+  pickUK(); speechSynthesis.addEventListener?.("voiceschanged", pickUK);
   document.addEventListener("click", (e) => {
     const box = e.target.closest(".tts"); if (!box) return;
     const act = e.target.closest("[data-tts-act]")?.dataset.ttsAct, rate = e.target.closest("[data-tts-rate]")?.dataset.ttsRate;
