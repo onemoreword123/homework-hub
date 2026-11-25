@@ -942,21 +942,21 @@
     {
      "q": "What problem did Leo have?",
      "options": [
-      "He was late for work.",
       "He didn't always write the orders down.",
+      "He was late for work.",
       "He was rude to a customer."
      ],
-     "answer": 1,
+     "answer": 0,
      "why": "“Sometimes you don't write the orders down.”"
     },
     {
      "q": "What happened at table six?",
      "options": [
       "They got the wrong food.",
-      "They got the wrong drinks.",
-      "They waited too long for their food."
+      "They waited too long for their food.",
+      "They got the wrong drinks."
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "“Yesterday, table six got the wrong drinks.”"
     },
     {
@@ -973,10 +973,10 @@
      "q": "What does Kate say about customers who are waiting for a table?",
      "options": [
       "They should wait outside.",
-      "They don't mind waiting if they know how long it will be.",
-      "They should get a free drink."
+      "They should get a free drink.",
+      "They don't mind waiting if they know how long it will be."
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "“People don't mind waiting if they know how long.”"
     },
     {
