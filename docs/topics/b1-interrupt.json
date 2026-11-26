@@ -983,84 +983,74 @@
   {
    "type": "listening",
    "title": "Part 4: Listening",
-   "intro": "Mia, Jack and Lan are having lunch. Mia is telling them about her presentation this morning. Listen, then answer the questions.",
-   "podcast": "🎧 Mia's presentation",
+   "intro": "Emma and Jack are colleagues. They're having lunch together after Emma's big presentation. Listen, then answer the questions.",
+   "podcast": "🎧 Emma's big presentation",
    "audio": "audio/b1-interrupt.mp3",
    "script": [
     {
      "t": 0,
-     "who": "Mia",
-     "text": "You won't believe what happened in my presentation this morning. So, ==I'd practised it about ten times==, and I was feeling pretty confident. I started with the sales figures, and ==just as I got to the second slide—=="
+     "who": "Jack",
+     "text": "So, how did it go? Was this your first time presenting to the CEO?"
+    },
+    {
+     "t": 3.91,
+     "who": "Emma",
+     "text": "Yes, my first time. I was nervous, but I felt quite confident, because ==I practised it about ten times at home==. I knew every slide by heart."
     },
     {
      "t": 11.44,
      "who": "Jack",
-     "text": "Wait, wait. Was the CEO there?"
+     "text": "Nice. So what happened?"
     },
     {
      "t": 13.31,
-     "who": "Mia",
-     "text": "Yes! She was sitting right at the front. Anyway, just as I got to the second slide, ==my laptop froze==."
+     "who": "Emma",
+     "text": "Well, I started speaking, and everything was fine. But ==after about two minutes, my laptop suddenly went black==."
     },
     {
      "t": 19.18,
-     "who": "Lan",
-     "text": "Oh no! Sorry, quick question. Did you have a backup?"
+     "who": "Jack",
+     "text": "Wait, wait. Two minutes? That's so early!"
     },
     {
      "t": 22.45,
-     "who": "Mia",
-     "text": "Luckily, I'd emailed the slides to myself, so ==a colleague opened them on his laptop==. But it took about five minutes, and there was this really awkward silence."
+     "who": "Emma",
+     "text": "I know! I tried to restart it, but it didn't work. In the end, ==someone from IT had to open my file on a different computer==. It took almost fifteen minutes."
     },
     {
      "t": 31.52,
      "who": "Jack",
-     "text": "Hang on a sec. Five minutes? What did you do the whole time?"
+     "text": "Sorry, quick question. What did you do while you were waiting? Did the CEO take a break?"
     },
     {
      "t": 35.36,
-     "who": "Mia",
-     "text": "I'm getting to that! I thought, \"I can't just stand here,\" so I started telling them how the project began, almost like a story."
+     "who": "Emma",
+     "text": "No, everyone just sat there, so ==I started talking without my slides. I told them a story about one of our customers== and why she loves our product."
     },
     {
      "t": 42.3,
-     "who": "Lan",
-     "text": "Oh, that reminds me, my manager always says ==people remember stories much better than numbers==."
-    },
-    {
-     "t": 47.04,
-     "who": "Mia",
-     "text": "Exactly! And that's what happened. Anyway, where was I?"
+     "who": "Jack",
+     "text": "Oh, that reminds me, ==my manager always says people remember stories, not numbers==. Nobody remembers a chart, but everyone remembers a good story."
     },
     {
      "t": 50.19,
-     "who": "Jack",
-     "text": "You were telling the story."
-    },
-    {
-     "t": 51.4,
-     "who": "Mia",
-     "text": "Oh, right. So, when the slides finally came back, the CEO said, \"To be honest, ==I enjoyed the story more than the slides!==\""
+     "who": "Emma",
+     "text": "That's exactly what happened! When the slides came back, I showed the sales numbers at the end. But afterwards, the CEO said the customer story was her favourite part. She said it was much more interesting than the numbers."
     },
     {
      "t": 61.54,
-     "who": "Lan",
-     "text": "No way! That's amazing. Sorry, I keep interrupting. Go on!"
+     "who": "Jack",
+     "text": "That's amazing! So, the laptop problem was actually a good thing."
     },
     {
      "t": 63.51,
-     "who": "Mia",
-     "text": "No worries, that's basically it. Afterwards, she asked me to present at the big meeting next month."
+     "who": "Emma",
+     "text": "Maybe! It went really well in the end. But ==next time, I'm going to bring a copy of my slides on a USB stick, just in case==."
     },
     {
      "t": 68.7,
      "who": "Jack",
-     "text": "So your laptop freezing was ==the best thing that could have happened==!"
-    },
-    {
-     "t": 71.83,
-     "who": "Mia",
-     "text": "Ha, I guess so. ==But I'm still taking two laptops next time.=="
+     "text": "Good idea. And maybe start with a story too!"
     }
    ]
   },
@@ -1069,64 +1059,64 @@
    "title": "Part 4: Choose the correct answer",
    "questions": [
     {
-     "q": "Why was Mia feeling confident at the start?",
+     "q": "Why did Emma feel fairly confident before her presentation?",
      "options": [
       "She had presented to the CEO before.",
-      "She had rehearsed many times.",
-      "A colleague had checked her slides for her."
-     ],
-     "answer": 1,
-     "why": "“I'd practised it about ten times.”"
-    },
-    {
-     "q": "When did the problem happen?",
-     "options": [
-      "Before she had even started speaking",
-      "Near the end, during the sales figures",
-      "Quite early in the presentation"
+      "A colleague had checked her slides for her.",
+      "She had rehearsed it many times."
      ],
      "answer": 2,
-     "why": "“Just as I got to the second slide, my laptop froze.”"
+     "why": "“I felt quite confident, because I practised it about ten times at home.”"
     },
     {
-     "q": "Why did the problem take so long to fix?",
+     "q": "Why is Jack surprised when Emma describes the problem?",
      "options": [
-      "Someone had to open the file on a different computer.",
-      "Mia's laptop had to restart.",
+      "It happened very early in the presentation.",
+      "It happened right before the end.",
+      "It happened before she had even started."
+     ],
+     "answer": 0,
+     "why": "“After about two minutes, my laptop suddenly went black.” Jack: “Two minutes? That's so early!”"
+    },
+    {
+     "q": "Why did it take so long to fix the problem?",
+     "options": [
+      "Emma's laptop had to restart several times.",
+      "Someone had to open the file on another computer.",
       "The CEO asked everyone to take a short break."
      ],
-     "answer": 0,
-     "why": "“A colleague opened them on his laptop. But it took about five minutes.”"
+     "answer": 1,
+     "why": "“Someone from IT had to open my file on a different computer. It took almost fifteen minutes.”"
     },
     {
-     "q": "Why does Lan mention her manager?",
+     "q": "How did Emma deal with the wait?",
      "options": [
-      "To change the subject",
-      "To warn Mia that the CEO doesn't like long presentations",
-      "To agree that stories are easier to remember than numbers"
+      "She asked the CEO if they could take a break.",
+      "She started the presentation again from the beginning.",
+      "She carried on without her slides and told a customer story."
      ],
      "answer": 2,
-     "why": "“My manager always says people remember stories much better than numbers.”"
+     "why": "“I started talking without my slides. I told them a story about one of our customers.”"
     },
     {
-     "q": "What did the CEO think?",
+     "q": "Why does Jack mention his manager?",
      "options": [
-      "She found the unplanned part more interesting.",
-      "She preferred the sales figures to the story.",
-      "She thought the slides were too long."
+      "To support the idea that stories are more memorable than data",
+      "To change the subject",
+      "To warn Emma that the CEO doesn't like long presentations"
      ],
      "answer": 0,
-     "why": "“I enjoyed the story more than the slides!”"
+     "why": "“My manager always says people remember stories, not numbers.”"
     },
     {
-     "q": "How does Mia feel about the laptop problem now?",
+     "q": "What will Emma do differently next time?",
      "options": [
-      "She's still upset about it.",
-      "It worked out well, but she'll be more prepared next time.",
-      "She's decided she'll never use slides again."
+      "Stop using slides completely",
+      "Bring a backup copy of her slides",
+      "Ask IT to set up her laptop before she starts"
      ],
      "answer": 1,
-     "why": "“I guess so. But I'm still taking two laptops next time.”"
+     "why": "“Next time, I'm going to bring a copy of my slides on a USB stick, just in case.”"
     }
    ]
   },
