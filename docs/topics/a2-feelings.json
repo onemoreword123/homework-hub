@@ -1,0 +1,811 @@
+{
+ "id": "a2-feelings",
+ "title": "Feelings & Emotions",
+ "level": "A2",
+ "emoji": "🤸",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-feelings.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "🤸 Feelings & Emotions"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "What’s something **small that always makes your day?**",
+    "What really **gets on your nerves,** at work or in daily life?",
+    "When was **the last time you felt you had too much on your plate?**",
+    "Do you usually show your **feelings, or keep them to yourself?**"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Happy: I’m on cloud nine!",
+   "context": "***Context:*** *Linh has just had a phone call from HR. She rushes over to tell her colleague Mark the news.*",
+   "lines": [
+    [
+     "Mark",
+     "Hey, Linh. You're **grinning**. Anything good happen?"
+    ],
+    [
+     "Linh",
+     "Yes! HR just called me. I got the promotion!"
+    ],
+    [
+     "Mark",
+     "Really? That’s **wonderful news**! Congratulations! You must be really **excited!**"
+    ],
+    [
+     "Linh",
+     "I am. **To be honest, I still can’t quite believe it.** After the interview, I **was sure I didn’t get it**, because I was so nervous and I **forgot** some of my answers."
+    ],
+    [
+     "Mark",
+     "Well, they clearly **didn’t mind**. You’ve worked really hard this year, so you **completely deserve it**."
+    ],
+    [
+     "Linh",
+     "Thank you. Right now, I mostly just feel **relieved**. I’ve been **worrying about it** all week."
+    ],
+    [
+     "Mark",
+     "**I could tell.** You kept checking your phone during the meeting this morning."
+    ],
+    [
+     "Linh",
+     "Haha, **you noticed**? When they told me, I **couldn’t stop smiling**. I called my mum **straight away**, and she was **over the moon**."
+    ],
+    [
+     "Mark",
+     "That’s lovely. I’m sure she’s **really proud of** you. All your hard work has finally **paid off**. So, what changes now?"
+    ],
+    [
+     "Linh",
+     "From next month, I’ll **be in charge of** the design team. It’s **a big step** for me, so I feel **a little nervous about it**."
+    ],
+    [
+     "Mark",
+     "**I wouldn't worry too much.** Everyone already **trusts** you and **asks you for advice**, so I’m sure you’ll **do a great job**."
+    ],
+    [
+     "Linh",
+     "Thanks, Mark. **That really means a lot.** Would you like to get dinner after work to **celebrate**? **It’s my treat.**"
+    ],
+    [
+     "Mark",
+     "**I’d love to.** And well done, Linh. **You’ve earned it.**"
+    ]
+   ],
+   "vocab": [
+    [
+     "**grin**",
+     "/ɡrɪn/",
+     "verb",
+     "",
+     "audio/v/a266986861.mp3",
+     "You're **grinning**.",
+     "cười toe toét"
+    ],
+    [
+     "**get a promotion**",
+     "/ɡet ə prəˈməʊʃn/",
+     "collocation",
+     "",
+     "audio/v/c13ed632d2.mp3",
+     "I got the promotion!",
+     "được thăng chức"
+    ],
+    [
+     "**must be + adj**",
+     "/mʌst bi/",
+     "structure",
+     "",
+     "audio/v/64a9244dfa.mp3",
+     "You must be really **excited!**",
+     "chắc hẳn là…"
+    ],
+    [
+     "**I can’t quite believe it.**",
+     "/aɪ kɑːnt kwaɪt bɪˈliːv ɪt/",
+     "expression",
+     "",
+     "audio/v/f9c0f3699b.mp3",
+     "**To be honest, I still can’t quite believe it.** After the interview, I **was sure I didn’t get it**, because I was so nervous and I **forgot** some of my answers.",
+     "Mình vẫn chưa dám tin."
+    ],
+    [
+     "**not mind** + N",
+     "/nɒt maɪnd/",
+     "verb",
+     "",
+     "audio/v/e642a0a297.mp3",
+     "Well, they clearly **didn’t mind**.",
+     "không bận tâm, không để ý…"
+    ],
+    [
+     "**(completely) deserve it**",
+     "/kəmˈpliːtli dɪˈzɜːv ɪt/",
+     "phrase",
+     "",
+     "audio/v/56f188a307.mp3",
+     "You’ve worked really hard this year, so you **completely deserve it**.",
+     "(hoàn toàn) xứng đáng"
+    ],
+    [
+     "**be relieved**",
+     "/bi rɪˈliːvd/",
+     "phrase",
+     "",
+     "audio/v/bac3c0cd87.mp3",
+     "Right now, I mostly just feel **relieved**.",
+     "thấy nhẹ nhõm"
+    ],
+    [
+     "**worry about** + N",
+     "/ˈwʌri əˈbaʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/e5f77a02c8.mp3",
+     "I’ve been **worrying about it** all week.",
+     "lo lắng về…"
+    ],
+    [
+     "**can’t stop + V-ing**",
+     "/kɑːnt stɒp/",
+     "structure",
+     "",
+     "audio/v/4c7a0da424.mp3",
+     "",
+     "không thể ngừng…"
+    ],
+    [
+     "**be over the moon**",
+     "/bi ˈəʊvə ðə muːn/",
+     "idiom",
+     "",
+     "audio/v/89dbea4786.mp3",
+     "I called my mum **straight away**, and she was **over the moon**.",
+     "vui sướng tột độ"
+    ],
+    [
+     "**be proud of** + sb",
+     "/bi praʊd əv/",
+     "phrase",
+     "",
+     "audio/v/356205307b.mp3",
+     "I’m sure she’s **really proud of** you.",
+     "tự hào về ai"
+    ],
+    [
+     "**pay off**",
+     "/peɪ ɒf/",
+     "phrasal verb",
+     "",
+     "audio/v/dc99335756.mp3",
+     "",
+     "được đền đáp, mang lại kết quả"
+    ],
+    [
+     "**a big step**",
+     "/ə bɪɡ step/",
+     "phrase",
+     "",
+     "audio/v/f9582ef61c.mp3",
+     "It’s **a big step** for me, so I feel **a little nervous about it**.",
+     "một bước tiến lớn"
+    ],
+    [
+     "**be nervous about** + N",
+     "/bi ˈnɜːvəs əˈbaʊt/",
+     "phrase",
+     "",
+     "audio/v/abc011fbcd.mp3",
+     "It’s **a big step** for me, so I feel **a little nervous about it**.",
+     "hồi hộp, lo lắng về…"
+    ],
+    [
+     "**I wouldn’t worry too much.**",
+     "/aɪ ˈwʊdnt ˈwʌri tuː mʌtʃ/",
+     "expression",
+     "",
+     "audio/v/ab93102aee.mp3",
+     "**I wouldn't worry too much.** Everyone already **trusts** you and **asks you for advice**, so I’m sure you’ll **do a great job**.",
+     "Mình nghĩ bạn không cần lo quá đâu."
+    ],
+    [
+     "**ask sb for advice**",
+     "/ɑːsk fɔːr ədˈvaɪs/",
+     "collocation",
+     "",
+     "audio/v/d7f81d567d.mp3",
+     "**I wouldn't worry too much.** Everyone already **trusts** you and **asks you for advice**, so I’m sure you’ll **do a great job**.",
+     "xin lời khuyên của ai"
+    ],
+    [
+     "**That really means a lot.**",
+     "/ðæt ˈrɪəli miːnz ə lɒt/",
+     "expression",
+     "",
+     "audio/v/f16b5dc92c.mp3",
+     "**That really means a lot.** Would you like to get dinner after work to **celebrate**?",
+     "Điều đó thật sự rất có ý nghĩa với mình."
+    ],
+    [
+     "**It’s my treat.**",
+     "/ɪts maɪ triːt/",
+     "expression",
+     "",
+     "audio/v/6c5d44c507.mp3",
+     "**It’s my treat.**",
+     "Để mình mời."
+    ],
+    [
+     "**You’ve earned it.**",
+     "/juːv ɜːnd ɪt/",
+     "expression",
+     "",
+     "audio/v/3d47d9a602.mp3",
+     "**You’ve earned it.**",
+     "Bạn xứng đáng với điều đó."
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "About a time you felt really happy",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**When? What was happening?**",
+     "• **This happened a few years ago, when I was…**\n• **At that time, I was really looking forward to…**\n• **I had been waiting for this moment for a long time.**\n• **I was a little nervous because…**"
+    ],
+    [
+     "**What happened?**",
+     "• **Then, something unexpected happened.**\n• **Suddenly, I got a call / received some good news.**\n• **I couldn't believe it when…**\n• **As soon as I heard the news, I…**"
+    ],
+    [
+     "**How did you feel? How did you show it?**",
+     "• **I was so happy / excited / surprised.**\n• **I couldn't stop smiling.**\n• **I was grinning from ear to ear.**\n• **I felt so relieved because…**\n• **I was so happy that I wanted to tell everyone.**"
+    ],
+    [
+     "**Why was it so special?**",
+     "• **It meant a lot to me because…**\n• **I had worked really hard for it.**\n• **It was the first time I had ever…**\n• **It was a special moment for me because…**"
+    ],
+    [
+     "**How did you celebrate? How do you feel now?**",
+     "• **I celebrated by…**\n• **I called my family / friends to share the news.**\n• **We went out for dinner to celebrate.**\n• **It's still one of my happiest memories.**"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Frustrated: It’s driving me up the wall!",
+   "context": "***Context:*** *Tom notices his colleague Hà glaring at her laptop.*",
+   "lines": [
+    [
+     "Tom",
+     "Hà, are you OK? You look **a bit upset**."
+    ],
+    [
+     "Hà",
+     "Not really. You know the presentation **I’ve been working on** for two weeks?"
+    ],
+    [
+     "Tom",
+     "The one for the new client? Yes, of course."
+    ],
+    [
+     "Hà",
+     "They’ve just emailed me. They want to **change the whole idea**, and the meeting is on Friday!"
+    ],
+    [
+     "Tom",
+     "**Are you serious?** That’s **really frustrating**."
+    ],
+    [
+     "Hà",
+     "I know. I’m **so annoyed**. **The worst part is**, they **agreed to** everything last week. Now two weeks of work are **a complete waste of time**."
+    ],
+    [
+     "Tom",
+     "**I’d be annoyed too.** Have you called them?"
+    ],
+    [
+     "Hà",
+     "Yes, three times, but nobody answered. And it’s the second time this month. I’m **really tired of** clients **changing their minds at the last minute**."
+    ],
+    [
+     "Tom",
+     "**I understand.** But **try not to take it personally**. They do the same thing with everyone."
+    ],
+    [
+     "Hà",
+     "I know you’re right, but I’m just **too angry to think clearly** right now."
+    ],
+    [
+     "Tom",
+     "**Look on the bright side.** Your research and data are still useful, so you **don’t have to start from scratch.**"
+    ],
+    [
+     "Hà",
+     "Hmm, **that’s true**. **At least** I don’t have to do everything again."
+    ],
+    [
+     "Tom",
+     "Why don’t we **take a short break** and get a coffee? You can **get it all off your chest**, and then we can **make a new plan** together."
+    ],
+    [
+     "Hà",
+     "Thanks, Tom. That **sounds good**. I need to **calm down** first, or I might send them an angry email that **I’ll regret** later."
+    ]
+   ],
+   "vocab": [
+    [
+     "**upset**",
+     "/ʌpˈset/",
+     "adjective",
+     "",
+     "audio/v/589ceff369.mp3",
+     "You look **a bit upset**.",
+     "buồn bực, khó chịu"
+    ],
+    [
+     "**have been working on** + N",
+     "/hæv biːn ˈwɜːkɪŋ ɒn/",
+     "phrase",
+     "",
+     "audio/v/a068706b11.mp3",
+     "You know the presentation **I’ve been working on** for two weeks?",
+     "đang làm (việc gì) suốt thời gian qua"
+    ],
+    [
+     "**change the whole idea**",
+     "/tʃeɪndʒ ðə həʊl aɪˈdɪə/",
+     "phrase",
+     "",
+     "audio/v/148150bb3d.mp3",
+     "They want to **change the whole idea**, and the meeting is on Friday!",
+     "thay đổi toàn bộ ý tưởng"
+    ],
+    [
+     "**Are you serious?**",
+     "/ɑː juː ˈsɪəriəs/",
+     "expression",
+     "",
+     "audio/v/0a9ccbe0f1.mp3",
+     "**Are you serious?** That’s **really frustrating**.",
+     "Thật không đấy?"
+    ],
+    [
+     "**frustrating**",
+     "/frʌˈstreɪtɪŋ/",
+     "adjective",
+     "",
+     "audio/v/624f7c0dd6.mp3",
+     "**Are you serious?** That’s **really frustrating**.",
+     "gây bực bội, nản lòng"
+    ],
+    [
+     "**annoyed**",
+     "/əˈnɔɪd/",
+     "adjective",
+     "",
+     "audio/v/2c4bbb20bb.mp3",
+     "I’m **so annoyed**.",
+     "bực mình"
+    ],
+    [
+     "**the worst part is (that)…**",
+     "/ðə wɜːst pɑːt ɪz/",
+     "phrase",
+     "",
+     "audio/v/99bf737321.mp3",
+     "**The worst part is**, they **agreed to** everything last week.",
+     "tệ nhất là…"
+    ],
+    [
+     "**agree to** + N",
+     "/əˈɡriː tə/",
+     "phrasal verb",
+     "",
+     "audio/v/e0e72fb34a.mp3",
+     "**The worst part is**, they **agreed to** everything last week.",
+     "đồng ý với (đề xuất, kế hoạch)"
+    ],
+    [
+     "**a (complete) waste of time**",
+     "/ə kəmˈpliːt weɪst əv taɪm/",
+     "collocation",
+     "",
+     "audio/v/27e942b67d.mp3",
+     "Now two weeks of work are **a complete waste of time**.",
+     "hoàn toàn phí thời gian"
+    ],
+    [
+     "**change your mind**",
+     "/tʃeɪndʒ jɔː maɪnd/",
+     "collocation",
+     "",
+     "audio/v/ff57db700c.mp3",
+     "",
+     "đổi ý"
+    ],
+    [
+     "**at the last minute**",
+     "/ət ðə lɑːst ˈmɪnɪt/",
+     "phrase",
+     "",
+     "audio/v/958dae6ed3.mp3",
+     "I’m **really tired of** clients **changing their minds at the last minute**.",
+     "vào phút chót"
+    ],
+    [
+     "**take it personally**",
+     "/teɪk ɪt ˈpɜːsənəli/",
+     "phrase",
+     "",
+     "audio/v/9c16025bc8.mp3",
+     "**I understand.** But **try not to take it personally**.",
+     "để bụng, coi là nhắm vào mình"
+    ],
+    [
+     "**too + adj + to + V**",
+     "/tuː/",
+     "structure",
+     "",
+     "audio/v/7684afc459.mp3",
+     "**I’d be annoyed too.** Have you called them?",
+     "quá… đến nỗi không thể…"
+    ],
+    [
+     "**think clearly**",
+     "/θɪŋk ˈklɪəli/",
+     "collocation",
+     "",
+     "audio/v/1ad89b1f6c.mp3",
+     "I know you’re right, but I’m just **too angry to think clearly** right now.",
+     "suy nghĩ sáng suốt"
+    ],
+    [
+     "**look on the bright side**",
+     "/lʊk ɒn ðə braɪt saɪd/",
+     "idiom",
+     "",
+     "audio/v/45bdfcba9a.mp3",
+     "**Look on the bright side.** Your research and data are still useful, so you **don’t have to start from scratch.**",
+     "nhìn vào mặt tích cực"
+    ],
+    [
+     "**at least**",
+     "/ət liːst/",
+     "phrase",
+     "",
+     "audio/v/b4e380389a.mp3",
+     "**At least** I don’t have to do everything again.",
+     "ít nhất thì"
+    ],
+    [
+     "**take a (short) break**",
+     "/teɪk ə ʃɔːt breɪk/",
+     "collocation",
+     "",
+     "audio/v/9377ebf432.mp3",
+     "Why don’t we **take a short break** and get a coffee?",
+     "nghỉ giải lao (một chút)"
+    ],
+    [
+     "**calm down**",
+     "/kɑːm daʊn/",
+     "phrasal verb",
+     "",
+     "audio/v/aff03a88d5.mp3",
+     "I need to **calm down** first, or I might send them an angry email that **I’ll regret** later.",
+     "bình tĩnh lại"
+    ],
+    [
+     "**sth I’ll regret**",
+     "/aɪl rɪˈɡret/",
+     "phrase",
+     "",
+     "audio/v/74f598fa08.mp3",
+     "I need to **calm down** first, or I might send them an angry email that **I’ll regret** later.",
+     "điều mình sẽ hối hận"
+    ],
+    [
+     "**start from scratch**",
+     "/stɑːrt frəm skrætʃ/",
+     "",
+     "",
+     "audio/v/618efc1f6c.mp3",
+     "**Look on the bright side.** Your research and data are still useful, so you **don’t have to start from scratch.**",
+     "bắt đầu lại từ đầu"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "About a time you felt really frustrated",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What were you trying to do?**",
+     "• **A few weeks ago, I was trying to…**\n• **I wanted to…, but…**\n• **Everything was going well until…**"
+    ],
+    [
+     "**What went wrong?**",
+     "• **Suddenly, …**\n• **Just when I thought everything was OK, …**\n• **To make things worse, …**"
+    ],
+    [
+     "**How did you feel?**",
+     "• **I was really annoyed / frustrated.**\n• **I was getting more and more frustrated.**\n• **It really got on my nerves.**\n• **It was really annoying because…**"
+    ],
+    [
+     "**How did you deal with it?**",
+     "• **I took a deep breath and tried again.**\n• **I decided to take a short break.**\n• **I talked to a friend about it.**\n• **I asked someone for help.**\n• **After a while, I managed to…**"
+    ],
+    [
+     "**What do you think about it now?**",
+     "• **Looking back, I think I was too stressed about it.**\n• **Now I know I should…**\n• **It taught me to be more patient. At least, I learned something from the experience.**"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a word or phrase from the word bank. Use each one once.",
+   "context": "Lisa tells her friend Tom about her mum's birthday last weekend.",
+   "bank": [
+    "relieved",
+    "calm down",
+    "the last minute",
+    "over the moon",
+    "worried about",
+    "annoyed",
+    "look on the bright side",
+    "proud of",
+    "frustrating",
+    "the worst part is"
+   ],
+   "lines": [
+    [
+     "Tom",
+     "How was your mum's birthday?"
+    ],
+    [
+     "Lisa",
+     "It was great in the end, but the morning was really {frustrating}."
+    ],
+    [
+     "Tom",
+     "Oh no. What happened?"
+    ],
+    [
+     "Lisa",
+     "I ordered a chocolate cake from a bakery two weeks ago. Then, on Saturday morning, they called and said they couldn't make it because their oven was broken. They told me at {the last minute}!"
+    ],
+    [
+     "Tom",
+     "That's terrible. I'd be so {annoyed}."
+    ],
+    [
+     "Lisa",
+     "I was. And {the worst part is}, I'd already paid for it!"
+    ],
+    [
+     "Tom",
+     "So what did you do?"
+    ],
+    [
+     "Lisa",
+     "First, I took a deep breath to {calm down}. Then my sister told me to {look on the bright side}. At least we still had time to bake a cake ourselves."
+    ],
+    [
+     "Tom",
+     "You made it yourselves?"
+    ],
+    [
+     "Lisa",
+     "Yes! It took three hours, and it looked a bit strange, but Mum was {over the moon}. She said it was her best present ever."
+    ],
+    [
+     "Tom",
+     "Aw, she must be really {proud of} you two."
+    ],
+    [
+     "Lisa",
+     "I think so. I felt so {relieved}, because I was {worried about} it all morning."
+    ],
+    [
+     "Tom",
+     "Sounds like the broken oven was a good thing after all!"
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to Hoa talking about her first day at a new company, then answer the questions.",
+   "podcast": "🎧 Hoa's first day",
+   "audio": "audio/a2-feelings.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Hoa",
+     "text": "Hi, I'm Hoa. Last Monday was my first day at a new company, and I was really nervous. ==I wanted to make a good first impression==, so I left home early."
+    },
+    {
+     "t": 10.56,
+     "who": "Hoa",
+     "text": "But on the way, ==the bus broke down==, and I had to wait twenty minutes for another one. In the end, I arrived ten minutes late. I was so annoyed with myself."
+    },
+    {
+     "t": 21.45,
+     "who": "Hoa",
+     "text": "To make things worse, my computer wasn't ready, so I couldn't do any real work all morning. ==I just sat there and read some documents.== It was really frustrating, because I wanted to show everyone that I was a hard worker."
+    },
+    {
+     "t": 34.54,
+     "who": "Hoa",
+     "text": "Then, at lunchtime, something nice happened. My manager took the whole team out for lunch ==to welcome me==. Everyone was so friendly, and they told me funny stories about their first days. One colleague said ==he got lost in the building== on his first day!"
+    },
+    {
+     "t": 49.89,
+     "who": "Hoa",
+     "text": "I felt so relieved. By the afternoon, my computer was working, and I finished my first small task."
+    },
+    {
+     "t": 57.1,
+     "who": "Hoa",
+     "text": "Looking back, I think I worried too much. Now I always tell myself: one bad morning doesn't mean a bad day."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did Hoa leave home early?",
+     "options": [
+      "She wanted to buy breakfast on the way.",
+      "She wanted her new team to have a good opinion of her.",
+      "Her manager asked her to come in early."
+     ],
+     "answer": 1,
+     "why": "“I wanted to make a good first impression, so I left home early.”"
+    },
+    {
+     "q": "Why was Hoa late?",
+     "options": [
+      "There was a problem with her bus.",
+      "She got lost in the building.",
+      "She woke up late."
+     ],
+     "answer": 0,
+     "why": "“On the way, the bus broke down.”"
+    },
+    {
+     "q": "What did Hoa do in the morning?",
+     "options": [
+      "She finished her first task.",
+      "She had a meeting with her manager.",
+      "She read some documents."
+     ],
+     "answer": 2,
+     "why": "“I just sat there and read some documents.”"
+    },
+    {
+     "q": "Why did the manager take the team out for lunch?",
+     "options": [
+      "To welcome a new member of the team",
+      "To celebrate a new project",
+      "Because it was someone's birthday"
+     ],
+     "answer": 0,
+     "why": "“My manager took the whole team out for lunch to welcome me.”"
+    },
+    {
+     "q": "What did one colleague say about his first day?",
+     "options": [
+      "He was late, too.",
+      "His computer didn't work.",
+      "He couldn't find his way around the building."
+     ],
+     "answer": 2,
+     "why": "“He got lost in the building on his first day!”"
+    }
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Speaking (1–2 minutes)",
+   "instructions": "Choose ONE option and record your answer (1–2 minutes).",
+   "options": [
+    {
+     "title": "Tell me about a time you felt really nervous.",
+     "questions": [
+      "What was the situation? (an exam, an interview, a presentation…)",
+      "Why were you so nervous?",
+      "How did it go in the end?"
+     ],
+     "use": "I was worried about… · My hands were shaking · I tried to calm down by… · In the end, … · I was so relieved when…"
+    },
+    {
+     "title": "Tell me about a time when something went wrong and you felt really frustrated.",
+     "questions": [
+      "What were you trying to do?",
+      "What went wrong? What was the worst part?",
+      "How did you deal with it?"
+     ],
+     "use": "Everything was going smoothly until… · To make things worse, … · The last straw was when… · I nearly lost my temper · I took a deep breath and…"
+    },
+    {
+     "title": "Tell me about a time when you felt overwhelmed.",
+     "questions": [
+      "What was going on in your life at the time?",
+      "How did everything pile up, and how did it affect you?",
+      "How did you cope, and what did you learn?"
+     ],
+     "use": "I had way too much on my plate · On top of that, … · I could barely sleep · I didn't know where to start · I decided to take it one step at a time · Looking back, I realised…"
+    }
+   ]
+  }
+ ]
+}
