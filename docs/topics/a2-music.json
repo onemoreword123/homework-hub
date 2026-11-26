@@ -902,17 +902,17 @@
     {
      "t": 17.93,
      "who": "",
-     "text": "Why? Because when we're teenagers, ==so many things happen for the first time==: our first best friend, our first love, our first time away from home. Our feelings are very strong, and ==the songs we hear become connected to those feelings==. So when an old song comes on, we don't just hear the music. We remember who we were."
+     "text": "Why? Because when we're teenagers, so many things happen for the first time: ==our first best friend, our first love, our first time away from home==. Our feelings are very strong, and the songs we hear become connected to those feelings. So when an old song comes on, we don't just hear the music. We remember who we were."
     },
     {
      "t": 41.99,
      "who": "",
-     "text": "Here's my story. When I was fifteen, ==I loved a boy band==. I had their posters all over my bedroom wall, and I waited six hours in a queue to see them in concert. ==Now I'm thirty, and I listen to jazz==. I almost never listen to that band. But last month, ==I was sitting in a café==, and one of their songs came on. ==Suddenly, I felt fifteen again==. I could almost smell my old school bag!"
+     "text": "Here's my story. When I was fifteen, I loved a boy band. I had their posters all over my bedroom wall, and ==I waited six hours in a queue== to see them in concert. ==Now I'm thirty, and I listen to jazz==. I almost never listen to that band. But last month, ==I was sitting in a café==, and one of their songs came on. Suddenly, I felt fifteen again. ==I could almost smell my old school bag!=="
     },
     {
      "t": 70.73,
      "who": "",
-     "text": "Experts say it doesn't really matter if a song is good or not. Some of our favourite old songs are not very good at all! ==What matters is when we heard them==. That's also why our parents often say music was better in their day."
+     "text": "Experts say it doesn't really matter if a song is good or not. ==Some of our favourite old songs are not very good at all!== ==What matters is when we heard them==. That's also why ==our parents often say music was better in their day==."
     },
     {
      "t": 86.45,
@@ -926,64 +926,64 @@
    "title": "Part 3A: Choose the best answer",
    "questions": [
     {
-     "q": "What does the speaker say about songs from our teenage years?",
+     "q": "The speaker says many things happen for the first time when we're teenagers. Which one does she NOT talk about?",
      "options": [
-      "We only listen to them when we're teenagers.",
-      "We remember them better than songs from other times.",
-      "They are always better than new songs."
+      "Your first best friend",
+      "Your first job",
+      "Your first time away from home"
      ],
      "answer": 1,
-     "why": "“Most people remember songs from their teenage years better than songs from any other time in their life.”"
+     "why": "She mentions “our first best friend, our first love, our first time away from home”, but not a first job."
     },
     {
-     "q": "Why do we remember these songs so well?",
+     "q": "How long did the speaker wait in the queue to see the boy band?",
      "options": [
-      "Teenagers listen to music all day.",
-      "The songs are usually simple and catchy.",
-      "The songs are connected to strong feelings and first experiences."
-     ],
-     "answer": 2,
-     "why": "“So many things happen for the first time… the songs we hear become connected to those feelings.”"
-    },
-    {
-     "q": "What do we learn about the speaker?",
-     "options": [
-      "She now likes very different music.",
-      "She still listens to her old favourite band every day.",
-      "She went to a café to listen to her old songs."
+      "Six hours",
+      "Two hours",
+      "All day"
      ],
      "answer": 0,
-     "why": "“Now I'm thirty, and I listen to jazz. I almost never listen to that band.”"
+     "why": "“I waited six hours in a queue to see them in concert.”"
     },
     {
-     "q": "What happened in the café?",
+     "q": "How old is the speaker now?",
      "options": [
-      "She felt embarrassed and left.",
-      "She felt fifteen again.",
-      "She met some old school friends."
-     ],
-     "answer": 1,
-     "why": "“Suddenly, I felt fifteen again.”"
-    },
-    {
-     "q": "Which songs do we love the most, according to experts?",
-     "options": [
-      "Songs we heard at a special time in our life",
-      "The best and most famous songs",
-      "Songs our parents played to us"
-     ],
-     "answer": 0,
-     "why": "“What matters is when we heard them.”"
-    },
-    {
-     "q": "Why does the speaker say an old playlist is like a diary?",
-     "options": [
-      "People should write about music every day.",
-      "It shows that our taste in music gets better.",
-      "It keeps memories of who we were."
+      "Fifteen",
+      "Twenty-five",
+      "Thirty"
      ],
      "answer": 2,
-     "why": "“We remember who we were… It's like a diary.”"
+     "why": "“Now I'm thirty, and I listen to jazz.”"
+    },
+    {
+     "q": "When the speaker heard the old song in the café, what could she almost smell?",
+     "options": [
+      "Her old bedroom",
+      "The school canteen",
+      "Her old school bag"
+     ],
+     "answer": 2,
+     "why": "“I could almost smell my old school bag!”"
+    },
+    {
+     "q": "What do experts say about our favourite old songs?",
+     "options": [
+      "They're always better than new songs.",
+      "Teenagers choose the best music.",
+      "Many of them aren't very good."
+     ],
+     "answer": 2,
+     "why": "“Some of our favourite old songs are not very good at all!”"
+    },
+    {
+     "q": "Who often says that music was better in the past?",
+     "options": [
+      "Our parents",
+      "Our teachers",
+      "Our friends"
+     ],
+     "answer": 0,
+     "why": "“Our parents often say music was better in their day.”"
     }
    ]
   },

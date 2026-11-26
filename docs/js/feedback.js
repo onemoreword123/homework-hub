@@ -1,7 +1,7 @@
 // Rich feedback: short comment + full corrected version + error table.
 // Stored inside submissions.teacher_comment as JSON {v:2, comment, corrected, errors:[[mistakeHtml, fixHtml], ...]}
 // so no database change is needed. Old plain-text comments still work.
-import { esc } from "./db.js?v=202611262242";
+import { esc } from "./db.js?v=202611262247";
 
 /* ---------- storage ---------- */
 export function unpack(raw) {
