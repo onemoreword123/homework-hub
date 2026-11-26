@@ -1016,8 +1016,8 @@
   {
    "type": "gaptype",
    "title": "Part 3B: Complete the summary",
-   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
-   "text": "People tend to remember the most from their teenage years and early {twenties}. During this time, many things happen for the {first time}, so our {emotions|feelings} are stronger and become linked to the songs we hear. The speaker used to be {obsessed} with a boy band, but now she prefers {jazz}. Experts believe that how much we love an old song depends more on {when} we heard it than on how good it is. This explains why parents often say music was better {in their day}."
+   "instructions": "Write NO MORE THAN THREE WORDS for each blank.",
+   "text": "People tend to remember the most from their teenage years and early {twenties}. During this time, many things happen for the {first time}, so our {emotions|feelings} are stronger and become linked to the songs we hear. The speaker used to be {obsessed} with a boy band, but now she prefers {jazz|jazz music}. Experts believe that how much we love an old song depends more on {when} we heard it than on how good it is. This explains why parents often say music was better {in their day|back in their day}."
   },
   {
    "type": "recording",
