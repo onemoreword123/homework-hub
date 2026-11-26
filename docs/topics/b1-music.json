@@ -928,17 +928,17 @@
     {
      "t": 21.6,
      "who": "",
-     "text": "Part of the reason is that ==so many things happen for the first time in those years==: first friendships, first heartbreak, first time living away from home. ==Our emotions are stronger, and the songs we hear become linked to those feelings==. So when an old song comes on, it's not just the melody we're reacting to. It's the memory of who we were."
+     "text": "Part of the reason is that ==so many things happen for the first time in those years==: ==first friendships, first heartbreak, first time living away from home==. ==Our emotions are stronger==, and the songs we hear become linked to those feelings. So when an old song comes on, it's not just the melody we're reacting to. It's the memory of who we were."
     },
     {
      "t": 41.55,
      "who": "",
-     "text": "My own example is a little embarrassing. When I was fifteen, ==I was obsessed with a boy band==. I had posters all over my bedroom wall, and I queued for six hours to see them live. If you'd told me then that ==I'd be a jazz lover at thirty==, I'd have laughed. ==These days, I almost never listen to that band==. But last month, one of their songs came on in a café, and ==I suddenly felt fifteen again==. I could almost smell my old school bag."
+     "text": "My own example is a little embarrassing. When I was fifteen, ==I was obsessed with a boy band==. I had posters all over my bedroom wall, and ==I queued for six hours to see them live==. If you'd told me then that ==I'd be a jazz lover at thirty==, I'd have laughed. These days, I almost never listen to that band. But ==last month, one of their songs came on in a café==, and I suddenly felt fifteen again. I could almost smell my old school bag."
     },
     {
      "t": 67.34,
      "who": "",
-     "text": "Interestingly, experts say ==this effect isn't really about whether the music is good==. Some of the songs we remember most fondly are, honestly, pretty average. ==What matters is when we heard them==. That's also why our parents often insist that ==music was better in their day==. They're not completely wrong. They're just remembering the songs together with the best years of their lives."
+     "text": "Interestingly, experts say this effect isn't really about whether the music is good. ==Some of the songs we remember most fondly are, honestly, pretty average==. ==What matters is when we heard them==. That's also why our parents often insist that ==music was better in their day==. ==They're not completely wrong.== They're just remembering the songs together with the best years of their lives."
     },
     {
      "t": 86.86,
@@ -952,64 +952,64 @@
    "title": "Part 3A: Choose the best answer",
    "questions": [
     {
-     "q": "What is the “reminiscence bump”?",
+     "q": "According to the speaker, which period of life do most people remember the most events from?",
      "options": [
-      "The habit of only listening to music from your teenage years.",
-      "The tendency to remember more from your teens and early twenties than from other periods.",
-      "The embarrassing feeling you get when you hear an old song."
+      "Their childhood, before the age of ten",
+      "Their thirties, when life is more settled",
+      "Their teens and early twenties"
      ],
-     "answer": 1,
+     "answer": 2,
      "why": "“Most people remember more events from their teens and early twenties than from any other time in their lives.”"
     },
     {
-     "q": "Why do songs from these years become so memorable?",
+     "q": "The speaker gives examples of things that happen “for the first time”. Which one does she NOT mention?",
      "options": [
-      "The songs become connected to strong feelings from new experiences.",
-      "Teenagers listen to music much more often than adults do.",
-      "Songs from that period usually have simpler, catchier melodies."
-     ],
-     "answer": 0,
-     "why": "“Our emotions are stronger, and the songs we hear become linked to those feelings.”"
-    },
-    {
-     "q": "What do we learn about the speaker?",
-     "options": [
-      "She still listens to the boy band she loved as a teenager.",
-      "She went to a café specifically to listen to her old favourite songs.",
-      "Her taste in music has changed a lot since she was fifteen."
-     ],
-     "answer": 2,
-     "why": "“I'd be a jazz lover at thirty… These days, I almost never listen to that band.”"
-    },
-    {
-     "q": "What happened when she heard the song in the café?",
-     "options": [
-      "She felt embarrassed and wanted to leave.",
-      "Her teenage years came back to her very clearly.",
-      "She realised the song was better than she remembered."
+      "First heartbreak",
+      "First job",
+      "First time living away from home"
      ],
      "answer": 1,
-     "why": "“I suddenly felt fifteen again. I could almost smell my old school bag.”"
+     "why": "She mentions “first friendships, first heartbreak, first time living away from home”, but not a first job."
     },
     {
-     "q": "According to experts, which songs do we remember most fondly?",
+     "q": "What did the speaker do as a fifteen-year-old fan?",
      "options": [
-      "The ones that are of the highest quality.",
-      "The ones our parents played when we were children.",
-      "The ones we heard at a particular stage of our lives."
-     ],
-     "answer": 2,
-     "why": "“What matters is when we heard them.”"
-    },
-    {
-     "q": "What does the speaker mean when she says an old playlist is “a diary”?",
-     "options": [
-      "It records important moments and feelings from our past.",
-      "People should write down the songs they listen to every day.",
-      "It shows how much our taste in music has improved."
+      "She queued for hours to see the band perform.",
+      "She covered her school books with photos of the band.",
+      "She listened to the band with her parents."
      ],
      "answer": 0,
-     "why": "“It's not really a playlist. It's a diary.”"
+     "why": "“I queued for six hours to see them live.”"
+    },
+    {
+     "q": "When did the speaker hear the old song again?",
+     "options": [
+      "Last week",
+      "Last year",
+      "Last month"
+     ],
+     "answer": 2,
+     "why": "“Last month, one of their songs came on in a café.”"
+    },
+    {
+     "q": "What do experts say about many of the songs we remember most fondly?",
+     "options": [
+      "They're actually quite ordinary.",
+      "They usually have the most meaningful lyrics.",
+      "They're also our parents' favourite songs."
+     ],
+     "answer": 0,
+     "why": "“Some of the songs we remember most fondly are, honestly, pretty average.”"
+    },
+    {
+     "q": "What does the speaker think about parents who say music was better in their day?",
+     "options": [
+      "They're completely wrong.",
+      "They're partly right.",
+      "They've forgotten most of the old songs."
+     ],
+     "answer": 1,
+     "why": "“They're not completely wrong. They're just remembering the songs together with the best years of their lives.”"
     }
    ]
   },
