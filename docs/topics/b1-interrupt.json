@@ -821,7 +821,7 @@
   },
   {
    "type": "gapselect",
-   "title": "Part 2A: Vocab check (sentences)",
+   "title": "Part 2: Vocab check (sentences)",
    "instructions": "Complete each sentence with a phrase from the box. Use each phrase once.",
    "bank": [
     "one-word answers",
@@ -880,7 +880,58 @@
   },
   {
    "type": "gapselect",
-   "title": "Part 2B: Professional: a team meeting",
+   "title": "Part 3A: Casual: a trip to Đà Lạt",
+   "instructions": "Complete the conversation with the phrases from the box. Use each phrase once.",
+   "context": "Nam is telling his friends Lily and Hoa about his weekend trip to Đà Lạt.",
+   "bank": [
+    "Anyway, where was I?",
+    "Wait, wait.",
+    "Sorry, I keep interrupting. Go on!",
+    "Oh, that reminds me",
+    "Sorry, quick question."
+   ],
+   "lines": [
+    [
+     "Nam",
+     "So, on the second day, we rented motorbikes and drove up into the mountains. Then halfway up, it started raining really heavily, and…"
+    ],
+    [
+     "Lily",
+     "{Wait, wait.} You drove in the rain? Weren't you scared?"
+    ],
+    [
+     "Nam",
+     "A bit! Anyway, we stopped at a small café to wait."
+    ],
+    [
+     "Hoa",
+     "{Sorry, quick question.} Who did you go with? Your colleagues?"
+    ],
+    [
+     "Nam",
+     "No, my cousins. So, we were sitting in the café, and…"
+    ],
+    [
+     "Lily",
+     "{Oh, that reminds me}, did you try the strawberry milk there? Everyone says it's amazing."
+    ],
+    [
+     "Nam",
+     "Ha, yes, I had three glasses! {Anyway, where was I?} Oh yes, the café. The owner told us about a secret waterfall nearby."
+    ],
+    [
+     "Hoa",
+     "A secret waterfall? Wow! {Sorry, I keep interrupting. Go on!}"
+    ],
+    [
+     "Nam",
+     "So, the next morning, we went to find it…"
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 3B: Professional: a team meeting",
    "instructions": "Complete the conversation with the phrases from the box. Use each phrase once.",
    "context": "Ms Chen is presenting the plan for the company's new website at a team meeting.",
    "bank": [
@@ -931,7 +982,7 @@
   },
   {
    "type": "listening",
-   "title": "Part 3: Listening",
+   "title": "Part 4: Listening",
    "intro": "Mia, Jack and Lan are having lunch. Mia is telling them about her presentation this morning. Listen, then answer the questions.",
    "podcast": "🎧 Mia's presentation",
    "audio": "audio/b1-interrupt.mp3",
@@ -1015,7 +1066,7 @@
   },
   {
    "type": "mcq",
-   "title": "Part 3: Choose the correct answer",
+   "title": "Part 4: Choose the correct answer",
    "questions": [
     {
      "q": "Why was Mia feeling confident at the start?",
@@ -1081,7 +1132,7 @@
   },
   {
    "type": "recording",
-   "title": "Part 4: Speaking (1–2 minutes)",
+   "title": "Part 5: Speaking (1–2 minutes)",
    "instructions": "Choose ONE of the three topics and record your answer (1–2 minutes).",
    "options": [
     {
