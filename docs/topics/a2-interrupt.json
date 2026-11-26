@@ -1,0 +1,1153 @@
+{
+ "id": "a2-interrupt",
+ "title": "Polite ways to interrupt",
+ "level": "A2",
+ "emoji": "✋",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-interrupt.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "💬 Grammar"
+  },
+  {
+   "type": "table",
+   "title": "Interrupting in casual conversations (with friends and family)",
+   "head": [
+    "Purpose",
+    "Phrase",
+    "Example"
+   ],
+   "rows": [
+    [
+     "React with surprise",
+     "**Wait, wait…**\n**Hang on a sec…**",
+     "*Wait, wait. You quit your job? When?*"
+    ],
+    [
+     "Ask a quick question",
+     "**Sorry, quick question…**\n**Can I just say something?**",
+     "*Sorry, quick question. Who else was there?*"
+    ],
+    [
+     "Add something related",
+     "**Oh, that reminds me…**\n**Anyway, speaking of…**",
+     "*Oh, that reminds me, did you ever get your phone fixed?*"
+    ],
+    [
+     "Say something before you forget",
+     "**Before I forget, …**",
+     "*Before I forget, your mum called this morning.*"
+    ],
+    [
+     "Go back to your story",
+     "**Anyway, where was I?**",
+     "*Anyway, where was I? Oh yes, the hotel.*"
+    ],
+    [
+     "Apologise and let them continue",
+     "**Sorry, I keep interrupting. Go on!**",
+     "*Sorry, I keep interrupting. Go on, what did she say?*"
+    ],
+    [
+     "Help someone continue",
+     "**You were saying…?**",
+     "*Sorry about that. You were saying…?*"
+    ]
+   ],
+   "label": "🧠 How to Interrupt Politely",
+   "say": [
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Interrupting in professional settings (meetings, calls, presentations)",
+   "head": [
+    "Purpose",
+    "Phrase",
+    "Example"
+   ],
+   "rows": [
+    [
+     "Interrupt politely",
+     "**Sorry to interrupt, but…**",
+     "*Sorry to interrupt, but the client is waiting on line two.*"
+    ],
+    [
+     "Ask a question",
+     "**Could I just ask a quick question?**",
+     "*Could I just ask a quick question about the budget?*"
+    ],
+    [
+     "Give your opinion",
+     "**Can I just jump in here?**",
+     "*Can I just jump in here? I think the deadline is too tight.*"
+    ],
+    [
+     "Add to someone's point",
+     "**Can I just add something to that?**",
+     "*Can I just add something to that? Prices have also gone up this year.*"
+    ],
+    [
+     "Check something before the topic changes",
+     "**Before we move on,  …**",
+     "*Before we move on, could I check the date of the next meeting?*"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "When someone interrupts YOU",
+   "head": [
+    "Purpose",
+    "Phrase",
+    "Example"
+   ],
+   "rows": [
+    [
+     "Politely keep your turn",
+     "**Can I just finish first?**",
+     "*Good question, but if I could just finish my point first?*"
+    ],
+    [
+     "Promise to answer later",
+     "**I'll come back to that in a minute.**",
+     "*That's a fair point. I'll come back to that in a moment.*"
+    ],
+    [
+     "Continue after an interruption",
+     "**As I was saying, …**\n**Going back to…**",
+     "*As I was saying, the project should finish in June.*"
+    ],
+    [
+     "Let the other person speak",
+     "**Go ahead.**\n**Please, go on.**",
+     "*Oh, you wanted to say something? Please, go ahead.*"
+    ],
+    [
+     "Invite others in",
+     "**Does anyone have any questions?**",
+     "*Before we finish, does anyone have anything to add?*"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ],
+    [
+     "",
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "🌍 Polite Ways to Interrupt"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "When do you usually **interrupt people?** In what situations?",
+    "What's the difference between **interrupting a friend and interrupting your boss?**",
+    "In Vietnamese culture, is it okay to **interrupt people while they're talking**?",
+    "Have you ever interrupted someone at the wrong moment? What happened?"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. Casual: Wait, he did what?!",
+   "context": "***Context:*** *Linh, Tom and Mai are having coffee. Linh is telling them about a blind date last weekend. Her aunt organised it.*",
+   "lines": [
+    [
+     "Linh",
+     "So, my aunt finally **set me up with** her colleague's son. We met at a small Italian restaurant on Saturday. He arrived twenty minutes late, and…"
+    ],
+    [
+     "Tom",
+     "**Wait, wait.** Twenty minutes? Did he say sorry?"
+    ],
+    [
+     "Linh",
+     "**Sort of.** He **blamed the traffic**, but he didn't seem very sorry. Anyway, we sat down and tried to **make small talk**."
+    ],
+    [
+     "Mai",
+     "**Sorry, quick question.** What does he do? Your aunt said he works at a bank, right?"
+    ],
+    [
+     "Linh",
+     "Yeah. And that's the problem. He **spent** the first half hour **talking about** his money and his new car."
+    ],
+    [
+     "Tom",
+     "**Hang on a sec.** Half an hour? Did he ask you any questions?"
+    ],
+    [
+     "Linh",
+     "**Not really!** When I tried to **change the subject**, he just gave me **one-word answers**. There were so many **awkward silences**. But wait, the worst part is coming."
+    ],
+    [
+     "Mai",
+     "**Oh, that reminds me**, my cousin **went on a date** like that last month. The guy **kept checking** his phone the whole time!"
+    ],
+    [
+     "Linh",
+     "Ha, that's exactly what happened next! **Anyway, where was I?**"
+    ],
+    [
+     "Tom",
+     "The worst part."
+    ],
+    [
+     "Linh",
+     "Oh, right. When the bill came, he said, \"Shall we **split it**?\" That's totally fine! But then he took out his phone and counted exactly what I ate, even one piece of garlic bread."
+    ],
+    [
+     "Mai",
+     "No way! That's **a red flag**. **Sorry, I keep interrupting. Go on!**"
+    ],
+    [
+     "Linh",
+     "**No worries.** Honestly, we had **nothing in common**, so I went home early. My aunt keeps asking if I'll **give him a second chance**. I don't think so!"
+    ]
+   ],
+   "vocab": [
+    [
+     "**set sb up with** sb",
+     "/set ʌp wɪð/",
+     "phrasal verb",
+     "",
+     "audio/v/e9a51c8d9b.mp3",
+     "So, my aunt finally **set me up with** her colleague's son.",
+     "mai mối ai với ai"
+    ],
+    [
+     "**a blind date**",
+     "/ə blaɪnd deɪt/",
+     "noun",
+     "",
+     "audio/v/accdf4ed40.mp3",
+     "",
+     "buổi hẹn hò giấu mặt"
+    ],
+    [
+     "**Sort of.**",
+     "/sɔːt əv/",
+     "expression",
+     "",
+     "audio/v/cde81ba546.mp3",
+     "**Sort of.** He **blamed the traffic**, but he didn't seem very sorry.",
+     "Cũng gần như vậy. / Kiểu vậy."
+    ],
+    [
+     "**blame sth (on sb)** / **blame the traffic**",
+     "/bleɪm/",
+     "verb",
+     "",
+     "audio/v/6532a34c72.mp3",
+     "**Sort of.** He **blamed the traffic**, but he didn't seem very sorry.",
+     "đổ lỗi (cho ai) / đổ tại kẹt xe"
+    ],
+    [
+     "**make small talk**",
+     "/meɪk smɔːl tɔːk/",
+     "collocation",
+     "",
+     "audio/v/bad0945c6d.mp3",
+     "Anyway, we sat down and tried to **make small talk**.",
+     "nói chuyện xã giao"
+    ],
+    [
+     "**spend + time + V-ing**",
+     "/spend/",
+     "structure",
+     "",
+     "audio/v/91c38fc743.mp3",
+     "He **spent** the first half hour **talking about** his money and his new car.",
+     "dành thời gian làm gì"
+    ],
+    [
+     "**Not really.**",
+     "/nɒt ˈrɪə.li/",
+     "expression",
+     "",
+     "audio/v/7fdc17c307.mp3",
+     "**Not really!** When I tried to **change the subject**, he just gave me **one-word answers**.",
+     "Không hẳn."
+    ],
+    [
+     "**change the subject**",
+     "/tʃeɪndʒ ðə ˈsʌb.dʒɪkt/",
+     "collocation",
+     "",
+     "audio/v/ddbeca91d2.mp3",
+     "**Not really!** When I tried to **change the subject**, he just gave me **one-word answers**.",
+     "đổi chủ đề"
+    ],
+    [
+     "**one-word answers**",
+     "/wʌn wɜːd ˈɑːn.səz/",
+     "noun",
+     "",
+     "audio/v/40077dca6a.mp3",
+     "**Not really!** When I tried to **change the subject**, he just gave me **one-word answers**.",
+     "câu trả lời cụt lủn"
+    ],
+    [
+     "**an awkward silence**",
+     "/ən ˈɔː.kwəd ˈsaɪ.ləns/",
+     "collocation",
+     "",
+     "audio/v/baccc2dd70.mp3",
+     "There were so many **awkward silences**.",
+     "khoảng lặng ngượng ngùng"
+    ],
+    [
+     "**go on a date**",
+     "/ɡəʊ ɒn ə deɪt/",
+     "collocation",
+     "",
+     "audio/v/4aae57e83d.mp3",
+     "**Oh, that reminds me**, my cousin **went on a date** like that last month.",
+     "đi hẹn hò"
+    ],
+    [
+     "**keep + V-ing**",
+     "/kiːp/",
+     "structure",
+     "",
+     "audio/v/1264bdfe5f.mp3",
+     "**Sorry, I keep interrupting.**",
+     "cứ liên tục…"
+    ],
+    [
+     "**split the bill**",
+     "/splɪt ðə bɪl/",
+     "collocation",
+     "",
+     "audio/v/1c30251b65.mp3",
+     "When the bill came, he said, \"Shall we **split it**?\" That's totally fine!",
+     "chia tiền hoá đơn"
+    ],
+    [
+     "**a red flag**",
+     "/ə red flæɡ/",
+     "noun",
+     "",
+     "audio/v/4c9b65409b.mp3",
+     "That's **a red flag**.",
+     "dấu hiệu đáng lo ngại"
+    ],
+    [
+     "**No worries.**",
+     "/nəʊ ˈwʌr.iz/",
+     "expression",
+     "",
+     "audio/v/f104fa9c05.mp3",
+     "**No worries.** Honestly, we had **nothing in common**, so I went home early.",
+     "Không sao đâu."
+    ],
+    [
+     "**have nothing in common**",
+     "/hæv ˈnʌθ.ɪŋ ɪn ˈkɒm.ən/",
+     "phrase",
+     "",
+     "audio/v/42002eaf2e.mp3",
+     "**No worries.** Honestly, we had **nothing in common**, so I went home early.",
+     "không có điểm chung"
+    ],
+    [
+     "**give sb a second chance**",
+     "/ɡɪv ə ˈsek.ənd tʃɑːns/",
+     "collocation",
+     "",
+     "audio/v/909103c14e.mp3",
+     "My aunt keeps asking if I'll **give him a second chance**.",
+     "cho ai cơ hội thứ hai"
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Professional: In the meeting",
+   "context": "***Context:*** *Mr Harris, the team manager, is explaining a new plan for working from home at a team meeting. Laura and David are listening.*",
+   "lines": [
+    [
+     "Mr Harris",
+     "…so from next month, everyone will work from home on Mondays and Fridays, and come to the office from Tuesday to Thursday. We'll **try it for** three months, **as a trial**. It should **save** everyone **time** on **the commute**. During that time, I'd like…"
+    ],
+    [
+     "Laura",
+     "**Sorry to interrupt, but could I just ask a quick question?**"
+    ],
+    [
+     "Mr Harris",
+     "Of course, **go ahead**."
+    ],
+    [
+     "Laura",
+     "Can we choose our home days, or are they **fixed**? I'd prefer something more **flexible**."
+    ],
+    [
+     "Mr Harris",
+     "Good question. Each team can decide, but everyone needs to be **online and available** between ten and four."
+    ],
+    [
+     "David",
+     "**Can I just say something?** I'm **a bit worried about** team meetings. People **get distracted** easily on video calls, and it's much harder to **share ideas**."
+    ],
+    [
+     "Mr Harris",
+     "**That's a fair point**, David. **I'll come back to that in a minute. Can I just finish first?**"
+    ],
+    [
+     "David",
+     "Of course, sorry. Go ahead."
+    ],
+    [
+     "Mr Harris",
+     "Thanks. During the trial, I'd like everyone to **fill in** a short survey every two weeks. That way, we can **see how it's going**. Now, **going back to** David's point about meetings…"
+    ],
+    [
+     "David",
+     "Yeah. It's just easier to share ideas **face to face**. On calls, it's **hard to know if** everyone understands, and some people never **turn their cameras on**."
+    ],
+    [
+     "Laura",
+     "**Can I just add something?** Maybe we could **keep** the big meetings **for** office days. Then home days could be for our own tasks, when we need to **stay focused**."
+    ],
+    [
+     "Mr Harris",
+     "That's a great idea, Laura. It's **a good compromise**. **Is everyone happy with that?**"
+    ],
+    [
+     "David",
+     "Yes, **that works for me**."
+    ],
+    [
+     "Mr Harris",
+     "Great. **Before we move on, does anyone have any questions?**"
+    ],
+    [
+     "Laura",
+     "Just one. Will the company give us any **equipment** for working from home, like a second screen? Some of us only have a small laptop."
+    ],
+    [
+     "Mr Harris",
+     "I'm not sure yet. I'll **find out** and **get back to you** by Friday."
+    ]
+   ],
+   "vocab": [
+    [
+     "**try sth for** + time",
+     "/traɪ… fɔː/",
+     "phrase",
+     "",
+     "audio/v/16dfb1b561.mp3",
+     "We'll **try it for** three months, **as a trial**.",
+     "thử cái gì trong (khoảng thời gian)"
+    ],
+    [
+     "**as a trial**",
+     "/əz ə ˈtraɪ.əl/",
+     "phrase",
+     "",
+     "audio/v/8e027c9217.mp3",
+     "We'll **try it for** three months, **as a trial**.",
+     "để thử nghiệm"
+    ],
+    [
+     "**save (sb) time**",
+     "/seɪv taɪm/",
+     "collocation",
+     "",
+     "audio/v/073ed09ef2.mp3",
+     "It should **save** everyone **time** on **the commute**.",
+     "tiết kiệm thời gian (cho ai)"
+    ],
+    [
+     "**the commute**",
+     "/ðə kəˈmjuːt/",
+     "noun",
+     "",
+     "audio/v/3d110757bc.mp3",
+     "It should **save** everyone **time** on **the commute**.",
+     "quãng đường đi làm hằng ngày"
+    ],
+    [
+     "**fixed**",
+     "/fɪkst/",
+     "adjective",
+     "",
+     "audio/v/7bc555991d.mp3",
+     "Can we choose our home days, or are they **fixed**?",
+     "cố định"
+    ],
+    [
+     "**flexible**",
+     "/ˈflek.sə.bəl/",
+     "adjective",
+     "",
+     "audio/v/ac6636e36f.mp3",
+     "I'd prefer something more **flexible**.",
+     "linh hoạt"
+    ],
+    [
+     "**online and available**",
+     "/ˌɒnˈlaɪn ənd əˈveɪ.lə.bəl/",
+     "phrase",
+     "",
+     "audio/v/f2121330ca.mp3",
+     "Each team can decide, but everyone needs to be **online and available** between ten and four.",
+     "trực tuyến và sẵn sàng liên lạc"
+    ],
+    [
+     "**be worried about** + N",
+     "/bi ˈwʌr.id əˈbaʊt/",
+     "phrase",
+     "",
+     "audio/v/588347b4f0.mp3",
+     "**Can I just say something?** I'm **a bit worried about** team meetings.",
+     "lo lắng về…"
+    ],
+    [
+     "**get distracted**",
+     "/ɡet dɪˈstræk.tɪd/",
+     "collocation",
+     "",
+     "audio/v/05bea52620.mp3",
+     "People **get distracted** easily on video calls, and it's much harder to **share ideas**.",
+     "bị phân tâm"
+    ],
+    [
+     "**share ideas**",
+     "/ʃeər aɪˈdɪəz/",
+     "collocation",
+     "",
+     "audio/v/4b821e882a.mp3",
+     "People **get distracted** easily on video calls, and it's much harder to **share ideas**.",
+     "chia sẻ ý tưởng"
+    ],
+    [
+     "**fill in** + a form / a survey",
+     "/fɪl ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/b0ab0bee92.mp3",
+     "During the trial, I'd like everyone to **fill in** a short survey every two weeks.",
+     "điền (mẫu đơn / khảo sát)"
+    ],
+    [
+     "**see how it's going**",
+     "/siː haʊ ɪts ˈɡəʊ.ɪŋ/",
+     "phrase",
+     "",
+     "audio/v/1ba675f858.mp3",
+     "That way, we can **see how it's going**.",
+     "xem mọi việc tiến triển thế nào"
+    ],
+    [
+     "**going back to** + N",
+     "/ˈɡəʊ.ɪŋ bæk tə/",
+     "phrase",
+     "",
+     "audio/v/14fddf0a0c.mp3",
+     "Now, **going back to** David's point about meetings…",
+     "quay lại (vấn đề)…"
+    ],
+    [
+     "**face to face**",
+     "/ˌfeɪs tə ˈfeɪs/",
+     "phrase",
+     "",
+     "audio/v/11516a3d7f.mp3",
+     "It's just easier to share ideas **face to face**.",
+     "trực tiếp, mặt đối mặt"
+    ],
+    [
+     "**It's hard to know if…**",
+     "/ɪts hɑːd tə nəʊ ɪf/",
+     "structure",
+     "",
+     "audio/v/73b3cce8c6.mp3",
+     "On calls, it's **hard to know if** everyone understands, and some people never **turn their cameras on**.",
+     "Khó mà biết liệu…"
+    ],
+    [
+     "**turn your camera on**",
+     "/tɜːn jɔː ˈkæm.rə ɒn/",
+     "phrase",
+     "",
+     "audio/v/9b244d03a0.mp3",
+     "On calls, it's **hard to know if** everyone understands, and some people never **turn their cameras on**.",
+     "bật camera"
+    ],
+    [
+     "**keep sth for** + N",
+     "/kiːp… fɔː/",
+     "phrase",
+     "",
+     "audio/v/fa0f87edca.mp3",
+     "**Can I just add something?** Maybe we could **keep** the big meetings **for** office days.",
+     "để dành cái gì cho…"
+    ],
+    [
+     "**stay focused**",
+     "/steɪ ˈfəʊ.kəst/",
+     "collocation",
+     "",
+     "audio/v/e4112603b9.mp3",
+     "Then home days could be for our own tasks, when we need to **stay focused**.",
+     "giữ tập trung"
+    ],
+    [
+     "**a good compromise**",
+     "/ə ɡʊd ˈkɒm.prə.maɪz/",
+     "collocation",
+     "",
+     "audio/v/a2b6dc36f4.mp3",
+     "It's **a good compromise**.",
+     "giải pháp dung hoà tốt"
+    ],
+    [
+     "**Is everyone happy with that?**",
+     "/ɪz ˈev.ri.wʌn ˈhæp.i wɪð ðæt/",
+     "expression",
+     "",
+     "audio/v/eff59fc204.mp3",
+     "**Is everyone happy with that?**",
+     "Mọi người đồng ý chứ?"
+    ],
+    [
+     "**That works for me.**",
+     "/ðæt wɜːks fə miː/",
+     "expression",
+     "",
+     "audio/v/bafce75e7f.mp3",
+     "Yes, **that works for me**.",
+     "Mình thấy được đấy."
+    ],
+    [
+     "**equipment**",
+     "/ɪˈkwɪp.mənt/",
+     "noun",
+     "",
+     "audio/v/bedcc40ee5.mp3",
+     "Will the company give us any **equipment** for working from home, like a second screen?",
+     "thiết bị"
+    ],
+    [
+     "**find out**",
+     "/faɪnd aʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/ecdbd35c93.mp3",
+     "I'll **find out** and **get back to you** by Friday.",
+     "tìm hiểu, tìm ra"
+    ],
+    [
+     "**get back to** sb",
+     "/ɡet bæk tə/",
+     "phrasal verb",
+     "",
+     "audio/v/baf3241adc.mp3",
+     "I'll **find out** and **get back to you** by Friday.",
+     "trả lời lại ai sau"
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Hannah has just started a new job. She meets her friend Sam for coffee.",
+   "bank": [
+    "face to face",
+    "a red flag",
+    "make small talk",
+    "change the subject",
+    "hard to know",
+    "see how it goes",
+    "awkward silences",
+    "worried about",
+    "the commute",
+    "get distracted"
+   ],
+   "lines": [
+    [
+     "Sam",
+     "So, how's the new job?"
+    ],
+    [
+     "Hannah",
+     "Pretty good! Yesterday, the team took me out for lunch so I could meet everyone."
+    ],
+    [
+     "Sam",
+     "Nice! Was it fun?"
+    ],
+    [
+     "Hannah",
+     "At first, it was a bit strange. Nobody knew what to say, so we just tried to {make small talk} about the weather and the traffic. There were a few {awkward silences}."
+    ],
+    [
+     "Sam",
+     "Haha, that always happens at the start."
+    ],
+    [
+     "Hannah",
+     "Then my manager started talking about work again, so I tried to {change the subject}. I asked everyone about their weekend plans, and that really helped."
+    ],
+    [
+     "Sam",
+     "Good idea. What's your manager like?"
+    ],
+    [
+     "Hannah",
+     "He's nice, but he seems quite {worried about} deadlines. He checked his emails all through lunch."
+    ],
+    [
+     "Sam",
+     "Hmm, is that {a red flag}?"
+    ],
+    [
+     "Hannah",
+     "Not really. It's {hard to know} after just one lunch. I'll wait and {see how it goes}."
+    ],
+    [
+     "Sam",
+     "Fair enough. Do you work from home?"
+    ],
+    [
+     "Hannah",
+     "Two days a week. It saves me an hour on {the commute}, but at home, I {get distracted} really easily. My bed is right next to my desk!"
+    ],
+    [
+     "Sam",
+     "Haha, I know the feeling."
+    ],
+    [
+     "Hannah",
+     "So I prefer the office. It's much easier to work with people {face to face}."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once.",
+   "bank": [
+    "one-word answers",
+    "That works for me",
+    "fill in",
+    "equipment",
+    "a blind date",
+    "available",
+    "Sort of",
+    "fixed",
+    "flexible",
+    "turn your camera on"
+   ],
+   "lines": [
+    [
+     "",
+     "My friend wants me to go on {a blind date} with her cousin, but I've never even seen a photo of him."
+    ],
+    [
+     "",
+     "\"Did you enjoy the party?\" \"{Sort of}. The music was good, but I didn't know anyone.\""
+    ],
+    [
+     "",
+     "I asked him about his holiday, but he only gave me {one-word answers}."
+    ],
+    [
+     "",
+     "In my old job, the hours were {fixed}: 8am to 5pm, every day."
+    ],
+    [
+     "",
+     "My new job is more {flexible}. I can start any time between eight and ten."
+    ],
+    [
+     "",
+     "Please {fill in} this form and give it to reception."
+    ],
+    [
+     "",
+     "\"Can we meet on Thursday at ten?\" \"Yes, {That works for me|that works for me}.\""
+    ],
+    [
+     "",
+     "The company gave us new {equipment} for working from home: a laptop and a headset."
+    ],
+    [
+     "",
+     "Sorry, the manager isn't {available} right now. She's in a meeting."
+    ],
+    [
+     "",
+     "Please {turn your camera on} during video calls, so we can see you."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 3A: Casual: a weekend trip",
+   "instructions": "Complete the conversation with phrases from the box. Use each phrase once.",
+   "context": "Nam is telling his friends Lily and Hoa about his weekend trip to Đà Lạt.",
+   "bank": [
+    "Anyway, where was I?",
+    "Wait, wait.",
+    "Sorry, I keep interrupting. Go on!",
+    "Oh, that reminds me",
+    "Sorry, quick question."
+   ],
+   "lines": [
+    [
+     "Nam",
+     "So, on the second day, we rented motorbikes and drove up into the mountains. Then it started raining really hard, and…"
+    ],
+    [
+     "Lily",
+     "{Wait, wait.} You drove in the rain? Were you scared?"
+    ],
+    [
+     "Nam",
+     "A bit! Anyway, we stopped at a small café to wait."
+    ],
+    [
+     "Hoa",
+     "{Sorry, quick question.} Who did you go with? Your colleagues?"
+    ],
+    [
+     "Nam",
+     "No, my cousins. So, we were sitting in the café, and…"
+    ],
+    [
+     "Lily",
+     "{Oh, that reminds me}, did you try the strawberry milk? Everyone says it's amazing."
+    ],
+    [
+     "Nam",
+     "Yes, I had three glasses! {Anyway, where was I?} Oh yes, the café. The owner told us about a secret waterfall nearby."
+    ],
+    [
+     "Hoa",
+     "A secret waterfall? Wow! {Sorry, I keep interrupting. Go on!}"
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 3B: Professional: a team meeting",
+   "instructions": "Complete the conversation with phrases from the box. Use each phrase once.",
+   "context": "Ms Chen is talking about the company's new website at a team meeting.",
+   "bank": [
+    "As I was saying,",
+    "I'll come back to that in a minute.",
+    "Sorry to interrupt, but",
+    "Can I just finish first?",
+    "Can I just add something?"
+   ],
+   "lines": [
+    [
+     "Ms Chen",
+     "…so the new website will be ready at the end of March. The design team will start next week, and…"
+    ],
+    [
+     "Tom",
+     "{Sorry to interrupt, but} could I just ask a quick question?"
+    ],
+    [
+     "Ms Chen",
+     "Of course, go ahead."
+    ],
+    [
+     "Tom",
+     "Will customers be able to pay online?"
+    ],
+    [
+     "Ms Chen",
+     "Yes, they will."
+    ],
+    [
+     "Anna",
+     "{Can I just add something?} I think we should also have a live chat. Customers often have questions before they buy."
+    ],
+    [
+     "Ms Chen",
+     "That's a fair point, Anna. {I'll come back to that in a minute.} {Can I just finish first?}"
+    ],
+    [
+     "Anna",
+     "Of course, sorry."
+    ],
+    [
+     "Ms Chen",
+     "Thanks. {As I was saying,} the design team will start next week, and we'll test the website in early March."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 4: Listening",
+   "intro": "Emma and Jack are colleagues. They're having lunch together after Emma's big presentation. Listen to the conversation, then choose the best answer.",
+   "podcast": "🎧 Emma's big presentation",
+   "audio": "audio/a2-interrupt.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Jack",
+     "text": "So, how did it go? Was this your first time presenting to the CEO?"
+    },
+    {
+     "t": 3.71,
+     "who": "Emma",
+     "text": "Yes, my first time. I was nervous, but I felt quite confident, because ==I practised it about ten times at home==. I knew every slide by heart."
+    },
+    {
+     "t": 12.51,
+     "who": "Jack",
+     "text": "Nice. So what happened?"
+    },
+    {
+     "t": 14.28,
+     "who": "Emma",
+     "text": "Well, I started speaking, and everything was fine. But ==after about two minutes, my laptop suddenly went black==."
+    },
+    {
+     "t": 20.48,
+     "who": "Jack",
+     "text": "Wait, wait. Two minutes? That's so early!"
+    },
+    {
+     "t": 23.09,
+     "who": "Emma",
+     "text": "I know! I tried to restart it, but it didn't work. In the end, ==someone from IT had to open my file on a different computer==. It took almost fifteen minutes."
+    },
+    {
+     "t": 32.12,
+     "who": "Jack",
+     "text": "Sorry, quick question. What did you do while you were waiting? Did the CEO take a break?"
+    },
+    {
+     "t": 36.37,
+     "who": "Emma",
+     "text": "No, everyone just sat there, so I started talking without my slides. I told them a story about one of our customers and why she loves our product."
+    },
+    {
+     "t": 44.46,
+     "who": "Jack",
+     "text": "Oh, that reminds me, ==my manager always says people remember stories, not numbers==. Nobody remembers a chart, but everyone remembers a good story."
+    },
+    {
+     "t": 52.29,
+     "who": "Emma",
+     "text": "That's exactly what happened! When the slides came back, I showed the sales numbers at the end. But afterwards, ==the CEO said the customer story was her favourite part==. She said it was much more interesting than the numbers."
+    },
+    {
+     "t": 63.91,
+     "who": "Jack",
+     "text": "That's amazing! So, the laptop problem was actually a good thing."
+    },
+    {
+     "t": 67.84,
+     "who": "Emma",
+     "text": "Maybe! ==It went really well in the end==. But ==next time, I'm going to bring a copy of my slides on a USB stick==, just in case."
+    },
+    {
+     "t": 74.74,
+     "who": "Jack",
+     "text": "Good idea. And maybe start with a story too!"
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 4: Choose the best answer",
+   "questions": [
+    {
+     "q": "Why did Emma feel confident at the start?",
+     "options": [
+      "She had given a presentation to the CEO before.",
+      "A colleague had checked her slides.",
+      "She had practised many times."
+     ],
+     "answer": 2,
+     "why": "“I practised it about ten times at home.”"
+    },
+    {
+     "q": "When did the problem happen?",
+     "options": [
+      "Quite early in the presentation",
+      "Before she started speaking",
+      "Near the end, during the sales numbers"
+     ],
+     "answer": 0,
+     "why": "“After about two minutes, my laptop suddenly went black.”"
+    },
+    {
+     "q": "Why did it take so long to fix the problem?",
+     "options": [
+      "Emma's laptop had to restart.",
+      "The CEO asked everyone to take a short break.",
+      "Someone had to open the file on a different computer."
+     ],
+     "answer": 2,
+     "why": "“Someone from IT had to open my file on a different computer.”"
+    },
+    {
+     "q": "Why does Jack talk about his manager?",
+     "options": [
+      "To agree that people remember stories better than numbers",
+      "To change the subject",
+      "To warn Emma that the CEO doesn't like long presentations"
+     ],
+     "answer": 0,
+     "why": "“My manager always says people remember stories, not numbers.”"
+    },
+    {
+     "q": "What did the CEO think?",
+     "options": [
+      "She liked the sales numbers more than the story.",
+      "She found the unplanned part more interesting.",
+      "She thought the slides were too long."
+     ],
+     "answer": 1,
+     "why": "“The customer story was her favourite part.”"
+    },
+    {
+     "q": "How does Emma feel about the laptop problem now?",
+     "options": [
+      "She's still upset about it.",
+      "It went well in the end, but she'll be more prepared next time.",
+      "She'll never use slides again."
+     ],
+     "answer": 1,
+     "why": "“It went really well in the end. But next time, I'm going to bring a copy of my slides on a USB stick.”"
+    }
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 5: Speaking (1.5–2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking. You are the only speaker.",
+   "options": [
+    {
+     "title": "Is it rude to interrupt people?",
+     "questions": [
+      "Who interrupts the most in your family or group of friends?",
+      "When is it OK to interrupt? When is it not OK?",
+      "Is it different at work?"
+     ],
+     "use": "Sorry to interrupt, but…, Could I just ask a quick question?, Wait, wait…, That's a fair point."
+    },
+    {
+     "title": "Do you prefer working from home or in the office? Why?",
+     "questions": [
+      "What do you like about working from home?",
+      "What's better about the office?",
+      "What would be a good compromise for you?"
+     ],
+     "use": "save time, the commute, get distracted, stay focused, face to face, flexible, a good compromise"
+    },
+    {
+     "title": "Tell me about a funny or bad date, meal or meeting you remember (yours or a friend's).",
+     "questions": [
+      "Where was it, and who was there?",
+      "What happened?",
+      "How did it end?"
+     ],
+     "use": "make small talk, an awkward silence, change the subject, a red flag, have nothing in common"
+    }
+   ]
+  }
+ ]
+}
