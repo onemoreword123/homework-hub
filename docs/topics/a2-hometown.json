@@ -650,6 +650,112 @@
    ]
   },
   {
+   "type": "listening",
+   "title": "Part 2: Listening",
+   "intro": "Listen to Lily talking about her hometown, then do Parts A and B.",
+   "podcast": "🎧 Lily's hometown",
+   "audio": "audio/a2-hometown.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "Lily",
+     "text": "Hi, I'm Lily. I grew up in Mudgee, a small ==farming== town about four hours from Sydney, in Australia. When I was a kid, I loved it. We had a big garden, and my brother and I rode our bikes everywhere. But when I was a teenager, ==I found it a bit boring==. There was only one cinema, and the last bus left at six o'clock."
+    },
+    {
+     "t": 24.34,
+     "who": "Lily",
+     "text": "So when I was nineteen, I moved to Sydney for ==university==. Now I work at a bank in the city centre. I love the restaurants and the beaches here, but ==the rent is really expensive==. I share a small flat with two friends, and my bedroom is smaller than my parents' bathroom!"
+    },
+    {
+     "t": 45.98,
+     "who": "Lily",
+     "text": "I go back home three or four times a year. Last Christmas, I was really surprised. My town has ==changed== a lot. ==There are lots of new wine bars and restaurants==, and tourists come from Sydney every weekend. My dad's old shop is now a ==café==. He wasn't happy about it at first, but ==now he goes there every morning== for his coffee."
+    },
+    {
+     "t": 71.27,
+     "who": "Lily",
+     "text": "Some things haven't changed, though. ==People still say hello to everyone== in the street, and my mum still knows all the neighbours' names. In my building in Sydney, I don't know anyone."
+    },
+    {
+     "t": 84.91,
+     "who": "Lily",
+     "text": "Would I move back? ==Maybe one day, when I have children.== For now, I'm happy in the city."
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 2A: Choose the best answer",
+   "questions": [
+    {
+     "q": "How did Lily feel about her town when she was a teenager?",
+     "options": [
+      "She loved riding her bike everywhere.",
+      "She thought there wasn't much to do.",
+      "She wanted to work on a farm."
+     ],
+     "answer": 1,
+     "why": "“When I was a teenager, I found it a bit boring.”"
+    },
+    {
+     "q": "What does Lily say about her life in Sydney?",
+     "options": [
+      "She lives alone in a small flat.",
+      "Her bedroom is bigger than her parents' bathroom.",
+      "It costs a lot of money to live there."
+     ],
+     "answer": 2,
+     "why": "“The rent is really expensive.”"
+    },
+    {
+     "q": "What surprised Lily last Christmas?",
+     "options": [
+      "There were lots of new places to eat and drink.",
+      "Her dad had opened a new café.",
+      "There weren't many tourists in town."
+     ],
+     "answer": 0,
+     "why": "“There are lots of new wine bars and restaurants.”"
+    },
+    {
+     "q": "How does Lily's dad feel about the café now?",
+     "options": [
+      "He is still unhappy about it.",
+      "He likes it and goes there often.",
+      "He works there every morning."
+     ],
+     "answer": 1,
+     "why": "“Now he goes there every morning for his coffee.”"
+    },
+    {
+     "q": "What hasn't changed in Lily's hometown?",
+     "options": [
+      "People are still friendly to each other.",
+      "The last bus still leaves at six o'clock.",
+      "Her mum still lives in the same building."
+     ],
+     "answer": 0,
+     "why": "“People still say hello to everyone in the street.”"
+    },
+    {
+     "q": "Will Lily move back to her hometown?",
+     "options": [
+      "Yes, she's moving back next year.",
+      "No, she wants to stay in Sydney forever.",
+      "Maybe, at some point in the future."
+     ],
+     "answer": 2,
+     "why": "“Maybe one day, when I have children.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 2B: Complete the summary",
+   "instructions": "Write ONE word for each blank.",
+   "text": "Lily grew up in a small {farming} town in Australia. As a teenager, she thought it was quite {boring}. At nineteen, she moved to Sydney to go to {university|uni}. She loves the city, but the {rent} is very high. When she went home last Christmas, she saw that her town had {changed} a lot, and her dad's old shop was now a {café|cafe}. But people there still say {hello} to everyone. Lily might move back when she has {children|kids}."
+  },
+  {
    "type": "recording",
    "title": "Part 3: Speaking (1–2 minutes)",
    "instructions": "Choose ONE option and record yourself speaking.",
