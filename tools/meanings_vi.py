@@ -469,3 +469,22 @@ VI.update({
 "sth I'll regret": "điều mình sẽ hối hận",
 "start from scratch": "bắt đầu lại từ đầu",
 })
+VI.update({
+"Stop rubbing it in!": "Đừng xát muối nữa!",
+"I'll admit it.": "Mình thừa nhận.",
+"There's always something going on.": "Lúc nào cũng có gì đó diễn ra.",
+"way more + N": "nhiều… hơn hẳn",
+"job opportunities": "cơ hội việc làm",
+"exhausting": "mệt mỏi, kiệt sức",
+"almost unrecognisable": "gần như không nhận ra",
+"apartment blocks": "khu chung cư",
+"flood in": "đổ về ồ ạt",
+"not as + adj + as I expected": "không… như mình nghĩ",
+"think of X as Y": "nghĩ về X như là Y",
+"find a parking space": "tìm chỗ đỗ xe",
+"open your own + N": "mở… của riêng mình",
+"be stuck in traffic": "bị kẹt xe",
+"catch up on + N": "tranh thủ làm cho kịp…",
+"handy": "tiện lợi",
+"lose its charm": "mất đi nét quyến rũ",
+})

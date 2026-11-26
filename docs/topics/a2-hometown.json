@@ -1,0 +1,690 @@
+{
+ "id": "a2-hometown",
+ "title": "Your hometown",
+ "level": "A2",
+ "emoji": "🏡",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/a2-hometown.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "🏡 Your hometown"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Where’s your hometown, and **how often do you go back?**",
+    "What do you **miss most about your hometown** when you’re away?",
+    "Would you rather **live in a big city, by the sea or in the mountains**? Why?",
+    "How **has your hometown changed** since you were a child?"
+   ]
+  },
+  {
+   "type": "dialogue",
+   "label": "📖 Bài học chính",
+   "title": "1. City life or beach life?",
+   "context": "***Context:*** *Minh, from Hà Nội, and Vy, from Quy Nhơn, are stuck in a taxi in rush-hour traffic.*",
+   "lines": [
+    [
+     "Minh",
+     "We’ve only moved ten metres in fifteen minutes. **I can’t stand** this traffic!"
+    ],
+    [
+     "Vy",
+     "Honestly, Hà Nội is a real **concrete jungle**. In Quy Nhơn, I’d be home by now, probably relaxing on the beach with a coconut."
+    ],
+    [
+     "Minh",
+     "**Stop rubbing it in!** But come on, you like it here a little bit."
+    ],
+    [
+     "Vy",
+     "OK, **I’ll admit it**. The food is amazing, and **there’s always something going on**."
+    ],
+    [
+     "Minh",
+     "Exactly. And there are **way more job opportunities**. Half my friends from university moved here for work."
+    ],
+    [
+     "Vy",
+     "True, but city life can be **exhausting**. Two hours **stuck in traffic** every day, and all that **air pollution**…"
+    ],
+    [
+     "Minh",
+     "**Fair point.** So what’s a normal day like back home?"
+    ],
+    [
+     "Vy",
+     "**Super chilled.** My parents’ house is **a stone’s throw from** the beach, so I **wake up to the sound of** the waves. Every morning, my mum goes to the fish market and **haggles** for the freshest fish."
+    ],
+    [
+     "Minh",
+     "Stop, you’re making me hungry! But don’t you get bored? I’d miss going out late at night."
+    ],
+    [
+     "Vy",
+     "Haha, **that’s the only downside**. Most places close by nine. But people there are **really close**. If you’re sick, the whole street **turns up** with soup."
+    ],
+    [
+     "Minh",
+     "That’s so sweet. In my building, people don’t even **make eye contact** in the lift."
+    ],
+    [
+     "Vy",
+     "Has Hà Nội changed much since you were a kid?"
+    ],
+    [
+     "Minh",
+     "**Yeah, a lot.** Some areas are **almost unrecognisable**. The rice fields near my grandma’s house are now huge **apartment blocks**."
+    ],
+    [
+     "Vy",
+     "Same in Quy Nhơn. Tourists keep **flooding in**, and new resorts are **popping up** all along the coast."
+    ],
+    [
+     "Minh",
+     "Well, **I’d swap** this traffic **for** a beach **any day**!"
+    ]
+   ],
+   "vocab": [
+    [
+     "**rush-hour traffic**",
+     "/ˈrʌʃ aʊə ˈtræfɪk/",
+     "noun",
+     "",
+     "audio/v/da0fb3ed41.mp3",
+     "",
+     "giao thông giờ cao điểm"
+    ],
+    [
+     "**can’t stand** + N",
+     "/kɑːnt stænd/",
+     "phrase",
+     "",
+     "audio/v/f90ae318c1.mp3",
+     "**I can’t stand** this traffic!",
+     "không chịu nổi…"
+    ],
+    [
+     "**a concrete jungle**",
+     "/ə ˈkɒŋkriːt ˈdʒʌŋɡl/",
+     "idiom",
+     "",
+     "audio/v/9dacdcfcf5.mp3",
+     "Honestly, Hà Nội is a real **concrete jungle**.",
+     "rừng bê tông (thành phố toàn nhà cao tầng)"
+    ],
+    [
+     "**Stop rubbing it in!**",
+     "/stɒp ˈrʌbɪŋ ɪt ɪn/",
+     "expression",
+     "",
+     "audio/v/b2d5641fcc.mp3",
+     "**Stop rubbing it in!** But come on, you like it here a little bit.",
+     "Đừng xát muối nữa!"
+    ],
+    [
+     "**I’ll admit it.**",
+     "/aɪl ədˈmɪt ɪt/",
+     "expression",
+     "",
+     "audio/v/399780047c.mp3",
+     "OK, **I’ll admit it**.",
+     "Mình thừa nhận."
+    ],
+    [
+     "**There’s always something going on.**",
+     "",
+     "expression",
+     "",
+     "audio/v/0a3eac7ff4.mp3",
+     "The food is amazing, and **there’s always something going on**.",
+     "Lúc nào cũng có gì đó diễn ra."
+    ],
+    [
+     "**way more** + N",
+     "/weɪ mɔː/",
+     "phrase, informal",
+     "",
+     "audio/v/e569a6e442.mp3",
+     "And there are **way more job opportunities**.",
+     "nhiều… hơn hẳn"
+    ],
+    [
+     "**job opportunities**",
+     "/dʒɒb ˌɒpəˈtjuːnətiz/",
+     "noun",
+     "",
+     "audio/v/0741f93ab7.mp3",
+     "And there are **way more job opportunities**.",
+     "cơ hội việc làm"
+    ],
+    [
+     "**exhausting**",
+     "/ɪɡˈzɔːstɪŋ/",
+     "adjective",
+     "",
+     "audio/v/5d1f8728c1.mp3",
+     "True, but city life can be **exhausting**.",
+     "mệt mỏi, kiệt sức"
+    ],
+    [
+     "**a stone’s throw from** + place",
+     "/ə stəʊnz θrəʊ frɒm/",
+     "idiom",
+     "",
+     "audio/v/412b3e98f1.mp3",
+     "**Super chilled.** My parents’ house is **a stone’s throw from** the beach, so I **wake up to the sound of** the waves.",
+     "cách… chỉ một đoạn ngắn (rất gần)"
+    ],
+    [
+     "**wake up to the sound of** + N",
+     "/weɪk ʌp tə ðə saʊnd əv/",
+     "phrase",
+     "",
+     "audio/v/be1d2a1b16.mp3",
+     "**Super chilled.** My parents’ house is **a stone’s throw from** the beach, so I **wake up to the sound of** the waves.",
+     "thức dậy cùng tiếng…"
+    ],
+    [
+     "**haggle (for sth)**",
+     "/ˈhæɡl/",
+     "verb",
+     "",
+     "audio/v/93ae45d081.mp3",
+     "Every morning, my mum goes to the fish market and **haggles** for the freshest fish.",
+     "mặc cả, trả giá"
+    ],
+    [
+     "**turn up**",
+     "/tɜːn ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/a771745339.mp3",
+     "If you’re sick, the whole street **turns up** with soup.",
+     "xuất hiện, ghé đến"
+    ],
+    [
+     "**make eye contact**",
+     "/meɪk aɪ ˈkɒntækt/",
+     "collocation",
+     "",
+     "audio/v/525588ab06.mp3",
+     "In my building, people don’t even **make eye contact** in the lift.",
+     "nhìn vào mắt nhau"
+    ],
+    [
+     "**almost unrecognisable**",
+     "/ˈɔːlməʊst ʌnˈrekəɡnaɪzəbl/",
+     "phrase",
+     "",
+     "audio/v/8776d159a0.mp3",
+     "**Yeah, a lot.** Some areas are **almost unrecognisable**.",
+     "gần như không nhận ra"
+    ],
+    [
+     "**apartment blocks**",
+     "/əˈpɑːtmənt blɒks/",
+     "noun",
+     "",
+     "audio/v/56bbd49022.mp3",
+     "The rice fields near my grandma’s house are now huge **apartment blocks**.",
+     "khu chung cư"
+    ],
+    [
+     "**flood in**",
+     "/flʌd ɪn/",
+     "phrasal verb",
+     "",
+     "audio/v/fe8220a851.mp3",
+     "Tourists keep **flooding in**, and new resorts are **popping up** all along the coast.",
+     "đổ về ồ ạt"
+    ],
+    [
+     "**pop up**",
+     "/pɒp ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/e9c7603eb3.mp3",
+     "Tourists keep **flooding in**, and new resorts are **popping up** all along the coast.",
+     "mọc lên, xuất hiện (nhanh, nhiều)"
+    ],
+    [
+     "**I’d swap X for Y any day.**",
+     "",
+     "expression",
+     "",
+     "audio/v/c63c714856.mp3",
+     "Well, **I’d swap** this traffic **for** a beach **any day**!",
+     "Mình sẵn sàng đổi X lấy Y bất cứ lúc nào."
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "Tell us about your hometown",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**Where is it? What’s it known for?**",
+     "• ***I’m from…, a busy city / a coastal city / a small town in…***\n• ***It’s about … hours from… by bus / plane.***\n• ***It’s best known for… / It’s famous for…***\n• ***It’s not very well-known, but…***"
+    ],
+    [
+     "**What’s daily life like?**",
+     "• ***Life there is much slower / busier than in…***\n• ***There’s always something going on.***\n• ***After work, most people…***"
+    ],
+    [
+     "**What do you love? What wears you down?**",
+     "• ***What I love most about it is…***\n• ***The best thing about living there is…***\n• ***The one thing I can’t stand is…***\n• ***The only downside is that…***"
+    ],
+    [
+     "**What are the people like? How do you feel about it?**",
+     "• ***People there are really friendly / close / hard-working.***\n• ***Everyone looks out for each other.***\n• ***Whenever I go back, I feel at home.***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Then and now",
+   "context": "***Context:*** *Quân, from Sài Gòn, and Ngọc, from Đà Lạt, are friends. They’re having coffee after the long weekend.*",
+   "lines": [
+    [
+     "Quân",
+     "You’re back! How was home? Was it cold up there?"
+    ],
+    [
+     "Ngọc",
+     "Really nice, thanks. I ate **way too much**, **as usual**. But it **wasn’t as cold as I expected**. It’s **much warmer than** when I was a kid. I wore a T-shirt most of the day."
+    ],
+    [
+     "Quân",
+     "In Đà Lạt? I didn’t expect that."
+    ],
+    [
+     "Ngọc",
+     "Yeah. My mum thinks it’s because they’ve built so much. A lot of the hills near our house **are covered in** greenhouses now."
+    ],
+    [
+     "Quân",
+     "That’s a bit sad. I always **think of** Đà Lạt **as** pine trees and fog."
+    ],
+    [
+     "Ngọc",
+     "Some parts are still like that. But at weekends, it gets **really crowded**. Lots of people **drive up** from Sài Gòn, and it’s **really hard to find a parking space**."
+    ],
+    [
+     "Quân",
+     "**To be honest**, I was one of them last month."
+    ],
+    [
+     "Ngọc",
+     "Haha, that’s OK. **It’s good for business.** A few of my **old classmates** have **moved back** and **opened** their own coffee shops. Ten years ago, everyone wanted to leave."
+    ],
+    [
+     "Quân",
+     "That’s nice. Sài Gòn has changed a lot too. It **feels like a different city** every few years."
+    ],
+    [
+     "Ngọc",
+     "What’s changed the most?"
+    ],
+    [
+     "Quân",
+     "The metro, **for sure**. I used to spend an hour on my motorbike every morning, **stuck in traffic**. Now it **only takes** about twenty minutes, and I can listen to music on the way."
+    ],
+    [
+     "Ngọc",
+     "That’s **a big improvement**. Is there anything you don’t like?"
+    ],
+    [
+     "Quân",
+     "They **turned** the market near my parents’ house **into** a shopping mall. It’s **handy**, I guess, but **it’s not the same**. I used to go there with my grandma every Sunday."
+    ],
+    [
+     "Ngọc",
+     "**I understand.** It’s usually the small places you miss."
+    ]
+   ],
+   "vocab": [
+    [
+     "**as usual**",
+     "/əz ˈjuːʒuəl/",
+     "phrase",
+     "",
+     "audio/v/73b20ad0fd.mp3",
+     "I ate **way too much**, **as usual**.",
+     "như thường lệ"
+    ],
+    [
+     "**not as + adj + as I expected**",
+     "/nɒt əz… əz aɪ ɪkˈspektɪd/",
+     "structure",
+     "",
+     "audio/v/c8974eccd6.mp3",
+     "It’s **handy**, I guess, but **it’s not the same**.",
+     "không… như mình nghĩ"
+    ],
+    [
+     "**so much + comparative + than**",
+     "/səʊ mʌtʃ/",
+     "structure",
+     "",
+     "audio/v/f77eafffec.mp3",
+     "My mum thinks it’s because they’ve built so much.",
+     "… hơn nhiều so với…"
+    ],
+    [
+     "**be covered in** + N",
+     "/bi ˈkʌvəd ɪn/",
+     "phrase",
+     "",
+     "audio/v/f7f934a3d9.mp3",
+     "A lot of the hills near our house **are covered in** greenhouses now.",
+     "bị phủ đầy bởi…"
+    ],
+    [
+     "**think of X as Y**",
+     "/θɪŋk əv… əz/",
+     "phrase",
+     "",
+     "audio/v/4b5f9838e1.mp3",
+     "My mum thinks it’s because they’ve built so much.",
+     "nghĩ về X như là Y"
+    ],
+    [
+     "**drive up**",
+     "/draɪv ʌp/",
+     "phrasal verb",
+     "",
+     "audio/v/411d876e1d.mp3",
+     "Lots of people **drive up** from Sài Gòn, and it’s **really hard to find a parking space**.",
+     "đẩy (giá cả) lên"
+    ],
+    [
+     "**to be fair**",
+     "/tə bi feə/",
+     "expression",
+     "",
+     "audio/v/84fe36476e.mp3",
+     "",
+     "công bằng mà nói"
+    ],
+    [
+     "**It’s good for business.**",
+     "",
+     "expression",
+     "",
+     "audio/v/76459fea39.mp3",
+     "**It’s good for business.** A few of my **old classmates** have **moved back** and **opened** their own coffee shops.",
+     "Tốt cho việc làm ăn."
+    ],
+    [
+     "**find a parking space**",
+     "/faɪnd ə ˈpɑːkɪŋ speɪs/",
+     "collocation",
+     "",
+     "audio/v/bec7a17776.mp3",
+     "Lots of people **drive up** from Sài Gòn, and it’s **really hard to find a parking space**.",
+     "tìm chỗ đỗ xe"
+    ],
+    [
+     "**open your own** + N",
+     "/ˈəʊpən jɔːr əʊn/",
+     "phrase",
+     "",
+     "audio/v/0ce54144e4.mp3",
+     "**It’s good for business.** A few of my **old classmates** have **moved back** and **opened** their own coffee shops.",
+     "mở… của riêng mình"
+    ],
+    [
+     "**for sure**",
+     "/fə ʃʊə/",
+     "phrase",
+     "",
+     "audio/v/1e3e10c2d4.mp3",
+     "The metro, **for sure**.",
+     "chắc chắn"
+    ],
+    [
+     "**be stuck in traffic**",
+     "/bi stʌk ɪn ˈtræfɪk/",
+     "collocation",
+     "",
+     "audio/v/7f107a343f.mp3",
+     "I used to spend an hour on my motorbike every morning, **stuck in traffic**.",
+     "bị kẹt xe"
+    ],
+    [
+     "**catch up on** + N",
+     "/kætʃ ʌp ɒn/",
+     "phrasal verb",
+     "",
+     "audio/v/abd1cc6a29.mp3",
+     "",
+     "tranh thủ làm cho kịp…"
+    ],
+    [
+     "**a big improvement**",
+     "/ə bɪɡ ɪmˈpruːvmənt/",
+     "collocation",
+     "",
+     "audio/v/c2d004e174.mp3",
+     "That’s **a big improvement**.",
+     "một sự cải thiện lớn"
+    ],
+    [
+     "**turn X into Y**",
+     "/tɜːn ˈɪntuː/",
+     "phrase",
+     "",
+     "audio/v/9bee3fa65c.mp3",
+     "They **turned** the market near my parents’ house **into** a shopping mall.",
+     "biến X thành Y"
+    ],
+    [
+     "**handy**",
+     "/ˈhændi/",
+     "adjective",
+     "",
+     "audio/v/99b878da46.mp3",
+     "It’s **handy**, I guess, but **it’s not the same**.",
+     "tiện lợi"
+    ],
+    [
+     "**lose its charm**",
+     "/luːz ɪts tʃɑːm/",
+     "collocation",
+     "",
+     "audio/v/30b098232a.mp3",
+     "",
+     "mất đi nét quyến rũ"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "label": "How has it changed?",
+   "title": "",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What was it like before?**",
+     "• ***When I was a kid, it used to be…***\n• ***Back then, there weren’t many…***\n• ***I remember going to … with my family.***\n• ***I used to spend a lot of time…***"
+    ],
+    [
+     "**What has changed?**",
+     "• ***It’s a lot busier / bigger than it used to be.***\n• ***There are a lot more … now.***\n• ***They turned the old … into a…***\n• ***Some areas are almost unrecognisable.***"
+    ],
+    [
+     "**What’s better now?**",
+     "• ***To be fair, some things have changed for the better.***\n• ***It’s much easier to … now.***\n• ***There’s a lot more to do now, like…***"
+    ],
+    [
+     "**What do you miss?**",
+     "• ***What I miss most is…***\n• ***It’s handy now, but it’s not the same.***\n• ***I’m glad that … hasn’t changed.***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Thảo has just moved from Huế to Sài Gòn for a new job. Her friend Nam calls to ask how she's doing.",
+   "bank": [
+    "exhausting",
+    "stuck in traffic",
+    "Stop rubbing it in",
+    "popping up",
+    "a stone's throw from",
+    "something going on",
+    "can't stand",
+    "almost unrecognisable",
+    "way more",
+    "as usual"
+   ],
+   "lines": [
+    [
+     "Nam",
+     "Hi Thảo! How's life in Sài Gòn?"
+    ],
+    [
+     "Thảo",
+     "Good, but busy! There's always {something going on}. Last night I went to a night market, and this weekend there's a music festival near my flat."
+    ],
+    [
+     "Nam",
+     "That sounds fun. Do you like your new job?"
+    ],
+    [
+     "Thảo",
+     "Yes, I do. There are {way more} jobs for designers here than in Huế. That's why I moved."
+    ],
+    [
+     "Nam",
+     "And how's your flat?"
+    ],
+    [
+     "Thảo",
+     "Really nice. It's {a stone's throw from} a big park, so I go for a walk there every morning."
+    ],
+    [
+     "Nam",
+     "That's great. Is there anything you don't like?"
+    ],
+    [
+     "Thảo",
+     "The traffic. Yesterday I was {stuck in traffic} for an hour on my way home. I really {can't stand} it."
+    ],
+    [
+     "Nam",
+     "Well, Huế is quiet and slow, {as usual}. I walked by the river after work today. It was so peaceful."
+    ],
+    [
+     "Thảo",
+     "{Stop rubbing it in}! I really miss those walks."
+    ],
+    [
+     "Nam",
+     "Huế is changing too, though. Some streets near our old school are {almost unrecognisable} now. New hotels and cafés are {popping up} everywhere."
+    ],
+    [
+     "Thảo",
+     "Really? I've only been away for two months!"
+    ],
+    [
+     "Nam",
+     "Haha, it's not that fast. But it's much busier than before. So how do you feel after two months there?"
+    ],
+    [
+     "Thảo",
+     "Much better. The first few weeks were really {exhausting}. Everything was new, and I was tired all the time. But now I'm starting to feel at home."
+    ]
+   ]
+  },
+  {
+   "type": "recording",
+   "title": "Part 3: Speaking (1–2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking.",
+   "options": [
+    {
+     "title": "Tell me about your hometown.",
+     "questions": [
+      "Where is it, and what is it famous for?",
+      "What's a normal day like there?",
+      "What's the best thing about it?",
+      "Is there anything you can't stand about it?"
+     ],
+     "use": "a stone's throw from, There's always something going on, can't stand, The only downside is that…, Whenever I go back, I feel at home."
+    },
+    {
+     "title": "How has your hometown changed since you were a child?",
+     "questions": [
+      "What was it like when you were a kid?",
+      "What is new there now?",
+      "Is anything better now?",
+      "What do you miss?"
+     ],
+     "use": "used to, almost unrecognisable, pop up, turn X into Y, It's handy, but it's not the same."
+    },
+    {
+     "title": "In the future, would you like to live in a big city, by the sea or in the mountains?",
+     "questions": [
+      "What are the good things about city life?",
+      "What are the bad things?",
+      "What would be nice about living by the sea or in the mountains?",
+      "So where would you choose, and why?"
+     ],
+     "use": "a concrete jungle, way more job opportunities, exhausting, be stuck in traffic, wake up to the sound of, I'd swap X for Y any day."
+    }
+   ]
+  }
+ ]
+}

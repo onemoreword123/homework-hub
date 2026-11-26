@@ -1,6 +1,6 @@
 // Small visual effects + Word of the day. No libraries; respects "reduce motion".
-import { esc } from "./db.js?v=202611261726";
-import { md } from "./topic.js?v=202611261726";
+import { esc } from "./db.js?v=202611262138";
+import { md } from "./topic.js?v=202611262138";
 
 export const reduceMotion = () => window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
 
