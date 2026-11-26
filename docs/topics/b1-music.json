@@ -1,0 +1,1060 @@
+{
+ "id": "b1-music",
+ "title": "Music and life's soundtracks",
+ "level": "B1",
+ "emoji": "🎹",
+ "lesson": [
+  {
+   "type": "banner",
+   "src": "img/b1-music.jpg"
+  },
+  {
+   "type": "heading",
+   "text": "🎹 Music and Life’s Soundtracks"
+  },
+  {
+   "type": "questions",
+   "label": "🧠 Brainstorming questions (Câu hỏi nên nghĩ trước buổi học)",
+   "items": [
+    "Is there a song that **instantly takes you back to your teenage years?**",
+    "Do you think music was better in the past, **or do we only remember the good songs?**",
+    "Have you ever been a big fan of a **singer or band?** What did you do as a fan?",
+    "Why do you listen to music: to relax, to escape, to feel understood, or something else?"
+   ]
+  },
+  {
+   "type": "table",
+   "label": "🎶 List of common music genres",
+   "title": "",
+   "head": [
+    "Genre",
+    "Example songs"
+   ],
+   "rows": [
+    [
+     "**Classical** (adj/n) /ˈklæs.ɪ.kəl/",
+     "🎵 Für Elise – Beethoven"
+    ],
+    [
+     "**Jazz** (n) /dʒæz/",
+     "🎵 What a Wonderful World – Louis Armstrong"
+    ],
+    [
+     "**Rock / Metal** (n) /rɒk/ /ˈmet.əl/",
+     "🎵 Bohemian Rhapsody – Queen"
+    ],
+    [
+     "**Pop** (n) /pɒp/",
+     "🎵 Billie Jean – Michael Jackson"
+    ],
+    [
+     "**Hip-hop / Rap** (n) /ˈhɪp.hɒp/ /ræp/",
+     "🎵 Lose Yourself – Eminem"
+    ],
+    [
+     "**R&B** (Rhythm and Blues) (n) /ˌɑːr ən ˈbiː/",
+     "🎵 I Will Always Love You – Whitney Houston\n🎵 Leave The Door Open – Silk Sonic (Bruno Mars & Anderson .Paak)"
+    ],
+    [
+     "**EDM** (Electronic Dance Music) (n) /ˌiː.diːˈem/",
+     "🎵 Wake Me Up – Avicii\n🎵 Closer – The Chainsmokers ft. Halsey"
+    ],
+    [
+     "**Folk** (n) /fəʊk/",
+     "🎵 The Sound of Silence – Simon & Garfunkel"
+    ],
+    [
+     "**Indie** (adj/n) /ˈɪn.di/",
+     "🎵 Em Dạo Này – Ngọt"
+    ],
+    [
+     "**Country** (n) /ˈkʌn.tri/",
+     "🎵 Love Story – Taylor Swift"
+    ],
+    [
+     "**Soul / Blues** (n) /səʊl/ /bluːz/",
+     "🎵 All of Me – John Legend"
+    ],
+    [
+     "**Reggae** (n) /ˈreɡ.eɪ/",
+     "🎵 No Woman, No Cry – Bob Marley"
+    ]
+   ],
+   "say": [
+    [
+     "audio/v/4a19573b7e.mp3",
+     ""
+    ],
+    [
+     "audio/v/6abc743bbd.mp3",
+     ""
+    ],
+    [
+     "audio/v/4dbb4695a9.mp3",
+     ""
+    ],
+    [
+     "audio/v/4f197c99a7.mp3",
+     ""
+    ],
+    [
+     "audio/v/b69536e3de.mp3",
+     ""
+    ],
+    [
+     "audio/v/cb0cde801b.mp3",
+     ""
+    ],
+    [
+     "audio/v/47ff004327.mp3",
+     ""
+    ],
+    [
+     "audio/v/2d02ecf89a.mp3",
+     ""
+    ],
+    [
+     "audio/v/e33fc333d4.mp3",
+     ""
+    ],
+    [
+     "audio/v/8e68b3e5af.mp3",
+     ""
+    ],
+    [
+     "audio/v/d08e8d39c9.mp3",
+     ""
+    ],
+    [
+     "audio/v/0615591f84.mp3",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "heading",
+   "text": "⛱️ Conversations"
+  },
+  {
+   "type": "dialogue",
+   "title": "1. Music and Nostalgia",
+   "context": "***Context:*** *Chloe is helping her friend Sam clear out his old bedroom at his parents’ house. Sam finds a box under the bed.*",
+   "lines": [
+    [
+     "Sam",
+     "Oh, look what I’ve found. My old MP3 player. It’s been **gathering dust** under here for years."
+    ],
+    [
+     "Chloe",
+     "**That brings back memories.** Does it still work?"
+    ],
+    [
+     "Sam",
+     "Let me charge it… Yeah, it does. Everything on here is from about 2010."
+    ],
+    [
+     "Chloe",
+     "Go on, **hit play**. **For old times’ sake.**"
+    ],
+    [
+     "Sam",
+     "OK, this one. I **had it on repeat** for the whole of Year 11. I still **know every word by heart**."
+    ],
+    [
+     "Chloe",
+     "I remember this! It was **all over the radio** that year. It’s so **catchy**. It used to **get stuck in my head** for days."
+    ],
+    [
+     "Sam",
+     "It’s pretty **cheesy**, though."
+    ],
+    [
+     "Chloe",
+     "Very. But I’ve always **had a soft spot for** it. We used to **sing it at the top of our lungs** on the school bus."
+    ],
+    [
+     "Sam",
+     "It’s funny. I haven’t heard it in years, but it **takes me straight back**. I can **vividly remember** the smell of the school canteen."
+    ],
+    [
+     "Chloe",
+     "Music’s good at that. It’s like **a trip down memory lane**."
+    ],
+    [
+     "Sam",
+     "To be honest, I think I miss that time more than the song. Life was so much simpler. No rent, no deadlines."
+    ],
+    [
+     "Chloe",
+     "Ah, **the good old days**."
+    ],
+    [
+     "Sam",
+     "Although, **in hindsight**, I complained about exams all the time."
+    ],
+    [
+     "Chloe",
+     "We all did. I read somewhere that the songs we hear as teenagers **stay with us for life**. That’s why your dad still plays the same three bands from the eighties."
+    ],
+    [
+     "Sam",
+     "And tells me **they don’t make music like they used to**."
+    ],
+    [
+     "Chloe",
+     "Every generation says that."
+    ],
+    [
+     "Sam",
+     "I know. I’ve started saying it too. It **makes me feel old**."
+    ],
+    [
+     "Chloe",
+     "I think we **look back through rose-tinted glasses**."
+    ],
+    [
+     "Sam",
+     "**Fair enough.** Some of these have **stood the test of time**, though. Others… **haven’t aged well** at all."
+    ],
+    [
+     "Chloe",
+     "So, are you going to throw it away?"
+    ],
+    [
+     "Sam",
+     "No, I’ll **hang on to** it. Everyone needs **a bit of nostalgia** sometimes."
+    ]
+   ],
+   "vocab": [
+    [
+     "**clear out** + place",
+     "/klɪər aʊt/",
+     "phrasal verb",
+     "",
+     "audio/v/9518b90dc3.mp3",
+     "",
+     "dọn sạch (nơi nào)"
+    ],
+    [
+     "**gather dust**",
+     "/ˈɡæðə dʌst/",
+     "idiom",
+     "",
+     "audio/v/4994bafa99.mp3",
+     "It’s been **gathering dust** under here for years.",
+     "bị bỏ xó, phủ bụi"
+    ],
+    [
+     "**bring back memories**",
+     "/brɪŋ bæk ˈmeməriz/",
+     "collocation",
+     "",
+     "audio/v/fc0968acd3.mp3",
+     "**That brings back memories.** Does it still work?",
+     "gợi lại kỷ niệm"
+    ],
+    [
+     "**hit play**",
+     "/hɪt pleɪ/",
+     "collocation",
+     "",
+     "audio/v/8541c0872c.mp3",
+     "Go on, **hit play**.",
+     "bấm phát"
+    ],
+    [
+     "**for old times’ sake**",
+     "/fər əʊld taɪmz seɪk/",
+     "idiom",
+     "",
+     "audio/v/46c84bbf19.mp3",
+     "**For old times’ sake.**",
+     "để nhớ lại ngày xưa"
+    ],
+    [
+     "**have sth on repeat**",
+     "/hæv ɒn rɪˈpiːt/",
+     "phrase",
+     "",
+     "audio/v/307954bb1a.mp3",
+     "I **had it on repeat** for the whole of Year 11.",
+     "nghe đi nghe lại (bài gì)"
+    ],
+    [
+     "**know sth by heart**",
+     "/nəʊ baɪ hɑːt/",
+     "idiom",
+     "",
+     "audio/v/2bfa449991.mp3",
+     "I still **know every word by heart**.",
+     "thuộc lòng"
+    ],
+    [
+     "**catchy**",
+     "/ˈkætʃi/",
+     "adjective",
+     "",
+     "audio/v/b06216abf6.mp3",
+     "It’s so **catchy**.",
+     "bắt tai, dễ nhớ"
+    ],
+    [
+     "**get stuck in your head**",
+     "/ɡet stʌk ɪn jɔː hed/",
+     "phrase",
+     "",
+     "audio/v/dbb69ed8ae.mp3",
+     "It used to **get stuck in my head** for days.",
+     "cứ văng vẳng trong đầu"
+    ],
+    [
+     "**cheesy**",
+     "/ˈtʃiːzi/",
+     "adjective, informal",
+     "",
+     "audio/v/248bc7afa1.mp3",
+     "It’s pretty **cheesy**, though.",
+     "sến"
+    ],
+    [
+     "**have a soft spot for** + N",
+     "/hæv ə sɒft spɒt fɔː/",
+     "idiom",
+     "",
+     "audio/v/0b64cc8c68.mp3",
+     "But I’ve always **had a soft spot for** it.",
+     "có cảm tình đặc biệt với…"
+    ],
+    [
+     "**sing at the top of your lungs**",
+     "/sɪŋ ət ðə tɒp əv jɔː lʌŋz/",
+     "idiom",
+     "",
+     "audio/v/53f85054d7.mp3",
+     "We used to **sing it at the top of our lungs** on the school bus.",
+     "hát hết cỡ, hát to hết cỡ"
+    ],
+    [
+     "**take sb (straight) back**",
+     "/teɪk streɪt bæk/",
+     "phrase",
+     "",
+     "audio/v/4b86279049.mp3",
+     "I haven’t heard it in years, but it **takes me straight back**.",
+     "đưa ai trở về (ngay) ký ức"
+    ],
+    [
+     "**vividly remember**",
+     "/ˈvɪvɪdli rɪˈmembə/",
+     "collocation",
+     "",
+     "audio/v/94a50fb626.mp3",
+     "I can **vividly remember** the smell of the school canteen.",
+     "nhớ như in"
+    ],
+    [
+     "**a trip down memory lane**",
+     "/ə trɪp daʊn ˈmeməri leɪn/",
+     "idiom",
+     "",
+     "audio/v/83e4043d64.mp3",
+     "It’s like **a trip down memory lane**.",
+     "chuyến trở về miền ký ức"
+    ],
+    [
+     "**the good old days**",
+     "/ðə ɡʊd əʊld deɪz/",
+     "idiom",
+     "",
+     "audio/v/f8e57c21f2.mp3",
+     "Ah, **the good old days**.",
+     "những ngày xưa tươi đẹp"
+    ],
+    [
+     "**in hindsight**",
+     "/ɪn ˈhaɪndsaɪt/",
+     "phrase",
+     "",
+     "audio/v/60d425db8c.mp3",
+     "Although, **in hindsight**, I complained about exams all the time.",
+     "nhìn lại thì"
+    ],
+    [
+     "**stay with sb for life**",
+     "/steɪ wɪð fə laɪf/",
+     "phrase",
+     "",
+     "audio/v/0dae9f4ac5.mp3",
+     "I read somewhere that the songs we hear as teenagers **stay with us for life**.",
+     "theo ai suốt đời"
+    ],
+    [
+     "**look back through rose-tinted glasses**",
+     "/lʊk bæk θruː ˌrəʊz ˈtɪntɪd ˈɡlɑːsɪz/",
+     "idiom",
+     "",
+     "audio/v/f403e51c01.mp3",
+     "I think we **look back through rose-tinted glasses**.",
+     "nhìn quá khứ qua lăng kính màu hồng"
+    ],
+    [
+     "**stand the test of time**",
+     "/stænd ðə test əv taɪm/",
+     "idiom",
+     "",
+     "audio/v/a24174c03c.mp3",
+     "",
+     "trường tồn với thời gian"
+    ],
+    [
+     "**(not) age well**",
+     "/eɪdʒ wel/",
+     "collocation",
+     "",
+     "audio/v/55ee2d9eb2.mp3",
+     "Others… **haven’t aged well** at all.",
+     "(không) còn hợp thời"
+    ],
+    [
+     "**hang on to** sth",
+     "/hæŋ ɒn tə/",
+     "phrasal verb",
+     "",
+     "audio/v/5734258535.mp3",
+     "No, I’ll **hang on to** it.",
+     "giữ lại cái gì"
+    ],
+    [
+     "**a bit of nostalgia**",
+     "/ə bɪt əv nɒˈstældʒə/",
+     "phrase",
+     "",
+     "audio/v/00e3dbcbdc.mp3",
+     "Everyone needs **a bit of nostalgia** sometimes.",
+     "một chút hoài niệm"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Talk about an old song",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What song is it?**\n(name, singer, when it came out, what it’s about)",
+     "***The song I’d like to talk about is… by…***\n***It came out when I was in…, and it was all over the radio.***\n***It’s a slow / upbeat song about…***"
+    ],
+    [
+     "**Why did you like it?**\n(lyrics / melody / voice)",
+     "***Lyrics: I could relate to the lyrics, because at that time I was…***\n***Melody: The melody is really catchy / beautiful / relaxing. I loved the chorus.***\n***Voice: The singer has a really soft / powerful voice.***"
+    ],
+    [
+     "**What time does it remind you of?**\n**(**school days, uni, a first job, a trip, a person, a place)",
+     "***It takes me straight back to…***\n***It reminds me of the time when…***\n***I can vividly remember…***"
+    ],
+    [
+     "**How do you feel listening to it now?**",
+     "***I haven’t heard it in years, but whenever it comes on, I…***\n***It brings back a lot of memories of…***\n***It makes me a bit emotional / makes me smile.***"
+    ],
+    [
+     "**Would you still listen to it today?**",
+     "***It has really stood the test of time. I still have a soft spot for it.***\n***To be honest, it hasn’t aged very well. It sounds a bit cheesy now.***\n***Maybe I’m looking back through rose-tinted glasses, but I still like it.***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  },
+  {
+   "type": "dialogue",
+   "title": "2. Fans and indie music",
+   "context": "***Context:*** *Mia and Jack are colleagues. It’s Monday morning, and Mia looks very tired.*",
+   "lines": [
+    [
+     "Jack",
+     "You seem a bit tired today. Busy weekend?"
+    ],
+    [
+     "Mia",
+     "Not really. I **stayed up** late last night trying to get concert tickets. The website **kept crashing**, but I got two **in the end**. They’re right at the back, but I’m just happy to be going."
+    ],
+    [
+     "Jack",
+     "Is this for that boy band you really like?"
+    ],
+    [
+     "Mia",
+     "Yes, **that’s the one**. I know it sounds a bit silly."
+    ],
+    [
+     "Jack",
+     "It’s not silly, but **I don’t really get it**. Is it really **worth losing sleep over**?"
+    ],
+    [
+     "Mia",
+     "For me, it is. It’s not just about the music. A few years ago, I was **going through a rough patch** at work, and their songs really **got me through it**. I’ve also made some close friends through the **fan community**."
+    ],
+    [
+     "Jack",
+     "So it’s more about the people than the band."
+    ],
+    [
+     "Mia",
+     "Kind of. It gives me **a sense of belonging**. When the whole stadium is singing along, you **feel like part of something bigger**. It’s **hard to put into words**."
+    ],
+    [
+     "Jack",
+     "That sounds nice, actually. I’m just **not a big fan of** crowds. I prefer small **gigs**."
+    ],
+    [
+     "Mia",
+     "Right, you’re more **into** indie music, aren’t you?"
+    ],
+    [
+     "Jack",
+     "Yeah. I like finding bands **before they make it big**. And small gigs feel really **raw**. There are only about thirty people in the room, and you can hear every word. It’s easy to **lose yourself in the music**."
+    ],
+    [
+     "Mia",
+     "**I can see the appeal.**"
+    ],
+    [
+     "Jack",
+     "The lyrics also **hit close to home**. They’re less about love and more about **everyday struggles**, like paying rent or not knowing what to do with your life."
+    ],
+    [
+     "Mia",
+     "That sounds a bit sad."
+    ],
+    [
+     "Jack",
+     "Sometimes it is. But it’s **comforting** to know someone else feels the same way."
+    ],
+    [
+     "Mia",
+     "**Funnily enough**, that’s exactly how I feel about my band. We just like different sounds."
+    ],
+    [
+     "Jack",
+     "Maybe we’re **not so different after all**."
+    ]
+   ],
+   "vocab": [
+    [
+     "**crash**",
+     "/kræʃ/",
+     "verb",
+     "",
+     "audio/v/2fc7f14523.mp3",
+     "The website **kept crashing**, but I got two **in the end**.",
+     "bị sập, bị treo"
+    ],
+    [
+     "**I don’t really get it.**",
+     "/aɪ dəʊnt ˈrɪəli ɡet ɪt/",
+     "expression",
+     "",
+     "audio/v/3ea0d75bc7.mp3",
+     "It’s not silly, but **I don’t really get it**.",
+     "Mình không hiểu lắm."
+    ],
+    [
+     "**be worth losing sleep over**",
+     "/bi wɜːθ ˈluːzɪŋ sliːp ˈəʊvə/",
+     "phrase",
+     "",
+     "audio/v/683e5926c8.mp3",
+     "Is it really **worth losing sleep over**?",
+     "đáng để mất ngủ vì nó"
+    ],
+    [
+     "**go through a rough patch**",
+     "/ɡəʊ θruː ə rʌf pætʃ/",
+     "idiom",
+     "",
+     "audio/v/d4f600b4b5.mp3",
+     "A few years ago, I was **going through a rough patch** at work, and their songs really **got me through it**.",
+     "trải qua giai đoạn khó khăn"
+    ],
+    [
+     "**get sb through sth**",
+     "/ɡet θruː/",
+     "phrasal verb",
+     "",
+     "audio/v/31c204084b.mp3",
+     "A few years ago, I was **going through a rough patch** at work, and their songs really **got me through it**.",
+     "giúp ai vượt qua điều gì"
+    ],
+    [
+     "**a fan community**",
+     "/ə fæn kəˈmjuːnəti/",
+     "noun",
+     "",
+     "audio/v/da90ebe1c3.mp3",
+     "I’ve also made some close friends through the **fan community**.",
+     "cộng đồng người hâm mộ"
+    ],
+    [
+     "**a sense of belonging**",
+     "/ə sens əv bɪˈlɒŋɪŋ/",
+     "collocation",
+     "",
+     "audio/v/619d062483.mp3",
+     "It gives me **a sense of belonging**.",
+     "cảm giác thuộc về"
+    ],
+    [
+     "**feel like part of something bigger**",
+     "/fiːl laɪk pɑːt əv ˈsʌmθɪŋ ˈbɪɡə/",
+     "",
+     "",
+     "audio/v/6103640da2.mp3",
+     "When the whole stadium is singing along, you **feel like part of something bigger**.",
+     "cảm thấy là một phần của điều lớn lao hơn"
+    ],
+    [
+     "**hard to put into words**",
+     "/hɑːd tə pʊt ˈɪntə wɜːdz/",
+     "phrase",
+     "",
+     "audio/v/4c370230e6.mp3",
+     "It’s **hard to put into words**.",
+     "khó diễn tả thành lời"
+    ],
+    [
+     "**not a big fan of** + N",
+     "/nɒt ə bɪɡ fæn əv/",
+     "phrase",
+     "",
+     "audio/v/09055b83ac.mp3",
+     "I’m just **not a big fan of** crowds.",
+     "không thích… lắm"
+    ],
+    [
+     "**a gig**",
+     "/ɡɪɡ/",
+     "noun",
+     "",
+     "audio/v/179f3a5119.mp3",
+     "I prefer small **gigs**.",
+     "buổi diễn nhỏ"
+    ],
+    [
+     "**make it big**",
+     "/meɪk ɪt bɪɡ/",
+     "idiom",
+     "",
+     "audio/v/5bfabd80ad.mp3",
+     "I like finding bands **before they make it big**.",
+     "trở nên nổi tiếng, thành công lớn"
+    ],
+    [
+     "**raw**",
+     "/rɔː/",
+     "adjective",
+     "",
+     "audio/v/ce15802a8c.mp3",
+     "And small gigs feel really **raw**.",
+     "mộc, chân thật"
+    ],
+    [
+     "**lose yourself in the music**",
+     "/luːz jɔːˈself ɪn ðə ˈmjuːzɪk/",
+     "phrase",
+     "",
+     "audio/v/7b789c1d0a.mp3",
+     "It’s easy to **lose yourself in the music**.",
+     "đắm chìm trong âm nhạc"
+    ],
+    [
+     "**I can see the appeal.**",
+     "/aɪ kən siː ði əˈpiːl/",
+     "expression",
+     "",
+     "audio/v/c7f3e4813f.mp3",
+     "**I can see the appeal.**",
+     "Mình hiểu vì sao nó hấp dẫn."
+    ],
+    [
+     "**hit close to home**",
+     "/hɪt kləʊs tə həʊm/",
+     "idiom",
+     "",
+     "audio/v/38ee31b9fa.mp3",
+     "The lyrics also **hit close to home**.",
+     "chạm đúng tâm tư, rất đồng cảm"
+    ],
+    [
+     "**everyday struggles**",
+     "/ˈevrideɪ ˈstrʌɡlz/",
+     "collocation",
+     "",
+     "audio/v/c3abc9fe31.mp3",
+     "They’re less about love and more about **everyday struggles**, like paying rent or not knowing what to do with your life.",
+     "những khó khăn thường ngày"
+    ],
+    [
+     "**comforting**",
+     "/ˈkʌmfətɪŋ/",
+     "adjective",
+     "",
+     "audio/v/ca4d9e3311.mp3",
+     "But it’s **comforting** to know someone else feels the same way.",
+     "an ủi, dễ chịu"
+    ],
+    [
+     "**funnily enough**",
+     "/ˈfʌnɪli ɪˈnʌf/",
+     "phrase",
+     "",
+     "audio/v/0878d34a85.mp3",
+     "**Funnily enough**, that’s exactly how I feel about my band.",
+     "buồn cười là, lạ thay"
+    ],
+    [
+     "**not so different after all**",
+     "/nɒt səʊ ˈdɪfrənt ˈɑːftər ɔːl/",
+     "phrase",
+     "",
+     "audio/v/ea829b65fc.mp3",
+     "Maybe we’re **not so different after all**.",
+     "rốt cuộc cũng không khác nhau mấy"
+    ]
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Why do you listen to music?",
+   "head": [
+    "Purposes",
+    "Phrases"
+   ],
+   "rows": [
+    [
+     "**What kind of music are you into?**\n(pop, K-pop, indie, ballads, rock; a big fan or a casual listener)",
+     "***I’m really into… at the moment.***\n***I’m more into… than…***\n***I’m a big fan of… / I’m not a big fan of…***\n***I’m not a big fan of any one…, but…***"
+    ],
+    [
+     "**Why do you listen to it?**\n(to relax, to escape, to feel understood, to get through a hard time)",
+     "***For me, it’s not just about the music. It’s about the lyrics / the people / the feeling…***\n***When I was going through a rough patch, … really got me through it.***\n***The lyrics really hit close to home, because…***"
+    ],
+    [
+     "**How do you enjoy it?** (big concerts, small gigs, headphones on alone, singing along)",
+     "***I usually listen to it when I’m… / on my way to…***\n***I prefer… to…, because…***\n***… feels really raw / personal, because…***\n***When I…, I completely lose myself in the music.***"
+    ],
+    [
+     "**What does it give you?**\n(friends, a sense of belonging, comfort, energy)",
+     "***It gives me a sense of belonging / energy / comfort.***\n***I’ve made some close friends through…***\n***It’s hard to put into words, but it makes me feel…***"
+    ]
+   ],
+   "say": [
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ],
+    [
+     "",
+     ""
+    ]
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "type": "gapselect",
+   "title": "Part 1: Vocab check",
+   "instructions": "Fill in each blank with a phrase from the word bank. Use each phrase once.",
+   "context": "Linh and her cousin Huy are driving back to their hometown for Tết. Huy is in charge of the music.",
+   "bank": [
+    "hit close to home",
+    "a soft spot for",
+    "made it big",
+    "had it on repeat",
+    "rose-tinted glasses",
+    "going through a rough patch",
+    "cheesy",
+    "a trip down memory lane",
+    "stood the test of time",
+    "at the top of your lungs"
+   ],
+   "lines": [
+    [
+     "Linh",
+     "What's this playlist? I haven't heard these songs since high school."
+    ],
+    [
+     "Huy",
+     "I made it last night. It's called “2012”. I thought it would be {a trip down memory lane} for the long drive."
+    ],
+    [
+     "Linh",
+     "It is. Oh, I love this one. I {had it on repeat} for months when it came out. I listened to it every night before bed."
+    ],
+    [
+     "Huy",
+     "I remember. You used to sing it {at the top of your lungs} in the shower, and the whole house could hear you."
+    ],
+    [
+     "Linh",
+     "Sorry about that. I know the lyrics are a bit {cheesy}, all that “you're my sunshine” stuff. But I've always had {a soft spot for} it."
+    ],
+    [
+     "Huy",
+     "Do you think music was better back then?"
+    ],
+    [
+     "Linh",
+     "Maybe I'm just looking back through {rose-tinted glasses}. Some of these songs have {stood the test of time}, but others sound quite old-fashioned now."
+    ],
+    [
+     "Huy",
+     "What about this next one? It's that indie band I told you about. They haven't {made it big} yet, but they're getting more popular."
+    ],
+    [
+     "Linh",
+     "It's nice. Very calm. Why do you like them so much?"
+    ],
+    [
+     "Huy",
+     "Last year, when I lost my job, I was {going through a rough patch}, and their songs really helped me. The lyrics {hit close to home}, because they're all about feeling lost in your twenties."
+    ],
+    [
+     "Linh",
+     "I can see the appeal. Send me the playlist when we get there."
+    ]
+   ]
+  },
+  {
+   "type": "gapselect",
+   "title": "Part 2: Vocab check (sentences)",
+   "instructions": "Complete each sentence with a phrase from the box. Use each phrase once.",
+   "bank": [
+    "a sense of belonging",
+    "for old times' sake",
+    "catchy",
+    "comforting",
+    "I don't really get it",
+    "by heart",
+    "lose myself in the music",
+    "In hindsight",
+    "brings back memories",
+    "gigs"
+   ],
+   "lines": [
+    [
+     "",
+     "This song is so {catchy}. I've only heard it once, and I'm already singing it."
+    ],
+    [
+     "",
+     "I've heard this song so many times that I know every word {by heart}."
+    ],
+    [
+     "",
+     "Looking at old photos from university always {brings back memories}."
+    ],
+    [
+     "",
+     "{In hindsight}, I should have studied harder at school, but I was having too much fun."
+    ],
+    [
+     "",
+     "Let's go to that old café near our school, {for old times' sake}."
+    ],
+    [
+     "",
+     "\"I spend most of my salary on concert tickets.\" \"Really? {I don't really get it}. Why not just listen at home?\""
+    ],
+    [
+     "",
+     "When I joined the running club, I finally felt {a sense of belonging}. Everyone was so welcoming."
+    ],
+    [
+     "",
+     "I'm not a big fan of huge concerts. I prefer small {gigs} in local bars."
+    ],
+    [
+     "",
+     "When I'm stressed, I put my headphones on and {lose myself in the music}."
+    ],
+    [
+     "",
+     "It's {comforting} to hear a song about the same problems you're going through."
+    ]
+   ]
+  },
+  {
+   "type": "listening",
+   "title": "Part 3: Listening",
+   "intro": "Listen to a short radio segment about music and memory, then do Parts A and B.",
+   "podcast": "🎧 Why old songs stay with us",
+   "audio": "audio/b1-music.mp3",
+   "script": [
+    {
+     "t": 0,
+     "who": "",
+     "text": "Have you ever noticed that the songs you loved as a teenager still feel special, even if you'd never choose to listen to them today? You're not alone. Researchers call this the \"reminiscence bump\". ==Most people remember more events from their teens and early twenties than from any other time in their lives==, and the music from those years tends to stay with us the longest."
+    },
+    {
+     "t": 21.6,
+     "who": "",
+     "text": "Part of the reason is that ==so many things happen for the first time in those years==: first friendships, first heartbreak, first time living away from home. ==Our emotions are stronger, and the songs we hear become linked to those feelings==. So when an old song comes on, it's not just the melody we're reacting to. It's the memory of who we were."
+    },
+    {
+     "t": 41.55,
+     "who": "",
+     "text": "My own example is a little embarrassing. When I was fifteen, ==I was obsessed with a boy band==. I had posters all over my bedroom wall, and I queued for six hours to see them live. If you'd told me then that ==I'd be a jazz lover at thirty==, I'd have laughed. ==These days, I almost never listen to that band==. But last month, one of their songs came on in a café, and ==I suddenly felt fifteen again==. I could almost smell my old school bag."
+    },
+    {
+     "t": 67.34,
+     "who": "",
+     "text": "Interestingly, experts say ==this effect isn't really about whether the music is good==. Some of the songs we remember most fondly are, honestly, pretty average. ==What matters is when we heard them==. That's also why our parents often insist that ==music was better in their day==. They're not completely wrong. They're just remembering the songs together with the best years of their lives."
+    },
+    {
+     "t": 86.86,
+     "who": "",
+     "text": "So next time someone laughs at your old playlist, don't apologise. It's not really a playlist. ==It's a diary.=="
+    }
+   ]
+  },
+  {
+   "type": "mcq",
+   "title": "Part 3A: Choose the best answer",
+   "questions": [
+    {
+     "q": "What is the “reminiscence bump”?",
+     "options": [
+      "The habit of only listening to music from your teenage years.",
+      "The tendency to remember more from your teens and early twenties than from other periods.",
+      "The embarrassing feeling you get when you hear an old song."
+     ],
+     "answer": 1,
+     "why": "“Most people remember more events from their teens and early twenties than from any other time in their lives.”"
+    },
+    {
+     "q": "Why do songs from these years become so memorable?",
+     "options": [
+      "The songs become connected to strong feelings from new experiences.",
+      "Teenagers listen to music much more often than adults do.",
+      "Songs from that period usually have simpler, catchier melodies."
+     ],
+     "answer": 0,
+     "why": "“Our emotions are stronger, and the songs we hear become linked to those feelings.”"
+    },
+    {
+     "q": "What do we learn about the speaker?",
+     "options": [
+      "She still listens to the boy band she loved as a teenager.",
+      "She went to a café specifically to listen to her old favourite songs.",
+      "Her taste in music has changed a lot since she was fifteen."
+     ],
+     "answer": 2,
+     "why": "“I'd be a jazz lover at thirty… These days, I almost never listen to that band.”"
+    },
+    {
+     "q": "What happened when she heard the song in the café?",
+     "options": [
+      "She felt embarrassed and wanted to leave.",
+      "Her teenage years came back to her very clearly.",
+      "She realised the song was better than she remembered."
+     ],
+     "answer": 1,
+     "why": "“I suddenly felt fifteen again. I could almost smell my old school bag.”"
+    },
+    {
+     "q": "According to experts, which songs do we remember most fondly?",
+     "options": [
+      "The ones that are of the highest quality.",
+      "The ones our parents played when we were children.",
+      "The ones we heard at a particular stage of our lives."
+     ],
+     "answer": 2,
+     "why": "“What matters is when we heard them.”"
+    },
+    {
+     "q": "What does the speaker mean when she says an old playlist is “a diary”?",
+     "options": [
+      "It records important moments and feelings from our past.",
+      "People should write down the songs they listen to every day.",
+      "It shows how much our taste in music has improved."
+     ],
+     "answer": 0,
+     "why": "“It's not really a playlist. It's a diary.”"
+    }
+   ]
+  },
+  {
+   "type": "gaptype",
+   "title": "Part 3B: Complete the summary",
+   "instructions": "Write NO MORE THAN TWO WORDS for each blank.",
+   "text": "People tend to remember the most from their teenage years and early {twenties}. During this time, many things happen for the {first time}, so our {emotions|feelings} are stronger and become linked to the songs we hear. The speaker used to be {obsessed} with a boy band, but now she prefers {jazz}. Experts believe that how much we love an old song depends more on {when} we heard it than on how good it is. This explains why parents often say music was better {in their day}."
+  },
+  {
+   "type": "recording",
+   "title": "Part 4: Speaking (2 minutes)",
+   "instructions": "Choose ONE option and record yourself speaking for about 2 minutes.",
+   "options": [
+    {
+     "title": "Talk about an old song that brings back memories.",
+     "questions": [
+      "What's the song, who sings it, and when did it come out?",
+      "Why did you like it: the lyrics, the melody or the singer's voice?",
+      "What time in your life does it remind you of?",
+      "How do you feel when you hear it now? Has it stood the test of time?"
+     ],
+     "use": "all over the radio, have sth on repeat, take sb straight back, vividly remember, have a soft spot for, (not) age well"
+    },
+    {
+     "title": "Tell me about a time when music helped you through a difficult period.",
+     "questions": [
+      "What was happening in your life at that time?",
+      "Which song or artist did you listen to?",
+      "Why did it help you? Was it the lyrics, the melody, or something else?",
+      "How do you feel when you listen to it now?"
+     ],
+     "use": "go through a rough patch, get sb through sth, hit close to home, lose yourself in the music, comforting, hard to put into words"
+    },
+    {
+     "title": "Was music better in the past, or do we just remember it that way?",
+     "questions": [
+      "What do older people in your family say about today's music?",
+      "Which old songs have stood the test of time? Which haven't aged well?",
+      "What do you think of music today?",
+      "So what's your opinion?"
+     ],
+     "use": "They don't make music like they used to, look back through rose-tinted glasses, stand the test of time, catchy, cheesy, in hindsight"
+    }
+   ]
+  }
+ ]
+}
