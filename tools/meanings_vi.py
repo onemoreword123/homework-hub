@@ -596,3 +596,20 @@ VI.update({
 "equipment": "thiết bị",
 "find out": "tìm hiểu, tìm ra",
 })
+VI.update({
+"be all over the radio": "phát khắp nơi trên radio",
+"take sb back": "đưa ai về lại ký ức",
+"Life was so much simpler.": "Cuộc sống hồi đó đơn giản hơn nhiều.",
+"They don't make music like they used to.": "Giờ chẳng còn ai làm nhạc như ngày xưa.",
+"make sb feel old": "khiến ai thấy mình già",
+"stay up late": "thức khuya",
+"keep crashing": "cứ bị sập liên tục",
+"That's the one.": "Đúng cái đó đấy.",
+"go through a hard time": "trải qua giai đoạn khó khăn",
+"Kind of.": "Kiểu vậy. / Cũng gần như thế.",
+"hard to explain": "khó giải thích",
+"be into + N": "thích, mê…",
+"get famous": "trở nên nổi tiếng",
+"I can see why.": "Mình hiểu tại sao.",
+"speak to sb": "chạm đến lòng ai, khiến ai đồng cảm",
+})
