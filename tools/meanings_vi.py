@@ -412,3 +412,19 @@ VI.update({
 "give sth a (good) stir": "khuấy đều cái gì",
 "get the hang of sth": "quen tay, nắm được cách làm gì",
 })
+VI.update({
+"let me quickly explain + how…": "để mình giải thích nhanh cách…",
+"It all starts with + N": "mọi thứ bắt đầu từ…",
+"a price quote": "bảng báo giá",
+"Once + clause, …": "một khi…, sau khi…",
+"at this point": "ở bước này, lúc này",
+"arrange the delivery": "sắp xếp việc giao hàng",
+"sb's main contact": "người liên hệ chính của ai",
+"get stuck": "bị kẹt, bị tắc lại",
+"so far": "cho đến giờ",
+"in the bottom of + N": "ở dưới đáy…",
+"gently": "nhẹ nhàng",
+"Don't…, or…": "đừng…, nếu không thì…",
+"Trust me.": "Tin mình đi.",
+"once you know how": "một khi đã biết cách",
+})
